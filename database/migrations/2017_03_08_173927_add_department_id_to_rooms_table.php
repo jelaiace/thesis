@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddDayColumnToSchedulesTable extends Migration
+class AddDepartmentIdToRoomsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddDayColumnToSchedulesTable extends Migration
      */
     public function up()
     {
-        Schema::table('schedules', function(Blueprint $table) {
-            $table->enum('day', ['mth', 'tf', 'ws']);
+        Schema::table('rooms', function(Blueprint $table) {
+            $table->integer('department_id');
         });
     }
 
@@ -25,8 +25,8 @@ class AddDayColumnToSchedulesTable extends Migration
      */
     public function down()
     {
-        Schema::table('schedules', function(Blueprint $table) {
-            $table->dropColumn(['day']);
+        Schema::table('rooms', function(Blueprint $table) {
+            $table->dropColumn('department_id');
         });
     }
 }

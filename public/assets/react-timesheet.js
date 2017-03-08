@@ -1,77 +1,77 @@
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"), require("ReactDOM"));
-	else if(typeof define === 'function' && define.amd)
-		define(["React", "ReactDOM"], factory);
-	else if(typeof exports === 'object')
-		exports["ReactTimesheet"] = factory(require("React"), require("ReactDOM"));
-	else
-		root["ReactTimesheet"] = factory(root["React"], root["ReactDOM"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_125__) {
+    if(typeof exports === 'object' && typeof module === 'object')
+        module.exports = factory(require("React"), require("ReactDOM"));
+    else if(typeof define === 'function' && define.amd)
+        define(["React", "ReactDOM"], factory);
+    else if(typeof exports === 'object')
+        exports["ReactTimesheet"] = factory(require("React"), require("ReactDOM"));
+    else
+        root["ReactTimesheet"] = factory(root["React"], root["ReactDOM"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_119__) {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/    // The module cache
+/******/    var installedModules = {};
 
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/    // The require function
+/******/    function __webpack_require__(moduleId) {
 
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
+/******/        // Check if module is in cache
+/******/        if(installedModules[moduleId])
+/******/            return installedModules[moduleId].exports;
 
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
+/******/        // Create a new module (and put it into the cache)
+/******/        var module = installedModules[moduleId] = {
+/******/            i: moduleId,
+/******/            l: false,
+/******/            exports: {}
+/******/        };
 
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/        // Execute the module function
+/******/        modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
+/******/        // Flag the module as loaded
+/******/        module.l = true;
 
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
+/******/        // Return the exports of the module
+/******/        return module.exports;
+/******/    }
 
 
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
+/******/    // expose the modules object (__webpack_modules__)
+/******/    __webpack_require__.m = modules;
 
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
+/******/    // expose the module cache
+/******/    __webpack_require__.c = installedModules;
 
-/******/ 	// identity function for calling harmory imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/    // identity function for calling harmory imports with the correct context
+/******/    __webpack_require__.i = function(value) { return value; };
 
-/******/ 	// define getter function for harmory exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		Object.defineProperty(exports, name, {
-/******/ 			configurable: false,
-/******/ 			enumerable: true,
-/******/ 			get: getter
-/******/ 		});
-/******/ 	};
+/******/    // define getter function for harmory exports
+/******/    __webpack_require__.d = function(exports, name, getter) {
+/******/        Object.defineProperty(exports, name, {
+/******/            configurable: false,
+/******/            enumerable: true,
+/******/            get: getter
+/******/        });
+/******/    };
 
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
+/******/    // getDefaultExport function for compatibility with non-harmony modules
+/******/    __webpack_require__.n = function(module) {
+/******/        var getter = module && module.__esModule ?
+/******/            function getDefault() { return module['default']; } :
+/******/            function getModuleExports() { return module; };
+/******/        __webpack_require__.d(getter, 'a', getter);
+/******/        return getter;
+/******/    };
 
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/    // Object.prototype.hasOwnProperty.call
+/******/    __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/    // __webpack_public_path__
+/******/    __webpack_require__.p = "";
 
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 189);
+/******/    // Load entry module and return exports
+/******/    return __webpack_require__(__webpack_require__.s = 150);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1892,7 +1892,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(176)("./" + name);
+            __webpack_require__(136)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -4380,7 +4380,7 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(188)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(149)(module)))
 
 /***/ },
 /* 1 */
@@ -4400,50 +4400,65 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 /* global define */
 
 (function () {
-	'use strict';
+    'use strict';
 
-	var hasOwn = {}.hasOwnProperty;
+    var hasOwn = {}.hasOwnProperty;
 
-	function classNames () {
-		var classes = [];
+    function classNames () {
+        var classes = [];
 
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
+        for (var i = 0; i < arguments.length; i++) {
+            var arg = arguments[i];
+            if (!arg) continue;
 
-			var argType = typeof arg;
+            var argType = typeof arg;
 
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
+            if (argType === 'string' || argType === 'number') {
+                classes.push(arg);
+            } else if (Array.isArray(arg)) {
+                classes.push(classNames.apply(null, arg));
+            } else if (argType === 'object') {
+                for (var key in arg) {
+                    if (hasOwn.call(arg, key) && arg[key]) {
+                        classes.push(key);
+                    }
+                }
+            }
+        }
 
-		return classes.join(' ');
-	}
+        return classes.join(' ');
+    }
 
-	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = classNames;
+    } else if (true) {
+        // register as 'classnames', consistent with npm package name
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+            return classNames;
+        }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else {
+        window.classNames = classNames;
+    }
 }());
 
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+"use strict";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var height = exports.height = 125;
+var width = exports.width = 250;
+
+exports.default = { height: height, width: width };
+
+/***/ },
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4456,7 +4471,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -4471,11 +4486,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(125);
+var _reactDom = __webpack_require__(119);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactInputAutosize = __webpack_require__(177);
+var _reactInputAutosize = __webpack_require__(138);
 
 var _reactInputAutosize2 = _interopRequireDefault(_reactInputAutosize);
 
@@ -4483,53 +4498,53 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _utilsDefaultArrowRenderer = __webpack_require__(185);
+var _utilsDefaultArrowRenderer = __webpack_require__(146);
 
 var _utilsDefaultArrowRenderer2 = _interopRequireDefault(_utilsDefaultArrowRenderer);
 
-var _utilsDefaultFilterOptions = __webpack_require__(122);
+var _utilsDefaultFilterOptions = __webpack_require__(116);
 
 var _utilsDefaultFilterOptions2 = _interopRequireDefault(_utilsDefaultFilterOptions);
 
-var _utilsDefaultMenuRenderer = __webpack_require__(123);
+var _utilsDefaultMenuRenderer = __webpack_require__(117);
 
 var _utilsDefaultMenuRenderer2 = _interopRequireDefault(_utilsDefaultMenuRenderer);
 
-var _utilsDefaultClearRenderer = __webpack_require__(186);
+var _utilsDefaultClearRenderer = __webpack_require__(147);
 
 var _utilsDefaultClearRenderer2 = _interopRequireDefault(_utilsDefaultClearRenderer);
 
-var _Async = __webpack_require__(180);
+var _Async = __webpack_require__(141);
 
 var _Async2 = _interopRequireDefault(_Async);
 
-var _AsyncCreatable = __webpack_require__(181);
+var _AsyncCreatable = __webpack_require__(142);
 
 var _AsyncCreatable2 = _interopRequireDefault(_AsyncCreatable);
 
-var _Creatable = __webpack_require__(182);
+var _Creatable = __webpack_require__(143);
 
 var _Creatable2 = _interopRequireDefault(_Creatable);
 
-var _Option = __webpack_require__(183);
+var _Option = __webpack_require__(144);
 
 var _Option2 = _interopRequireDefault(_Option);
 
-var _Value = __webpack_require__(184);
+var _Value = __webpack_require__(145);
 
 var _Value2 = _interopRequireDefault(_Value);
 
 function stringifyValue(value) {
-	var valueType = typeof value;
-	if (valueType === 'string') {
-		return value;
-	} else if (valueType === 'object') {
-		return JSON.stringify(value);
-	} else if (valueType === 'number' || valueType === 'boolean') {
-		return String(value);
-	} else {
-		return '';
-	}
+    var valueType = typeof value;
+    if (valueType === 'string') {
+        return value;
+    } else if (valueType === 'object') {
+        return JSON.stringify(value);
+    } else if (valueType === 'number' || valueType === 'boolean') {
+        return String(value);
+    } else {
+        return '';
+    }
 }
 
 var stringOrNode = _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.string, _react2['default'].PropTypes.node]);
@@ -4538,1137 +4553,1137 @@ var instanceId = 1;
 
 var Select = _react2['default'].createClass({
 
-	displayName: 'Select',
+    displayName: 'Select',
 
-	propTypes: {
-		addLabelText: _react2['default'].PropTypes.string, // placeholder displayed when you want to add a label on a multi-value input
-		'aria-label': _react2['default'].PropTypes.string, // Aria label (for assistive tech)
-		'aria-labelledby': _react2['default'].PropTypes.string, // HTML ID of an element that should be used as the label (for assistive tech)
-		arrowRenderer: _react2['default'].PropTypes.func, // Create drop-down caret element
-		autoBlur: _react2['default'].PropTypes.bool, // automatically blur the component when an option is selected
-		autofocus: _react2['default'].PropTypes.bool, // autofocus the component on mount
-		autosize: _react2['default'].PropTypes.bool, // whether to enable autosizing or not
-		backspaceRemoves: _react2['default'].PropTypes.bool, // whether backspace removes an item if there is no text input
-		backspaceToRemoveMessage: _react2['default'].PropTypes.string, // Message to use for screenreaders to press backspace to remove the current item - {label} is replaced with the item label
-		className: _react2['default'].PropTypes.string, // className for the outer element
-		clearAllText: stringOrNode, // title for the "clear" control when multi: true
-		clearRenderer: _react2['default'].PropTypes.func, // create clearable x element
-		clearValueText: stringOrNode, // title for the "clear" control
-		clearable: _react2['default'].PropTypes.bool, // should it be possible to reset value
-		deleteRemoves: _react2['default'].PropTypes.bool, // whether backspace removes an item if there is no text input
-		delimiter: _react2['default'].PropTypes.string, // delimiter to use to join multiple values for the hidden field value
-		disabled: _react2['default'].PropTypes.bool, // whether the Select is disabled or not
-		escapeClearsValue: _react2['default'].PropTypes.bool, // whether escape clears the value when the menu is closed
-		filterOption: _react2['default'].PropTypes.func, // method to filter a single option (option, filterString)
-		filterOptions: _react2['default'].PropTypes.any, // boolean to enable default filtering or function to filter the options array ([options], filterString, [values])
-		ignoreAccents: _react2['default'].PropTypes.bool, // whether to strip diacritics when filtering
-		ignoreCase: _react2['default'].PropTypes.bool, // whether to perform case-insensitive filtering
-		inputProps: _react2['default'].PropTypes.object, // custom attributes for the Input
-		inputRenderer: _react2['default'].PropTypes.func, // returns a custom input component
-		instanceId: _react2['default'].PropTypes.string, // set the components instanceId
-		isLoading: _react2['default'].PropTypes.bool, // whether the Select is loading externally or not (such as options being loaded)
-		joinValues: _react2['default'].PropTypes.bool, // joins multiple values into a single form field with the delimiter (legacy mode)
-		labelKey: _react2['default'].PropTypes.string, // path of the label value in option objects
-		matchPos: _react2['default'].PropTypes.string, // (any|start) match the start or entire string when filtering
-		matchProp: _react2['default'].PropTypes.string, // (any|label|value) which option property to filter on
-		menuBuffer: _react2['default'].PropTypes.number, // optional buffer (in px) between the bottom of the viewport and the bottom of the menu
-		menuContainerStyle: _react2['default'].PropTypes.object, // optional style to apply to the menu container
-		menuRenderer: _react2['default'].PropTypes.func, // renders a custom menu with options
-		menuStyle: _react2['default'].PropTypes.object, // optional style to apply to the menu
-		multi: _react2['default'].PropTypes.bool, // multi-value input
-		name: _react2['default'].PropTypes.string, // generates a hidden <input /> tag with this field name for html forms
-		noResultsText: stringOrNode, // placeholder displayed when there are no matching search results
-		onBlur: _react2['default'].PropTypes.func, // onBlur handler: function (event) {}
-		onBlurResetsInput: _react2['default'].PropTypes.bool, // whether input is cleared on blur
-		onChange: _react2['default'].PropTypes.func, // onChange handler: function (newValue) {}
-		onClose: _react2['default'].PropTypes.func, // fires when the menu is closed
-		onCloseResetsInput: _react2['default'].PropTypes.bool, // whether input is cleared when menu is closed through the arrow
-		onFocus: _react2['default'].PropTypes.func, // onFocus handler: function (event) {}
-		onInputChange: _react2['default'].PropTypes.func, // onInputChange handler: function (inputValue) {}
-		onInputKeyDown: _react2['default'].PropTypes.func, // input keyDown handler: function (event) {}
-		onMenuScrollToBottom: _react2['default'].PropTypes.func, // fires when the menu is scrolled to the bottom; can be used to paginate options
-		onOpen: _react2['default'].PropTypes.func, // fires when the menu is opened
-		onValueClick: _react2['default'].PropTypes.func, // onClick handler for value labels: function (value, event) {}
-		openAfterFocus: _react2['default'].PropTypes.bool, // boolean to enable opening dropdown when focused
-		openOnFocus: _react2['default'].PropTypes.bool, // always open options menu on focus
-		optionClassName: _react2['default'].PropTypes.string, // additional class(es) to apply to the <Option /> elements
-		optionComponent: _react2['default'].PropTypes.func, // option component to render in dropdown
-		optionRenderer: _react2['default'].PropTypes.func, // optionRenderer: function (option) {}
-		options: _react2['default'].PropTypes.array, // array of options
-		pageSize: _react2['default'].PropTypes.number, // number of entries to page when using page up/down keys
-		placeholder: stringOrNode, // field placeholder, displayed when there's no value
-		required: _react2['default'].PropTypes.bool, // applies HTML5 required attribute when needed
-		resetValue: _react2['default'].PropTypes.any, // value to use when you clear the control
-		scrollMenuIntoView: _react2['default'].PropTypes.bool, // boolean to enable the viewport to shift so that the full menu fully visible when engaged
-		searchable: _react2['default'].PropTypes.bool, // whether to enable searching feature or not
-		simpleValue: _react2['default'].PropTypes.bool, // pass the value to onChange as a simple value (legacy pre 1.0 mode), defaults to false
-		style: _react2['default'].PropTypes.object, // optional style to apply to the control
-		tabIndex: _react2['default'].PropTypes.string, // optional tab index of the control
-		tabSelectsValue: _react2['default'].PropTypes.bool, // whether to treat tabbing out while focused to be value selection
-		value: _react2['default'].PropTypes.any, // initial field value
-		valueComponent: _react2['default'].PropTypes.func, // value component to render
-		valueKey: _react2['default'].PropTypes.string, // path of the label value in option objects
-		valueRenderer: _react2['default'].PropTypes.func, // valueRenderer: function (option) {}
-		wrapperStyle: _react2['default'].PropTypes.object },
+    propTypes: {
+        addLabelText: _react2['default'].PropTypes.string, // placeholder displayed when you want to add a label on a multi-value input
+        'aria-label': _react2['default'].PropTypes.string, // Aria label (for assistive tech)
+        'aria-labelledby': _react2['default'].PropTypes.string, // HTML ID of an element that should be used as the label (for assistive tech)
+        arrowRenderer: _react2['default'].PropTypes.func, // Create drop-down caret element
+        autoBlur: _react2['default'].PropTypes.bool, // automatically blur the component when an option is selected
+        autofocus: _react2['default'].PropTypes.bool, // autofocus the component on mount
+        autosize: _react2['default'].PropTypes.bool, // whether to enable autosizing or not
+        backspaceRemoves: _react2['default'].PropTypes.bool, // whether backspace removes an item if there is no text input
+        backspaceToRemoveMessage: _react2['default'].PropTypes.string, // Message to use for screenreaders to press backspace to remove the current item - {label} is replaced with the item label
+        className: _react2['default'].PropTypes.string, // className for the outer element
+        clearAllText: stringOrNode, // title for the "clear" control when multi: true
+        clearRenderer: _react2['default'].PropTypes.func, // create clearable x element
+        clearValueText: stringOrNode, // title for the "clear" control
+        clearable: _react2['default'].PropTypes.bool, // should it be possible to reset value
+        deleteRemoves: _react2['default'].PropTypes.bool, // whether backspace removes an item if there is no text input
+        delimiter: _react2['default'].PropTypes.string, // delimiter to use to join multiple values for the hidden field value
+        disabled: _react2['default'].PropTypes.bool, // whether the Select is disabled or not
+        escapeClearsValue: _react2['default'].PropTypes.bool, // whether escape clears the value when the menu is closed
+        filterOption: _react2['default'].PropTypes.func, // method to filter a single option (option, filterString)
+        filterOptions: _react2['default'].PropTypes.any, // boolean to enable default filtering or function to filter the options array ([options], filterString, [values])
+        ignoreAccents: _react2['default'].PropTypes.bool, // whether to strip diacritics when filtering
+        ignoreCase: _react2['default'].PropTypes.bool, // whether to perform case-insensitive filtering
+        inputProps: _react2['default'].PropTypes.object, // custom attributes for the Input
+        inputRenderer: _react2['default'].PropTypes.func, // returns a custom input component
+        instanceId: _react2['default'].PropTypes.string, // set the components instanceId
+        isLoading: _react2['default'].PropTypes.bool, // whether the Select is loading externally or not (such as options being loaded)
+        joinValues: _react2['default'].PropTypes.bool, // joins multiple values into a single form field with the delimiter (legacy mode)
+        labelKey: _react2['default'].PropTypes.string, // path of the label value in option objects
+        matchPos: _react2['default'].PropTypes.string, // (any|start) match the start or entire string when filtering
+        matchProp: _react2['default'].PropTypes.string, // (any|label|value) which option property to filter on
+        menuBuffer: _react2['default'].PropTypes.number, // optional buffer (in px) between the bottom of the viewport and the bottom of the menu
+        menuContainerStyle: _react2['default'].PropTypes.object, // optional style to apply to the menu container
+        menuRenderer: _react2['default'].PropTypes.func, // renders a custom menu with options
+        menuStyle: _react2['default'].PropTypes.object, // optional style to apply to the menu
+        multi: _react2['default'].PropTypes.bool, // multi-value input
+        name: _react2['default'].PropTypes.string, // generates a hidden <input /> tag with this field name for html forms
+        noResultsText: stringOrNode, // placeholder displayed when there are no matching search results
+        onBlur: _react2['default'].PropTypes.func, // onBlur handler: function (event) {}
+        onBlurResetsInput: _react2['default'].PropTypes.bool, // whether input is cleared on blur
+        onChange: _react2['default'].PropTypes.func, // onChange handler: function (newValue) {}
+        onClose: _react2['default'].PropTypes.func, // fires when the menu is closed
+        onCloseResetsInput: _react2['default'].PropTypes.bool, // whether input is cleared when menu is closed through the arrow
+        onFocus: _react2['default'].PropTypes.func, // onFocus handler: function (event) {}
+        onInputChange: _react2['default'].PropTypes.func, // onInputChange handler: function (inputValue) {}
+        onInputKeyDown: _react2['default'].PropTypes.func, // input keyDown handler: function (event) {}
+        onMenuScrollToBottom: _react2['default'].PropTypes.func, // fires when the menu is scrolled to the bottom; can be used to paginate options
+        onOpen: _react2['default'].PropTypes.func, // fires when the menu is opened
+        onValueClick: _react2['default'].PropTypes.func, // onClick handler for value labels: function (value, event) {}
+        openAfterFocus: _react2['default'].PropTypes.bool, // boolean to enable opening dropdown when focused
+        openOnFocus: _react2['default'].PropTypes.bool, // always open options menu on focus
+        optionClassName: _react2['default'].PropTypes.string, // additional class(es) to apply to the <Option /> elements
+        optionComponent: _react2['default'].PropTypes.func, // option component to render in dropdown
+        optionRenderer: _react2['default'].PropTypes.func, // optionRenderer: function (option) {}
+        options: _react2['default'].PropTypes.array, // array of options
+        pageSize: _react2['default'].PropTypes.number, // number of entries to page when using page up/down keys
+        placeholder: stringOrNode, // field placeholder, displayed when there's no value
+        required: _react2['default'].PropTypes.bool, // applies HTML5 required attribute when needed
+        resetValue: _react2['default'].PropTypes.any, // value to use when you clear the control
+        scrollMenuIntoView: _react2['default'].PropTypes.bool, // boolean to enable the viewport to shift so that the full menu fully visible when engaged
+        searchable: _react2['default'].PropTypes.bool, // whether to enable searching feature or not
+        simpleValue: _react2['default'].PropTypes.bool, // pass the value to onChange as a simple value (legacy pre 1.0 mode), defaults to false
+        style: _react2['default'].PropTypes.object, // optional style to apply to the control
+        tabIndex: _react2['default'].PropTypes.string, // optional tab index of the control
+        tabSelectsValue: _react2['default'].PropTypes.bool, // whether to treat tabbing out while focused to be value selection
+        value: _react2['default'].PropTypes.any, // initial field value
+        valueComponent: _react2['default'].PropTypes.func, // value component to render
+        valueKey: _react2['default'].PropTypes.string, // path of the label value in option objects
+        valueRenderer: _react2['default'].PropTypes.func, // valueRenderer: function (option) {}
+        wrapperStyle: _react2['default'].PropTypes.object },
 
-	// optional style to apply to the component wrapper
-	statics: { Async: _Async2['default'], AsyncCreatable: _AsyncCreatable2['default'], Creatable: _Creatable2['default'] },
+    // optional style to apply to the component wrapper
+    statics: { Async: _Async2['default'], AsyncCreatable: _AsyncCreatable2['default'], Creatable: _Creatable2['default'] },
 
-	getDefaultProps: function getDefaultProps() {
-		return {
-			addLabelText: 'Add "{label}"?',
-			arrowRenderer: _utilsDefaultArrowRenderer2['default'],
-			autosize: true,
-			backspaceRemoves: true,
-			backspaceToRemoveMessage: 'Press backspace to remove {label}',
-			clearable: true,
-			clearAllText: 'Clear all',
-			clearRenderer: _utilsDefaultClearRenderer2['default'],
-			clearValueText: 'Clear value',
-			deleteRemoves: true,
-			delimiter: ',',
-			disabled: false,
-			escapeClearsValue: true,
-			filterOptions: _utilsDefaultFilterOptions2['default'],
-			ignoreAccents: true,
-			ignoreCase: true,
-			inputProps: {},
-			isLoading: false,
-			joinValues: false,
-			labelKey: 'label',
-			matchPos: 'any',
-			matchProp: 'any',
-			menuBuffer: 0,
-			menuRenderer: _utilsDefaultMenuRenderer2['default'],
-			multi: false,
-			noResultsText: 'No results found',
-			onBlurResetsInput: true,
-			onCloseResetsInput: true,
-			openAfterFocus: false,
-			optionComponent: _Option2['default'],
-			pageSize: 5,
-			placeholder: 'Select...',
-			required: false,
-			scrollMenuIntoView: true,
-			searchable: true,
-			simpleValue: false,
-			tabSelectsValue: true,
-			valueComponent: _Value2['default'],
-			valueKey: 'value'
-		};
-	},
+    getDefaultProps: function getDefaultProps() {
+        return {
+            addLabelText: 'Add "{label}"?',
+            arrowRenderer: _utilsDefaultArrowRenderer2['default'],
+            autosize: true,
+            backspaceRemoves: true,
+            backspaceToRemoveMessage: 'Press backspace to remove {label}',
+            clearable: true,
+            clearAllText: 'Clear all',
+            clearRenderer: _utilsDefaultClearRenderer2['default'],
+            clearValueText: 'Clear value',
+            deleteRemoves: true,
+            delimiter: ',',
+            disabled: false,
+            escapeClearsValue: true,
+            filterOptions: _utilsDefaultFilterOptions2['default'],
+            ignoreAccents: true,
+            ignoreCase: true,
+            inputProps: {},
+            isLoading: false,
+            joinValues: false,
+            labelKey: 'label',
+            matchPos: 'any',
+            matchProp: 'any',
+            menuBuffer: 0,
+            menuRenderer: _utilsDefaultMenuRenderer2['default'],
+            multi: false,
+            noResultsText: 'No results found',
+            onBlurResetsInput: true,
+            onCloseResetsInput: true,
+            openAfterFocus: false,
+            optionComponent: _Option2['default'],
+            pageSize: 5,
+            placeholder: 'Select...',
+            required: false,
+            scrollMenuIntoView: true,
+            searchable: true,
+            simpleValue: false,
+            tabSelectsValue: true,
+            valueComponent: _Value2['default'],
+            valueKey: 'value'
+        };
+    },
 
-	getInitialState: function getInitialState() {
-		return {
-			inputValue: '',
-			isFocused: false,
-			isOpen: false,
-			isPseudoFocused: false,
-			required: false
-		};
-	},
+    getInitialState: function getInitialState() {
+        return {
+            inputValue: '',
+            isFocused: false,
+            isOpen: false,
+            isPseudoFocused: false,
+            required: false
+        };
+    },
 
-	componentWillMount: function componentWillMount() {
-		this._instancePrefix = 'react-select-' + (this.props.instanceId || ++instanceId) + '-';
-		var valueArray = this.getValueArray(this.props.value);
+    componentWillMount: function componentWillMount() {
+        this._instancePrefix = 'react-select-' + (this.props.instanceId || ++instanceId) + '-';
+        var valueArray = this.getValueArray(this.props.value);
 
-		if (this.props.required) {
-			this.setState({
-				required: this.handleRequired(valueArray[0], this.props.multi)
-			});
-		}
-	},
+        if (this.props.required) {
+            this.setState({
+                required: this.handleRequired(valueArray[0], this.props.multi)
+            });
+        }
+    },
 
-	componentDidMount: function componentDidMount() {
-		if (this.props.autofocus) {
-			this.focus();
-		}
-	},
+    componentDidMount: function componentDidMount() {
+        if (this.props.autofocus) {
+            this.focus();
+        }
+    },
 
-	componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-		var valueArray = this.getValueArray(nextProps.value, nextProps);
+    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+        var valueArray = this.getValueArray(nextProps.value, nextProps);
 
-		if (nextProps.required) {
-			this.setState({
-				required: this.handleRequired(valueArray[0], nextProps.multi)
-			});
-		}
-	},
+        if (nextProps.required) {
+            this.setState({
+                required: this.handleRequired(valueArray[0], nextProps.multi)
+            });
+        }
+    },
 
-	componentWillUpdate: function componentWillUpdate(nextProps, nextState) {
-		if (nextState.isOpen !== this.state.isOpen) {
-			this.toggleTouchOutsideEvent(nextState.isOpen);
-			var handler = nextState.isOpen ? nextProps.onOpen : nextProps.onClose;
-			handler && handler();
-		}
-	},
+    componentWillUpdate: function componentWillUpdate(nextProps, nextState) {
+        if (nextState.isOpen !== this.state.isOpen) {
+            this.toggleTouchOutsideEvent(nextState.isOpen);
+            var handler = nextState.isOpen ? nextProps.onOpen : nextProps.onClose;
+            handler && handler();
+        }
+    },
 
-	componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
-		// focus to the selected option
-		if (this.menu && this.focused && this.state.isOpen && !this.hasScrolledToOption) {
-			var focusedOptionNode = _reactDom2['default'].findDOMNode(this.focused);
-			var menuNode = _reactDom2['default'].findDOMNode(this.menu);
-			menuNode.scrollTop = focusedOptionNode.offsetTop;
-			this.hasScrolledToOption = true;
-		} else if (!this.state.isOpen) {
-			this.hasScrolledToOption = false;
-		}
+    componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
+        // focus to the selected option
+        if (this.menu && this.focused && this.state.isOpen && !this.hasScrolledToOption) {
+            var focusedOptionNode = _reactDom2['default'].findDOMNode(this.focused);
+            var menuNode = _reactDom2['default'].findDOMNode(this.menu);
+            menuNode.scrollTop = focusedOptionNode.offsetTop;
+            this.hasScrolledToOption = true;
+        } else if (!this.state.isOpen) {
+            this.hasScrolledToOption = false;
+        }
 
-		if (this._scrollToFocusedOptionOnUpdate && this.focused && this.menu) {
-			this._scrollToFocusedOptionOnUpdate = false;
-			var focusedDOM = _reactDom2['default'].findDOMNode(this.focused);
-			var menuDOM = _reactDom2['default'].findDOMNode(this.menu);
-			var focusedRect = focusedDOM.getBoundingClientRect();
-			var menuRect = menuDOM.getBoundingClientRect();
-			if (focusedRect.bottom > menuRect.bottom || focusedRect.top < menuRect.top) {
-				menuDOM.scrollTop = focusedDOM.offsetTop + focusedDOM.clientHeight - menuDOM.offsetHeight;
-			}
-		}
-		if (this.props.scrollMenuIntoView && this.menuContainer) {
-			var menuContainerRect = this.menuContainer.getBoundingClientRect();
-			if (window.innerHeight < menuContainerRect.bottom + this.props.menuBuffer) {
-				window.scrollBy(0, menuContainerRect.bottom + this.props.menuBuffer - window.innerHeight);
-			}
-		}
-		if (prevProps.disabled !== this.props.disabled) {
-			this.setState({ isFocused: false }); // eslint-disable-line react/no-did-update-set-state
-			this.closeMenu();
-		}
-	},
+        if (this._scrollToFocusedOptionOnUpdate && this.focused && this.menu) {
+            this._scrollToFocusedOptionOnUpdate = false;
+            var focusedDOM = _reactDom2['default'].findDOMNode(this.focused);
+            var menuDOM = _reactDom2['default'].findDOMNode(this.menu);
+            var focusedRect = focusedDOM.getBoundingClientRect();
+            var menuRect = menuDOM.getBoundingClientRect();
+            if (focusedRect.bottom > menuRect.bottom || focusedRect.top < menuRect.top) {
+                menuDOM.scrollTop = focusedDOM.offsetTop + focusedDOM.clientHeight - menuDOM.offsetHeight;
+            }
+        }
+        if (this.props.scrollMenuIntoView && this.menuContainer) {
+            var menuContainerRect = this.menuContainer.getBoundingClientRect();
+            if (window.innerHeight < menuContainerRect.bottom + this.props.menuBuffer) {
+                window.scrollBy(0, menuContainerRect.bottom + this.props.menuBuffer - window.innerHeight);
+            }
+        }
+        if (prevProps.disabled !== this.props.disabled) {
+            this.setState({ isFocused: false }); // eslint-disable-line react/no-did-update-set-state
+            this.closeMenu();
+        }
+    },
 
-	componentWillUnmount: function componentWillUnmount() {
-		if (!document.removeEventListener && document.detachEvent) {
-			document.detachEvent('ontouchstart', this.handleTouchOutside);
-		} else {
-			document.removeEventListener('touchstart', this.handleTouchOutside);
-		}
-	},
+    componentWillUnmount: function componentWillUnmount() {
+        if (!document.removeEventListener && document.detachEvent) {
+            document.detachEvent('ontouchstart', this.handleTouchOutside);
+        } else {
+            document.removeEventListener('touchstart', this.handleTouchOutside);
+        }
+    },
 
-	toggleTouchOutsideEvent: function toggleTouchOutsideEvent(enabled) {
-		if (enabled) {
-			if (!document.addEventListener && document.attachEvent) {
-				document.attachEvent('ontouchstart', this.handleTouchOutside);
-			} else {
-				document.addEventListener('touchstart', this.handleTouchOutside);
-			}
-		} else {
-			if (!document.removeEventListener && document.detachEvent) {
-				document.detachEvent('ontouchstart', this.handleTouchOutside);
-			} else {
-				document.removeEventListener('touchstart', this.handleTouchOutside);
-			}
-		}
-	},
+    toggleTouchOutsideEvent: function toggleTouchOutsideEvent(enabled) {
+        if (enabled) {
+            if (!document.addEventListener && document.attachEvent) {
+                document.attachEvent('ontouchstart', this.handleTouchOutside);
+            } else {
+                document.addEventListener('touchstart', this.handleTouchOutside);
+            }
+        } else {
+            if (!document.removeEventListener && document.detachEvent) {
+                document.detachEvent('ontouchstart', this.handleTouchOutside);
+            } else {
+                document.removeEventListener('touchstart', this.handleTouchOutside);
+            }
+        }
+    },
 
-	handleTouchOutside: function handleTouchOutside(event) {
-		// handle touch outside on ios to dismiss menu
-		if (this.wrapper && !this.wrapper.contains(event.target)) {
-			this.closeMenu();
-		}
-	},
+    handleTouchOutside: function handleTouchOutside(event) {
+        // handle touch outside on ios to dismiss menu
+        if (this.wrapper && !this.wrapper.contains(event.target)) {
+            this.closeMenu();
+        }
+    },
 
-	focus: function focus() {
-		if (!this.input) return;
-		this.input.focus();
+    focus: function focus() {
+        if (!this.input) return;
+        this.input.focus();
 
-		if (this.props.openAfterFocus) {
-			this.setState({
-				isOpen: true
-			});
-		}
-	},
+        if (this.props.openAfterFocus) {
+            this.setState({
+                isOpen: true
+            });
+        }
+    },
 
-	blurInput: function blurInput() {
-		if (!this.input) return;
-		this.input.blur();
-	},
+    blurInput: function blurInput() {
+        if (!this.input) return;
+        this.input.blur();
+    },
 
-	handleTouchMove: function handleTouchMove(event) {
-		// Set a flag that the view is being dragged
-		this.dragging = true;
-	},
+    handleTouchMove: function handleTouchMove(event) {
+        // Set a flag that the view is being dragged
+        this.dragging = true;
+    },
 
-	handleTouchStart: function handleTouchStart(event) {
-		// Set a flag that the view is not being dragged
-		this.dragging = false;
-	},
+    handleTouchStart: function handleTouchStart(event) {
+        // Set a flag that the view is not being dragged
+        this.dragging = false;
+    },
 
-	handleTouchEnd: function handleTouchEnd(event) {
-		// Check if the view is being dragged, In this case
-		// we don't want to fire the click event (because the user only wants to scroll)
-		if (this.dragging) return;
+    handleTouchEnd: function handleTouchEnd(event) {
+        // Check if the view is being dragged, In this case
+        // we don't want to fire the click event (because the user only wants to scroll)
+        if (this.dragging) return;
 
-		// Fire the mouse events
-		this.handleMouseDown(event);
-	},
+        // Fire the mouse events
+        this.handleMouseDown(event);
+    },
 
-	handleTouchEndClearValue: function handleTouchEndClearValue(event) {
-		// Check if the view is being dragged, In this case
-		// we don't want to fire the click event (because the user only wants to scroll)
-		if (this.dragging) return;
+    handleTouchEndClearValue: function handleTouchEndClearValue(event) {
+        // Check if the view is being dragged, In this case
+        // we don't want to fire the click event (because the user only wants to scroll)
+        if (this.dragging) return;
 
-		// Clear the value
-		this.clearValue(event);
-	},
+        // Clear the value
+        this.clearValue(event);
+    },
 
-	handleMouseDown: function handleMouseDown(event) {
-		// if the event was triggered by a mousedown and not the primary
-		// button, or if the component is disabled, ignore it.
-		if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
-			return;
-		}
+    handleMouseDown: function handleMouseDown(event) {
+        // if the event was triggered by a mousedown and not the primary
+        // button, or if the component is disabled, ignore it.
+        if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
+            return;
+        }
 
-		if (event.target.tagName === 'INPUT') {
-			return;
-		}
+        if (event.target.tagName === 'INPUT') {
+            return;
+        }
 
-		// prevent default event handlers
-		event.stopPropagation();
-		event.preventDefault();
+        // prevent default event handlers
+        event.stopPropagation();
+        event.preventDefault();
 
-		// for the non-searchable select, toggle the menu
-		if (!this.props.searchable) {
-			this.focus();
-			return this.setState({
-				isOpen: !this.state.isOpen
-			});
-		}
+        // for the non-searchable select, toggle the menu
+        if (!this.props.searchable) {
+            this.focus();
+            return this.setState({
+                isOpen: !this.state.isOpen
+            });
+        }
 
-		if (this.state.isFocused) {
-			// On iOS, we can get into a state where we think the input is focused but it isn't really,
-			// since iOS ignores programmatic calls to input.focus() that weren't triggered by a click event.
-			// Call focus() again here to be safe.
-			this.focus();
+        if (this.state.isFocused) {
+            // On iOS, we can get into a state where we think the input is focused but it isn't really,
+            // since iOS ignores programmatic calls to input.focus() that weren't triggered by a click event.
+            // Call focus() again here to be safe.
+            this.focus();
 
-			var input = this.input;
-			if (typeof input.getInput === 'function') {
-				// Get the actual DOM input if the ref is an <AutosizeInput /> component
-				input = input.getInput();
-			}
+            var input = this.input;
+            if (typeof input.getInput === 'function') {
+                // Get the actual DOM input if the ref is an <AutosizeInput /> component
+                input = input.getInput();
+            }
 
-			// clears the value so that the cursor will be at the end of input when the component re-renders
-			input.value = '';
+            // clears the value so that the cursor will be at the end of input when the component re-renders
+            input.value = '';
 
-			// if the input is focused, ensure the menu is open
-			this.setState({
-				isOpen: true,
-				isPseudoFocused: false
-			});
-		} else {
-			// otherwise, focus the input and open the menu
-			this._openAfterFocus = true;
-			this.focus();
-		}
-	},
+            // if the input is focused, ensure the menu is open
+            this.setState({
+                isOpen: true,
+                isPseudoFocused: false
+            });
+        } else {
+            // otherwise, focus the input and open the menu
+            this._openAfterFocus = true;
+            this.focus();
+        }
+    },
 
-	handleMouseDownOnArrow: function handleMouseDownOnArrow(event) {
-		// if the event was triggered by a mousedown and not the primary
-		// button, or if the component is disabled, ignore it.
-		if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
-			return;
-		}
-		// If the menu isn't open, let the event bubble to the main handleMouseDown
-		if (!this.state.isOpen) {
-			return;
-		}
-		// prevent default event handlers
-		event.stopPropagation();
-		event.preventDefault();
-		// close the menu
-		this.closeMenu();
-	},
+    handleMouseDownOnArrow: function handleMouseDownOnArrow(event) {
+        // if the event was triggered by a mousedown and not the primary
+        // button, or if the component is disabled, ignore it.
+        if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
+            return;
+        }
+        // If the menu isn't open, let the event bubble to the main handleMouseDown
+        if (!this.state.isOpen) {
+            return;
+        }
+        // prevent default event handlers
+        event.stopPropagation();
+        event.preventDefault();
+        // close the menu
+        this.closeMenu();
+    },
 
-	handleMouseDownOnMenu: function handleMouseDownOnMenu(event) {
-		// if the event was triggered by a mousedown and not the primary
-		// button, or if the component is disabled, ignore it.
-		if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
-			return;
-		}
-		event.stopPropagation();
-		event.preventDefault();
+    handleMouseDownOnMenu: function handleMouseDownOnMenu(event) {
+        // if the event was triggered by a mousedown and not the primary
+        // button, or if the component is disabled, ignore it.
+        if (this.props.disabled || event.type === 'mousedown' && event.button !== 0) {
+            return;
+        }
+        event.stopPropagation();
+        event.preventDefault();
 
-		this._openAfterFocus = true;
-		this.focus();
-	},
+        this._openAfterFocus = true;
+        this.focus();
+    },
 
-	closeMenu: function closeMenu() {
-		if (this.props.onCloseResetsInput) {
-			this.setState({
-				isOpen: false,
-				isPseudoFocused: this.state.isFocused && !this.props.multi,
-				inputValue: ''
-			});
-		} else {
-			this.setState({
-				isOpen: false,
-				isPseudoFocused: this.state.isFocused && !this.props.multi,
-				inputValue: this.state.inputValue
-			});
-		}
-		this.hasScrolledToOption = false;
-	},
+    closeMenu: function closeMenu() {
+        if (this.props.onCloseResetsInput) {
+            this.setState({
+                isOpen: false,
+                isPseudoFocused: this.state.isFocused && !this.props.multi,
+                inputValue: ''
+            });
+        } else {
+            this.setState({
+                isOpen: false,
+                isPseudoFocused: this.state.isFocused && !this.props.multi,
+                inputValue: this.state.inputValue
+            });
+        }
+        this.hasScrolledToOption = false;
+    },
 
-	handleInputFocus: function handleInputFocus(event) {
-		if (this.props.disabled) return;
-		var isOpen = this.state.isOpen || this._openAfterFocus || this.props.openOnFocus;
-		if (this.props.onFocus) {
-			this.props.onFocus(event);
-		}
-		this.setState({
-			isFocused: true,
-			isOpen: isOpen
-		});
-		this._openAfterFocus = false;
-	},
+    handleInputFocus: function handleInputFocus(event) {
+        if (this.props.disabled) return;
+        var isOpen = this.state.isOpen || this._openAfterFocus || this.props.openOnFocus;
+        if (this.props.onFocus) {
+            this.props.onFocus(event);
+        }
+        this.setState({
+            isFocused: true,
+            isOpen: isOpen
+        });
+        this._openAfterFocus = false;
+    },
 
-	handleInputBlur: function handleInputBlur(event) {
-		// The check for menu.contains(activeElement) is necessary to prevent IE11's scrollbar from closing the menu in certain contexts.
-		if (this.menu && (this.menu === document.activeElement || this.menu.contains(document.activeElement))) {
-			this.focus();
-			return;
-		}
+    handleInputBlur: function handleInputBlur(event) {
+        // The check for menu.contains(activeElement) is necessary to prevent IE11's scrollbar from closing the menu in certain contexts.
+        if (this.menu && (this.menu === document.activeElement || this.menu.contains(document.activeElement))) {
+            this.focus();
+            return;
+        }
 
-		if (this.props.onBlur) {
-			this.props.onBlur(event);
-		}
-		var onBlurredState = {
-			isFocused: false,
-			isOpen: false,
-			isPseudoFocused: false
-		};
-		if (this.props.onBlurResetsInput) {
-			onBlurredState.inputValue = '';
-		}
-		this.setState(onBlurredState);
-	},
+        if (this.props.onBlur) {
+            this.props.onBlur(event);
+        }
+        var onBlurredState = {
+            isFocused: false,
+            isOpen: false,
+            isPseudoFocused: false
+        };
+        if (this.props.onBlurResetsInput) {
+            onBlurredState.inputValue = '';
+        }
+        this.setState(onBlurredState);
+    },
 
-	handleInputChange: function handleInputChange(event) {
-		var newInputValue = event.target.value;
+    handleInputChange: function handleInputChange(event) {
+        var newInputValue = event.target.value;
 
-		if (this.state.inputValue !== event.target.value && this.props.onInputChange) {
-			var nextState = this.props.onInputChange(newInputValue);
-			// Note: != used deliberately here to catch undefined and null
-			if (nextState != null && typeof nextState !== 'object') {
-				newInputValue = '' + nextState;
-			}
-		}
+        if (this.state.inputValue !== event.target.value && this.props.onInputChange) {
+            var nextState = this.props.onInputChange(newInputValue);
+            // Note: != used deliberately here to catch undefined and null
+            if (nextState != null && typeof nextState !== 'object') {
+                newInputValue = '' + nextState;
+            }
+        }
 
-		this.setState({
-			isOpen: true,
-			isPseudoFocused: false,
-			inputValue: newInputValue
-		});
-	},
+        this.setState({
+            isOpen: true,
+            isPseudoFocused: false,
+            inputValue: newInputValue
+        });
+    },
 
-	handleKeyDown: function handleKeyDown(event) {
-		if (this.props.disabled) return;
+    handleKeyDown: function handleKeyDown(event) {
+        if (this.props.disabled) return;
 
-		if (typeof this.props.onInputKeyDown === 'function') {
-			this.props.onInputKeyDown(event);
-			if (event.defaultPrevented) {
-				return;
-			}
-		}
+        if (typeof this.props.onInputKeyDown === 'function') {
+            this.props.onInputKeyDown(event);
+            if (event.defaultPrevented) {
+                return;
+            }
+        }
 
-		switch (event.keyCode) {
-			case 8:
-				// backspace
-				if (!this.state.inputValue && this.props.backspaceRemoves) {
-					event.preventDefault();
-					this.popValue();
-				}
-				return;
-			case 9:
-				// tab
-				if (event.shiftKey || !this.state.isOpen || !this.props.tabSelectsValue) {
-					return;
-				}
-				this.selectFocusedOption();
-				return;
-			case 13:
-				// enter
-				if (!this.state.isOpen) return;
-				event.stopPropagation();
-				this.selectFocusedOption();
-				break;
-			case 27:
-				// escape
-				if (this.state.isOpen) {
-					this.closeMenu();
-					event.stopPropagation();
-				} else if (this.props.clearable && this.props.escapeClearsValue) {
-					this.clearValue(event);
-					event.stopPropagation();
-				}
-				break;
-			case 38:
-				// up
-				this.focusPreviousOption();
-				break;
-			case 40:
-				// down
-				this.focusNextOption();
-				break;
-			case 33:
-				// page up
-				this.focusPageUpOption();
-				break;
-			case 34:
-				// page down
-				this.focusPageDownOption();
-				break;
-			case 35:
-				// end key
-				if (event.shiftKey) {
-					return;
-				}
-				this.focusEndOption();
-				break;
-			case 36:
-				// home key
-				if (event.shiftKey) {
-					return;
-				}
-				this.focusStartOption();
-				break;
-			case 46:
-				// backspace
-				if (!this.state.inputValue && this.props.deleteRemoves) {
-					event.preventDefault();
-					this.popValue();
-				}
-				return;
-			default:
-				return;
-		}
-		event.preventDefault();
-	},
+        switch (event.keyCode) {
+            case 8:
+                // backspace
+                if (!this.state.inputValue && this.props.backspaceRemoves) {
+                    event.preventDefault();
+                    this.popValue();
+                }
+                return;
+            case 9:
+                // tab
+                if (event.shiftKey || !this.state.isOpen || !this.props.tabSelectsValue) {
+                    return;
+                }
+                this.selectFocusedOption();
+                return;
+            case 13:
+                // enter
+                if (!this.state.isOpen) return;
+                event.stopPropagation();
+                this.selectFocusedOption();
+                break;
+            case 27:
+                // escape
+                if (this.state.isOpen) {
+                    this.closeMenu();
+                    event.stopPropagation();
+                } else if (this.props.clearable && this.props.escapeClearsValue) {
+                    this.clearValue(event);
+                    event.stopPropagation();
+                }
+                break;
+            case 38:
+                // up
+                this.focusPreviousOption();
+                break;
+            case 40:
+                // down
+                this.focusNextOption();
+                break;
+            case 33:
+                // page up
+                this.focusPageUpOption();
+                break;
+            case 34:
+                // page down
+                this.focusPageDownOption();
+                break;
+            case 35:
+                // end key
+                if (event.shiftKey) {
+                    return;
+                }
+                this.focusEndOption();
+                break;
+            case 36:
+                // home key
+                if (event.shiftKey) {
+                    return;
+                }
+                this.focusStartOption();
+                break;
+            case 46:
+                // backspace
+                if (!this.state.inputValue && this.props.deleteRemoves) {
+                    event.preventDefault();
+                    this.popValue();
+                }
+                return;
+            default:
+                return;
+        }
+        event.preventDefault();
+    },
 
-	handleValueClick: function handleValueClick(option, event) {
-		if (!this.props.onValueClick) return;
-		this.props.onValueClick(option, event);
-	},
+    handleValueClick: function handleValueClick(option, event) {
+        if (!this.props.onValueClick) return;
+        this.props.onValueClick(option, event);
+    },
 
-	handleMenuScroll: function handleMenuScroll(event) {
-		if (!this.props.onMenuScrollToBottom) return;
-		var target = event.target;
+    handleMenuScroll: function handleMenuScroll(event) {
+        if (!this.props.onMenuScrollToBottom) return;
+        var target = event.target;
 
-		if (target.scrollHeight > target.offsetHeight && !(target.scrollHeight - target.offsetHeight - target.scrollTop)) {
-			this.props.onMenuScrollToBottom();
-		}
-	},
+        if (target.scrollHeight > target.offsetHeight && !(target.scrollHeight - target.offsetHeight - target.scrollTop)) {
+            this.props.onMenuScrollToBottom();
+        }
+    },
 
-	handleRequired: function handleRequired(value, multi) {
-		if (!value) return true;
-		return multi ? value.length === 0 : Object.keys(value).length === 0;
-	},
+    handleRequired: function handleRequired(value, multi) {
+        if (!value) return true;
+        return multi ? value.length === 0 : Object.keys(value).length === 0;
+    },
 
-	getOptionLabel: function getOptionLabel(op) {
-		return op[this.props.labelKey];
-	},
+    getOptionLabel: function getOptionLabel(op) {
+        return op[this.props.labelKey];
+    },
 
-	/**
+    /**
   * Turns a value into an array from the given options
-  * @param	{String|Number|Array}	value		- the value of the select input
-  * @param	{Object}		nextProps	- optionally specify the nextProps so the returned array uses the latest configuration
-  * @returns	{Array}	the value of the select represented in an array
+  * @param  {String|Number|Array}   value       - the value of the select input
+  * @param  {Object}        nextProps   - optionally specify the nextProps so the returned array uses the latest configuration
+  * @returns    {Array} the value of the select represented in an array
   */
-	getValueArray: function getValueArray(value, nextProps) {
-		var _this = this;
+    getValueArray: function getValueArray(value, nextProps) {
+        var _this = this;
 
-		/** support optionally passing in the `nextProps` so `componentWillReceiveProps` updates will function as expected */
-		var props = typeof nextProps === 'object' ? nextProps : this.props;
-		if (props.multi) {
-			if (typeof value === 'string') value = value.split(props.delimiter);
-			if (!Array.isArray(value)) {
-				if (value === null || value === undefined) return [];
-				value = [value];
-			}
-			return value.map(function (value) {
-				return _this.expandValue(value, props);
-			}).filter(function (i) {
-				return i;
-			});
-		}
-		var expandedValue = this.expandValue(value, props);
-		return expandedValue ? [expandedValue] : [];
-	},
+        /** support optionally passing in the `nextProps` so `componentWillReceiveProps` updates will function as expected */
+        var props = typeof nextProps === 'object' ? nextProps : this.props;
+        if (props.multi) {
+            if (typeof value === 'string') value = value.split(props.delimiter);
+            if (!Array.isArray(value)) {
+                if (value === null || value === undefined) return [];
+                value = [value];
+            }
+            return value.map(function (value) {
+                return _this.expandValue(value, props);
+            }).filter(function (i) {
+                return i;
+            });
+        }
+        var expandedValue = this.expandValue(value, props);
+        return expandedValue ? [expandedValue] : [];
+    },
 
-	/**
+    /**
   * Retrieve a value from the given options and valueKey
-  * @param	{String|Number|Array}	value	- the selected value(s)
-  * @param	{Object}		props	- the Select component's props (or nextProps)
+  * @param  {String|Number|Array}   value   - the selected value(s)
+  * @param  {Object}        props   - the Select component's props (or nextProps)
   */
-	expandValue: function expandValue(value, props) {
-		var valueType = typeof value;
-		if (valueType !== 'string' && valueType !== 'number' && valueType !== 'boolean') return value;
-		var options = props.options;
-		var valueKey = props.valueKey;
+    expandValue: function expandValue(value, props) {
+        var valueType = typeof value;
+        if (valueType !== 'string' && valueType !== 'number' && valueType !== 'boolean') return value;
+        var options = props.options;
+        var valueKey = props.valueKey;
 
-		if (!options) return;
-		for (var i = 0; i < options.length; i++) {
-			if (options[i][valueKey] === value) return options[i];
-		}
-	},
+        if (!options) return;
+        for (var i = 0; i < options.length; i++) {
+            if (options[i][valueKey] === value) return options[i];
+        }
+    },
 
-	setValue: function setValue(value) {
-		var _this2 = this;
+    setValue: function setValue(value) {
+        var _this2 = this;
 
-		if (this.props.autoBlur) {
-			this.blurInput();
-		}
-		if (!this.props.onChange) return;
-		if (this.props.required) {
-			var required = this.handleRequired(value, this.props.multi);
-			this.setState({ required: required });
-		}
-		if (this.props.simpleValue && value) {
-			value = this.props.multi ? value.map(function (i) {
-				return i[_this2.props.valueKey];
-			}).join(this.props.delimiter) : value[this.props.valueKey];
-		}
-		this.props.onChange(value);
-	},
+        if (this.props.autoBlur) {
+            this.blurInput();
+        }
+        if (!this.props.onChange) return;
+        if (this.props.required) {
+            var required = this.handleRequired(value, this.props.multi);
+            this.setState({ required: required });
+        }
+        if (this.props.simpleValue && value) {
+            value = this.props.multi ? value.map(function (i) {
+                return i[_this2.props.valueKey];
+            }).join(this.props.delimiter) : value[this.props.valueKey];
+        }
+        this.props.onChange(value);
+    },
 
-	selectValue: function selectValue(value) {
-		var _this3 = this;
+    selectValue: function selectValue(value) {
+        var _this3 = this;
 
-		//NOTE: update value in the callback to make sure the input value is empty so that there are no styling issues (Chrome had issue otherwise)
-		this.hasScrolledToOption = false;
-		if (this.props.multi) {
-			this.setState({
-				inputValue: '',
-				focusedIndex: null
-			}, function () {
-				_this3.addValue(value);
-			});
-		} else {
-			this.setState({
-				isOpen: false,
-				inputValue: '',
-				isPseudoFocused: this.state.isFocused
-			}, function () {
-				_this3.setValue(value);
-			});
-		}
-	},
+        //NOTE: update value in the callback to make sure the input value is empty so that there are no styling issues (Chrome had issue otherwise)
+        this.hasScrolledToOption = false;
+        if (this.props.multi) {
+            this.setState({
+                inputValue: '',
+                focusedIndex: null
+            }, function () {
+                _this3.addValue(value);
+            });
+        } else {
+            this.setState({
+                isOpen: false,
+                inputValue: '',
+                isPseudoFocused: this.state.isFocused
+            }, function () {
+                _this3.setValue(value);
+            });
+        }
+    },
 
-	addValue: function addValue(value) {
-		var valueArray = this.getValueArray(this.props.value);
-		var visibleOptions = this._visibleOptions.filter(function (val) {
-			return !val.disabled;
-		});
-		var lastValueIndex = visibleOptions.indexOf(value);
-		this.setValue(valueArray.concat(value));
-		if (visibleOptions.length - 1 === lastValueIndex) {
-			// the last option was selected; focus the second-last one
-			this.focusOption(visibleOptions[lastValueIndex - 1]);
-		} else if (visibleOptions.length > lastValueIndex) {
-			// focus the option below the selected one
-			this.focusOption(visibleOptions[lastValueIndex + 1]);
-		}
-	},
+    addValue: function addValue(value) {
+        var valueArray = this.getValueArray(this.props.value);
+        var visibleOptions = this._visibleOptions.filter(function (val) {
+            return !val.disabled;
+        });
+        var lastValueIndex = visibleOptions.indexOf(value);
+        this.setValue(valueArray.concat(value));
+        if (visibleOptions.length - 1 === lastValueIndex) {
+            // the last option was selected; focus the second-last one
+            this.focusOption(visibleOptions[lastValueIndex - 1]);
+        } else if (visibleOptions.length > lastValueIndex) {
+            // focus the option below the selected one
+            this.focusOption(visibleOptions[lastValueIndex + 1]);
+        }
+    },
 
-	popValue: function popValue() {
-		var valueArray = this.getValueArray(this.props.value);
-		if (!valueArray.length) return;
-		if (valueArray[valueArray.length - 1].clearableValue === false) return;
-		this.setValue(valueArray.slice(0, valueArray.length - 1));
-	},
+    popValue: function popValue() {
+        var valueArray = this.getValueArray(this.props.value);
+        if (!valueArray.length) return;
+        if (valueArray[valueArray.length - 1].clearableValue === false) return;
+        this.setValue(valueArray.slice(0, valueArray.length - 1));
+    },
 
-	removeValue: function removeValue(value) {
-		var valueArray = this.getValueArray(this.props.value);
-		this.setValue(valueArray.filter(function (i) {
-			return i !== value;
-		}));
-		this.focus();
-	},
+    removeValue: function removeValue(value) {
+        var valueArray = this.getValueArray(this.props.value);
+        this.setValue(valueArray.filter(function (i) {
+            return i !== value;
+        }));
+        this.focus();
+    },
 
-	clearValue: function clearValue(event) {
-		// if the event was triggered by a mousedown and not the primary
-		// button, ignore it.
-		if (event && event.type === 'mousedown' && event.button !== 0) {
-			return;
-		}
-		event.stopPropagation();
-		event.preventDefault();
-		this.setValue(this.getResetValue());
-		this.setState({
-			isOpen: false,
-			inputValue: ''
-		}, this.focus);
-	},
+    clearValue: function clearValue(event) {
+        // if the event was triggered by a mousedown and not the primary
+        // button, ignore it.
+        if (event && event.type === 'mousedown' && event.button !== 0) {
+            return;
+        }
+        event.stopPropagation();
+        event.preventDefault();
+        this.setValue(this.getResetValue());
+        this.setState({
+            isOpen: false,
+            inputValue: ''
+        }, this.focus);
+    },
 
-	getResetValue: function getResetValue() {
-		if (this.props.resetValue !== undefined) {
-			return this.props.resetValue;
-		} else if (this.props.multi) {
-			return [];
-		} else {
-			return null;
-		}
-	},
+    getResetValue: function getResetValue() {
+        if (this.props.resetValue !== undefined) {
+            return this.props.resetValue;
+        } else if (this.props.multi) {
+            return [];
+        } else {
+            return null;
+        }
+    },
 
-	focusOption: function focusOption(option) {
-		this.setState({
-			focusedOption: option
-		});
-	},
+    focusOption: function focusOption(option) {
+        this.setState({
+            focusedOption: option
+        });
+    },
 
-	focusNextOption: function focusNextOption() {
-		this.focusAdjacentOption('next');
-	},
+    focusNextOption: function focusNextOption() {
+        this.focusAdjacentOption('next');
+    },
 
-	focusPreviousOption: function focusPreviousOption() {
-		this.focusAdjacentOption('previous');
-	},
+    focusPreviousOption: function focusPreviousOption() {
+        this.focusAdjacentOption('previous');
+    },
 
-	focusPageUpOption: function focusPageUpOption() {
-		this.focusAdjacentOption('page_up');
-	},
+    focusPageUpOption: function focusPageUpOption() {
+        this.focusAdjacentOption('page_up');
+    },
 
-	focusPageDownOption: function focusPageDownOption() {
-		this.focusAdjacentOption('page_down');
-	},
+    focusPageDownOption: function focusPageDownOption() {
+        this.focusAdjacentOption('page_down');
+    },
 
-	focusStartOption: function focusStartOption() {
-		this.focusAdjacentOption('start');
-	},
+    focusStartOption: function focusStartOption() {
+        this.focusAdjacentOption('start');
+    },
 
-	focusEndOption: function focusEndOption() {
-		this.focusAdjacentOption('end');
-	},
+    focusEndOption: function focusEndOption() {
+        this.focusAdjacentOption('end');
+    },
 
-	focusAdjacentOption: function focusAdjacentOption(dir) {
-		var options = this._visibleOptions.map(function (option, index) {
-			return { option: option, index: index };
-		}).filter(function (option) {
-			return !option.option.disabled;
-		});
-		this._scrollToFocusedOptionOnUpdate = true;
-		if (!this.state.isOpen) {
-			this.setState({
-				isOpen: true,
-				inputValue: '',
-				focusedOption: this._focusedOption || (options.length ? options[dir === 'next' ? 0 : options.length - 1].option : null)
-			});
-			return;
-		}
-		if (!options.length) return;
-		var focusedIndex = -1;
-		for (var i = 0; i < options.length; i++) {
-			if (this._focusedOption === options[i].option) {
-				focusedIndex = i;
-				break;
-			}
-		}
-		if (dir === 'next' && focusedIndex !== -1) {
-			focusedIndex = (focusedIndex + 1) % options.length;
-		} else if (dir === 'previous') {
-			if (focusedIndex > 0) {
-				focusedIndex = focusedIndex - 1;
-			} else {
-				focusedIndex = options.length - 1;
-			}
-		} else if (dir === 'start') {
-			focusedIndex = 0;
-		} else if (dir === 'end') {
-			focusedIndex = options.length - 1;
-		} else if (dir === 'page_up') {
-			var potentialIndex = focusedIndex - this.props.pageSize;
-			if (potentialIndex < 0) {
-				focusedIndex = 0;
-			} else {
-				focusedIndex = potentialIndex;
-			}
-		} else if (dir === 'page_down') {
-			var potentialIndex = focusedIndex + this.props.pageSize;
-			if (potentialIndex > options.length - 1) {
-				focusedIndex = options.length - 1;
-			} else {
-				focusedIndex = potentialIndex;
-			}
-		}
+    focusAdjacentOption: function focusAdjacentOption(dir) {
+        var options = this._visibleOptions.map(function (option, index) {
+            return { option: option, index: index };
+        }).filter(function (option) {
+            return !option.option.disabled;
+        });
+        this._scrollToFocusedOptionOnUpdate = true;
+        if (!this.state.isOpen) {
+            this.setState({
+                isOpen: true,
+                inputValue: '',
+                focusedOption: this._focusedOption || (options.length ? options[dir === 'next' ? 0 : options.length - 1].option : null)
+            });
+            return;
+        }
+        if (!options.length) return;
+        var focusedIndex = -1;
+        for (var i = 0; i < options.length; i++) {
+            if (this._focusedOption === options[i].option) {
+                focusedIndex = i;
+                break;
+            }
+        }
+        if (dir === 'next' && focusedIndex !== -1) {
+            focusedIndex = (focusedIndex + 1) % options.length;
+        } else if (dir === 'previous') {
+            if (focusedIndex > 0) {
+                focusedIndex = focusedIndex - 1;
+            } else {
+                focusedIndex = options.length - 1;
+            }
+        } else if (dir === 'start') {
+            focusedIndex = 0;
+        } else if (dir === 'end') {
+            focusedIndex = options.length - 1;
+        } else if (dir === 'page_up') {
+            var potentialIndex = focusedIndex - this.props.pageSize;
+            if (potentialIndex < 0) {
+                focusedIndex = 0;
+            } else {
+                focusedIndex = potentialIndex;
+            }
+        } else if (dir === 'page_down') {
+            var potentialIndex = focusedIndex + this.props.pageSize;
+            if (potentialIndex > options.length - 1) {
+                focusedIndex = options.length - 1;
+            } else {
+                focusedIndex = potentialIndex;
+            }
+        }
 
-		if (focusedIndex === -1) {
-			focusedIndex = 0;
-		}
+        if (focusedIndex === -1) {
+            focusedIndex = 0;
+        }
 
-		this.setState({
-			focusedIndex: options[focusedIndex].index,
-			focusedOption: options[focusedIndex].option
-		});
-	},
+        this.setState({
+            focusedIndex: options[focusedIndex].index,
+            focusedOption: options[focusedIndex].option
+        });
+    },
 
-	getFocusedOption: function getFocusedOption() {
-		return this._focusedOption;
-	},
+    getFocusedOption: function getFocusedOption() {
+        return this._focusedOption;
+    },
 
-	getInputValue: function getInputValue() {
-		return this.state.inputValue;
-	},
+    getInputValue: function getInputValue() {
+        return this.state.inputValue;
+    },
 
-	selectFocusedOption: function selectFocusedOption() {
-		if (this._focusedOption) {
-			return this.selectValue(this._focusedOption);
-		}
-	},
+    selectFocusedOption: function selectFocusedOption() {
+        if (this._focusedOption) {
+            return this.selectValue(this._focusedOption);
+        }
+    },
 
-	renderLoading: function renderLoading() {
-		if (!this.props.isLoading) return;
-		return _react2['default'].createElement(
-			'span',
-			{ className: 'Select-loading-zone', 'aria-hidden': 'true' },
-			_react2['default'].createElement('span', { className: 'Select-loading' })
-		);
-	},
+    renderLoading: function renderLoading() {
+        if (!this.props.isLoading) return;
+        return _react2['default'].createElement(
+            'span',
+            { className: 'Select-loading-zone', 'aria-hidden': 'true' },
+            _react2['default'].createElement('span', { className: 'Select-loading' })
+        );
+    },
 
-	renderValue: function renderValue(valueArray, isOpen) {
-		var _this4 = this;
+    renderValue: function renderValue(valueArray, isOpen) {
+        var _this4 = this;
 
-		var renderLabel = this.props.valueRenderer || this.getOptionLabel;
-		var ValueComponent = this.props.valueComponent;
-		if (!valueArray.length) {
-			return !this.state.inputValue ? _react2['default'].createElement(
-				'div',
-				{ className: 'Select-placeholder' },
-				this.props.placeholder
-			) : null;
-		}
-		var onClick = this.props.onValueClick ? this.handleValueClick : null;
-		if (this.props.multi) {
-			return valueArray.map(function (value, i) {
-				return _react2['default'].createElement(
-					ValueComponent,
-					{
-						id: _this4._instancePrefix + '-value-' + i,
-						instancePrefix: _this4._instancePrefix,
-						disabled: _this4.props.disabled || value.clearableValue === false,
-						key: 'value-' + i + '-' + value[_this4.props.valueKey],
-						onClick: onClick,
-						onRemove: _this4.removeValue,
-						value: value
-					},
-					renderLabel(value, i),
-					_react2['default'].createElement(
-						'span',
-						{ className: 'Select-aria-only' },
-						' '
-					)
-				);
-			});
-		} else if (!this.state.inputValue) {
-			if (isOpen) onClick = null;
-			return _react2['default'].createElement(
-				ValueComponent,
-				{
-					id: this._instancePrefix + '-value-item',
-					disabled: this.props.disabled,
-					instancePrefix: this._instancePrefix,
-					onClick: onClick,
-					value: valueArray[0]
-				},
-				renderLabel(valueArray[0])
-			);
-		}
-	},
+        var renderLabel = this.props.valueRenderer || this.getOptionLabel;
+        var ValueComponent = this.props.valueComponent;
+        if (!valueArray.length) {
+            return !this.state.inputValue ? _react2['default'].createElement(
+                'div',
+                { className: 'Select-placeholder' },
+                this.props.placeholder
+            ) : null;
+        }
+        var onClick = this.props.onValueClick ? this.handleValueClick : null;
+        if (this.props.multi) {
+            return valueArray.map(function (value, i) {
+                return _react2['default'].createElement(
+                    ValueComponent,
+                    {
+                        id: _this4._instancePrefix + '-value-' + i,
+                        instancePrefix: _this4._instancePrefix,
+                        disabled: _this4.props.disabled || value.clearableValue === false,
+                        key: 'value-' + i + '-' + value[_this4.props.valueKey],
+                        onClick: onClick,
+                        onRemove: _this4.removeValue,
+                        value: value
+                    },
+                    renderLabel(value, i),
+                    _react2['default'].createElement(
+                        'span',
+                        { className: 'Select-aria-only' },
+                        ' '
+                    )
+                );
+            });
+        } else if (!this.state.inputValue) {
+            if (isOpen) onClick = null;
+            return _react2['default'].createElement(
+                ValueComponent,
+                {
+                    id: this._instancePrefix + '-value-item',
+                    disabled: this.props.disabled,
+                    instancePrefix: this._instancePrefix,
+                    onClick: onClick,
+                    value: valueArray[0]
+                },
+                renderLabel(valueArray[0])
+            );
+        }
+    },
 
-	renderInput: function renderInput(valueArray, focusedOptionIndex) {
-		var _classNames,
-		    _this5 = this;
+    renderInput: function renderInput(valueArray, focusedOptionIndex) {
+        var _classNames,
+            _this5 = this;
 
-		var className = (0, _classnames2['default'])('Select-input', this.props.inputProps.className);
-		var isOpen = !!this.state.isOpen;
+        var className = (0, _classnames2['default'])('Select-input', this.props.inputProps.className);
+        var isOpen = !!this.state.isOpen;
 
-		var ariaOwns = (0, _classnames2['default'])((_classNames = {}, _defineProperty(_classNames, this._instancePrefix + '-list', isOpen), _defineProperty(_classNames, this._instancePrefix + '-backspace-remove-message', this.props.multi && !this.props.disabled && this.state.isFocused && !this.state.inputValue), _classNames));
+        var ariaOwns = (0, _classnames2['default'])((_classNames = {}, _defineProperty(_classNames, this._instancePrefix + '-list', isOpen), _defineProperty(_classNames, this._instancePrefix + '-backspace-remove-message', this.props.multi && !this.props.disabled && this.state.isFocused && !this.state.inputValue), _classNames));
 
-		// TODO: Check how this project includes Object.assign()
-		var inputProps = _extends({}, this.props.inputProps, {
-			role: 'combobox',
-			'aria-expanded': '' + isOpen,
-			'aria-owns': ariaOwns,
-			'aria-haspopup': '' + isOpen,
-			'aria-activedescendant': isOpen ? this._instancePrefix + '-option-' + focusedOptionIndex : this._instancePrefix + '-value',
-			'aria-labelledby': this.props['aria-labelledby'],
-			'aria-label': this.props['aria-label'],
-			className: className,
-			tabIndex: this.props.tabIndex,
-			onBlur: this.handleInputBlur,
-			onChange: this.handleInputChange,
-			onFocus: this.handleInputFocus,
-			ref: function ref(_ref) {
-				return _this5.input = _ref;
-			},
-			required: this.state.required,
-			value: this.state.inputValue
-		});
+        // TODO: Check how this project includes Object.assign()
+        var inputProps = _extends({}, this.props.inputProps, {
+            role: 'combobox',
+            'aria-expanded': '' + isOpen,
+            'aria-owns': ariaOwns,
+            'aria-haspopup': '' + isOpen,
+            'aria-activedescendant': isOpen ? this._instancePrefix + '-option-' + focusedOptionIndex : this._instancePrefix + '-value',
+            'aria-labelledby': this.props['aria-labelledby'],
+            'aria-label': this.props['aria-label'],
+            className: className,
+            tabIndex: this.props.tabIndex,
+            onBlur: this.handleInputBlur,
+            onChange: this.handleInputChange,
+            onFocus: this.handleInputFocus,
+            ref: function ref(_ref) {
+                return _this5.input = _ref;
+            },
+            required: this.state.required,
+            value: this.state.inputValue
+        });
 
-		if (this.props.inputRenderer) {
-			return this.props.inputRenderer(inputProps);
-		}
+        if (this.props.inputRenderer) {
+            return this.props.inputRenderer(inputProps);
+        }
 
-		if (this.props.disabled || !this.props.searchable) {
-			var _props$inputProps = this.props.inputProps;
-			var inputClassName = _props$inputProps.inputClassName;
+        if (this.props.disabled || !this.props.searchable) {
+            var _props$inputProps = this.props.inputProps;
+            var inputClassName = _props$inputProps.inputClassName;
 
-			var divProps = _objectWithoutProperties(_props$inputProps, ['inputClassName']);
+            var divProps = _objectWithoutProperties(_props$inputProps, ['inputClassName']);
 
-			return _react2['default'].createElement('div', _extends({}, divProps, {
-				role: 'combobox',
-				'aria-expanded': isOpen,
-				'aria-owns': isOpen ? this._instancePrefix + '-list' : this._instancePrefix + '-value',
-				'aria-activedescendant': isOpen ? this._instancePrefix + '-option-' + focusedOptionIndex : this._instancePrefix + '-value',
-				className: className,
-				tabIndex: this.props.tabIndex || 0,
-				onBlur: this.handleInputBlur,
-				onFocus: this.handleInputFocus,
-				ref: function (ref) {
-					return _this5.input = ref;
-				},
-				'aria-readonly': '' + !!this.props.disabled,
-				style: { border: 0, width: 1, display: 'inline-block' } }));
-		}
+            return _react2['default'].createElement('div', _extends({}, divProps, {
+                role: 'combobox',
+                'aria-expanded': isOpen,
+                'aria-owns': isOpen ? this._instancePrefix + '-list' : this._instancePrefix + '-value',
+                'aria-activedescendant': isOpen ? this._instancePrefix + '-option-' + focusedOptionIndex : this._instancePrefix + '-value',
+                className: className,
+                tabIndex: this.props.tabIndex || 0,
+                onBlur: this.handleInputBlur,
+                onFocus: this.handleInputFocus,
+                ref: function (ref) {
+                    return _this5.input = ref;
+                },
+                'aria-readonly': '' + !!this.props.disabled,
+                style: { border: 0, width: 1, display: 'inline-block' } }));
+        }
 
-		if (this.props.autosize) {
-			return _react2['default'].createElement(_reactInputAutosize2['default'], _extends({}, inputProps, { minWidth: '5' }));
-		}
-		return _react2['default'].createElement(
-			'div',
-			{ className: className },
-			_react2['default'].createElement('input', inputProps)
-		);
-	},
+        if (this.props.autosize) {
+            return _react2['default'].createElement(_reactInputAutosize2['default'], _extends({}, inputProps, { minWidth: '5' }));
+        }
+        return _react2['default'].createElement(
+            'div',
+            { className: className },
+            _react2['default'].createElement('input', inputProps)
+        );
+    },
 
-	renderClear: function renderClear() {
-		if (!this.props.clearable || !this.props.value || this.props.value === 0 || this.props.multi && !this.props.value.length || this.props.disabled || this.props.isLoading) return;
-		var clear = this.props.clearRenderer();
+    renderClear: function renderClear() {
+        if (!this.props.clearable || !this.props.value || this.props.value === 0 || this.props.multi && !this.props.value.length || this.props.disabled || this.props.isLoading) return;
+        var clear = this.props.clearRenderer();
 
-		return _react2['default'].createElement(
-			'span',
-			{ className: 'Select-clear-zone', title: this.props.multi ? this.props.clearAllText : this.props.clearValueText,
-				'aria-label': this.props.multi ? this.props.clearAllText : this.props.clearValueText,
-				onMouseDown: this.clearValue,
-				onTouchStart: this.handleTouchStart,
-				onTouchMove: this.handleTouchMove,
-				onTouchEnd: this.handleTouchEndClearValue
-			},
-			clear
-		);
-	},
+        return _react2['default'].createElement(
+            'span',
+            { className: 'Select-clear-zone', title: this.props.multi ? this.props.clearAllText : this.props.clearValueText,
+                'aria-label': this.props.multi ? this.props.clearAllText : this.props.clearValueText,
+                onMouseDown: this.clearValue,
+                onTouchStart: this.handleTouchStart,
+                onTouchMove: this.handleTouchMove,
+                onTouchEnd: this.handleTouchEndClearValue
+            },
+            clear
+        );
+    },
 
-	renderArrow: function renderArrow() {
-		var onMouseDown = this.handleMouseDownOnArrow;
-		var isOpen = this.state.isOpen;
-		var arrow = this.props.arrowRenderer({ onMouseDown: onMouseDown, isOpen: isOpen });
+    renderArrow: function renderArrow() {
+        var onMouseDown = this.handleMouseDownOnArrow;
+        var isOpen = this.state.isOpen;
+        var arrow = this.props.arrowRenderer({ onMouseDown: onMouseDown, isOpen: isOpen });
 
-		return _react2['default'].createElement(
-			'span',
-			{
-				className: 'Select-arrow-zone',
-				onMouseDown: onMouseDown
-			},
-			arrow
-		);
-	},
+        return _react2['default'].createElement(
+            'span',
+            {
+                className: 'Select-arrow-zone',
+                onMouseDown: onMouseDown
+            },
+            arrow
+        );
+    },
 
-	filterOptions: function filterOptions(excludeOptions) {
-		var filterValue = this.state.inputValue;
-		var options = this.props.options || [];
-		if (this.props.filterOptions) {
-			// Maintain backwards compatibility with boolean attribute
-			var filterOptions = typeof this.props.filterOptions === 'function' ? this.props.filterOptions : _utilsDefaultFilterOptions2['default'];
+    filterOptions: function filterOptions(excludeOptions) {
+        var filterValue = this.state.inputValue;
+        var options = this.props.options || [];
+        if (this.props.filterOptions) {
+            // Maintain backwards compatibility with boolean attribute
+            var filterOptions = typeof this.props.filterOptions === 'function' ? this.props.filterOptions : _utilsDefaultFilterOptions2['default'];
 
-			return filterOptions(options, filterValue, excludeOptions, {
-				filterOption: this.props.filterOption,
-				ignoreAccents: this.props.ignoreAccents,
-				ignoreCase: this.props.ignoreCase,
-				labelKey: this.props.labelKey,
-				matchPos: this.props.matchPos,
-				matchProp: this.props.matchProp,
-				valueKey: this.props.valueKey
-			});
-		} else {
-			return options;
-		}
-	},
+            return filterOptions(options, filterValue, excludeOptions, {
+                filterOption: this.props.filterOption,
+                ignoreAccents: this.props.ignoreAccents,
+                ignoreCase: this.props.ignoreCase,
+                labelKey: this.props.labelKey,
+                matchPos: this.props.matchPos,
+                matchProp: this.props.matchProp,
+                valueKey: this.props.valueKey
+            });
+        } else {
+            return options;
+        }
+    },
 
-	onOptionRef: function onOptionRef(ref, isFocused) {
-		if (isFocused) {
-			this.focused = ref;
-		}
-	},
+    onOptionRef: function onOptionRef(ref, isFocused) {
+        if (isFocused) {
+            this.focused = ref;
+        }
+    },
 
-	renderMenu: function renderMenu(options, valueArray, focusedOption) {
-		if (options && options.length) {
-			return this.props.menuRenderer({
-				focusedOption: focusedOption,
-				focusOption: this.focusOption,
-				instancePrefix: this._instancePrefix,
-				labelKey: this.props.labelKey,
-				onFocus: this.focusOption,
-				onSelect: this.selectValue,
-				optionClassName: this.props.optionClassName,
-				optionComponent: this.props.optionComponent,
-				optionRenderer: this.props.optionRenderer || this.getOptionLabel,
-				options: options,
-				selectValue: this.selectValue,
-				valueArray: valueArray,
-				valueKey: this.props.valueKey,
-				onOptionRef: this.onOptionRef
-			});
-		} else if (this.props.noResultsText) {
-			return _react2['default'].createElement(
-				'div',
-				{ className: 'Select-noresults' },
-				this.props.noResultsText
-			);
-		} else {
-			return null;
-		}
-	},
+    renderMenu: function renderMenu(options, valueArray, focusedOption) {
+        if (options && options.length) {
+            return this.props.menuRenderer({
+                focusedOption: focusedOption,
+                focusOption: this.focusOption,
+                instancePrefix: this._instancePrefix,
+                labelKey: this.props.labelKey,
+                onFocus: this.focusOption,
+                onSelect: this.selectValue,
+                optionClassName: this.props.optionClassName,
+                optionComponent: this.props.optionComponent,
+                optionRenderer: this.props.optionRenderer || this.getOptionLabel,
+                options: options,
+                selectValue: this.selectValue,
+                valueArray: valueArray,
+                valueKey: this.props.valueKey,
+                onOptionRef: this.onOptionRef
+            });
+        } else if (this.props.noResultsText) {
+            return _react2['default'].createElement(
+                'div',
+                { className: 'Select-noresults' },
+                this.props.noResultsText
+            );
+        } else {
+            return null;
+        }
+    },
 
-	renderHiddenField: function renderHiddenField(valueArray) {
-		var _this6 = this;
+    renderHiddenField: function renderHiddenField(valueArray) {
+        var _this6 = this;
 
-		if (!this.props.name) return;
-		if (this.props.joinValues) {
-			var value = valueArray.map(function (i) {
-				return stringifyValue(i[_this6.props.valueKey]);
-			}).join(this.props.delimiter);
-			return _react2['default'].createElement('input', {
-				type: 'hidden',
-				ref: function (ref) {
-					return _this6.value = ref;
-				},
-				name: this.props.name,
-				value: value,
-				disabled: this.props.disabled });
-		}
-		return valueArray.map(function (item, index) {
-			return _react2['default'].createElement('input', { key: 'hidden.' + index,
-				type: 'hidden',
-				ref: 'value' + index,
-				name: _this6.props.name,
-				value: stringifyValue(item[_this6.props.valueKey]),
-				disabled: _this6.props.disabled });
-		});
-	},
+        if (!this.props.name) return;
+        if (this.props.joinValues) {
+            var value = valueArray.map(function (i) {
+                return stringifyValue(i[_this6.props.valueKey]);
+            }).join(this.props.delimiter);
+            return _react2['default'].createElement('input', {
+                type: 'hidden',
+                ref: function (ref) {
+                    return _this6.value = ref;
+                },
+                name: this.props.name,
+                value: value,
+                disabled: this.props.disabled });
+        }
+        return valueArray.map(function (item, index) {
+            return _react2['default'].createElement('input', { key: 'hidden.' + index,
+                type: 'hidden',
+                ref: 'value' + index,
+                name: _this6.props.name,
+                value: stringifyValue(item[_this6.props.valueKey]),
+                disabled: _this6.props.disabled });
+        });
+    },
 
-	getFocusableOptionIndex: function getFocusableOptionIndex(selectedOption) {
-		var options = this._visibleOptions;
-		if (!options.length) return null;
+    getFocusableOptionIndex: function getFocusableOptionIndex(selectedOption) {
+        var options = this._visibleOptions;
+        if (!options.length) return null;
 
-		var focusedOption = this.state.focusedOption || selectedOption;
-		if (focusedOption && !focusedOption.disabled) {
-			var focusedOptionIndex = options.indexOf(focusedOption);
-			if (focusedOptionIndex !== -1) {
-				return focusedOptionIndex;
-			}
-		}
+        var focusedOption = this.state.focusedOption || selectedOption;
+        if (focusedOption && !focusedOption.disabled) {
+            var focusedOptionIndex = options.indexOf(focusedOption);
+            if (focusedOptionIndex !== -1) {
+                return focusedOptionIndex;
+            }
+        }
 
-		for (var i = 0; i < options.length; i++) {
-			if (!options[i].disabled) return i;
-		}
-		return null;
-	},
+        for (var i = 0; i < options.length; i++) {
+            if (!options[i].disabled) return i;
+        }
+        return null;
+    },
 
-	renderOuter: function renderOuter(options, valueArray, focusedOption) {
-		var _this7 = this;
+    renderOuter: function renderOuter(options, valueArray, focusedOption) {
+        var _this7 = this;
 
-		var menu = this.renderMenu(options, valueArray, focusedOption);
-		if (!menu) {
-			return null;
-		}
+        var menu = this.renderMenu(options, valueArray, focusedOption);
+        if (!menu) {
+            return null;
+        }
 
-		return _react2['default'].createElement(
-			'div',
-			{ ref: function (ref) {
-					return _this7.menuContainer = ref;
-				}, className: 'Select-menu-outer', style: this.props.menuContainerStyle },
-			_react2['default'].createElement(
-				'div',
-				{ ref: function (ref) {
-						return _this7.menu = ref;
-					}, role: 'listbox', className: 'Select-menu', id: this._instancePrefix + '-list',
-					style: this.props.menuStyle,
-					onScroll: this.handleMenuScroll,
-					onMouseDown: this.handleMouseDownOnMenu },
-				menu
-			)
-		);
-	},
+        return _react2['default'].createElement(
+            'div',
+            { ref: function (ref) {
+                    return _this7.menuContainer = ref;
+                }, className: 'Select-menu-outer', style: this.props.menuContainerStyle },
+            _react2['default'].createElement(
+                'div',
+                { ref: function (ref) {
+                        return _this7.menu = ref;
+                    }, role: 'listbox', className: 'Select-menu', id: this._instancePrefix + '-list',
+                    style: this.props.menuStyle,
+                    onScroll: this.handleMenuScroll,
+                    onMouseDown: this.handleMouseDownOnMenu },
+                menu
+            )
+        );
+    },
 
-	render: function render() {
-		var _this8 = this;
+    render: function render() {
+        var _this8 = this;
 
-		var valueArray = this.getValueArray(this.props.value);
-		var options = this._visibleOptions = this.filterOptions(this.props.multi ? this.getValueArray(this.props.value) : null);
-		var isOpen = this.state.isOpen;
-		if (this.props.multi && !options.length && valueArray.length && !this.state.inputValue) isOpen = false;
-		var focusedOptionIndex = this.getFocusableOptionIndex(valueArray[0]);
+        var valueArray = this.getValueArray(this.props.value);
+        var options = this._visibleOptions = this.filterOptions(this.props.multi ? this.getValueArray(this.props.value) : null);
+        var isOpen = this.state.isOpen;
+        if (this.props.multi && !options.length && valueArray.length && !this.state.inputValue) isOpen = false;
+        var focusedOptionIndex = this.getFocusableOptionIndex(valueArray[0]);
 
-		var focusedOption = null;
-		if (focusedOptionIndex !== null) {
-			focusedOption = this._focusedOption = options[focusedOptionIndex];
-		} else {
-			focusedOption = this._focusedOption = null;
-		}
-		var className = (0, _classnames2['default'])('Select', this.props.className, {
-			'Select--multi': this.props.multi,
-			'Select--single': !this.props.multi,
-			'is-disabled': this.props.disabled,
-			'is-focused': this.state.isFocused,
-			'is-loading': this.props.isLoading,
-			'is-open': isOpen,
-			'is-pseudo-focused': this.state.isPseudoFocused,
-			'is-searchable': this.props.searchable,
-			'has-value': valueArray.length
-		});
+        var focusedOption = null;
+        if (focusedOptionIndex !== null) {
+            focusedOption = this._focusedOption = options[focusedOptionIndex];
+        } else {
+            focusedOption = this._focusedOption = null;
+        }
+        var className = (0, _classnames2['default'])('Select', this.props.className, {
+            'Select--multi': this.props.multi,
+            'Select--single': !this.props.multi,
+            'is-disabled': this.props.disabled,
+            'is-focused': this.state.isFocused,
+            'is-loading': this.props.isLoading,
+            'is-open': isOpen,
+            'is-pseudo-focused': this.state.isPseudoFocused,
+            'is-searchable': this.props.searchable,
+            'has-value': valueArray.length
+        });
 
-		var removeMessage = null;
-		if (this.props.multi && !this.props.disabled && valueArray.length && !this.state.inputValue && this.state.isFocused && this.props.backspaceRemoves) {
-			removeMessage = _react2['default'].createElement(
-				'span',
-				{ id: this._instancePrefix + '-backspace-remove-message', className: 'Select-aria-only', 'aria-live': 'assertive' },
-				this.props.backspaceToRemoveMessage.replace('{label}', valueArray[valueArray.length - 1][this.props.labelKey])
-			);
-		}
+        var removeMessage = null;
+        if (this.props.multi && !this.props.disabled && valueArray.length && !this.state.inputValue && this.state.isFocused && this.props.backspaceRemoves) {
+            removeMessage = _react2['default'].createElement(
+                'span',
+                { id: this._instancePrefix + '-backspace-remove-message', className: 'Select-aria-only', 'aria-live': 'assertive' },
+                this.props.backspaceToRemoveMessage.replace('{label}', valueArray[valueArray.length - 1][this.props.labelKey])
+            );
+        }
 
-		return _react2['default'].createElement(
-			'div',
-			{ ref: function (ref) {
-					return _this8.wrapper = ref;
-				},
-				className: className,
-				style: this.props.wrapperStyle },
-			this.renderHiddenField(valueArray),
-			_react2['default'].createElement(
-				'div',
-				{ ref: function (ref) {
-						return _this8.control = ref;
-					},
-					className: 'Select-control',
-					style: this.props.style,
-					onKeyDown: this.handleKeyDown,
-					onMouseDown: this.handleMouseDown,
-					onTouchEnd: this.handleTouchEnd,
-					onTouchStart: this.handleTouchStart,
-					onTouchMove: this.handleTouchMove
-				},
-				_react2['default'].createElement(
-					'span',
-					{ className: 'Select-multi-value-wrapper', id: this._instancePrefix + '-value' },
-					this.renderValue(valueArray, isOpen),
-					this.renderInput(valueArray, focusedOptionIndex)
-				),
-				removeMessage,
-				this.renderLoading(),
-				this.renderClear(),
-				this.renderArrow()
-			),
-			isOpen ? this.renderOuter(options, !this.props.multi ? valueArray : null, focusedOption) : null
-		);
-	}
+        return _react2['default'].createElement(
+            'div',
+            { ref: function (ref) {
+                    return _this8.wrapper = ref;
+                },
+                className: className,
+                style: this.props.wrapperStyle },
+            this.renderHiddenField(valueArray),
+            _react2['default'].createElement(
+                'div',
+                { ref: function (ref) {
+                        return _this8.control = ref;
+                    },
+                    className: 'Select-control',
+                    style: this.props.style,
+                    onKeyDown: this.handleKeyDown,
+                    onMouseDown: this.handleMouseDown,
+                    onTouchEnd: this.handleTouchEnd,
+                    onTouchStart: this.handleTouchStart,
+                    onTouchMove: this.handleTouchMove
+                },
+                _react2['default'].createElement(
+                    'span',
+                    { className: 'Select-multi-value-wrapper', id: this._instancePrefix + '-value' },
+                    this.renderValue(valueArray, isOpen),
+                    this.renderInput(valueArray, focusedOptionIndex)
+                ),
+                removeMessage,
+                this.renderLoading(),
+                this.renderClear(),
+                this.renderArrow()
+            ),
+            isOpen ? this.renderOuter(options, !this.props.multi ? valueArray : null, focusedOption) : null
+        );
+    }
 
 });
 
@@ -5676,108 +5691,43 @@ exports['default'] = Select;
 module.exports = exports['default'];
 
 /***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-var eq = __webpack_require__(170);
-
-/**
- * Gets the index at which the `key` is found in `array` of key-value pairs.
- *
- * @private
- * @param {Array} array The array to inspect.
- * @param {*} key The key to search for.
- * @returns {number} Returns the index of the matched value, else `-1`.
- */
-function assocIndexOf(array, key) {
-  var length = array.length;
-  while (length--) {
-    if (eq(array[length][0], key)) {
-      return length;
-    }
-  }
-  return -1;
-}
-
-module.exports = assocIndexOf;
-
-
-/***/ },
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(153);
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = getIncrementDifference;
+
+var _moment = __webpack_require__(0);
+
+var _moment2 = _interopRequireDefault(_moment);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Gets the data for `map`.
+ * Get the time increment difference between the start and end time.
+ * diff = duration / increment
  *
- * @private
- * @param {Object} map The map to query.
- * @param {string} key The reference key.
- * @returns {*} Returns the map data.
+ * @param {string} start (10:00 am)
+ * @param {string} end (11:30 am)
+ * @param {object} increment ({ hours: 1, minutes: 30 })
+ * @return {float}
  */
-function getMapData(map, key) {
-  var data = map.__data__;
-  return isKeyable(key)
-    ? data[typeof key == 'string' ? 'string' : 'hash']
-    : data.map;
+function getIncrementDifference(start, end, increment) {
+  increment = _moment2.default.duration(increment).asHours();
+  var difference = _moment2.default.duration(end.diff(start)).asHours();
+  return difference / increment;
 }
-
-module.exports = getMapData;
-
 
 /***/ },
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(13);
-
-/* Built-in method references that are verified to be native. */
-var nativeCreate = getNative(Object, 'create');
-
-module.exports = nativeCreate;
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-var baseGetTag = __webpack_require__(12),
-    isObjectLike = __webpack_require__(172);
-
-/** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
-
-/**
- * Checks if `value` is classified as a `Symbol` primitive or object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
- * @example
- *
- * _.isSymbol(Symbol.iterator);
- * // => true
- *
- * _.isSymbol('abc');
- * // => false
- */
-function isSymbol(value) {
-  return typeof value == 'symbol' ||
-    (isObjectLike(value) && baseGetTag(value) == symbolTag);
-}
-
-module.exports = isSymbol;
-
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-var root = __webpack_require__(9);
+var root = __webpack_require__(130);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -5786,148 +5736,7 @@ module.exports = Symbol;
 
 
 /***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-var freeGlobal = __webpack_require__(144);
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-module.exports = root;
-
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-/**
- * Checks if `value` is classified as an `Array` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an array, else `false`.
- * @example
- *
- * _.isArray([1, 2, 3]);
- * // => true
- *
- * _.isArray(document.body.children);
- * // => false
- *
- * _.isArray('abc');
- * // => false
- *
- * _.isArray(_.noop);
- * // => false
- */
-var isArray = Array.isArray;
-
-module.exports = isArray;
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return value != null && (type == 'object' || type == 'function');
-}
-
-module.exports = isObject;
-
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-var Symbol = __webpack_require__(8),
-    getRawTag = __webpack_require__(145),
-    objectToString = __webpack_require__(166);
-
-/** `Object#toString` result references. */
-var nullTag = '[object Null]',
-    undefinedTag = '[object Undefined]';
-
-/** Built-in value references. */
-var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
-
-/**
- * The base implementation of `getTag` without fallbacks for buggy environments.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the `toStringTag`.
- */
-function baseGetTag(value) {
-  if (value == null) {
-    return value === undefined ? undefinedTag : nullTag;
-  }
-  return (symToStringTag && symToStringTag in Object(value))
-    ? getRawTag(value)
-    : objectToString(value);
-}
-
-module.exports = baseGetTag;
-
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-var baseIsNative = __webpack_require__(140),
-    getValue = __webpack_require__(146);
-
-/**
- * Gets the native function at `key` of `object`.
- *
- * @private
- * @param {Object} object The object to query.
- * @param {string} key The key of the method to get.
- * @returns {*} Returns the function if it's native, else `undefined`.
- */
-function getNative(object, key) {
-  var value = getValue(object, key);
-  return baseIsNative(value) ? value : undefined;
-}
-
-module.exports = getNative;
-
-
-/***/ },
-/* 14 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6005,7 +5814,7 @@ return af;
 
 
 /***/ },
-/* 15 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6069,7 +5878,7 @@ return arDz;
 
 
 /***/ },
-/* 16 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6200,7 +6009,7 @@ return arLy;
 
 
 /***/ },
-/* 17 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6265,7 +6074,7 @@ return arMa;
 
 
 /***/ },
-/* 18 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6375,7 +6184,7 @@ return arSa;
 
 
 /***/ },
-/* 19 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6439,7 +6248,7 @@ return arTn;
 
 
 /***/ },
-/* 20 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6586,7 +6395,7 @@ return ar;
 
 
 /***/ },
-/* 21 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6696,7 +6505,7 @@ return az;
 
 
 /***/ },
-/* 22 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6835,7 +6644,7 @@ return be;
 
 
 /***/ },
-/* 23 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6930,7 +6739,7 @@ return bg;
 
 
 /***/ },
-/* 24 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7054,7 +6863,7 @@ return bn;
 
 
 /***/ },
-/* 25 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7178,7 +6987,7 @@ return bo;
 
 
 /***/ },
-/* 26 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7291,7 +7100,7 @@ return br;
 
 
 /***/ },
-/* 27 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7439,7 +7248,7 @@ return bs;
 
 
 /***/ },
-/* 28 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7525,7 +7334,7 @@ return ca;
 
 
 /***/ },
-/* 29 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7702,7 +7511,7 @@ return cs;
 
 
 /***/ },
-/* 30 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7770,7 +7579,7 @@ return cv;
 
 
 /***/ },
-/* 31 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7856,7 +7665,7 @@ return cy;
 
 
 /***/ },
-/* 32 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7921,7 +7730,7 @@ return da;
 
 
 /***/ },
-/* 33 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8005,7 +7814,7 @@ return deAt;
 
 
 /***/ },
-/* 34 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8088,7 +7897,7 @@ return de;
 
 
 /***/ },
-/* 35 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8193,7 +8002,7 @@ return dv;
 
 
 /***/ },
-/* 36 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8296,7 +8105,7 @@ return el;
 
 
 /***/ },
-/* 37 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8368,7 +8177,7 @@ return enAu;
 
 
 /***/ },
-/* 38 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8436,7 +8245,7 @@ return enCa;
 
 
 /***/ },
-/* 39 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8508,7 +8317,7 @@ return enGb;
 
 
 /***/ },
-/* 40 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8580,7 +8389,7 @@ return enIe;
 
 
 /***/ },
-/* 41 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8652,7 +8461,7 @@ return enNz;
 
 
 /***/ },
-/* 42 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8730,7 +8539,7 @@ return eo;
 
 
 /***/ },
-/* 43 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8815,7 +8624,7 @@ return esDo;
 
 
 /***/ },
-/* 44 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8901,7 +8710,7 @@ return es;
 
 
 /***/ },
-/* 45 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8986,7 +8795,7 @@ return et;
 
 
 /***/ },
-/* 46 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9057,7 +8866,7 @@ return eu;
 
 
 /***/ },
-/* 47 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9169,7 +8978,7 @@ return fa;
 
 
 /***/ },
-/* 48 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9281,7 +9090,7 @@ return fi;
 
 
 /***/ },
-/* 49 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9346,7 +9155,7 @@ return fo;
 
 
 /***/ },
-/* 50 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9411,7 +9220,7 @@ return frCa;
 
 
 /***/ },
-/* 51 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9480,7 +9289,7 @@ return frCh;
 
 
 /***/ },
-/* 52 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9549,7 +9358,7 @@ return fr;
 
 
 /***/ },
-/* 53 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9627,7 +9436,7 @@ return fy;
 
 
 /***/ },
-/* 54 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9708,7 +9517,7 @@ return gd;
 
 
 /***/ },
-/* 55 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9790,7 +9599,7 @@ return gl;
 
 
 /***/ },
-/* 56 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9894,7 +9703,7 @@ return he;
 
 
 /***/ },
-/* 57 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10023,7 +9832,7 @@ return hi;
 
 
 /***/ },
-/* 58 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10173,7 +9982,7 @@ return hr;
 
 
 /***/ },
-/* 59 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10287,7 +10096,7 @@ return hu;
 
 
 /***/ },
-/* 60 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10387,7 +10196,7 @@ return hyAm;
 
 
 /***/ },
-/* 61 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10475,7 +10284,7 @@ return id;
 
 
 /***/ },
-/* 62 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10607,7 +10416,7 @@ return is;
 
 
 /***/ },
-/* 63 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10682,7 +10491,7 @@ return it;
 
 
 /***/ },
-/* 64 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10763,7 +10572,7 @@ return ja;
 
 
 /***/ },
-/* 65 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10851,7 +10660,7 @@ return jv;
 
 
 /***/ },
-/* 66 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10945,7 +10754,7 @@ return ka;
 
 
 /***/ },
-/* 67 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11037,7 +10846,7 @@ return kk;
 
 
 /***/ },
-/* 68 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11100,7 +10909,7 @@ return km;
 
 
 /***/ },
-/* 69 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11170,7 +10979,7 @@ return ko;
 
 
 /***/ },
-/* 70 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11263,7 +11072,7 @@ return ky;
 
 
 /***/ },
-/* 71 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11405,7 +11214,7 @@ return lb;
 
 
 /***/ },
-/* 72 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11480,7 +11289,7 @@ return lo;
 
 
 /***/ },
-/* 73 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11602,7 +11411,7 @@ return lt;
 
 
 /***/ },
-/* 74 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11704,7 +11513,7 @@ return lv;
 
 
 /***/ },
-/* 75 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11820,7 +11629,7 @@ return me;
 
 
 /***/ },
-/* 76 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11889,7 +11698,7 @@ return mi;
 
 
 /***/ },
-/* 77 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11984,7 +11793,7 @@ return mk;
 
 
 /***/ },
-/* 78 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12070,7 +11879,7 @@ return ml;
 
 
 /***/ },
-/* 79 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12234,7 +12043,7 @@ return mr;
 
 
 /***/ },
-/* 80 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12322,7 +12131,7 @@ return msMy;
 
 
 /***/ },
-/* 81 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12409,7 +12218,7 @@ return ms;
 
 
 /***/ },
-/* 82 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12510,7 +12319,7 @@ return my;
 
 
 /***/ },
-/* 83 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12578,7 +12387,7 @@ return nb;
 
 
 /***/ },
-/* 84 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12706,7 +12515,7 @@ return ne;
 
 
 /***/ },
-/* 85 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12797,7 +12606,7 @@ return nlBe;
 
 
 /***/ },
-/* 86 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12888,7 +12697,7 @@ return nl;
 
 
 /***/ },
-/* 87 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12953,7 +12762,7 @@ return nn;
 
 
 /***/ },
-/* 88 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13082,7 +12891,7 @@ return paIn;
 
 
 /***/ },
-/* 89 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13192,7 +13001,7 @@ return pl;
 
 
 /***/ },
-/* 90 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13258,7 +13067,7 @@ return ptBr;
 
 
 /***/ },
-/* 91 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13328,7 +13137,7 @@ return pt;
 
 
 /***/ },
-/* 92 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13408,7 +13217,7 @@ return ro;
 
 
 /***/ },
-/* 93 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13596,7 +13405,7 @@ return ru;
 
 
 /***/ },
-/* 94 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13662,7 +13471,7 @@ return se;
 
 
 /***/ },
-/* 95 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13738,7 +13547,7 @@ return si;
 
 
 /***/ },
-/* 96 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13893,7 +13702,7 @@ return sk;
 
 
 /***/ },
-/* 97 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14060,7 +13869,7 @@ return sl;
 
 
 /***/ },
-/* 98 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14135,7 +13944,7 @@ return sq;
 
 
 /***/ },
-/* 99 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14250,7 +14059,7 @@ return srCyrl;
 
 
 /***/ },
-/* 100 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14365,7 +14174,7 @@ return sr;
 
 
 /***/ },
-/* 101 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14459,7 +14268,7 @@ return ss;
 
 
 /***/ },
-/* 102 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14533,7 +14342,7 @@ return sv;
 
 
 /***/ },
-/* 103 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14597,7 +14406,7 @@ return sw;
 
 
 /***/ },
-/* 104 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14732,7 +14541,7 @@ return ta;
 
 
 /***/ },
-/* 105 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14826,7 +14635,7 @@ return te;
 
 
 /***/ },
-/* 106 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14899,7 +14708,7 @@ return tet;
 
 
 /***/ },
-/* 107 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14971,7 +14780,7 @@ return th;
 
 
 /***/ },
-/* 108 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15038,7 +14847,7 @@ return tlPh;
 
 
 /***/ },
-/* 109 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15163,7 +14972,7 @@ return tlh;
 
 
 /***/ },
-/* 110 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15258,7 +15067,7 @@ return tr;
 
 
 /***/ },
-/* 111 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15354,7 +15163,7 @@ return tzl;
 
 
 /***/ },
-/* 112 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15417,7 +15226,7 @@ return tzmLatn;
 
 
 /***/ },
-/* 113 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15480,7 +15289,7 @@ return tzm;
 
 
 /***/ },
-/* 114 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15631,7 +15440,7 @@ return uk;
 
 
 /***/ },
-/* 115 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15694,7 +15503,7 @@ return uz;
 
 
 /***/ },
-/* 116 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15778,7 +15587,7 @@ return vi;
 
 
 /***/ },
-/* 117 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15851,7 +15660,7 @@ return xPseudo;
 
 
 /***/ },
-/* 118 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15916,7 +15725,7 @@ return yo;
 
 
 /***/ },
-/* 119 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16048,7 +15857,7 @@ return zhCn;
 
 
 /***/ },
-/* 120 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16158,7 +15967,7 @@ return zhHk;
 
 
 /***/ },
-/* 121 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16267,7 +16076,1619 @@ return zhTw;
 
 
 /***/ },
-/* 122 */
+/* 115 */
+/***/ function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+    if(true)
+        module.exports = factory(__webpack_require__(1), __webpack_require__(119));
+    else if(typeof define === 'function' && define.amd)
+        define(["react", "react-dom"], factory);
+    else if(typeof exports === 'object')
+        exports["ReactDraggable"] = factory(require("react"), require("react-dom"));
+    else
+        root["ReactDraggable"] = factory(root["React"], root["ReactDOM"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/    // The module cache
+/******/    var installedModules = {};
+/******/
+/******/    // The require function
+/******/    function __webpack_require__(moduleId) {
+/******/
+/******/        // Check if module is in cache
+/******/        if(installedModules[moduleId])
+/******/            return installedModules[moduleId].exports;
+/******/
+/******/        // Create a new module (and put it into the cache)
+/******/        var module = installedModules[moduleId] = {
+/******/            exports: {},
+/******/            id: moduleId,
+/******/            loaded: false
+/******/        };
+/******/
+/******/        // Execute the module function
+/******/        modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/        // Flag the module as loaded
+/******/        module.loaded = true;
+/******/
+/******/        // Return the exports of the module
+/******/        return module.exports;
+/******/    }
+/******/
+/******/
+/******/    // expose the modules object (__webpack_modules__)
+/******/    __webpack_require__.m = modules;
+/******/
+/******/    // expose the module cache
+/******/    __webpack_require__.c = installedModules;
+/******/
+/******/    // __webpack_public_path__
+/******/    __webpack_require__.p = "";
+/******/
+/******/    // Load entry module and return exports
+/******/    return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+    'use strict';
+    
+    module.exports = __webpack_require__(1).default;
+    module.exports.DraggableCore = __webpack_require__(9).default;
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+    'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    
+    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+    
+    var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+    
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+    
+    var _react = __webpack_require__(2);
+    
+    var _react2 = _interopRequireDefault(_react);
+    
+    var _reactDom = __webpack_require__(3);
+    
+    var _reactDom2 = _interopRequireDefault(_reactDom);
+    
+    var _classnames = __webpack_require__(4);
+    
+    var _classnames2 = _interopRequireDefault(_classnames);
+    
+    var _domFns = __webpack_require__(5);
+    
+    var _positionFns = __webpack_require__(8);
+    
+    var _shims = __webpack_require__(6);
+    
+    var _DraggableCore = __webpack_require__(9);
+    
+    var _DraggableCore2 = _interopRequireDefault(_DraggableCore);
+    
+    var _log = __webpack_require__(11);
+    
+    var _log2 = _interopRequireDefault(_log);
+    
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+    
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+    
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+    
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+    
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+    // $FlowIgnore
+    
+    
+    /*:: import type {DraggableEventHandler} from './utils/types';*/
+    /*:: type DraggableState = {
+      dragging: boolean,
+      dragged: boolean,
+      x: number, y: number,
+      slackX: number, slackY: number,
+      isElementSVG: boolean
+    };*/
+    
+    
+    //
+    // Define <Draggable>
+    //
+    
+    /*:: type ConstructorProps = {
+      position: { x: number, y: number },
+      defaultPosition: { x: number, y: number }
+    };*/
+    
+    var Draggable = function (_React$Component) {
+      _inherits(Draggable, _React$Component);
+    
+      function Draggable(props /*: ConstructorProps*/) {
+        _classCallCheck(this, Draggable);
+    
+        var _this = _possibleConstructorReturn(this, (Draggable.__proto__ || Object.getPrototypeOf(Draggable)).call(this, props));
+    
+        _this.onDragStart = function (e, coreData) {
+          (0, _log2.default)('Draggable: onDragStart: %j', coreData);
+    
+          // Short-circuit if user's callback killed it.
+          var shouldStart = _this.props.onStart(e, (0, _positionFns.createDraggableData)(_this, coreData));
+          // Kills start event on core as well, so move handlers are never bound.
+          if (shouldStart === false) return false;
+    
+          _this.setState({ dragging: true, dragged: true });
+        };
+    
+        _this.onDrag = function (e, coreData) {
+          if (!_this.state.dragging) return false;
+          (0, _log2.default)('Draggable: onDrag: %j', coreData);
+    
+          var uiData = (0, _positionFns.createDraggableData)(_this, coreData);
+    
+          var newState /*: $Shape<DraggableState>*/ = {
+            x: uiData.x,
+            y: uiData.y
+          };
+    
+          // Keep within bounds.
+          if (_this.props.bounds) {
+            // Save original x and y.
+            var _x = newState.x,
+                _y = newState.y;
+    
+            // Add slack to the values used to calculate bound position. This will ensure that if
+            // we start removing slack, the element won't react to it right away until it's been
+            // completely removed.
+    
+            newState.x += _this.state.slackX;
+            newState.y += _this.state.slackY;
+    
+            // Get bound position. This will ceil/floor the x and y within the boundaries.
+            // $FlowBug
+    
+            // Recalculate slack by noting how much was shaved by the boundPosition handler.
+            var _getBoundPosition = (0, _positionFns.getBoundPosition)(_this, newState.x, newState.y);
+    
+            var _getBoundPosition2 = _slicedToArray(_getBoundPosition, 2);
+    
+            newState.x = _getBoundPosition2[0];
+            newState.y = _getBoundPosition2[1];
+            newState.slackX = _this.state.slackX + (_x - newState.x);
+            newState.slackY = _this.state.slackY + (_y - newState.y);
+    
+            // Update the event we fire to reflect what really happened after bounds took effect.
+            uiData.x = _x;
+            uiData.y = _y;
+            uiData.deltaX = newState.x - _this.state.x;
+            uiData.deltaY = newState.y - _this.state.y;
+          }
+    
+          // Short-circuit if user's callback killed it.
+          var shouldUpdate = _this.props.onDrag(e, uiData);
+          if (shouldUpdate === false) return false;
+    
+          _this.setState(newState);
+        };
+    
+        _this.onDragStop = function (e, coreData) {
+          if (!_this.state.dragging) return false;
+    
+          // Short-circuit if user's callback killed it.
+          var shouldStop = _this.props.onStop(e, (0, _positionFns.createDraggableData)(_this, coreData));
+          if (shouldStop === false) return false;
+    
+          (0, _log2.default)('Draggable: onDragStop: %j', coreData);
+    
+          var newState /*: $Shape<DraggableState>*/ = {
+            dragging: false,
+            slackX: 0,
+            slackY: 0
+          };
+    
+          // If this is a controlled component, the result of this operation will be to
+          // revert back to the old position. We expect a handler on `onDragStop`, at the least.
+          var controlled = Boolean(_this.props.position);
+          if (controlled) {
+            var _this$props$position = _this.props.position,
+                _x2 = _this$props$position.x,
+                _y2 = _this$props$position.y;
+    
+            newState.x = _x2;
+            newState.y = _y2;
+          }
+    
+          _this.setState(newState);
+        };
+    
+        _this.state = {
+          // Whether or not we are currently dragging.
+          dragging: false,
+    
+          // Whether or not we have been dragged before.
+          dragged: false,
+    
+          // Current transform x and y.
+          x: props.position ? props.position.x : props.defaultPosition.x,
+          y: props.position ? props.position.y : props.defaultPosition.y,
+    
+          // Used for compensating for out-of-bounds drags
+          slackX: 0, slackY: 0,
+    
+          // Can only determine if SVG after mounting
+          isElementSVG: false
+        };
+        return _this;
+      }
+    
+      _createClass(Draggable, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+          if (this.props.position && !(this.props.onDrag || this.props.onStop)) {
+            // eslint-disable-next-line
+            console.warn('A `position` was applied to this <Draggable>, without drag handlers. This will make this ' + 'component effectively undraggable. Please attach `onDrag` or `onStop` handlers so you can adjust the ' + '`position` of this element.');
+          }
+        }
+      }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+          // Check to see if the element passed is an instanceof SVGElement
+          if (typeof SVGElement !== 'undefined' && _reactDom2.default.findDOMNode(this) instanceof SVGElement) {
+            this.setState({ isElementSVG: true });
+          }
+        }
+      }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps /*: Object*/) {
+          // Set x/y if position has changed
+          if (nextProps.position && (!this.props.position || nextProps.position.x !== this.props.position.x || nextProps.position.y !== this.props.position.y)) {
+            this.setState({ x: nextProps.position.x, y: nextProps.position.y });
+          }
+        }
+      }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+          this.setState({ dragging: false }); // prevents invariant if unmounted while dragging
+        }
+      }, {
+        key: 'render',
+        value: function render() /*: React.Element<any>*/ {
+          var _classNames;
+    
+          var style = {},
+              svgTransform = null;
+    
+          // If this is controlled, we don't want to move it - unless it's dragging.
+          var controlled = Boolean(this.props.position);
+          var draggable = !controlled || this.state.dragging;
+    
+          var position = this.props.position || this.props.defaultPosition;
+          var transformOpts = {
+            // Set left if horizontal drag is enabled
+            x: (0, _positionFns.canDragX)(this) && draggable ? this.state.x : position.x,
+    
+            // Set top if vertical drag is enabled
+            y: (0, _positionFns.canDragY)(this) && draggable ? this.state.y : position.y
+          };
+    
+          // If this element was SVG, we use the `transform` attribute.
+          if (this.state.isElementSVG) {
+            svgTransform = (0, _domFns.createSVGTransform)(transformOpts);
+          } else {
+            // Add a CSS transform to move the element around. This allows us to move the element around
+            // without worrying about whether or not it is relatively or absolutely positioned.
+            // If the item you are dragging already has a transform set, wrap it in a <span> so <Draggable>
+            // has a clean slate.
+            style = (0, _domFns.createCSSTransform)(transformOpts);
+          }
+    
+          var _props = this.props,
+              defaultClassName = _props.defaultClassName,
+              defaultClassNameDragging = _props.defaultClassNameDragging,
+              defaultClassNameDragged = _props.defaultClassNameDragged;
+    
+          // Mark with class while dragging
+    
+          var className = (0, _classnames2.default)(this.props.children.props.className || '', defaultClassName, (_classNames = {}, _defineProperty(_classNames, defaultClassNameDragging, this.state.dragging), _defineProperty(_classNames, defaultClassNameDragged, this.state.dragged), _classNames));
+    
+          // Reuse the child provided
+          // This makes it flexible to use whatever element is wanted (div, ul, etc)
+          return _react2.default.createElement(
+            _DraggableCore2.default,
+            _extends({}, this.props, { onStart: this.onDragStart, onDrag: this.onDrag, onStop: this.onDragStop }),
+            _react2.default.cloneElement(_react2.default.Children.only(this.props.children), {
+              className: className,
+              style: _extends({}, this.props.children.props.style, style),
+              transform: svgTransform
+            })
+          );
+        }
+      }]);
+    
+      return Draggable;
+    }(_react2.default.Component);
+    
+    Draggable.displayName = 'Draggable';
+    Draggable.propTypes = _extends({}, _DraggableCore2.default.propTypes, {
+    
+      /**
+       * `axis` determines which axis the draggable can move.
+       *
+       *  Note that all callbacks will still return data as normal. This only
+       *  controls flushing to the DOM.
+       *
+       * 'both' allows movement horizontally and vertically.
+       * 'x' limits movement to horizontal axis.
+       * 'y' limits movement to vertical axis.
+       * 'none' limits all movement.
+       *
+       * Defaults to 'both'.
+       */
+      axis: _react.PropTypes.oneOf(['both', 'x', 'y', 'none']),
+    
+      /**
+       * `bounds` determines the range of movement available to the element.
+       * Available values are:
+       *
+       * 'parent' restricts movement within the Draggable's parent node.
+       *
+       * Alternatively, pass an object with the following properties, all of which are optional:
+       *
+       * {left: LEFT_BOUND, right: RIGHT_BOUND, bottom: BOTTOM_BOUND, top: TOP_BOUND}
+       *
+       * All values are in px.
+       *
+       * Example:
+       *
+       * ```jsx
+       *   let App = React.createClass({
+       *       render: function () {
+       *         return (
+       *            <Draggable bounds={{right: 300, bottom: 300}}>
+       *              <div>Content</div>
+       *           </Draggable>
+       *         );
+       *       }
+       *   });
+       * ```
+       */
+      bounds: _react.PropTypes.oneOfType([_react.PropTypes.shape({
+        left: _react.PropTypes.number,
+        right: _react.PropTypes.number,
+        top: _react.PropTypes.number,
+        bottom: _react.PropTypes.number
+      }), _react.PropTypes.string, _react.PropTypes.oneOf([false])]),
+    
+      defaultClassName: _react.PropTypes.string,
+      defaultClassNameDragging: _react.PropTypes.string,
+      defaultClassNameDragged: _react.PropTypes.string,
+    
+      /**
+       * `defaultPosition` specifies the x and y that the dragged item should start at
+       *
+       * Example:
+       *
+       * ```jsx
+       *      let App = React.createClass({
+       *          render: function () {
+       *              return (
+       *                  <Draggable defaultPosition={{x: 25, y: 25}}>
+       *                      <div>I start with transformX: 25px and transformY: 25px;</div>
+       *                  </Draggable>
+       *              );
+       *          }
+       *      });
+       * ```
+       */
+      defaultPosition: _react.PropTypes.shape({
+        x: _react.PropTypes.number,
+        y: _react.PropTypes.number
+      }),
+    
+      /**
+       * `position`, if present, defines the current position of the element.
+       *
+       *  This is similar to how form elements in React work - if no `position` is supplied, the component
+       *  is uncontrolled.
+       *
+       * Example:
+       *
+       * ```jsx
+       *      let App = React.createClass({
+       *          render: function () {
+       *              return (
+       *                  <Draggable position={{x: 25, y: 25}}>
+       *                      <div>I start with transformX: 25px and transformY: 25px;</div>
+       *                  </Draggable>
+       *              );
+       *          }
+       *      });
+       * ```
+       */
+      position: _react.PropTypes.shape({
+        x: _react.PropTypes.number,
+        y: _react.PropTypes.number
+      }),
+    
+      /**
+       * These properties should be defined on the child, not here.
+       */
+      className: _shims.dontSetMe,
+      style: _shims.dontSetMe,
+      transform: _shims.dontSetMe
+    });
+    Draggable.defaultProps = _extends({}, _DraggableCore2.default.defaultProps, {
+      axis: 'both',
+      bounds: false,
+      defaultClassName: 'react-draggable',
+      defaultClassNameDragging: 'react-draggable-dragging',
+      defaultClassNameDragged: 'react-draggable-dragged',
+      defaultPosition: { x: 0, y: 0 },
+      position: null
+    });
+    exports.default = Draggable;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+    module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+    module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+    var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+      Copyright (c) 2016 Jed Watson.
+      Licensed under the MIT License (MIT), see
+      http://jedwatson.github.io/classnames
+    */
+    /* global define */
+    
+    (function () {
+        'use strict';
+    
+        var hasOwn = {}.hasOwnProperty;
+    
+        function classNames () {
+            var classes = [];
+    
+            for (var i = 0; i < arguments.length; i++) {
+                var arg = arguments[i];
+                if (!arg) continue;
+    
+                var argType = typeof arg;
+    
+                if (argType === 'string' || argType === 'number') {
+                    classes.push(arg);
+                } else if (Array.isArray(arg)) {
+                    classes.push(classNames.apply(null, arg));
+                } else if (argType === 'object') {
+                    for (var key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                            classes.push(key);
+                        }
+                    }
+                }
+            }
+    
+            return classes.join(' ');
+        }
+    
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = classNames;
+        } else if (true) {
+            // register as 'classnames', consistent with npm package name
+            !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+                return classNames;
+            }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+        } else {
+            window.classNames = classNames;
+        }
+    }());
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+    'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    
+    var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+    
+    exports.matchesSelector = matchesSelector;
+    exports.matchesSelectorAndParentsTo = matchesSelectorAndParentsTo;
+    exports.addEvent = addEvent;
+    exports.removeEvent = removeEvent;
+    exports.outerHeight = outerHeight;
+    exports.outerWidth = outerWidth;
+    exports.innerHeight = innerHeight;
+    exports.innerWidth = innerWidth;
+    exports.offsetXYFromParent = offsetXYFromParent;
+    exports.createCSSTransform = createCSSTransform;
+    exports.createSVGTransform = createSVGTransform;
+    exports.getTouch = getTouch;
+    exports.getTouchIdentifier = getTouchIdentifier;
+    exports.addUserSelectStyles = addUserSelectStyles;
+    exports.removeUserSelectStyles = removeUserSelectStyles;
+    exports.styleHacks = styleHacks;
+    
+    var _shims = __webpack_require__(6);
+    
+    var _getPrefix = __webpack_require__(7);
+    
+    var _getPrefix2 = _interopRequireDefault(_getPrefix);
+    
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+    
+    function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+    
+    /*:: import type {ControlPosition} from './types';*/
+    
+    
+    var matchesSelectorFunc = '';
+    function matchesSelector(el /*: Node*/, selector /*: string*/) /*: boolean*/ {
+      if (!matchesSelectorFunc) {
+        matchesSelectorFunc = (0, _shims.findInArray)(['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'], function (method) {
+          // $FlowIgnore: Doesn't think elements are indexable
+          return (0, _shims.isFunction)(el[method]);
+        });
+      }
+    
+      // $FlowIgnore: Doesn't think elements are indexable
+      return el[matchesSelectorFunc].call(el, selector);
+    }
+    
+    // Works up the tree to the draggable itself attempting to match selector.
+    function matchesSelectorAndParentsTo(el /*: Node*/, selector /*: string*/, baseNode /*: Node*/) /*: boolean*/ {
+      var node = el;
+      do {
+        if (matchesSelector(node, selector)) return true;
+        if (node === baseNode) return false;
+        node = node.parentNode;
+      } while (node);
+    
+      return false;
+    }
+    
+    function addEvent(el /*: ?Node*/, event /*: string*/, handler /*: Function*/) /*: void*/ {
+      if (!el) {
+        return;
+      }
+      if (el.attachEvent) {
+        el.attachEvent('on' + event, handler);
+      } else if (el.addEventListener) {
+        el.addEventListener(event, handler, true);
+      } else {
+        // $FlowIgnore: Doesn't think elements are indexable
+        el['on' + event] = handler;
+      }
+    }
+    
+    function removeEvent(el /*: ?Node*/, event /*: string*/, handler /*: Function*/) /*: void*/ {
+      if (!el) {
+        return;
+      }
+      if (el.detachEvent) {
+        el.detachEvent('on' + event, handler);
+      } else if (el.removeEventListener) {
+        el.removeEventListener(event, handler, true);
+      } else {
+        // $FlowIgnore: Doesn't think elements are indexable
+        el['on' + event] = null;
+      }
+    }
+    
+    function outerHeight(node /*: HTMLElement*/) /*: number*/ {
+      // This is deliberately excluding margin for our calculations, since we are using
+      // offsetTop which is including margin. See getBoundPosition
+      var height = node.clientHeight;
+      var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
+      height += (0, _shims.int)(computedStyle.borderTopWidth);
+      height += (0, _shims.int)(computedStyle.borderBottomWidth);
+      return height;
+    }
+    
+    function outerWidth(node /*: HTMLElement*/) /*: number*/ {
+      // This is deliberately excluding margin for our calculations, since we are using
+      // offsetLeft which is including margin. See getBoundPosition
+      var width = node.clientWidth;
+      var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
+      width += (0, _shims.int)(computedStyle.borderLeftWidth);
+      width += (0, _shims.int)(computedStyle.borderRightWidth);
+      return width;
+    }
+    function innerHeight(node /*: HTMLElement*/) /*: number*/ {
+      var height = node.clientHeight;
+      var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
+      height -= (0, _shims.int)(computedStyle.paddingTop);
+      height -= (0, _shims.int)(computedStyle.paddingBottom);
+      return height;
+    }
+    
+    function innerWidth(node /*: HTMLElement*/) /*: number*/ {
+      var width = node.clientWidth;
+      var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
+      width -= (0, _shims.int)(computedStyle.paddingLeft);
+      width -= (0, _shims.int)(computedStyle.paddingRight);
+      return width;
+    }
+    
+    // Get from offsetParent
+    function offsetXYFromParent(evt /*: {clientX: number, clientY: number}*/, offsetParent /*: HTMLElement*/) /*: ControlPosition*/ {
+      var isBody = offsetParent === offsetParent.ownerDocument.body;
+      var offsetParentRect = isBody ? { left: 0, top: 0 } : offsetParent.getBoundingClientRect();
+    
+      var x = evt.clientX + offsetParent.scrollLeft - offsetParentRect.left;
+      var y = evt.clientY + offsetParent.scrollTop - offsetParentRect.top;
+    
+      return { x: x, y: y };
+    }
+    
+    function createCSSTransform(_ref) /*: Object*/ {
+      var x = _ref.x,
+          y = _ref.y;
+    
+      // Replace unitless items with px
+      return _defineProperty({}, (0, _getPrefix.browserPrefixToKey)('transform', _getPrefix2.default), 'translate(' + x + 'px,' + y + 'px)');
+    }
+    
+    function createSVGTransform(_ref3) /*: string*/ {
+      var x = _ref3.x,
+          y = _ref3.y;
+    
+      return 'translate(' + x + ',' + y + ')';
+    }
+    
+    function getTouch(e /*: MouseTouchEvent*/, identifier /*: number*/) /*: ?{clientX: number, clientY: number}*/ {
+      return e.targetTouches && (0, _shims.findInArray)(e.targetTouches, function (t) {
+        return identifier === t.identifier;
+      }) || e.changedTouches && (0, _shims.findInArray)(e.changedTouches, function (t) {
+        return identifier === t.identifier;
+      });
+    }
+    
+    function getTouchIdentifier(e /*: MouseTouchEvent*/) /*: ?number*/ {
+      if (e.targetTouches && e.targetTouches[0]) return e.targetTouches[0].identifier;
+      if (e.changedTouches && e.changedTouches[0]) return e.changedTouches[0].identifier;
+    }
+    
+    // User-select Hacks:
+    //
+    // Useful for preventing blue highlights all over everything when dragging.
+    var userSelectPrefix = (0, _getPrefix.getPrefix)('user-select');
+    var userSelect = (0, _getPrefix.browserPrefixToStyle)('user-select', userSelectPrefix);
+    var userSelectStyle = ';' + userSelect + ': none;';
+    var userSelectReplaceRegExp = new RegExp(';?' + userSelect + ': none;'); // leading ; not present on IE
+    
+    // Note we're passing `document` b/c we could be iframed
+    function addUserSelectStyles(body /*: HTMLElement*/) {
+      var style = body.getAttribute('style') || '';
+      body.setAttribute('style', style + userSelectStyle);
+    }
+    
+    function removeUserSelectStyles(body /*: HTMLElement*/) {
+      var style = body.getAttribute('style') || '';
+      body.setAttribute('style', style.replace(userSelectReplaceRegExp, ''));
+    }
+    
+    function styleHacks() /*: Object*/ {
+      var childStyle /*: Object*/ = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    
+      // Workaround IE pointer events; see #51
+      // https://github.com/mzabriskie/react-draggable/issues/51#issuecomment-103488278
+      return _extends({
+        touchAction: 'none'
+      }, childStyle);
+    }
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+    'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.findInArray = findInArray;
+    exports.isFunction = isFunction;
+    exports.isNum = isNum;
+    exports.int = int;
+    exports.dontSetMe = dontSetMe;
+    
+    // @credits https://gist.github.com/rogozhnikoff/a43cfed27c41e4e68cdc
+    function findInArray(array /*: Array<any> | TouchList*/, callback /*: Function*/) /*: any*/ {
+      for (var i = 0, length = array.length; i < length; i++) {
+        if (callback.apply(callback, [array[i], i, array])) return array[i];
+      }
+    }
+    
+    function isFunction(func /*: any*/) /*: boolean*/ {
+      return typeof func === 'function' || Object.prototype.toString.call(func) === '[object Function]';
+    }
+    
+    function isNum(num /*: any*/) /*: boolean*/ {
+      return typeof num === 'number' && !isNaN(num);
+    }
+    
+    function int(a /*: string*/) /*: number*/ {
+      return parseInt(a, 10);
+    }
+    
+    function dontSetMe(props /*: Object*/, propName /*: string*/, componentName /*: string*/) {
+      if (props[propName]) {
+        return new Error('Invalid prop ' + propName + ' passed to ' + componentName + ' - do not set this, set it on the child.');
+      }
+    }
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+    'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.getPrefix = getPrefix;
+    exports.browserPrefixToKey = browserPrefixToKey;
+    exports.browserPrefixToStyle = browserPrefixToStyle;
+    var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
+    function getPrefix() /*: string*/ {
+      var prop /*: string*/ = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'transform';
+    
+      // Checking specifically for 'window.document' is for pseudo-browser server-side
+      // environments that define 'window' as the global context.
+      // E.g. React-rails (see https://github.com/reactjs/react-rails/pull/84)
+      if (typeof window === 'undefined' || typeof window.document === 'undefined') return '';
+    
+      var style = window.document.documentElement.style;
+    
+      if (prop in style) return '';
+    
+      for (var i = 0; i < prefixes.length; i++) {
+        if (browserPrefixToKey(prop, prefixes[i]) in style) return prefixes[i];
+      }
+    
+      return '';
+    }
+    
+    function browserPrefixToKey(prop /*: string*/, prefix /*: string*/) /*: string*/ {
+      return prefix ? '' + prefix + kebabToTitleCase(prop) : prop;
+    }
+    
+    function browserPrefixToStyle(prop /*: string*/, prefix /*: string*/) /*: string*/ {
+      return prefix ? '-' + prefix.toLowerCase() + '-' + prop : prop;
+    }
+    
+    function kebabToTitleCase(str /*: string*/) /*: string*/ {
+      var out = '';
+      var shouldCapitalize = true;
+      for (var i = 0; i < str.length; i++) {
+        if (shouldCapitalize) {
+          out += str[i].toUpperCase();
+          shouldCapitalize = false;
+        } else if (str[i] === '-') {
+          shouldCapitalize = true;
+        } else {
+          out += str[i];
+        }
+      }
+      return out;
+    }
+    
+    // Default export is the prefix itself, like 'Moz', 'Webkit', etc
+    // Note that you may have to re-test for certain things; for instance, Chrome 50
+    // can handle unprefixed `transform`, but not unprefixed `user-select`
+    exports.default = getPrefix();
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+    'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.getBoundPosition = getBoundPosition;
+    exports.snapToGrid = snapToGrid;
+    exports.canDragX = canDragX;
+    exports.canDragY = canDragY;
+    exports.getControlPosition = getControlPosition;
+    exports.createCoreData = createCoreData;
+    exports.createDraggableData = createDraggableData;
+    
+    var _shims = __webpack_require__(6);
+    
+    var _reactDom = __webpack_require__(3);
+    
+    var _reactDom2 = _interopRequireDefault(_reactDom);
+    
+    var _domFns = __webpack_require__(5);
+    
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+    
+    /*:: import type Draggable from '../Draggable';*/
+    /*:: import type {Bounds, ControlPosition, DraggableData} from './types';*/
+    /*:: import type DraggableCore from '../DraggableCore';*/
+    function getBoundPosition(draggable /*: Draggable*/, x /*: number*/, y /*: number*/) /*: [number, number]*/ {
+      // If no bounds, short-circuit and move on
+      if (!draggable.props.bounds) return [x, y];
+    
+      // Clone new bounds
+      var bounds = draggable.props.bounds;
+    
+      bounds = typeof bounds === 'string' ? bounds : cloneBounds(bounds);
+      var node = _reactDom2.default.findDOMNode(draggable);
+    
+      if (typeof bounds === 'string') {
+        var ownerDocument = node.ownerDocument;
+    
+        var ownerWindow = ownerDocument.defaultView;
+        var boundNode = void 0;
+        if (bounds === 'parent') {
+          boundNode = node.parentNode;
+        } else {
+          boundNode = ownerDocument.querySelector(bounds);
+          if (!boundNode) throw new Error('Bounds selector "' + bounds + '" could not find an element.');
+        }
+        var nodeStyle = ownerWindow.getComputedStyle(node);
+        var boundNodeStyle = ownerWindow.getComputedStyle(boundNode);
+        // Compute bounds. This is a pain with padding and offsets but this gets it exactly right.
+        bounds = {
+          left: -node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingLeft) + (0, _shims.int)(nodeStyle.borderLeftWidth) + (0, _shims.int)(nodeStyle.marginLeft),
+          top: -node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingTop) + (0, _shims.int)(nodeStyle.borderTopWidth) + (0, _shims.int)(nodeStyle.marginTop),
+          right: (0, _domFns.innerWidth)(boundNode) - (0, _domFns.outerWidth)(node) - node.offsetLeft,
+          bottom: (0, _domFns.innerHeight)(boundNode) - (0, _domFns.outerHeight)(node) - node.offsetTop
+        };
+      }
+    
+      // Keep x and y below right and bottom limits...
+      if ((0, _shims.isNum)(bounds.right)) x = Math.min(x, bounds.right);
+      if ((0, _shims.isNum)(bounds.bottom)) y = Math.min(y, bounds.bottom);
+    
+      // But above left and top limits.
+      if ((0, _shims.isNum)(bounds.left)) x = Math.max(x, bounds.left);
+      if ((0, _shims.isNum)(bounds.top)) y = Math.max(y, bounds.top);
+    
+      return [x, y];
+    }
+    
+    function snapToGrid(grid /*: [number, number]*/, pendingX /*: number*/, pendingY /*: number*/) /*: [number, number]*/ {
+      var x = Math.round(pendingX / grid[0]) * grid[0];
+      var y = Math.round(pendingY / grid[1]) * grid[1];
+      return [x, y];
+    }
+    
+    function canDragX(draggable /*: Draggable*/) /*: boolean*/ {
+      return draggable.props.axis === 'both' || draggable.props.axis === 'x';
+    }
+    
+    function canDragY(draggable /*: Draggable*/) /*: boolean*/ {
+      return draggable.props.axis === 'both' || draggable.props.axis === 'y';
+    }
+    
+    // Get {x, y} positions from event.
+    function getControlPosition(e /*: MouseTouchEvent*/, touchIdentifier /*: ?number*/, draggableCore /*: DraggableCore*/) /*: ?ControlPosition*/ {
+      var touchObj = typeof touchIdentifier === 'number' ? (0, _domFns.getTouch)(e, touchIdentifier) : null;
+      if (typeof touchIdentifier === 'number' && !touchObj) return null; // not the right touch
+      var node = _reactDom2.default.findDOMNode(draggableCore);
+      // User can provide an offsetParent if desired.
+      var offsetParent = draggableCore.props.offsetParent || node.offsetParent || node.ownerDocument.body;
+      return (0, _domFns.offsetXYFromParent)(touchObj || e, offsetParent);
+    }
+    
+    // Create an data object exposed by <DraggableCore>'s events
+    function createCoreData(draggable /*: DraggableCore*/, x /*: number*/, y /*: number*/) /*: DraggableData*/ {
+      var state = draggable.state;
+      var isStart = !(0, _shims.isNum)(state.lastX);
+    
+      if (isStart) {
+        // If this is our first move, use the x and y as last coords.
+        return {
+          node: _reactDom2.default.findDOMNode(draggable),
+          deltaX: 0, deltaY: 0,
+          lastX: x, lastY: y,
+          x: x, y: y
+        };
+      } else {
+        // Otherwise calculate proper values.
+        return {
+          node: _reactDom2.default.findDOMNode(draggable),
+          deltaX: x - state.lastX, deltaY: y - state.lastY,
+          lastX: state.lastX, lastY: state.lastY,
+          x: x, y: y
+        };
+      }
+    }
+    
+    // Create an data exposed by <Draggable>'s events
+    function createDraggableData(draggable /*: Draggable*/, coreData /*: DraggableData*/) /*: DraggableData*/ {
+      return {
+        node: coreData.node,
+        x: draggable.state.x + coreData.deltaX,
+        y: draggable.state.y + coreData.deltaY,
+        deltaX: coreData.deltaX,
+        deltaY: coreData.deltaY,
+        lastX: draggable.state.x,
+        lastY: draggable.state.y
+      };
+    }
+    
+    // A lot faster than stringify/parse
+    function cloneBounds(bounds /*: Bounds*/) /*: Bounds*/ {
+      return {
+        left: bounds.left,
+        top: bounds.top,
+        right: bounds.right,
+        bottom: bounds.bottom
+      };
+    }
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+    /* WEBPACK VAR INJECTION */(function(process) {'use strict';
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    
+    var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+    
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+    
+    var _react = __webpack_require__(2);
+    
+    var _react2 = _interopRequireDefault(_react);
+    
+    var _reactDom = __webpack_require__(3);
+    
+    var _reactDom2 = _interopRequireDefault(_reactDom);
+    
+    var _domFns = __webpack_require__(5);
+    
+    var _positionFns = __webpack_require__(8);
+    
+    var _shims = __webpack_require__(6);
+    
+    var _log = __webpack_require__(11);
+    
+    var _log2 = _interopRequireDefault(_log);
+    
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+    
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+    
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+    
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+    
+    // Simple abstraction for dragging events names.
+    /*:: import type {EventHandler} from './utils/types';*/
+    var eventsFor = {
+      touch: {
+        start: 'touchstart',
+        move: 'touchmove',
+        stop: 'touchend'
+      },
+      mouse: {
+        start: 'mousedown',
+        move: 'mousemove',
+        stop: 'mouseup'
+      }
+    };
+    
+    // Default to mouse events.
+    var dragEventFor = eventsFor.mouse;
+    
+    //
+    // Define <DraggableCore>.
+    //
+    // <DraggableCore> is for advanced usage of <Draggable>. It maintains minimal internal state so it can
+    // work well with libraries that require more control over the element.
+    //
+    
+    /*:: type CoreState = {
+      dragging: boolean,
+      lastX: number,
+      lastY: number,
+      touchIdentifier: ?number
+    };*/
+    
+    var DraggableCore = function (_React$Component) {
+      _inherits(DraggableCore, _React$Component);
+    
+      function DraggableCore() {
+        var _ref;
+    
+        var _temp, _this, _ret;
+    
+        _classCallCheck(this, DraggableCore);
+    
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+    
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = DraggableCore.__proto__ || Object.getPrototypeOf(DraggableCore)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+          dragging: false,
+          // Used while dragging to determine deltas.
+          lastX: NaN, lastY: NaN,
+          touchIdentifier: null
+        }, _this.handleDragStart = function (e) {
+          // Make it possible to attach event handlers on top of this one.
+          _this.props.onMouseDown(e);
+    
+          // Only accept left-clicks.
+          if (!_this.props.allowAnyClick && typeof e.button === 'number' && e.button !== 0) return false;
+    
+          // Get nodes. Be sure to grab relative document (could be iframed)
+          var domNode = _reactDom2.default.findDOMNode(_this);
+          var ownerDocument = domNode.ownerDocument;
+    
+          // Short circuit if handle or cancel prop was provided and selector doesn't match.
+    
+          if (_this.props.disabled || !(e.target instanceof ownerDocument.defaultView.Node) || _this.props.handle && !(0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.handle, domNode) || _this.props.cancel && (0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.cancel, domNode)) {
+            return;
+          }
+    
+          // Set touch identifier in component state if this is a touch event. This allows us to
+          // distinguish between individual touches on multitouch screens by identifying which
+          // touchpoint was set to this element.
+          var touchIdentifier = (0, _domFns.getTouchIdentifier)(e);
+          _this.setState({ touchIdentifier: touchIdentifier });
+    
+          // Get the current drag point from the event. This is used as the offset.
+          var position = (0, _positionFns.getControlPosition)(e, touchIdentifier, _this);
+          if (position == null) return; // not possible but satisfies flow
+          var x = position.x,
+              y = position.y;
+    
+          // Create an event object with all the data parents need to make a decision here.
+    
+          var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
+    
+          (0, _log2.default)('DraggableCore: handleDragStart: %j', coreEvent);
+    
+          // Call event handler. If it returns explicit false, cancel.
+          (0, _log2.default)('calling', _this.props.onStart);
+          var shouldUpdate = _this.props.onStart(e, coreEvent);
+          if (shouldUpdate === false) return;
+    
+          // Add a style to the body to disable user-select. This prevents text from
+          // being selected all over the page.
+          if (_this.props.enableUserSelectHack) (0, _domFns.addUserSelectStyles)(ownerDocument.body);
+    
+          // Initiate dragging. Set the current x and y as offsets
+          // so we know how much we've moved during the drag. This allows us
+          // to drag elements around even if they have been moved, without issue.
+          _this.setState({
+            dragging: true,
+    
+            lastX: x,
+            lastY: y
+          });
+    
+          // Add events to the document directly so we catch when the user's mouse/touch moves outside of
+          // this element. We use different events depending on whether or not we have detected that this
+          // is a touch-capable device.
+          (0, _domFns.addEvent)(ownerDocument, dragEventFor.move, _this.handleDrag);
+          (0, _domFns.addEvent)(ownerDocument, dragEventFor.stop, _this.handleDragStop);
+        }, _this.handleDrag = function (e) {
+    
+          // Prevent scrolling on mobile devices, like ipad/iphone.
+          if (e.type === 'touchmove') e.preventDefault();
+    
+          // Get the current drag point from the event. This is used as the offset.
+          var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _this);
+          if (position == null) return;
+          var x = position.x,
+              y = position.y;
+    
+          // Snap to grid if prop has been provided
+    
+          if (x !== x) debugger;
+    
+          if (Array.isArray(_this.props.grid)) {
+            var deltaX = x - _this.state.lastX,
+                deltaY = y - _this.state.lastY;
+    
+            var _snapToGrid = (0, _positionFns.snapToGrid)(_this.props.grid, deltaX, deltaY);
+    
+            var _snapToGrid2 = _slicedToArray(_snapToGrid, 2);
+    
+            deltaX = _snapToGrid2[0];
+            deltaY = _snapToGrid2[1];
+    
+            if (!deltaX && !deltaY) return; // skip useless drag
+            x = _this.state.lastX + deltaX, y = _this.state.lastY + deltaY;
+          }
+    
+          var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
+    
+          (0, _log2.default)('DraggableCore: handleDrag: %j', coreEvent);
+    
+          // Call event handler. If it returns explicit false, trigger end.
+          var shouldUpdate = _this.props.onDrag(e, coreEvent);
+          if (shouldUpdate === false) {
+            try {
+              // $FlowIgnore
+              _this.handleDragStop(new MouseEvent('mouseup'));
+            } catch (err) {
+              // Old browsers
+              var event = ((document.createEvent('MouseEvents') /*: any*/) /*: MouseTouchEvent*/);
+              // I see why this insanity was deprecated
+              // $FlowIgnore
+              event.initMouseEvent('mouseup', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+              _this.handleDragStop(event);
+            }
+            return;
+          }
+    
+          _this.setState({
+            lastX: x,
+            lastY: y
+          });
+        }, _this.handleDragStop = function (e) {
+          if (!_this.state.dragging) return;
+    
+          var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _this);
+          if (position == null) return;
+          var x = position.x,
+              y = position.y;
+    
+          var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
+    
+          var _ReactDOM$findDOMNode = _reactDom2.default.findDOMNode(_this),
+              ownerDocument = _ReactDOM$findDOMNode.ownerDocument;
+    
+          // Remove user-select hack
+    
+    
+          if (_this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(ownerDocument.body);
+    
+          (0, _log2.default)('DraggableCore: handleDragStop: %j', coreEvent);
+    
+          // Reset the el.
+          _this.setState({
+            dragging: false,
+            lastX: NaN,
+            lastY: NaN
+          });
+    
+          // Call event handler
+          _this.props.onStop(e, coreEvent);
+    
+          // Remove event handlers
+          (0, _log2.default)('DraggableCore: Removing handlers');
+          (0, _domFns.removeEvent)(ownerDocument, dragEventFor.move, _this.handleDrag);
+          (0, _domFns.removeEvent)(ownerDocument, dragEventFor.stop, _this.handleDragStop);
+        }, _this.onMouseDown = function (e) {
+          dragEventFor = eventsFor.mouse; // on touchscreen laptops we could switch back to mouse
+    
+          return _this.handleDragStart(e);
+        }, _this.onMouseUp = function (e) {
+          dragEventFor = eventsFor.mouse;
+    
+          return _this.handleDragStop(e);
+        }, _this.onTouchStart = function (e) {
+          // We're on a touch device now, so change the event handlers
+          dragEventFor = eventsFor.touch;
+    
+          return _this.handleDragStart(e);
+        }, _this.onTouchEnd = function (e) {
+          // We're on a touch device now, so change the event handlers
+          dragEventFor = eventsFor.touch;
+    
+          return _this.handleDragStop(e);
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+      }
+    
+      _createClass(DraggableCore, [{
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+          // Remove any leftover event handlers. Remove both touch and mouse handlers in case
+          // some browser quirk caused a touch event to fire during a mouse move, or vice versa.
+          var _ReactDOM$findDOMNode2 = _reactDom2.default.findDOMNode(this),
+              ownerDocument = _ReactDOM$findDOMNode2.ownerDocument;
+    
+          (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.move, this.handleDrag);
+          (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.move, this.handleDrag);
+          (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.stop, this.handleDragStop);
+          (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.stop, this.handleDragStop);
+          if (this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(ownerDocument.body);
+        }
+    
+        // Same as onMouseDown (start drag), but now consider this a touch device.
+    
+      }, {
+        key: 'render',
+        value: function render() /*: React.Element<any>*/ {
+          // Reuse the child provided
+          // This makes it flexible to use whatever element is wanted (div, ul, etc)
+          return _react2.default.cloneElement(_react2.default.Children.only(this.props.children), {
+            style: (0, _domFns.styleHacks)(this.props.children.props.style),
+    
+            // Note: mouseMove handler is attached to document so it will still function
+            // when the user drags quickly and leaves the bounds of the element.
+            onMouseDown: this.onMouseDown,
+            onTouchStart: this.onTouchStart,
+            onMouseUp: this.onMouseUp,
+            onTouchEnd: this.onTouchEnd
+          });
+        }
+      }]);
+    
+      return DraggableCore;
+    }(_react2.default.Component);
+    
+    DraggableCore.displayName = 'DraggableCore';
+    DraggableCore.propTypes = {
+      /**
+       * `allowAnyClick` allows dragging using any mouse button.
+       * By default, we only accept the left button.
+       *
+       * Defaults to `false`.
+       */
+      allowAnyClick: _react.PropTypes.bool,
+    
+      /**
+       * `disabled`, if true, stops the <Draggable> from dragging. All handlers,
+       * with the exception of `onMouseDown`, will not fire.
+       */
+      disabled: _react.PropTypes.bool,
+    
+      /**
+       * By default, we add 'user-select:none' attributes to the document body
+       * to prevent ugly text selection during drag. If this is causing problems
+       * for your app, set this to `false`.
+       */
+      enableUserSelectHack: _react.PropTypes.bool,
+    
+      /**
+       * `offsetParent`, if set, uses the passed DOM node to compute drag offsets
+       * instead of using the parent node.
+       */
+      offsetParent: function offsetParent(props, propName) {
+        if (process.browser && props[propName] && props[propName].nodeType !== 1) {
+          throw new Error('Draggable\'s offsetParent must be a DOM Node.');
+        }
+      },
+    
+      /**
+       * `grid` specifies the x and y that dragging should snap to.
+       */
+      grid: _react.PropTypes.arrayOf(_react.PropTypes.number),
+    
+      /**
+       * `handle` specifies a selector to be used as the handle that initiates drag.
+       *
+       * Example:
+       *
+       * ```jsx
+       *   let App = React.createClass({
+       *       render: function () {
+       *         return (
+       *            <Draggable handle=".handle">
+       *              <div>
+       *                  <div className="handle">Click me to drag</div>
+       *                  <div>This is some other content</div>
+       *              </div>
+       *           </Draggable>
+       *         );
+       *       }
+       *   });
+       * ```
+       */
+      handle: _react.PropTypes.string,
+    
+      /**
+       * `cancel` specifies a selector to be used to prevent drag initialization.
+       *
+       * Example:
+       *
+       * ```jsx
+       *   let App = React.createClass({
+       *       render: function () {
+       *           return(
+       *               <Draggable cancel=".cancel">
+       *                   <div>
+       *                     <div className="cancel">You can't drag from here</div>
+       *                     <div>Dragging here works fine</div>
+       *                   </div>
+       *               </Draggable>
+       *           );
+       *       }
+       *   });
+       * ```
+       */
+      cancel: _react.PropTypes.string,
+    
+      /**
+       * Called when dragging starts.
+       * If this function returns the boolean false, dragging will be canceled.
+       */
+      onStart: _react.PropTypes.func,
+    
+      /**
+       * Called while dragging.
+       * If this function returns the boolean false, dragging will be canceled.
+       */
+      onDrag: _react.PropTypes.func,
+    
+      /**
+       * Called when dragging stops.
+       * If this function returns the boolean false, the drag will remain active.
+       */
+      onStop: _react.PropTypes.func,
+    
+      /**
+       * A workaround option which can be passed if onMouseDown needs to be accessed,
+       * since it'll always be blocked (as there is internal use of onMouseDown)
+       */
+      onMouseDown: _react.PropTypes.func,
+    
+      /**
+       * These properties should be defined on the child, not here.
+       */
+      className: _shims.dontSetMe,
+      style: _shims.dontSetMe,
+      transform: _shims.dontSetMe
+    };
+    DraggableCore.defaultProps = {
+      allowAnyClick: false, // by default only accept left click
+      cancel: null,
+      disabled: false,
+      enableUserSelectHack: true,
+      offsetParent: null,
+      handle: null,
+      grid: null,
+      transform: null,
+      onStart: function onStart() {},
+      onDrag: function onDrag() {},
+      onStop: function onStop() {},
+      onMouseDown: function onMouseDown() {}
+    };
+    exports.default = DraggableCore;
+    /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+    // shim for using process in browser
+    var process = module.exports = {};
+    
+    // cached from whatever global is present so that test runners that stub it
+    // don't break things.  But we need to wrap it in a try catch in case it is
+    // wrapped in strict mode code which doesn't define any globals.  It's inside a
+    // function because try/catches deoptimize in certain engines.
+    
+    var cachedSetTimeout;
+    var cachedClearTimeout;
+    
+    function defaultSetTimout() {
+        throw new Error('setTimeout has not been defined');
+    }
+    function defaultClearTimeout () {
+        throw new Error('clearTimeout has not been defined');
+    }
+    (function () {
+        try {
+            if (typeof setTimeout === 'function') {
+                cachedSetTimeout = setTimeout;
+            } else {
+                cachedSetTimeout = defaultSetTimout;
+            }
+        } catch (e) {
+            cachedSetTimeout = defaultSetTimout;
+        }
+        try {
+            if (typeof clearTimeout === 'function') {
+                cachedClearTimeout = clearTimeout;
+            } else {
+                cachedClearTimeout = defaultClearTimeout;
+            }
+        } catch (e) {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } ())
+    function runTimeout(fun) {
+        if (cachedSetTimeout === setTimeout) {
+            //normal enviroments in sane situations
+            return setTimeout(fun, 0);
+        }
+        // if setTimeout wasn't available but was latter defined
+        if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+            cachedSetTimeout = setTimeout;
+            return setTimeout(fun, 0);
+        }
+        try {
+            // when when somebody has screwed with setTimeout but no I.E. maddness
+            return cachedSetTimeout(fun, 0);
+        } catch(e){
+            try {
+                // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+                return cachedSetTimeout.call(null, fun, 0);
+            } catch(e){
+                // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+                return cachedSetTimeout.call(this, fun, 0);
+            }
+        }
+    
+    
+    }
+    function runClearTimeout(marker) {
+        if (cachedClearTimeout === clearTimeout) {
+            //normal enviroments in sane situations
+            return clearTimeout(marker);
+        }
+        // if clearTimeout wasn't available but was latter defined
+        if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+            cachedClearTimeout = clearTimeout;
+            return clearTimeout(marker);
+        }
+        try {
+            // when when somebody has screwed with setTimeout but no I.E. maddness
+            return cachedClearTimeout(marker);
+        } catch (e){
+            try {
+                // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+                return cachedClearTimeout.call(null, marker);
+            } catch (e){
+                // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+                // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+                return cachedClearTimeout.call(this, marker);
+            }
+        }
+    
+    
+    
+    }
+    var queue = [];
+    var draining = false;
+    var currentQueue;
+    var queueIndex = -1;
+    
+    function cleanUpNextTick() {
+        if (!draining || !currentQueue) {
+            return;
+        }
+        draining = false;
+        if (currentQueue.length) {
+            queue = currentQueue.concat(queue);
+        } else {
+            queueIndex = -1;
+        }
+        if (queue.length) {
+            drainQueue();
+        }
+    }
+    
+    function drainQueue() {
+        if (draining) {
+            return;
+        }
+        var timeout = runTimeout(cleanUpNextTick);
+        draining = true;
+    
+        var len = queue.length;
+        while(len) {
+            currentQueue = queue;
+            queue = [];
+            while (++queueIndex < len) {
+                if (currentQueue) {
+                    currentQueue[queueIndex].run();
+                }
+            }
+            queueIndex = -1;
+            len = queue.length;
+        }
+        currentQueue = null;
+        draining = false;
+        runClearTimeout(timeout);
+    }
+    
+    process.nextTick = function (fun) {
+        var args = new Array(arguments.length - 1);
+        if (arguments.length > 1) {
+            for (var i = 1; i < arguments.length; i++) {
+                args[i - 1] = arguments[i];
+            }
+        }
+        queue.push(new Item(fun, args));
+        if (queue.length === 1 && !draining) {
+            runTimeout(drainQueue);
+        }
+    };
+    
+    // v8 likes predictible objects
+    function Item(fun, array) {
+        this.fun = fun;
+        this.array = array;
+    }
+    Item.prototype.run = function () {
+        this.fun.apply(null, this.array);
+    };
+    process.title = 'browser';
+    process.browser = true;
+    process.env = {};
+    process.argv = [];
+    process.version = ''; // empty string to avoid regexp issues
+    process.versions = {};
+    
+    function noop() {}
+    
+    process.on = noop;
+    process.addListener = noop;
+    process.once = noop;
+    process.off = noop;
+    process.removeListener = noop;
+    process.removeAllListeners = noop;
+    process.emit = noop;
+    
+    process.binding = function (name) {
+        throw new Error('process.binding is not supported');
+    };
+    
+    process.cwd = function () { return '/' };
+    process.chdir = function (dir) {
+        throw new Error('process.chdir is not supported');
+    };
+    process.umask = function() { return 0; };
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+    "use strict";
+    
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    exports.default = log;
+    
+    /*eslint no-console:0*/
+    function log() {
+      var _console;
+    
+      if ((undefined)) (_console = console).log.apply(_console, arguments);
+    }
+
+/***/ }
+/******/ ])
+});
+;
+//# sourceMappingURL=react-draggable.js.map
+
+/***/ },
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16275,47 +17696,47 @@ return zhTw;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _stripDiacritics = __webpack_require__(124);
+var _stripDiacritics = __webpack_require__(118);
 
 var _stripDiacritics2 = _interopRequireDefault(_stripDiacritics);
 
 function filterOptions(options, filterValue, excludeOptions, props) {
-	var _this = this;
+    var _this = this;
 
-	if (props.ignoreAccents) {
-		filterValue = (0, _stripDiacritics2['default'])(filterValue);
-	}
+    if (props.ignoreAccents) {
+        filterValue = (0, _stripDiacritics2['default'])(filterValue);
+    }
 
-	if (props.ignoreCase) {
-		filterValue = filterValue.toLowerCase();
-	}
+    if (props.ignoreCase) {
+        filterValue = filterValue.toLowerCase();
+    }
 
-	if (excludeOptions) excludeOptions = excludeOptions.map(function (i) {
-		return i[props.valueKey];
-	});
+    if (excludeOptions) excludeOptions = excludeOptions.map(function (i) {
+        return i[props.valueKey];
+    });
 
-	return options.filter(function (option) {
-		if (excludeOptions && excludeOptions.indexOf(option[props.valueKey]) > -1) return false;
-		if (props.filterOption) return props.filterOption.call(_this, option, filterValue);
-		if (!filterValue) return true;
-		var valueTest = String(option[props.valueKey]);
-		var labelTest = String(option[props.labelKey]);
-		if (props.ignoreAccents) {
-			if (props.matchProp !== 'label') valueTest = (0, _stripDiacritics2['default'])(valueTest);
-			if (props.matchProp !== 'value') labelTest = (0, _stripDiacritics2['default'])(labelTest);
-		}
-		if (props.ignoreCase) {
-			if (props.matchProp !== 'label') valueTest = valueTest.toLowerCase();
-			if (props.matchProp !== 'value') labelTest = labelTest.toLowerCase();
-		}
-		return props.matchPos === 'start' ? props.matchProp !== 'label' && valueTest.substr(0, filterValue.length) === filterValue || props.matchProp !== 'value' && labelTest.substr(0, filterValue.length) === filterValue : props.matchProp !== 'label' && valueTest.indexOf(filterValue) >= 0 || props.matchProp !== 'value' && labelTest.indexOf(filterValue) >= 0;
-	});
+    return options.filter(function (option) {
+        if (excludeOptions && excludeOptions.indexOf(option[props.valueKey]) > -1) return false;
+        if (props.filterOption) return props.filterOption.call(_this, option, filterValue);
+        if (!filterValue) return true;
+        var valueTest = String(option[props.valueKey]);
+        var labelTest = String(option[props.labelKey]);
+        if (props.ignoreAccents) {
+            if (props.matchProp !== 'label') valueTest = (0, _stripDiacritics2['default'])(valueTest);
+            if (props.matchProp !== 'value') labelTest = (0, _stripDiacritics2['default'])(labelTest);
+        }
+        if (props.ignoreCase) {
+            if (props.matchProp !== 'label') valueTest = valueTest.toLowerCase();
+            if (props.matchProp !== 'value') labelTest = labelTest.toLowerCase();
+        }
+        return props.matchPos === 'start' ? props.matchProp !== 'label' && valueTest.substr(0, filterValue.length) === filterValue || props.matchProp !== 'value' && labelTest.substr(0, filterValue.length) === filterValue : props.matchProp !== 'label' && valueTest.indexOf(filterValue) >= 0 || props.matchProp !== 'value' && labelTest.indexOf(filterValue) >= 0;
+    });
 }
 
 module.exports = filterOptions;
 
 /***/ },
-/* 123 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16332,57 +17753,57 @@ var _react = __webpack_require__(1);
 var _react2 = _interopRequireDefault(_react);
 
 function menuRenderer(_ref) {
-	var focusedOption = _ref.focusedOption;
-	var instancePrefix = _ref.instancePrefix;
-	var labelKey = _ref.labelKey;
-	var onFocus = _ref.onFocus;
-	var onSelect = _ref.onSelect;
-	var optionClassName = _ref.optionClassName;
-	var optionComponent = _ref.optionComponent;
-	var optionRenderer = _ref.optionRenderer;
-	var options = _ref.options;
-	var valueArray = _ref.valueArray;
-	var valueKey = _ref.valueKey;
-	var onOptionRef = _ref.onOptionRef;
+    var focusedOption = _ref.focusedOption;
+    var instancePrefix = _ref.instancePrefix;
+    var labelKey = _ref.labelKey;
+    var onFocus = _ref.onFocus;
+    var onSelect = _ref.onSelect;
+    var optionClassName = _ref.optionClassName;
+    var optionComponent = _ref.optionComponent;
+    var optionRenderer = _ref.optionRenderer;
+    var options = _ref.options;
+    var valueArray = _ref.valueArray;
+    var valueKey = _ref.valueKey;
+    var onOptionRef = _ref.onOptionRef;
 
-	var Option = optionComponent;
+    var Option = optionComponent;
 
-	return options.map(function (option, i) {
-		var isSelected = valueArray && valueArray.indexOf(option) > -1;
-		var isFocused = option === focusedOption;
-		var optionClass = (0, _classnames2['default'])(optionClassName, {
-			'Select-option': true,
-			'is-selected': isSelected,
-			'is-focused': isFocused,
-			'is-disabled': option.disabled
-		});
+    return options.map(function (option, i) {
+        var isSelected = valueArray && valueArray.indexOf(option) > -1;
+        var isFocused = option === focusedOption;
+        var optionClass = (0, _classnames2['default'])(optionClassName, {
+            'Select-option': true,
+            'is-selected': isSelected,
+            'is-focused': isFocused,
+            'is-disabled': option.disabled
+        });
 
-		return _react2['default'].createElement(
-			Option,
-			{
-				className: optionClass,
-				instancePrefix: instancePrefix,
-				isDisabled: option.disabled,
-				isFocused: isFocused,
-				isSelected: isSelected,
-				key: 'option-' + i + '-' + option[valueKey],
-				onFocus: onFocus,
-				onSelect: onSelect,
-				option: option,
-				optionIndex: i,
-				ref: function (ref) {
-					onOptionRef(ref, isFocused);
-				}
-			},
-			optionRenderer(option, i)
-		);
-	});
+        return _react2['default'].createElement(
+            Option,
+            {
+                className: optionClass,
+                instancePrefix: instancePrefix,
+                isDisabled: option.disabled,
+                isFocused: isFocused,
+                isSelected: isSelected,
+                key: 'option-' + i + '-' + option[valueKey],
+                onFocus: onFocus,
+                onSelect: onSelect,
+                option: option,
+                optionIndex: i,
+                ref: function (ref) {
+                    onOptionRef(ref, isFocused);
+                }
+            },
+            optionRenderer(option, i)
+        );
+    });
 }
 
 module.exports = menuRenderer;
 
 /***/ },
-/* 124 */
+/* 118 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -16391,20 +17812,457 @@ module.exports = menuRenderer;
 var map = [{ 'base': 'A', 'letters': /[\u0041\u24B6\uFF21\u00C0\u00C1\u00C2\u1EA6\u1EA4\u1EAA\u1EA8\u00C3\u0100\u0102\u1EB0\u1EAE\u1EB4\u1EB2\u0226\u01E0\u00C4\u01DE\u1EA2\u00C5\u01FA\u01CD\u0200\u0202\u1EA0\u1EAC\u1EB6\u1E00\u0104\u023A\u2C6F]/g }, { 'base': 'AA', 'letters': /[\uA732]/g }, { 'base': 'AE', 'letters': /[\u00C6\u01FC\u01E2]/g }, { 'base': 'AO', 'letters': /[\uA734]/g }, { 'base': 'AU', 'letters': /[\uA736]/g }, { 'base': 'AV', 'letters': /[\uA738\uA73A]/g }, { 'base': 'AY', 'letters': /[\uA73C]/g }, { 'base': 'B', 'letters': /[\u0042\u24B7\uFF22\u1E02\u1E04\u1E06\u0243\u0182\u0181]/g }, { 'base': 'C', 'letters': /[\u0043\u24B8\uFF23\u0106\u0108\u010A\u010C\u00C7\u1E08\u0187\u023B\uA73E]/g }, { 'base': 'D', 'letters': /[\u0044\u24B9\uFF24\u1E0A\u010E\u1E0C\u1E10\u1E12\u1E0E\u0110\u018B\u018A\u0189\uA779]/g }, { 'base': 'DZ', 'letters': /[\u01F1\u01C4]/g }, { 'base': 'Dz', 'letters': /[\u01F2\u01C5]/g }, { 'base': 'E', 'letters': /[\u0045\u24BA\uFF25\u00C8\u00C9\u00CA\u1EC0\u1EBE\u1EC4\u1EC2\u1EBC\u0112\u1E14\u1E16\u0114\u0116\u00CB\u1EBA\u011A\u0204\u0206\u1EB8\u1EC6\u0228\u1E1C\u0118\u1E18\u1E1A\u0190\u018E]/g }, { 'base': 'F', 'letters': /[\u0046\u24BB\uFF26\u1E1E\u0191\uA77B]/g }, { 'base': 'G', 'letters': /[\u0047\u24BC\uFF27\u01F4\u011C\u1E20\u011E\u0120\u01E6\u0122\u01E4\u0193\uA7A0\uA77D\uA77E]/g }, { 'base': 'H', 'letters': /[\u0048\u24BD\uFF28\u0124\u1E22\u1E26\u021E\u1E24\u1E28\u1E2A\u0126\u2C67\u2C75\uA78D]/g }, { 'base': 'I', 'letters': /[\u0049\u24BE\uFF29\u00CC\u00CD\u00CE\u0128\u012A\u012C\u0130\u00CF\u1E2E\u1EC8\u01CF\u0208\u020A\u1ECA\u012E\u1E2C\u0197]/g }, { 'base': 'J', 'letters': /[\u004A\u24BF\uFF2A\u0134\u0248]/g }, { 'base': 'K', 'letters': /[\u004B\u24C0\uFF2B\u1E30\u01E8\u1E32\u0136\u1E34\u0198\u2C69\uA740\uA742\uA744\uA7A2]/g }, { 'base': 'L', 'letters': /[\u004C\u24C1\uFF2C\u013F\u0139\u013D\u1E36\u1E38\u013B\u1E3C\u1E3A\u0141\u023D\u2C62\u2C60\uA748\uA746\uA780]/g }, { 'base': 'LJ', 'letters': /[\u01C7]/g }, { 'base': 'Lj', 'letters': /[\u01C8]/g }, { 'base': 'M', 'letters': /[\u004D\u24C2\uFF2D\u1E3E\u1E40\u1E42\u2C6E\u019C]/g }, { 'base': 'N', 'letters': /[\u004E\u24C3\uFF2E\u01F8\u0143\u00D1\u1E44\u0147\u1E46\u0145\u1E4A\u1E48\u0220\u019D\uA790\uA7A4]/g }, { 'base': 'NJ', 'letters': /[\u01CA]/g }, { 'base': 'Nj', 'letters': /[\u01CB]/g }, { 'base': 'O', 'letters': /[\u004F\u24C4\uFF2F\u00D2\u00D3\u00D4\u1ED2\u1ED0\u1ED6\u1ED4\u00D5\u1E4C\u022C\u1E4E\u014C\u1E50\u1E52\u014E\u022E\u0230\u00D6\u022A\u1ECE\u0150\u01D1\u020C\u020E\u01A0\u1EDC\u1EDA\u1EE0\u1EDE\u1EE2\u1ECC\u1ED8\u01EA\u01EC\u00D8\u01FE\u0186\u019F\uA74A\uA74C]/g }, { 'base': 'OI', 'letters': /[\u01A2]/g }, { 'base': 'OO', 'letters': /[\uA74E]/g }, { 'base': 'OU', 'letters': /[\u0222]/g }, { 'base': 'P', 'letters': /[\u0050\u24C5\uFF30\u1E54\u1E56\u01A4\u2C63\uA750\uA752\uA754]/g }, { 'base': 'Q', 'letters': /[\u0051\u24C6\uFF31\uA756\uA758\u024A]/g }, { 'base': 'R', 'letters': /[\u0052\u24C7\uFF32\u0154\u1E58\u0158\u0210\u0212\u1E5A\u1E5C\u0156\u1E5E\u024C\u2C64\uA75A\uA7A6\uA782]/g }, { 'base': 'S', 'letters': /[\u0053\u24C8\uFF33\u1E9E\u015A\u1E64\u015C\u1E60\u0160\u1E66\u1E62\u1E68\u0218\u015E\u2C7E\uA7A8\uA784]/g }, { 'base': 'T', 'letters': /[\u0054\u24C9\uFF34\u1E6A\u0164\u1E6C\u021A\u0162\u1E70\u1E6E\u0166\u01AC\u01AE\u023E\uA786]/g }, { 'base': 'TZ', 'letters': /[\uA728]/g }, { 'base': 'U', 'letters': /[\u0055\u24CA\uFF35\u00D9\u00DA\u00DB\u0168\u1E78\u016A\u1E7A\u016C\u00DC\u01DB\u01D7\u01D5\u01D9\u1EE6\u016E\u0170\u01D3\u0214\u0216\u01AF\u1EEA\u1EE8\u1EEE\u1EEC\u1EF0\u1EE4\u1E72\u0172\u1E76\u1E74\u0244]/g }, { 'base': 'V', 'letters': /[\u0056\u24CB\uFF36\u1E7C\u1E7E\u01B2\uA75E\u0245]/g }, { 'base': 'VY', 'letters': /[\uA760]/g }, { 'base': 'W', 'letters': /[\u0057\u24CC\uFF37\u1E80\u1E82\u0174\u1E86\u1E84\u1E88\u2C72]/g }, { 'base': 'X', 'letters': /[\u0058\u24CD\uFF38\u1E8A\u1E8C]/g }, { 'base': 'Y', 'letters': /[\u0059\u24CE\uFF39\u1EF2\u00DD\u0176\u1EF8\u0232\u1E8E\u0178\u1EF6\u1EF4\u01B3\u024E\u1EFE]/g }, { 'base': 'Z', 'letters': /[\u005A\u24CF\uFF3A\u0179\u1E90\u017B\u017D\u1E92\u1E94\u01B5\u0224\u2C7F\u2C6B\uA762]/g }, { 'base': 'a', 'letters': /[\u0061\u24D0\uFF41\u1E9A\u00E0\u00E1\u00E2\u1EA7\u1EA5\u1EAB\u1EA9\u00E3\u0101\u0103\u1EB1\u1EAF\u1EB5\u1EB3\u0227\u01E1\u00E4\u01DF\u1EA3\u00E5\u01FB\u01CE\u0201\u0203\u1EA1\u1EAD\u1EB7\u1E01\u0105\u2C65\u0250]/g }, { 'base': 'aa', 'letters': /[\uA733]/g }, { 'base': 'ae', 'letters': /[\u00E6\u01FD\u01E3]/g }, { 'base': 'ao', 'letters': /[\uA735]/g }, { 'base': 'au', 'letters': /[\uA737]/g }, { 'base': 'av', 'letters': /[\uA739\uA73B]/g }, { 'base': 'ay', 'letters': /[\uA73D]/g }, { 'base': 'b', 'letters': /[\u0062\u24D1\uFF42\u1E03\u1E05\u1E07\u0180\u0183\u0253]/g }, { 'base': 'c', 'letters': /[\u0063\u24D2\uFF43\u0107\u0109\u010B\u010D\u00E7\u1E09\u0188\u023C\uA73F\u2184]/g }, { 'base': 'd', 'letters': /[\u0064\u24D3\uFF44\u1E0B\u010F\u1E0D\u1E11\u1E13\u1E0F\u0111\u018C\u0256\u0257\uA77A]/g }, { 'base': 'dz', 'letters': /[\u01F3\u01C6]/g }, { 'base': 'e', 'letters': /[\u0065\u24D4\uFF45\u00E8\u00E9\u00EA\u1EC1\u1EBF\u1EC5\u1EC3\u1EBD\u0113\u1E15\u1E17\u0115\u0117\u00EB\u1EBB\u011B\u0205\u0207\u1EB9\u1EC7\u0229\u1E1D\u0119\u1E19\u1E1B\u0247\u025B\u01DD]/g }, { 'base': 'f', 'letters': /[\u0066\u24D5\uFF46\u1E1F\u0192\uA77C]/g }, { 'base': 'g', 'letters': /[\u0067\u24D6\uFF47\u01F5\u011D\u1E21\u011F\u0121\u01E7\u0123\u01E5\u0260\uA7A1\u1D79\uA77F]/g }, { 'base': 'h', 'letters': /[\u0068\u24D7\uFF48\u0125\u1E23\u1E27\u021F\u1E25\u1E29\u1E2B\u1E96\u0127\u2C68\u2C76\u0265]/g }, { 'base': 'hv', 'letters': /[\u0195]/g }, { 'base': 'i', 'letters': /[\u0069\u24D8\uFF49\u00EC\u00ED\u00EE\u0129\u012B\u012D\u00EF\u1E2F\u1EC9\u01D0\u0209\u020B\u1ECB\u012F\u1E2D\u0268\u0131]/g }, { 'base': 'j', 'letters': /[\u006A\u24D9\uFF4A\u0135\u01F0\u0249]/g }, { 'base': 'k', 'letters': /[\u006B\u24DA\uFF4B\u1E31\u01E9\u1E33\u0137\u1E35\u0199\u2C6A\uA741\uA743\uA745\uA7A3]/g }, { 'base': 'l', 'letters': /[\u006C\u24DB\uFF4C\u0140\u013A\u013E\u1E37\u1E39\u013C\u1E3D\u1E3B\u017F\u0142\u019A\u026B\u2C61\uA749\uA781\uA747]/g }, { 'base': 'lj', 'letters': /[\u01C9]/g }, { 'base': 'm', 'letters': /[\u006D\u24DC\uFF4D\u1E3F\u1E41\u1E43\u0271\u026F]/g }, { 'base': 'n', 'letters': /[\u006E\u24DD\uFF4E\u01F9\u0144\u00F1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5]/g }, { 'base': 'nj', 'letters': /[\u01CC]/g }, { 'base': 'o', 'letters': /[\u006F\u24DE\uFF4F\u00F2\u00F3\u00F4\u1ED3\u1ED1\u1ED7\u1ED5\u00F5\u1E4D\u022D\u1E4F\u014D\u1E51\u1E53\u014F\u022F\u0231\u00F6\u022B\u1ECF\u0151\u01D2\u020D\u020F\u01A1\u1EDD\u1EDB\u1EE1\u1EDF\u1EE3\u1ECD\u1ED9\u01EB\u01ED\u00F8\u01FF\u0254\uA74B\uA74D\u0275]/g }, { 'base': 'oi', 'letters': /[\u01A3]/g }, { 'base': 'ou', 'letters': /[\u0223]/g }, { 'base': 'oo', 'letters': /[\uA74F]/g }, { 'base': 'p', 'letters': /[\u0070\u24DF\uFF50\u1E55\u1E57\u01A5\u1D7D\uA751\uA753\uA755]/g }, { 'base': 'q', 'letters': /[\u0071\u24E0\uFF51\u024B\uA757\uA759]/g }, { 'base': 'r', 'letters': /[\u0072\u24E1\uFF52\u0155\u1E59\u0159\u0211\u0213\u1E5B\u1E5D\u0157\u1E5F\u024D\u027D\uA75B\uA7A7\uA783]/g }, { 'base': 's', 'letters': /[\u0073\u24E2\uFF53\u00DF\u015B\u1E65\u015D\u1E61\u0161\u1E67\u1E63\u1E69\u0219\u015F\u023F\uA7A9\uA785\u1E9B]/g }, { 'base': 't', 'letters': /[\u0074\u24E3\uFF54\u1E6B\u1E97\u0165\u1E6D\u021B\u0163\u1E71\u1E6F\u0167\u01AD\u0288\u2C66\uA787]/g }, { 'base': 'tz', 'letters': /[\uA729]/g }, { 'base': 'u', 'letters': /[\u0075\u24E4\uFF55\u00F9\u00FA\u00FB\u0169\u1E79\u016B\u1E7B\u016D\u00FC\u01DC\u01D8\u01D6\u01DA\u1EE7\u016F\u0171\u01D4\u0215\u0217\u01B0\u1EEB\u1EE9\u1EEF\u1EED\u1EF1\u1EE5\u1E73\u0173\u1E77\u1E75\u0289]/g }, { 'base': 'v', 'letters': /[\u0076\u24E5\uFF56\u1E7D\u1E7F\u028B\uA75F\u028C]/g }, { 'base': 'vy', 'letters': /[\uA761]/g }, { 'base': 'w', 'letters': /[\u0077\u24E6\uFF57\u1E81\u1E83\u0175\u1E87\u1E85\u1E98\u1E89\u2C73]/g }, { 'base': 'x', 'letters': /[\u0078\u24E7\uFF58\u1E8B\u1E8D]/g }, { 'base': 'y', 'letters': /[\u0079\u24E8\uFF59\u1EF3\u00FD\u0177\u1EF9\u0233\u1E8F\u00FF\u1EF7\u1E99\u1EF5\u01B4\u024F\u1EFF]/g }, { 'base': 'z', 'letters': /[\u007A\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763]/g }];
 
 module.exports = function stripDiacritics(str) {
-	for (var i = 0; i < map.length; i++) {
-		str = str.replace(map[i].letters, map[i].base);
-	}
-	return str;
+    for (var i = 0; i < map.length; i++) {
+        str = str.replace(map[i].letters, map[i].base);
+    }
+    return str;
 };
 
 /***/ },
-/* 125 */
+/* 119 */
 /***/ function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_125__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_119__;
 
 /***/ },
-/* 126 */
+/* 120 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _clamp = __webpack_require__(131);
+
+var _clamp2 = _interopRequireDefault(_clamp);
+
+var _reactDraggable = __webpack_require__(115);
+
+var _settings = __webpack_require__(3);
+
+var _getIncrementDifference = __webpack_require__(5);
+
+var _getIncrementDifference2 = _interopRequireDefault(_getIncrementDifference);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DraggableLayer = function (_Component) {
+  _inherits(DraggableLayer, _Component);
+
+  function DraggableLayer() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, DraggableLayer);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = DraggableLayer.__proto__ || Object.getPrototypeOf(DraggableLayer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      x: 0,
+      y: 0,
+      dragging: 0
+    }, _this.handleDragStart = function (evt, position) {
+      var _this$props = _this.props,
+          schedule = _this$props.schedule,
+          schedules = _this$props.schedules,
+          times = _this$props.times,
+          source = _this$props.source;
+
+      var time = times.findIndex(function (time) {
+        return time.start.isSame(schedule.start);
+      });
+      var day = Object.keys(schedules).indexOf(source.day);
+
+      _this.setState({
+        x: _settings.width * day,
+        y: _settings.height * time
+      });
+    }, _this.handleDrag = function (evt, position) {
+      _this.setState({
+        x: _this.state.x + position.deltaX,
+        y: _this.state.y + position.deltaY,
+        dragging: true
+      });
+    }, _this.handleDragStop = function (evt) {
+      if (!_this.state.dragging) {
+        return;
+      }
+
+      var _this$state = _this.state,
+          x = _this$state.x,
+          y = _this$state.y;
+      var _this$props2 = _this.props,
+          source = _this$props2.source,
+          schedule = _this$props2.schedule,
+          schedules = _this$props2.schedules,
+          times = _this$props2.times;
+
+      var keys = Object.keys(schedules);
+      var day = keys[(0, _clamp2.default)(Math.ceil(x / _settings.width), 0, keys.length - 1)]; // Target day (index)
+      var time = times[(0, _clamp2.default)(Math.ceil(y / _settings.height), 0, times.length - 1)]; // Target time (index)
+
+      var start = schedule.start;
+      var end = schedule.end;
+      // If we dragged to another time (vertical),
+      // we'll compute those changes for validation.
+      if (!time.start.isSame(schedule.start)) {
+        var increment = _this.props.time.increment;
+
+        var difference = (0, _getIncrementDifference2.default)(start, end, increment);
+        start = time.start.clone();
+        var hours = difference * increment.hours;
+        var minutes = difference * increment.minutes;
+        end = time.start.clone().add(hours, 'hours').add(minutes, 'minutes');
+      }
+
+      // We'll apply changes only once we've verified that thing are valid
+      if (_this.props.validate({ day: day, schedule: schedule, start: start, end: end })) {
+        var updated = _extends({}, schedule, {
+          start: start,
+          end: end
+        });
+
+        // Just noting that we're no longer resetting state (setting the
+        // dragging flag to false) after this because the component is being
+        // re-rendered on another column after [dragging] calling this callback
+        _this.props.onDrag(source.day, source.index, updated, day);
+      }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(DraggableLayer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _reactDraggable.DraggableCore,
+        {
+          allowAnyClick: true,
+          grid: [_settings.width, _settings.height],
+          cancel: '.draggable-cancel',
+          onStart: this.handleDragStart,
+          onDrag: this.handleDrag,
+          onStop: this.handleDragStop },
+        this.props.children
+      );
+    }
+
+    // day, index
+
+  }]);
+
+  return DraggableLayer;
+}(_react.Component);
+
+exports.default = DraggableLayer;
+
+/***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactClickOutside = __webpack_require__(137);
+
+var _reactClickOutside2 = _interopRequireDefault(_reactClickOutside);
+
+var _reactSelect = __webpack_require__(4);
+
+var _reactSelect2 = _interopRequireDefault(_reactSelect);
+
+var _settings = __webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Popover = function (_Component) {
+  _inherits(Popover, _Component);
+
+  function Popover() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Popover);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Popover.__proto__ || Object.getPrototypeOf(Popover)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      professor: _this.props.schedule.data.professor,
+      subject: _this.props.schedule.data.subject,
+      section: _this.props.schedule.data.section
+    }, _this.handleEscape = function (evt) {
+      if (evt.keyCode === 27) {
+        _this.props.onCancel();
+      }
+    }, _this.handleInput = function (field) {
+      return function (option) {
+        option = option || { label: '', value: '' };
+
+        _this.setState(_defineProperty({}, field, _extends({}, _this.state[field], {
+          id: option.value,
+          name: option.label
+        })));
+      };
+    }, _this.handleSubmit = function (evt) {
+      evt.preventDefault();
+
+      _this.props.onSubmit(_extends({}, _this.props.schedule, {
+        data: _extends({}, _this.props.schedule.data, _this.state)
+      }));
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Popover, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      document.addEventListener('keyup', this.handleEscape);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      document.removeEventListener('keyup', this.handleEscape);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var state = this.state;
+      var _props = this.props,
+          recent = _props.recent,
+          schedules = _props.schedules,
+          source = _props.source;
+
+
+      var top = _settings.height * source.time + 30;
+      var left = _settings.width * (Object.keys(schedules).findIndex(function (day) {
+        return source.day === day;
+      }) + 1) + 75;
+
+      return _react2.default.createElement(
+        _reactClickOutside2.default,
+        { onClickOutside: this.props.onCancel,
+          className: 'timesheet__popover draggable-cancel',
+          style: { top: top, left: left } },
+        _react2.default.createElement(
+          'form',
+          { onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'div',
+            { className: 'timesheet__popover-body' },
+            _react2.default.createElement(
+              'div',
+              { className: 'u-spacer' },
+              _react2.default.createElement(_reactSelect2.default, { autofocus: true,
+                value: state.section.id,
+                onChange: this.handleInput('section'),
+                options: this.props.sections,
+                placeholder: 'Section Name' })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'u-spacer' },
+              _react2.default.createElement(_reactSelect2.default, {
+                value: state.subject.id,
+                onChange: this.handleInput('subject'),
+                options: this.props.subjects,
+                placeholder: 'Subject Name' })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'u-spacer' },
+              _react2.default.createElement(_reactSelect2.default, {
+                value: state.professor.id,
+                onChange: this.handleInput('professor'),
+                options: this.props.professors,
+                placeholder: 'Professor Name' })
+            )
+          ),
+          _react2.default.createElement(
+            'footer',
+            { className: 'timesheet__popover-footer' },
+            _react2.default.createElement(
+              'button',
+              { type: 'button', onClick: this.props.onCancel },
+              'Cancel'
+            ),
+            _react2.default.createElement(
+              'button',
+              null,
+              recent ? 'Create' : 'Update'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Popover;
+}(_react.Component);
+
+exports.default = Popover;
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDraggable = __webpack_require__(115);
+
+var _settings = __webpack_require__(3);
+
+var _getIncrementDifference = __webpack_require__(5);
+
+var _getIncrementDifference2 = _interopRequireDefault(_getIncrementDifference);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Resizer = function (_Component) {
+  _inherits(Resizer, _Component);
+
+  function Resizer() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Resizer);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Resizer.__proto__ || Object.getPrototypeOf(Resizer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      resize: 0,
+      resizing: false
+    }, _this.handleResizeStart = function () {
+      var _this$props = _this.props,
+          time = _this$props.time,
+          schedule = _this$props.schedule;
+      var start = schedule.start,
+          end = schedule.end;
+
+
+      _this.setState({
+        // Difference from start date
+        // (start - end) / increment
+        resize: (0, _getIncrementDifference2.default)(start, end, time.increment)
+      });
+    }, _this.handleResize = function (evt, position) {
+      _this.setState({
+        resize: _this.state.resize + position.deltaY / _settings.height,
+        resizing: true
+      });
+    }, _this.handleResizeStop = function () {
+      if (!_this.state.resizing) {
+        return;
+      }
+
+      var resize = _this.state.resize;
+      var _this$props2 = _this.props,
+          schedules = _this$props2.schedules,
+          schedule = _this$props2.schedule,
+          source = _this$props2.source,
+          time = _this$props2.time;
+      var increment = time.increment;
+
+      var end = schedule.start.clone().add(resize * increment.hours, 'hours').add(resize * increment.minutes, 'minutes');
+
+      if (_this.props.validate({ day: source.day, schedule: schedule, start: schedule.start, end: end })) {
+        _this.props.onResize(source.day, source.index, _extends({}, schedule, {
+          end: end
+        }));
+      }
+
+      _this.setState({
+        resize: 0,
+        resizing: false
+      });
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Resizer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _reactDraggable.DraggableCore,
+        {
+          allowAnyClick: true,
+          grid: [_settings.width, _settings.height],
+          onStart: this.handleResizeStart,
+          onDrag: this.handleResize,
+          onStop: this.handleResizeStop },
+        _react2.default.createElement('div', { className: 'timesheet__overlay-resizer draggable-cancel' })
+      );
+    }
+  }]);
+
+  return Resizer;
+}(_react.Component);
+
+exports.default = Resizer;
+
+/***/ },
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16450,44 +18308,208 @@ function times(start, end, step) {
 exports.default = times;
 
 /***/ },
+/* 124 */
+/***/ function(module, exports, __webpack_require__) {
+
+var getIn = __webpack_require__(139);
+var updateIn = __webpack_require__(140);
+
+/**
+ * Extracted the linkedState implementation to its own function (instead of a mixin)
+ *
+ * @params {ReactElement} ctx The component's `this`
+ * @params {str} path State key to be updated
+ * @return {object}
+ */
+module.exports = function linkState(ctx, path) {
+  return {
+    value: getIn(ctx.state, path),
+
+    requestChange: function setPartialState(value) {
+      ctx.setState(updateIn(
+        ctx.state,
+        path,
+        value
+      ));
+    }
+  };
+}
+
+
+/***/ },
+/* 125 */
+/***/ function(module, exports) {
+
+/**
+ * The base implementation of `_.clamp` which doesn't coerce arguments.
+ *
+ * @private
+ * @param {number} number The number to clamp.
+ * @param {number} [lower] The lower bound.
+ * @param {number} upper The upper bound.
+ * @returns {number} Returns the clamped number.
+ */
+function baseClamp(number, lower, upper) {
+  if (number === number) {
+    if (upper !== undefined) {
+      number = number <= upper ? number : upper;
+    }
+    if (lower !== undefined) {
+      number = number >= lower ? number : lower;
+    }
+  }
+  return number;
+}
+
+module.exports = baseClamp;
+
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(6),
+    getRawTag = __webpack_require__(128),
+    objectToString = __webpack_require__(129);
+
+/** `Object#toString` result references. */
+var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+  return (symToStringTag && symToStringTag in Object(value))
+    ? getRawTag(value)
+    : objectToString(value);
+}
+
+module.exports = baseGetTag;
+
+
+/***/ },
 /* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
-'use strict';
+/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = getIncrementDifference;
+module.exports = freeGlobal;
 
-var _moment = __webpack_require__(0);
-
-var _moment2 = _interopRequireDefault(_moment);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * Get the time increment difference between the start and end time.
- * diff = duration / increment
- *
- * @param {string} start (10:00 am)
- * @param {string} end (11:30 am)
- * @param {object} increment ({ hours: 1, minutes: 30 })
- * @return {float}
- */
-function getIncrementDifference(start, end, increment) {
-  increment = _moment2.default.duration(increment).asHours();
-  var difference = _moment2.default.duration(end.diff(start)).asHours();
-  return difference / increment;
-}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(148)))
 
 /***/ },
 /* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
-var baseClamp = __webpack_require__(138),
-    toNumber = __webpack_require__(174);
+var Symbol = __webpack_require__(6);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+function getRawTag(value) {
+  var isOwn = hasOwnProperty.call(value, symToStringTag),
+      tag = value[symToStringTag];
+
+  try {
+    value[symToStringTag] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag] = tag;
+    } else {
+      delete value[symToStringTag];
+    }
+  }
+  return result;
+}
+
+module.exports = getRawTag;
+
+
+/***/ },
+/* 129 */
+/***/ function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+var freeGlobal = __webpack_require__(127);
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+
+/***/ },
+/* 131 */
+/***/ function(module, exports, __webpack_require__) {
+
+var baseClamp = __webpack_require__(125),
+    toNumber = __webpack_require__(135);
 
 /**
  * Clamps `number` within the inclusive `lower` and `upper` bounds.
@@ -16528,46 +18550,425 @@ module.exports = clamp;
 
 
 /***/ },
-/* 129 */
-/***/ function(module, exports, __webpack_require__) {
-
-var baseGet = __webpack_require__(139);
+/* 132 */
+/***/ function(module, exports) {
 
 /**
- * Gets the value at `path` of `object`. If the resolved value is
- * `undefined`, the `defaultValue` is returned in its place.
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
  *
  * @static
  * @memberOf _
- * @since 3.7.0
- * @category Object
- * @param {Object} object The object to query.
- * @param {Array|string} path The path of the property to get.
- * @param {*} [defaultValue] The value returned for `undefined` resolved values.
- * @returns {*} Returns the resolved value.
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
  * @example
  *
- * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+ * _.isObject({});
+ * // => true
  *
- * _.get(object, 'a[0].b.c');
- * // => 3
+ * _.isObject([1, 2, 3]);
+ * // => true
  *
- * _.get(object, ['a', '0', 'b', 'c']);
- * // => 3
+ * _.isObject(_.noop);
+ * // => true
  *
- * _.get(object, 'a.b.c', 'default');
- * // => 'default'
+ * _.isObject(null);
+ * // => false
  */
-function get(object, path, defaultValue) {
-  var result = object == null ? undefined : baseGet(object, path);
-  return result === undefined ? defaultValue : result;
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
 }
 
-module.exports = get;
+module.exports = isObject;
 
 
 /***/ },
-/* 130 */
+/* 133 */
+/***/ function(module, exports) {
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return value != null && typeof value == 'object';
+}
+
+module.exports = isObjectLike;
+
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(126),
+    isObjectLike = __webpack_require__(133);
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && baseGetTag(value) == symbolTag);
+}
+
+module.exports = isSymbol;
+
+
+/***/ },
+/* 135 */
+/***/ function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(132),
+    isSymbol = __webpack_require__(134);
+
+/** Used as references for various `Number` constants. */
+var NAN = 0 / 0;
+
+/** Used to match leading and trailing whitespace. */
+var reTrim = /^\s+|\s+$/g;
+
+/** Used to detect bad signed hexadecimal string values. */
+var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+
+/** Used to detect binary string values. */
+var reIsBinary = /^0b[01]+$/i;
+
+/** Used to detect octal string values. */
+var reIsOctal = /^0o[0-7]+$/i;
+
+/** Built-in method references without a dependency on `root`. */
+var freeParseInt = parseInt;
+
+/**
+ * Converts `value` to a number.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to process.
+ * @returns {number} Returns the number.
+ * @example
+ *
+ * _.toNumber(3.2);
+ * // => 3.2
+ *
+ * _.toNumber(Number.MIN_VALUE);
+ * // => 5e-324
+ *
+ * _.toNumber(Infinity);
+ * // => Infinity
+ *
+ * _.toNumber('3.2');
+ * // => 3.2
+ */
+function toNumber(value) {
+  if (typeof value == 'number') {
+    return value;
+  }
+  if (isSymbol(value)) {
+    return NAN;
+  }
+  if (isObject(value)) {
+    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+    value = isObject(other) ? (other + '') : other;
+  }
+  if (typeof value != 'string') {
+    return value === 0 ? value : +value;
+  }
+  value = value.replace(reTrim, '');
+  var isBinary = reIsBinary.test(value);
+  return (isBinary || reIsOctal.test(value))
+    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+    : (reIsBadHex.test(value) ? NAN : +value);
+}
+
+module.exports = toNumber;
+
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+var map = {
+    "./af": 7,
+    "./af.js": 7,
+    "./ar": 13,
+    "./ar-dz": 8,
+    "./ar-dz.js": 8,
+    "./ar-ly": 9,
+    "./ar-ly.js": 9,
+    "./ar-ma": 10,
+    "./ar-ma.js": 10,
+    "./ar-sa": 11,
+    "./ar-sa.js": 11,
+    "./ar-tn": 12,
+    "./ar-tn.js": 12,
+    "./ar.js": 13,
+    "./az": 14,
+    "./az.js": 14,
+    "./be": 15,
+    "./be.js": 15,
+    "./bg": 16,
+    "./bg.js": 16,
+    "./bn": 17,
+    "./bn.js": 17,
+    "./bo": 18,
+    "./bo.js": 18,
+    "./br": 19,
+    "./br.js": 19,
+    "./bs": 20,
+    "./bs.js": 20,
+    "./ca": 21,
+    "./ca.js": 21,
+    "./cs": 22,
+    "./cs.js": 22,
+    "./cv": 23,
+    "./cv.js": 23,
+    "./cy": 24,
+    "./cy.js": 24,
+    "./da": 25,
+    "./da.js": 25,
+    "./de": 27,
+    "./de-at": 26,
+    "./de-at.js": 26,
+    "./de.js": 27,
+    "./dv": 28,
+    "./dv.js": 28,
+    "./el": 29,
+    "./el.js": 29,
+    "./en-au": 30,
+    "./en-au.js": 30,
+    "./en-ca": 31,
+    "./en-ca.js": 31,
+    "./en-gb": 32,
+    "./en-gb.js": 32,
+    "./en-ie": 33,
+    "./en-ie.js": 33,
+    "./en-nz": 34,
+    "./en-nz.js": 34,
+    "./eo": 35,
+    "./eo.js": 35,
+    "./es": 37,
+    "./es-do": 36,
+    "./es-do.js": 36,
+    "./es.js": 37,
+    "./et": 38,
+    "./et.js": 38,
+    "./eu": 39,
+    "./eu.js": 39,
+    "./fa": 40,
+    "./fa.js": 40,
+    "./fi": 41,
+    "./fi.js": 41,
+    "./fo": 42,
+    "./fo.js": 42,
+    "./fr": 45,
+    "./fr-ca": 43,
+    "./fr-ca.js": 43,
+    "./fr-ch": 44,
+    "./fr-ch.js": 44,
+    "./fr.js": 45,
+    "./fy": 46,
+    "./fy.js": 46,
+    "./gd": 47,
+    "./gd.js": 47,
+    "./gl": 48,
+    "./gl.js": 48,
+    "./he": 49,
+    "./he.js": 49,
+    "./hi": 50,
+    "./hi.js": 50,
+    "./hr": 51,
+    "./hr.js": 51,
+    "./hu": 52,
+    "./hu.js": 52,
+    "./hy-am": 53,
+    "./hy-am.js": 53,
+    "./id": 54,
+    "./id.js": 54,
+    "./is": 55,
+    "./is.js": 55,
+    "./it": 56,
+    "./it.js": 56,
+    "./ja": 57,
+    "./ja.js": 57,
+    "./jv": 58,
+    "./jv.js": 58,
+    "./ka": 59,
+    "./ka.js": 59,
+    "./kk": 60,
+    "./kk.js": 60,
+    "./km": 61,
+    "./km.js": 61,
+    "./ko": 62,
+    "./ko.js": 62,
+    "./ky": 63,
+    "./ky.js": 63,
+    "./lb": 64,
+    "./lb.js": 64,
+    "./lo": 65,
+    "./lo.js": 65,
+    "./lt": 66,
+    "./lt.js": 66,
+    "./lv": 67,
+    "./lv.js": 67,
+    "./me": 68,
+    "./me.js": 68,
+    "./mi": 69,
+    "./mi.js": 69,
+    "./mk": 70,
+    "./mk.js": 70,
+    "./ml": 71,
+    "./ml.js": 71,
+    "./mr": 72,
+    "./mr.js": 72,
+    "./ms": 74,
+    "./ms-my": 73,
+    "./ms-my.js": 73,
+    "./ms.js": 74,
+    "./my": 75,
+    "./my.js": 75,
+    "./nb": 76,
+    "./nb.js": 76,
+    "./ne": 77,
+    "./ne.js": 77,
+    "./nl": 79,
+    "./nl-be": 78,
+    "./nl-be.js": 78,
+    "./nl.js": 79,
+    "./nn": 80,
+    "./nn.js": 80,
+    "./pa-in": 81,
+    "./pa-in.js": 81,
+    "./pl": 82,
+    "./pl.js": 82,
+    "./pt": 84,
+    "./pt-br": 83,
+    "./pt-br.js": 83,
+    "./pt.js": 84,
+    "./ro": 85,
+    "./ro.js": 85,
+    "./ru": 86,
+    "./ru.js": 86,
+    "./se": 87,
+    "./se.js": 87,
+    "./si": 88,
+    "./si.js": 88,
+    "./sk": 89,
+    "./sk.js": 89,
+    "./sl": 90,
+    "./sl.js": 90,
+    "./sq": 91,
+    "./sq.js": 91,
+    "./sr": 93,
+    "./sr-cyrl": 92,
+    "./sr-cyrl.js": 92,
+    "./sr.js": 93,
+    "./ss": 94,
+    "./ss.js": 94,
+    "./sv": 95,
+    "./sv.js": 95,
+    "./sw": 96,
+    "./sw.js": 96,
+    "./ta": 97,
+    "./ta.js": 97,
+    "./te": 98,
+    "./te.js": 98,
+    "./tet": 99,
+    "./tet.js": 99,
+    "./th": 100,
+    "./th.js": 100,
+    "./tl-ph": 101,
+    "./tl-ph.js": 101,
+    "./tlh": 102,
+    "./tlh.js": 102,
+    "./tr": 103,
+    "./tr.js": 103,
+    "./tzl": 104,
+    "./tzl.js": 104,
+    "./tzm": 106,
+    "./tzm-latn": 105,
+    "./tzm-latn.js": 105,
+    "./tzm.js": 106,
+    "./uk": 107,
+    "./uk.js": 107,
+    "./uz": 108,
+    "./uz.js": 108,
+    "./vi": 109,
+    "./vi.js": 109,
+    "./x-pseudo": 110,
+    "./x-pseudo.js": 110,
+    "./yo": 111,
+    "./yo.js": 111,
+    "./zh-cn": 112,
+    "./zh-cn.js": 112,
+    "./zh-hk": 113,
+    "./zh-hk.js": 113,
+    "./zh-tw": 114,
+    "./zh-tw.js": 114
+};
+function webpackContext(req) {
+    return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+    var id = map[req];
+    if(!(id + 1)) // check for number
+        throw new Error("Cannot find module '" + req + "'.");
+    return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+    return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 136;
+
+
+/***/ },
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16653,3257 +19054,7 @@ ClickOutside.propTypes = {
 exports.default = ClickOutside;
 
 /***/ },
-/* 131 */
-/***/ function(module, exports, __webpack_require__) {
-
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory(__webpack_require__(1), __webpack_require__(125));
-	else if(typeof define === 'function' && define.amd)
-		define(["react", "react-dom"], factory);
-	else if(typeof exports === 'object')
-		exports["ReactDraggable"] = factory(require("react"), require("react-dom"));
-	else
-		root["ReactDraggable"] = factory(root["React"], root["ReactDOM"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__) {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	module.exports = __webpack_require__(1).default;
-	module.exports.DraggableCore = __webpack_require__(9).default;
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(3);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _classnames = __webpack_require__(4);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var _domFns = __webpack_require__(5);
-	
-	var _positionFns = __webpack_require__(8);
-	
-	var _shims = __webpack_require__(6);
-	
-	var _DraggableCore = __webpack_require__(9);
-	
-	var _DraggableCore2 = _interopRequireDefault(_DraggableCore);
-	
-	var _log = __webpack_require__(11);
-	
-	var _log2 = _interopRequireDefault(_log);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	// $FlowIgnore
-	
-	
-	/*:: import type {DraggableEventHandler} from './utils/types';*/
-	/*:: type DraggableState = {
-	  dragging: boolean,
-	  dragged: boolean,
-	  x: number, y: number,
-	  slackX: number, slackY: number,
-	  isElementSVG: boolean
-	};*/
-	
-	
-	//
-	// Define <Draggable>
-	//
-	
-	/*:: type ConstructorProps = {
-	  position: { x: number, y: number },
-	  defaultPosition: { x: number, y: number }
-	};*/
-	
-	var Draggable = function (_React$Component) {
-	  _inherits(Draggable, _React$Component);
-	
-	  function Draggable(props /*: ConstructorProps*/) {
-	    _classCallCheck(this, Draggable);
-	
-	    var _this = _possibleConstructorReturn(this, (Draggable.__proto__ || Object.getPrototypeOf(Draggable)).call(this, props));
-	
-	    _this.onDragStart = function (e, coreData) {
-	      (0, _log2.default)('Draggable: onDragStart: %j', coreData);
-	
-	      // Short-circuit if user's callback killed it.
-	      var shouldStart = _this.props.onStart(e, (0, _positionFns.createDraggableData)(_this, coreData));
-	      // Kills start event on core as well, so move handlers are never bound.
-	      if (shouldStart === false) return false;
-	
-	      _this.setState({ dragging: true, dragged: true });
-	    };
-	
-	    _this.onDrag = function (e, coreData) {
-	      if (!_this.state.dragging) return false;
-	      (0, _log2.default)('Draggable: onDrag: %j', coreData);
-	
-	      var uiData = (0, _positionFns.createDraggableData)(_this, coreData);
-	
-	      var newState /*: $Shape<DraggableState>*/ = {
-	        x: uiData.x,
-	        y: uiData.y
-	      };
-	
-	      // Keep within bounds.
-	      if (_this.props.bounds) {
-	        // Save original x and y.
-	        var _x = newState.x,
-	            _y = newState.y;
-	
-	        // Add slack to the values used to calculate bound position. This will ensure that if
-	        // we start removing slack, the element won't react to it right away until it's been
-	        // completely removed.
-	
-	        newState.x += _this.state.slackX;
-	        newState.y += _this.state.slackY;
-	
-	        // Get bound position. This will ceil/floor the x and y within the boundaries.
-	        // $FlowBug
-	
-	        // Recalculate slack by noting how much was shaved by the boundPosition handler.
-	        var _getBoundPosition = (0, _positionFns.getBoundPosition)(_this, newState.x, newState.y);
-	
-	        var _getBoundPosition2 = _slicedToArray(_getBoundPosition, 2);
-	
-	        newState.x = _getBoundPosition2[0];
-	        newState.y = _getBoundPosition2[1];
-	        newState.slackX = _this.state.slackX + (_x - newState.x);
-	        newState.slackY = _this.state.slackY + (_y - newState.y);
-	
-	        // Update the event we fire to reflect what really happened after bounds took effect.
-	        uiData.x = _x;
-	        uiData.y = _y;
-	        uiData.deltaX = newState.x - _this.state.x;
-	        uiData.deltaY = newState.y - _this.state.y;
-	      }
-	
-	      // Short-circuit if user's callback killed it.
-	      var shouldUpdate = _this.props.onDrag(e, uiData);
-	      if (shouldUpdate === false) return false;
-	
-	      _this.setState(newState);
-	    };
-	
-	    _this.onDragStop = function (e, coreData) {
-	      if (!_this.state.dragging) return false;
-	
-	      // Short-circuit if user's callback killed it.
-	      var shouldStop = _this.props.onStop(e, (0, _positionFns.createDraggableData)(_this, coreData));
-	      if (shouldStop === false) return false;
-	
-	      (0, _log2.default)('Draggable: onDragStop: %j', coreData);
-	
-	      var newState /*: $Shape<DraggableState>*/ = {
-	        dragging: false,
-	        slackX: 0,
-	        slackY: 0
-	      };
-	
-	      // If this is a controlled component, the result of this operation will be to
-	      // revert back to the old position. We expect a handler on `onDragStop`, at the least.
-	      var controlled = Boolean(_this.props.position);
-	      if (controlled) {
-	        var _this$props$position = _this.props.position,
-	            _x2 = _this$props$position.x,
-	            _y2 = _this$props$position.y;
-	
-	        newState.x = _x2;
-	        newState.y = _y2;
-	      }
-	
-	      _this.setState(newState);
-	    };
-	
-	    _this.state = {
-	      // Whether or not we are currently dragging.
-	      dragging: false,
-	
-	      // Whether or not we have been dragged before.
-	      dragged: false,
-	
-	      // Current transform x and y.
-	      x: props.position ? props.position.x : props.defaultPosition.x,
-	      y: props.position ? props.position.y : props.defaultPosition.y,
-	
-	      // Used for compensating for out-of-bounds drags
-	      slackX: 0, slackY: 0,
-	
-	      // Can only determine if SVG after mounting
-	      isElementSVG: false
-	    };
-	    return _this;
-	  }
-	
-	  _createClass(Draggable, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      if (this.props.position && !(this.props.onDrag || this.props.onStop)) {
-	        // eslint-disable-next-line
-	        console.warn('A `position` was applied to this <Draggable>, without drag handlers. This will make this ' + 'component effectively undraggable. Please attach `onDrag` or `onStop` handlers so you can adjust the ' + '`position` of this element.');
-	      }
-	    }
-	  }, {
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      // Check to see if the element passed is an instanceof SVGElement
-	      if (typeof SVGElement !== 'undefined' && _reactDom2.default.findDOMNode(this) instanceof SVGElement) {
-	        this.setState({ isElementSVG: true });
-	      }
-	    }
-	  }, {
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps /*: Object*/) {
-	      // Set x/y if position has changed
-	      if (nextProps.position && (!this.props.position || nextProps.position.x !== this.props.position.x || nextProps.position.y !== this.props.position.y)) {
-	        this.setState({ x: nextProps.position.x, y: nextProps.position.y });
-	      }
-	    }
-	  }, {
-	    key: 'componentWillUnmount',
-	    value: function componentWillUnmount() {
-	      this.setState({ dragging: false }); // prevents invariant if unmounted while dragging
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() /*: React.Element<any>*/ {
-	      var _classNames;
-	
-	      var style = {},
-	          svgTransform = null;
-	
-	      // If this is controlled, we don't want to move it - unless it's dragging.
-	      var controlled = Boolean(this.props.position);
-	      var draggable = !controlled || this.state.dragging;
-	
-	      var position = this.props.position || this.props.defaultPosition;
-	      var transformOpts = {
-	        // Set left if horizontal drag is enabled
-	        x: (0, _positionFns.canDragX)(this) && draggable ? this.state.x : position.x,
-	
-	        // Set top if vertical drag is enabled
-	        y: (0, _positionFns.canDragY)(this) && draggable ? this.state.y : position.y
-	      };
-	
-	      // If this element was SVG, we use the `transform` attribute.
-	      if (this.state.isElementSVG) {
-	        svgTransform = (0, _domFns.createSVGTransform)(transformOpts);
-	      } else {
-	        // Add a CSS transform to move the element around. This allows us to move the element around
-	        // without worrying about whether or not it is relatively or absolutely positioned.
-	        // If the item you are dragging already has a transform set, wrap it in a <span> so <Draggable>
-	        // has a clean slate.
-	        style = (0, _domFns.createCSSTransform)(transformOpts);
-	      }
-	
-	      var _props = this.props,
-	          defaultClassName = _props.defaultClassName,
-	          defaultClassNameDragging = _props.defaultClassNameDragging,
-	          defaultClassNameDragged = _props.defaultClassNameDragged;
-	
-	      // Mark with class while dragging
-	
-	      var className = (0, _classnames2.default)(this.props.children.props.className || '', defaultClassName, (_classNames = {}, _defineProperty(_classNames, defaultClassNameDragging, this.state.dragging), _defineProperty(_classNames, defaultClassNameDragged, this.state.dragged), _classNames));
-	
-	      // Reuse the child provided
-	      // This makes it flexible to use whatever element is wanted (div, ul, etc)
-	      return _react2.default.createElement(
-	        _DraggableCore2.default,
-	        _extends({}, this.props, { onStart: this.onDragStart, onDrag: this.onDrag, onStop: this.onDragStop }),
-	        _react2.default.cloneElement(_react2.default.Children.only(this.props.children), {
-	          className: className,
-	          style: _extends({}, this.props.children.props.style, style),
-	          transform: svgTransform
-	        })
-	      );
-	    }
-	  }]);
-	
-	  return Draggable;
-	}(_react2.default.Component);
-	
-	Draggable.displayName = 'Draggable';
-	Draggable.propTypes = _extends({}, _DraggableCore2.default.propTypes, {
-	
-	  /**
-	   * `axis` determines which axis the draggable can move.
-	   *
-	   *  Note that all callbacks will still return data as normal. This only
-	   *  controls flushing to the DOM.
-	   *
-	   * 'both' allows movement horizontally and vertically.
-	   * 'x' limits movement to horizontal axis.
-	   * 'y' limits movement to vertical axis.
-	   * 'none' limits all movement.
-	   *
-	   * Defaults to 'both'.
-	   */
-	  axis: _react.PropTypes.oneOf(['both', 'x', 'y', 'none']),
-	
-	  /**
-	   * `bounds` determines the range of movement available to the element.
-	   * Available values are:
-	   *
-	   * 'parent' restricts movement within the Draggable's parent node.
-	   *
-	   * Alternatively, pass an object with the following properties, all of which are optional:
-	   *
-	   * {left: LEFT_BOUND, right: RIGHT_BOUND, bottom: BOTTOM_BOUND, top: TOP_BOUND}
-	   *
-	   * All values are in px.
-	   *
-	   * Example:
-	   *
-	   * ```jsx
-	   *   let App = React.createClass({
-	   *       render: function () {
-	   *         return (
-	   *            <Draggable bounds={{right: 300, bottom: 300}}>
-	   *              <div>Content</div>
-	   *           </Draggable>
-	   *         );
-	   *       }
-	   *   });
-	   * ```
-	   */
-	  bounds: _react.PropTypes.oneOfType([_react.PropTypes.shape({
-	    left: _react.PropTypes.number,
-	    right: _react.PropTypes.number,
-	    top: _react.PropTypes.number,
-	    bottom: _react.PropTypes.number
-	  }), _react.PropTypes.string, _react.PropTypes.oneOf([false])]),
-	
-	  defaultClassName: _react.PropTypes.string,
-	  defaultClassNameDragging: _react.PropTypes.string,
-	  defaultClassNameDragged: _react.PropTypes.string,
-	
-	  /**
-	   * `defaultPosition` specifies the x and y that the dragged item should start at
-	   *
-	   * Example:
-	   *
-	   * ```jsx
-	   *      let App = React.createClass({
-	   *          render: function () {
-	   *              return (
-	   *                  <Draggable defaultPosition={{x: 25, y: 25}}>
-	   *                      <div>I start with transformX: 25px and transformY: 25px;</div>
-	   *                  </Draggable>
-	   *              );
-	   *          }
-	   *      });
-	   * ```
-	   */
-	  defaultPosition: _react.PropTypes.shape({
-	    x: _react.PropTypes.number,
-	    y: _react.PropTypes.number
-	  }),
-	
-	  /**
-	   * `position`, if present, defines the current position of the element.
-	   *
-	   *  This is similar to how form elements in React work - if no `position` is supplied, the component
-	   *  is uncontrolled.
-	   *
-	   * Example:
-	   *
-	   * ```jsx
-	   *      let App = React.createClass({
-	   *          render: function () {
-	   *              return (
-	   *                  <Draggable position={{x: 25, y: 25}}>
-	   *                      <div>I start with transformX: 25px and transformY: 25px;</div>
-	   *                  </Draggable>
-	   *              );
-	   *          }
-	   *      });
-	   * ```
-	   */
-	  position: _react.PropTypes.shape({
-	    x: _react.PropTypes.number,
-	    y: _react.PropTypes.number
-	  }),
-	
-	  /**
-	   * These properties should be defined on the child, not here.
-	   */
-	  className: _shims.dontSetMe,
-	  style: _shims.dontSetMe,
-	  transform: _shims.dontSetMe
-	});
-	Draggable.defaultProps = _extends({}, _DraggableCore2.default.defaultProps, {
-	  axis: 'both',
-	  bounds: false,
-	  defaultClassName: 'react-draggable',
-	  defaultClassNameDragging: 'react-draggable-dragging',
-	  defaultClassNameDragged: 'react-draggable-dragged',
-	  defaultPosition: { x: 0, y: 0 },
-	  position: null
-	});
-	exports.default = Draggable;
-
-/***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2016 Jed Watson.
-	  Licensed under the MIT License (MIT), see
-	  http://jedwatson.github.io/classnames
-	*/
-	/* global define */
-	
-	(function () {
-		'use strict';
-	
-		var hasOwn = {}.hasOwnProperty;
-	
-		function classNames () {
-			var classes = [];
-	
-			for (var i = 0; i < arguments.length; i++) {
-				var arg = arguments[i];
-				if (!arg) continue;
-	
-				var argType = typeof arg;
-	
-				if (argType === 'string' || argType === 'number') {
-					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
-				} else if (argType === 'object') {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				}
-			}
-	
-			return classes.join(' ');
-		}
-	
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = classNames;
-		} else if (true) {
-			// register as 'classnames', consistent with npm package name
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return classNames;
-			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else {
-			window.classNames = classNames;
-		}
-	}());
-
-
-/***/ },
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	exports.matchesSelector = matchesSelector;
-	exports.matchesSelectorAndParentsTo = matchesSelectorAndParentsTo;
-	exports.addEvent = addEvent;
-	exports.removeEvent = removeEvent;
-	exports.outerHeight = outerHeight;
-	exports.outerWidth = outerWidth;
-	exports.innerHeight = innerHeight;
-	exports.innerWidth = innerWidth;
-	exports.offsetXYFromParent = offsetXYFromParent;
-	exports.createCSSTransform = createCSSTransform;
-	exports.createSVGTransform = createSVGTransform;
-	exports.getTouch = getTouch;
-	exports.getTouchIdentifier = getTouchIdentifier;
-	exports.addUserSelectStyles = addUserSelectStyles;
-	exports.removeUserSelectStyles = removeUserSelectStyles;
-	exports.styleHacks = styleHacks;
-	
-	var _shims = __webpack_require__(6);
-	
-	var _getPrefix = __webpack_require__(7);
-	
-	var _getPrefix2 = _interopRequireDefault(_getPrefix);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	
-	/*:: import type {ControlPosition} from './types';*/
-	
-	
-	var matchesSelectorFunc = '';
-	function matchesSelector(el /*: Node*/, selector /*: string*/) /*: boolean*/ {
-	  if (!matchesSelectorFunc) {
-	    matchesSelectorFunc = (0, _shims.findInArray)(['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'], function (method) {
-	      // $FlowIgnore: Doesn't think elements are indexable
-	      return (0, _shims.isFunction)(el[method]);
-	    });
-	  }
-	
-	  // $FlowIgnore: Doesn't think elements are indexable
-	  return el[matchesSelectorFunc].call(el, selector);
-	}
-	
-	// Works up the tree to the draggable itself attempting to match selector.
-	function matchesSelectorAndParentsTo(el /*: Node*/, selector /*: string*/, baseNode /*: Node*/) /*: boolean*/ {
-	  var node = el;
-	  do {
-	    if (matchesSelector(node, selector)) return true;
-	    if (node === baseNode) return false;
-	    node = node.parentNode;
-	  } while (node);
-	
-	  return false;
-	}
-	
-	function addEvent(el /*: ?Node*/, event /*: string*/, handler /*: Function*/) /*: void*/ {
-	  if (!el) {
-	    return;
-	  }
-	  if (el.attachEvent) {
-	    el.attachEvent('on' + event, handler);
-	  } else if (el.addEventListener) {
-	    el.addEventListener(event, handler, true);
-	  } else {
-	    // $FlowIgnore: Doesn't think elements are indexable
-	    el['on' + event] = handler;
-	  }
-	}
-	
-	function removeEvent(el /*: ?Node*/, event /*: string*/, handler /*: Function*/) /*: void*/ {
-	  if (!el) {
-	    return;
-	  }
-	  if (el.detachEvent) {
-	    el.detachEvent('on' + event, handler);
-	  } else if (el.removeEventListener) {
-	    el.removeEventListener(event, handler, true);
-	  } else {
-	    // $FlowIgnore: Doesn't think elements are indexable
-	    el['on' + event] = null;
-	  }
-	}
-	
-	function outerHeight(node /*: HTMLElement*/) /*: number*/ {
-	  // This is deliberately excluding margin for our calculations, since we are using
-	  // offsetTop which is including margin. See getBoundPosition
-	  var height = node.clientHeight;
-	  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-	  height += (0, _shims.int)(computedStyle.borderTopWidth);
-	  height += (0, _shims.int)(computedStyle.borderBottomWidth);
-	  return height;
-	}
-	
-	function outerWidth(node /*: HTMLElement*/) /*: number*/ {
-	  // This is deliberately excluding margin for our calculations, since we are using
-	  // offsetLeft which is including margin. See getBoundPosition
-	  var width = node.clientWidth;
-	  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-	  width += (0, _shims.int)(computedStyle.borderLeftWidth);
-	  width += (0, _shims.int)(computedStyle.borderRightWidth);
-	  return width;
-	}
-	function innerHeight(node /*: HTMLElement*/) /*: number*/ {
-	  var height = node.clientHeight;
-	  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-	  height -= (0, _shims.int)(computedStyle.paddingTop);
-	  height -= (0, _shims.int)(computedStyle.paddingBottom);
-	  return height;
-	}
-	
-	function innerWidth(node /*: HTMLElement*/) /*: number*/ {
-	  var width = node.clientWidth;
-	  var computedStyle = node.ownerDocument.defaultView.getComputedStyle(node);
-	  width -= (0, _shims.int)(computedStyle.paddingLeft);
-	  width -= (0, _shims.int)(computedStyle.paddingRight);
-	  return width;
-	}
-	
-	// Get from offsetParent
-	function offsetXYFromParent(evt /*: {clientX: number, clientY: number}*/, offsetParent /*: HTMLElement*/) /*: ControlPosition*/ {
-	  var isBody = offsetParent === offsetParent.ownerDocument.body;
-	  var offsetParentRect = isBody ? { left: 0, top: 0 } : offsetParent.getBoundingClientRect();
-	
-	  var x = evt.clientX + offsetParent.scrollLeft - offsetParentRect.left;
-	  var y = evt.clientY + offsetParent.scrollTop - offsetParentRect.top;
-	
-	  return { x: x, y: y };
-	}
-	
-	function createCSSTransform(_ref) /*: Object*/ {
-	  var x = _ref.x,
-	      y = _ref.y;
-	
-	  // Replace unitless items with px
-	  return _defineProperty({}, (0, _getPrefix.browserPrefixToKey)('transform', _getPrefix2.default), 'translate(' + x + 'px,' + y + 'px)');
-	}
-	
-	function createSVGTransform(_ref3) /*: string*/ {
-	  var x = _ref3.x,
-	      y = _ref3.y;
-	
-	  return 'translate(' + x + ',' + y + ')';
-	}
-	
-	function getTouch(e /*: MouseTouchEvent*/, identifier /*: number*/) /*: ?{clientX: number, clientY: number}*/ {
-	  return e.targetTouches && (0, _shims.findInArray)(e.targetTouches, function (t) {
-	    return identifier === t.identifier;
-	  }) || e.changedTouches && (0, _shims.findInArray)(e.changedTouches, function (t) {
-	    return identifier === t.identifier;
-	  });
-	}
-	
-	function getTouchIdentifier(e /*: MouseTouchEvent*/) /*: ?number*/ {
-	  if (e.targetTouches && e.targetTouches[0]) return e.targetTouches[0].identifier;
-	  if (e.changedTouches && e.changedTouches[0]) return e.changedTouches[0].identifier;
-	}
-	
-	// User-select Hacks:
-	//
-	// Useful for preventing blue highlights all over everything when dragging.
-	var userSelectPrefix = (0, _getPrefix.getPrefix)('user-select');
-	var userSelect = (0, _getPrefix.browserPrefixToStyle)('user-select', userSelectPrefix);
-	var userSelectStyle = ';' + userSelect + ': none;';
-	var userSelectReplaceRegExp = new RegExp(';?' + userSelect + ': none;'); // leading ; not present on IE
-	
-	// Note we're passing `document` b/c we could be iframed
-	function addUserSelectStyles(body /*: HTMLElement*/) {
-	  var style = body.getAttribute('style') || '';
-	  body.setAttribute('style', style + userSelectStyle);
-	}
-	
-	function removeUserSelectStyles(body /*: HTMLElement*/) {
-	  var style = body.getAttribute('style') || '';
-	  body.setAttribute('style', style.replace(userSelectReplaceRegExp, ''));
-	}
-	
-	function styleHacks() /*: Object*/ {
-	  var childStyle /*: Object*/ = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	
-	  // Workaround IE pointer events; see #51
-	  // https://github.com/mzabriskie/react-draggable/issues/51#issuecomment-103488278
-	  return _extends({
-	    touchAction: 'none'
-	  }, childStyle);
-	}
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.findInArray = findInArray;
-	exports.isFunction = isFunction;
-	exports.isNum = isNum;
-	exports.int = int;
-	exports.dontSetMe = dontSetMe;
-	
-	// @credits https://gist.github.com/rogozhnikoff/a43cfed27c41e4e68cdc
-	function findInArray(array /*: Array<any> | TouchList*/, callback /*: Function*/) /*: any*/ {
-	  for (var i = 0, length = array.length; i < length; i++) {
-	    if (callback.apply(callback, [array[i], i, array])) return array[i];
-	  }
-	}
-	
-	function isFunction(func /*: any*/) /*: boolean*/ {
-	  return typeof func === 'function' || Object.prototype.toString.call(func) === '[object Function]';
-	}
-	
-	function isNum(num /*: any*/) /*: boolean*/ {
-	  return typeof num === 'number' && !isNaN(num);
-	}
-	
-	function int(a /*: string*/) /*: number*/ {
-	  return parseInt(a, 10);
-	}
-	
-	function dontSetMe(props /*: Object*/, propName /*: string*/, componentName /*: string*/) {
-	  if (props[propName]) {
-	    return new Error('Invalid prop ' + propName + ' passed to ' + componentName + ' - do not set this, set it on the child.');
-	  }
-	}
-
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getPrefix = getPrefix;
-	exports.browserPrefixToKey = browserPrefixToKey;
-	exports.browserPrefixToStyle = browserPrefixToStyle;
-	var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
-	function getPrefix() /*: string*/ {
-	  var prop /*: string*/ = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'transform';
-	
-	  // Checking specifically for 'window.document' is for pseudo-browser server-side
-	  // environments that define 'window' as the global context.
-	  // E.g. React-rails (see https://github.com/reactjs/react-rails/pull/84)
-	  if (typeof window === 'undefined' || typeof window.document === 'undefined') return '';
-	
-	  var style = window.document.documentElement.style;
-	
-	  if (prop in style) return '';
-	
-	  for (var i = 0; i < prefixes.length; i++) {
-	    if (browserPrefixToKey(prop, prefixes[i]) in style) return prefixes[i];
-	  }
-	
-	  return '';
-	}
-	
-	function browserPrefixToKey(prop /*: string*/, prefix /*: string*/) /*: string*/ {
-	  return prefix ? '' + prefix + kebabToTitleCase(prop) : prop;
-	}
-	
-	function browserPrefixToStyle(prop /*: string*/, prefix /*: string*/) /*: string*/ {
-	  return prefix ? '-' + prefix.toLowerCase() + '-' + prop : prop;
-	}
-	
-	function kebabToTitleCase(str /*: string*/) /*: string*/ {
-	  var out = '';
-	  var shouldCapitalize = true;
-	  for (var i = 0; i < str.length; i++) {
-	    if (shouldCapitalize) {
-	      out += str[i].toUpperCase();
-	      shouldCapitalize = false;
-	    } else if (str[i] === '-') {
-	      shouldCapitalize = true;
-	    } else {
-	      out += str[i];
-	    }
-	  }
-	  return out;
-	}
-	
-	// Default export is the prefix itself, like 'Moz', 'Webkit', etc
-	// Note that you may have to re-test for certain things; for instance, Chrome 50
-	// can handle unprefixed `transform`, but not unprefixed `user-select`
-	exports.default = getPrefix();
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getBoundPosition = getBoundPosition;
-	exports.snapToGrid = snapToGrid;
-	exports.canDragX = canDragX;
-	exports.canDragY = canDragY;
-	exports.getControlPosition = getControlPosition;
-	exports.createCoreData = createCoreData;
-	exports.createDraggableData = createDraggableData;
-	
-	var _shims = __webpack_require__(6);
-	
-	var _reactDom = __webpack_require__(3);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _domFns = __webpack_require__(5);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	/*:: import type Draggable from '../Draggable';*/
-	/*:: import type {Bounds, ControlPosition, DraggableData} from './types';*/
-	/*:: import type DraggableCore from '../DraggableCore';*/
-	function getBoundPosition(draggable /*: Draggable*/, x /*: number*/, y /*: number*/) /*: [number, number]*/ {
-	  // If no bounds, short-circuit and move on
-	  if (!draggable.props.bounds) return [x, y];
-	
-	  // Clone new bounds
-	  var bounds = draggable.props.bounds;
-	
-	  bounds = typeof bounds === 'string' ? bounds : cloneBounds(bounds);
-	  var node = _reactDom2.default.findDOMNode(draggable);
-	
-	  if (typeof bounds === 'string') {
-	    var ownerDocument = node.ownerDocument;
-	
-	    var ownerWindow = ownerDocument.defaultView;
-	    var boundNode = void 0;
-	    if (bounds === 'parent') {
-	      boundNode = node.parentNode;
-	    } else {
-	      boundNode = ownerDocument.querySelector(bounds);
-	      if (!boundNode) throw new Error('Bounds selector "' + bounds + '" could not find an element.');
-	    }
-	    var nodeStyle = ownerWindow.getComputedStyle(node);
-	    var boundNodeStyle = ownerWindow.getComputedStyle(boundNode);
-	    // Compute bounds. This is a pain with padding and offsets but this gets it exactly right.
-	    bounds = {
-	      left: -node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingLeft) + (0, _shims.int)(nodeStyle.borderLeftWidth) + (0, _shims.int)(nodeStyle.marginLeft),
-	      top: -node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingTop) + (0, _shims.int)(nodeStyle.borderTopWidth) + (0, _shims.int)(nodeStyle.marginTop),
-	      right: (0, _domFns.innerWidth)(boundNode) - (0, _domFns.outerWidth)(node) - node.offsetLeft,
-	      bottom: (0, _domFns.innerHeight)(boundNode) - (0, _domFns.outerHeight)(node) - node.offsetTop
-	    };
-	  }
-	
-	  // Keep x and y below right and bottom limits...
-	  if ((0, _shims.isNum)(bounds.right)) x = Math.min(x, bounds.right);
-	  if ((0, _shims.isNum)(bounds.bottom)) y = Math.min(y, bounds.bottom);
-	
-	  // But above left and top limits.
-	  if ((0, _shims.isNum)(bounds.left)) x = Math.max(x, bounds.left);
-	  if ((0, _shims.isNum)(bounds.top)) y = Math.max(y, bounds.top);
-	
-	  return [x, y];
-	}
-	
-	function snapToGrid(grid /*: [number, number]*/, pendingX /*: number*/, pendingY /*: number*/) /*: [number, number]*/ {
-	  var x = Math.round(pendingX / grid[0]) * grid[0];
-	  var y = Math.round(pendingY / grid[1]) * grid[1];
-	  return [x, y];
-	}
-	
-	function canDragX(draggable /*: Draggable*/) /*: boolean*/ {
-	  return draggable.props.axis === 'both' || draggable.props.axis === 'x';
-	}
-	
-	function canDragY(draggable /*: Draggable*/) /*: boolean*/ {
-	  return draggable.props.axis === 'both' || draggable.props.axis === 'y';
-	}
-	
-	// Get {x, y} positions from event.
-	function getControlPosition(e /*: MouseTouchEvent*/, touchIdentifier /*: ?number*/, draggableCore /*: DraggableCore*/) /*: ?ControlPosition*/ {
-	  var touchObj = typeof touchIdentifier === 'number' ? (0, _domFns.getTouch)(e, touchIdentifier) : null;
-	  if (typeof touchIdentifier === 'number' && !touchObj) return null; // not the right touch
-	  var node = _reactDom2.default.findDOMNode(draggableCore);
-	  // User can provide an offsetParent if desired.
-	  var offsetParent = draggableCore.props.offsetParent || node.offsetParent || node.ownerDocument.body;
-	  return (0, _domFns.offsetXYFromParent)(touchObj || e, offsetParent);
-	}
-	
-	// Create an data object exposed by <DraggableCore>'s events
-	function createCoreData(draggable /*: DraggableCore*/, x /*: number*/, y /*: number*/) /*: DraggableData*/ {
-	  var state = draggable.state;
-	  var isStart = !(0, _shims.isNum)(state.lastX);
-	
-	  if (isStart) {
-	    // If this is our first move, use the x and y as last coords.
-	    return {
-	      node: _reactDom2.default.findDOMNode(draggable),
-	      deltaX: 0, deltaY: 0,
-	      lastX: x, lastY: y,
-	      x: x, y: y
-	    };
-	  } else {
-	    // Otherwise calculate proper values.
-	    return {
-	      node: _reactDom2.default.findDOMNode(draggable),
-	      deltaX: x - state.lastX, deltaY: y - state.lastY,
-	      lastX: state.lastX, lastY: state.lastY,
-	      x: x, y: y
-	    };
-	  }
-	}
-	
-	// Create an data exposed by <Draggable>'s events
-	function createDraggableData(draggable /*: Draggable*/, coreData /*: DraggableData*/) /*: DraggableData*/ {
-	  return {
-	    node: coreData.node,
-	    x: draggable.state.x + coreData.deltaX,
-	    y: draggable.state.y + coreData.deltaY,
-	    deltaX: coreData.deltaX,
-	    deltaY: coreData.deltaY,
-	    lastX: draggable.state.x,
-	    lastY: draggable.state.y
-	  };
-	}
-	
-	// A lot faster than stringify/parse
-	function cloneBounds(bounds /*: Bounds*/) /*: Bounds*/ {
-	  return {
-	    left: bounds.left,
-	    top: bounds.top,
-	    right: bounds.right,
-	    bottom: bounds.bottom
-	  };
-	}
-
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(3);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _domFns = __webpack_require__(5);
-	
-	var _positionFns = __webpack_require__(8);
-	
-	var _shims = __webpack_require__(6);
-	
-	var _log = __webpack_require__(11);
-	
-	var _log2 = _interopRequireDefault(_log);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// Simple abstraction for dragging events names.
-	/*:: import type {EventHandler} from './utils/types';*/
-	var eventsFor = {
-	  touch: {
-	    start: 'touchstart',
-	    move: 'touchmove',
-	    stop: 'touchend'
-	  },
-	  mouse: {
-	    start: 'mousedown',
-	    move: 'mousemove',
-	    stop: 'mouseup'
-	  }
-	};
-	
-	// Default to mouse events.
-	var dragEventFor = eventsFor.mouse;
-	
-	//
-	// Define <DraggableCore>.
-	//
-	// <DraggableCore> is for advanced usage of <Draggable>. It maintains minimal internal state so it can
-	// work well with libraries that require more control over the element.
-	//
-	
-	/*:: type CoreState = {
-	  dragging: boolean,
-	  lastX: number,
-	  lastY: number,
-	  touchIdentifier: ?number
-	};*/
-	
-	var DraggableCore = function (_React$Component) {
-	  _inherits(DraggableCore, _React$Component);
-	
-	  function DraggableCore() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    _classCallCheck(this, DraggableCore);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = DraggableCore.__proto__ || Object.getPrototypeOf(DraggableCore)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      dragging: false,
-	      // Used while dragging to determine deltas.
-	      lastX: NaN, lastY: NaN,
-	      touchIdentifier: null
-	    }, _this.handleDragStart = function (e) {
-	      // Make it possible to attach event handlers on top of this one.
-	      _this.props.onMouseDown(e);
-	
-	      // Only accept left-clicks.
-	      if (!_this.props.allowAnyClick && typeof e.button === 'number' && e.button !== 0) return false;
-	
-	      // Get nodes. Be sure to grab relative document (could be iframed)
-	      var domNode = _reactDom2.default.findDOMNode(_this);
-	      var ownerDocument = domNode.ownerDocument;
-	
-	      // Short circuit if handle or cancel prop was provided and selector doesn't match.
-	
-	      if (_this.props.disabled || !(e.target instanceof ownerDocument.defaultView.Node) || _this.props.handle && !(0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.handle, domNode) || _this.props.cancel && (0, _domFns.matchesSelectorAndParentsTo)(e.target, _this.props.cancel, domNode)) {
-	        return;
-	      }
-	
-	      // Set touch identifier in component state if this is a touch event. This allows us to
-	      // distinguish between individual touches on multitouch screens by identifying which
-	      // touchpoint was set to this element.
-	      var touchIdentifier = (0, _domFns.getTouchIdentifier)(e);
-	      _this.setState({ touchIdentifier: touchIdentifier });
-	
-	      // Get the current drag point from the event. This is used as the offset.
-	      var position = (0, _positionFns.getControlPosition)(e, touchIdentifier, _this);
-	      if (position == null) return; // not possible but satisfies flow
-	      var x = position.x,
-	          y = position.y;
-	
-	      // Create an event object with all the data parents need to make a decision here.
-	
-	      var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
-	
-	      (0, _log2.default)('DraggableCore: handleDragStart: %j', coreEvent);
-	
-	      // Call event handler. If it returns explicit false, cancel.
-	      (0, _log2.default)('calling', _this.props.onStart);
-	      var shouldUpdate = _this.props.onStart(e, coreEvent);
-	      if (shouldUpdate === false) return;
-	
-	      // Add a style to the body to disable user-select. This prevents text from
-	      // being selected all over the page.
-	      if (_this.props.enableUserSelectHack) (0, _domFns.addUserSelectStyles)(ownerDocument.body);
-	
-	      // Initiate dragging. Set the current x and y as offsets
-	      // so we know how much we've moved during the drag. This allows us
-	      // to drag elements around even if they have been moved, without issue.
-	      _this.setState({
-	        dragging: true,
-	
-	        lastX: x,
-	        lastY: y
-	      });
-	
-	      // Add events to the document directly so we catch when the user's mouse/touch moves outside of
-	      // this element. We use different events depending on whether or not we have detected that this
-	      // is a touch-capable device.
-	      (0, _domFns.addEvent)(ownerDocument, dragEventFor.move, _this.handleDrag);
-	      (0, _domFns.addEvent)(ownerDocument, dragEventFor.stop, _this.handleDragStop);
-	    }, _this.handleDrag = function (e) {
-	
-	      // Prevent scrolling on mobile devices, like ipad/iphone.
-	      if (e.type === 'touchmove') e.preventDefault();
-	
-	      // Get the current drag point from the event. This is used as the offset.
-	      var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _this);
-	      if (position == null) return;
-	      var x = position.x,
-	          y = position.y;
-	
-	      // Snap to grid if prop has been provided
-	
-	      if (x !== x) debugger;
-	
-	      if (Array.isArray(_this.props.grid)) {
-	        var deltaX = x - _this.state.lastX,
-	            deltaY = y - _this.state.lastY;
-	
-	        var _snapToGrid = (0, _positionFns.snapToGrid)(_this.props.grid, deltaX, deltaY);
-	
-	        var _snapToGrid2 = _slicedToArray(_snapToGrid, 2);
-	
-	        deltaX = _snapToGrid2[0];
-	        deltaY = _snapToGrid2[1];
-	
-	        if (!deltaX && !deltaY) return; // skip useless drag
-	        x = _this.state.lastX + deltaX, y = _this.state.lastY + deltaY;
-	      }
-	
-	      var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
-	
-	      (0, _log2.default)('DraggableCore: handleDrag: %j', coreEvent);
-	
-	      // Call event handler. If it returns explicit false, trigger end.
-	      var shouldUpdate = _this.props.onDrag(e, coreEvent);
-	      if (shouldUpdate === false) {
-	        try {
-	          // $FlowIgnore
-	          _this.handleDragStop(new MouseEvent('mouseup'));
-	        } catch (err) {
-	          // Old browsers
-	          var event = ((document.createEvent('MouseEvents') /*: any*/) /*: MouseTouchEvent*/);
-	          // I see why this insanity was deprecated
-	          // $FlowIgnore
-	          event.initMouseEvent('mouseup', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-	          _this.handleDragStop(event);
-	        }
-	        return;
-	      }
-	
-	      _this.setState({
-	        lastX: x,
-	        lastY: y
-	      });
-	    }, _this.handleDragStop = function (e) {
-	      if (!_this.state.dragging) return;
-	
-	      var position = (0, _positionFns.getControlPosition)(e, _this.state.touchIdentifier, _this);
-	      if (position == null) return;
-	      var x = position.x,
-	          y = position.y;
-	
-	      var coreEvent = (0, _positionFns.createCoreData)(_this, x, y);
-	
-	      var _ReactDOM$findDOMNode = _reactDom2.default.findDOMNode(_this),
-	          ownerDocument = _ReactDOM$findDOMNode.ownerDocument;
-	
-	      // Remove user-select hack
-	
-	
-	      if (_this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(ownerDocument.body);
-	
-	      (0, _log2.default)('DraggableCore: handleDragStop: %j', coreEvent);
-	
-	      // Reset the el.
-	      _this.setState({
-	        dragging: false,
-	        lastX: NaN,
-	        lastY: NaN
-	      });
-	
-	      // Call event handler
-	      _this.props.onStop(e, coreEvent);
-	
-	      // Remove event handlers
-	      (0, _log2.default)('DraggableCore: Removing handlers');
-	      (0, _domFns.removeEvent)(ownerDocument, dragEventFor.move, _this.handleDrag);
-	      (0, _domFns.removeEvent)(ownerDocument, dragEventFor.stop, _this.handleDragStop);
-	    }, _this.onMouseDown = function (e) {
-	      dragEventFor = eventsFor.mouse; // on touchscreen laptops we could switch back to mouse
-	
-	      return _this.handleDragStart(e);
-	    }, _this.onMouseUp = function (e) {
-	      dragEventFor = eventsFor.mouse;
-	
-	      return _this.handleDragStop(e);
-	    }, _this.onTouchStart = function (e) {
-	      // We're on a touch device now, so change the event handlers
-	      dragEventFor = eventsFor.touch;
-	
-	      return _this.handleDragStart(e);
-	    }, _this.onTouchEnd = function (e) {
-	      // We're on a touch device now, so change the event handlers
-	      dragEventFor = eventsFor.touch;
-	
-	      return _this.handleDragStop(e);
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-	
-	  _createClass(DraggableCore, [{
-	    key: 'componentWillUnmount',
-	    value: function componentWillUnmount() {
-	      // Remove any leftover event handlers. Remove both touch and mouse handlers in case
-	      // some browser quirk caused a touch event to fire during a mouse move, or vice versa.
-	      var _ReactDOM$findDOMNode2 = _reactDom2.default.findDOMNode(this),
-	          ownerDocument = _ReactDOM$findDOMNode2.ownerDocument;
-	
-	      (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.move, this.handleDrag);
-	      (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.move, this.handleDrag);
-	      (0, _domFns.removeEvent)(ownerDocument, eventsFor.mouse.stop, this.handleDragStop);
-	      (0, _domFns.removeEvent)(ownerDocument, eventsFor.touch.stop, this.handleDragStop);
-	      if (this.props.enableUserSelectHack) (0, _domFns.removeUserSelectStyles)(ownerDocument.body);
-	    }
-	
-	    // Same as onMouseDown (start drag), but now consider this a touch device.
-	
-	  }, {
-	    key: 'render',
-	    value: function render() /*: React.Element<any>*/ {
-	      // Reuse the child provided
-	      // This makes it flexible to use whatever element is wanted (div, ul, etc)
-	      return _react2.default.cloneElement(_react2.default.Children.only(this.props.children), {
-	        style: (0, _domFns.styleHacks)(this.props.children.props.style),
-	
-	        // Note: mouseMove handler is attached to document so it will still function
-	        // when the user drags quickly and leaves the bounds of the element.
-	        onMouseDown: this.onMouseDown,
-	        onTouchStart: this.onTouchStart,
-	        onMouseUp: this.onMouseUp,
-	        onTouchEnd: this.onTouchEnd
-	      });
-	    }
-	  }]);
-	
-	  return DraggableCore;
-	}(_react2.default.Component);
-	
-	DraggableCore.displayName = 'DraggableCore';
-	DraggableCore.propTypes = {
-	  /**
-	   * `allowAnyClick` allows dragging using any mouse button.
-	   * By default, we only accept the left button.
-	   *
-	   * Defaults to `false`.
-	   */
-	  allowAnyClick: _react.PropTypes.bool,
-	
-	  /**
-	   * `disabled`, if true, stops the <Draggable> from dragging. All handlers,
-	   * with the exception of `onMouseDown`, will not fire.
-	   */
-	  disabled: _react.PropTypes.bool,
-	
-	  /**
-	   * By default, we add 'user-select:none' attributes to the document body
-	   * to prevent ugly text selection during drag. If this is causing problems
-	   * for your app, set this to `false`.
-	   */
-	  enableUserSelectHack: _react.PropTypes.bool,
-	
-	  /**
-	   * `offsetParent`, if set, uses the passed DOM node to compute drag offsets
-	   * instead of using the parent node.
-	   */
-	  offsetParent: function offsetParent(props, propName) {
-	    if (process.browser && props[propName] && props[propName].nodeType !== 1) {
-	      throw new Error('Draggable\'s offsetParent must be a DOM Node.');
-	    }
-	  },
-	
-	  /**
-	   * `grid` specifies the x and y that dragging should snap to.
-	   */
-	  grid: _react.PropTypes.arrayOf(_react.PropTypes.number),
-	
-	  /**
-	   * `handle` specifies a selector to be used as the handle that initiates drag.
-	   *
-	   * Example:
-	   *
-	   * ```jsx
-	   *   let App = React.createClass({
-	   *       render: function () {
-	   *         return (
-	   *            <Draggable handle=".handle">
-	   *              <div>
-	   *                  <div className="handle">Click me to drag</div>
-	   *                  <div>This is some other content</div>
-	   *              </div>
-	   *           </Draggable>
-	   *         );
-	   *       }
-	   *   });
-	   * ```
-	   */
-	  handle: _react.PropTypes.string,
-	
-	  /**
-	   * `cancel` specifies a selector to be used to prevent drag initialization.
-	   *
-	   * Example:
-	   *
-	   * ```jsx
-	   *   let App = React.createClass({
-	   *       render: function () {
-	   *           return(
-	   *               <Draggable cancel=".cancel">
-	   *                   <div>
-	   *                     <div className="cancel">You can't drag from here</div>
-	   *                     <div>Dragging here works fine</div>
-	   *                   </div>
-	   *               </Draggable>
-	   *           );
-	   *       }
-	   *   });
-	   * ```
-	   */
-	  cancel: _react.PropTypes.string,
-	
-	  /**
-	   * Called when dragging starts.
-	   * If this function returns the boolean false, dragging will be canceled.
-	   */
-	  onStart: _react.PropTypes.func,
-	
-	  /**
-	   * Called while dragging.
-	   * If this function returns the boolean false, dragging will be canceled.
-	   */
-	  onDrag: _react.PropTypes.func,
-	
-	  /**
-	   * Called when dragging stops.
-	   * If this function returns the boolean false, the drag will remain active.
-	   */
-	  onStop: _react.PropTypes.func,
-	
-	  /**
-	   * A workaround option which can be passed if onMouseDown needs to be accessed,
-	   * since it'll always be blocked (as there is internal use of onMouseDown)
-	   */
-	  onMouseDown: _react.PropTypes.func,
-	
-	  /**
-	   * These properties should be defined on the child, not here.
-	   */
-	  className: _shims.dontSetMe,
-	  style: _shims.dontSetMe,
-	  transform: _shims.dontSetMe
-	};
-	DraggableCore.defaultProps = {
-	  allowAnyClick: false, // by default only accept left click
-	  cancel: null,
-	  disabled: false,
-	  enableUserSelectHack: true,
-	  offsetParent: null,
-	  handle: null,
-	  grid: null,
-	  transform: null,
-	  onStart: function onStart() {},
-	  onDrag: function onDrag() {},
-	  onStop: function onStop() {},
-	  onMouseDown: function onMouseDown() {}
-	};
-	exports.default = DraggableCore;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	// shim for using process in browser
-	var process = module.exports = {};
-	
-	// cached from whatever global is present so that test runners that stub it
-	// don't break things.  But we need to wrap it in a try catch in case it is
-	// wrapped in strict mode code which doesn't define any globals.  It's inside a
-	// function because try/catches deoptimize in certain engines.
-	
-	var cachedSetTimeout;
-	var cachedClearTimeout;
-	
-	function defaultSetTimout() {
-	    throw new Error('setTimeout has not been defined');
-	}
-	function defaultClearTimeout () {
-	    throw new Error('clearTimeout has not been defined');
-	}
-	(function () {
-	    try {
-	        if (typeof setTimeout === 'function') {
-	            cachedSetTimeout = setTimeout;
-	        } else {
-	            cachedSetTimeout = defaultSetTimout;
-	        }
-	    } catch (e) {
-	        cachedSetTimeout = defaultSetTimout;
-	    }
-	    try {
-	        if (typeof clearTimeout === 'function') {
-	            cachedClearTimeout = clearTimeout;
-	        } else {
-	            cachedClearTimeout = defaultClearTimeout;
-	        }
-	    } catch (e) {
-	        cachedClearTimeout = defaultClearTimeout;
-	    }
-	} ())
-	function runTimeout(fun) {
-	    if (cachedSetTimeout === setTimeout) {
-	        //normal enviroments in sane situations
-	        return setTimeout(fun, 0);
-	    }
-	    // if setTimeout wasn't available but was latter defined
-	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-	        cachedSetTimeout = setTimeout;
-	        return setTimeout(fun, 0);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedSetTimeout(fun, 0);
-	    } catch(e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-	            return cachedSetTimeout.call(null, fun, 0);
-	        } catch(e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-	            return cachedSetTimeout.call(this, fun, 0);
-	        }
-	    }
-	
-	
-	}
-	function runClearTimeout(marker) {
-	    if (cachedClearTimeout === clearTimeout) {
-	        //normal enviroments in sane situations
-	        return clearTimeout(marker);
-	    }
-	    // if clearTimeout wasn't available but was latter defined
-	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-	        cachedClearTimeout = clearTimeout;
-	        return clearTimeout(marker);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedClearTimeout(marker);
-	    } catch (e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-	            return cachedClearTimeout.call(null, marker);
-	        } catch (e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-	            return cachedClearTimeout.call(this, marker);
-	        }
-	    }
-	
-	
-	
-	}
-	var queue = [];
-	var draining = false;
-	var currentQueue;
-	var queueIndex = -1;
-	
-	function cleanUpNextTick() {
-	    if (!draining || !currentQueue) {
-	        return;
-	    }
-	    draining = false;
-	    if (currentQueue.length) {
-	        queue = currentQueue.concat(queue);
-	    } else {
-	        queueIndex = -1;
-	    }
-	    if (queue.length) {
-	        drainQueue();
-	    }
-	}
-	
-	function drainQueue() {
-	    if (draining) {
-	        return;
-	    }
-	    var timeout = runTimeout(cleanUpNextTick);
-	    draining = true;
-	
-	    var len = queue.length;
-	    while(len) {
-	        currentQueue = queue;
-	        queue = [];
-	        while (++queueIndex < len) {
-	            if (currentQueue) {
-	                currentQueue[queueIndex].run();
-	            }
-	        }
-	        queueIndex = -1;
-	        len = queue.length;
-	    }
-	    currentQueue = null;
-	    draining = false;
-	    runClearTimeout(timeout);
-	}
-	
-	process.nextTick = function (fun) {
-	    var args = new Array(arguments.length - 1);
-	    if (arguments.length > 1) {
-	        for (var i = 1; i < arguments.length; i++) {
-	            args[i - 1] = arguments[i];
-	        }
-	    }
-	    queue.push(new Item(fun, args));
-	    if (queue.length === 1 && !draining) {
-	        runTimeout(drainQueue);
-	    }
-	};
-	
-	// v8 likes predictible objects
-	function Item(fun, array) {
-	    this.fun = fun;
-	    this.array = array;
-	}
-	Item.prototype.run = function () {
-	    this.fun.apply(null, this.array);
-	};
-	process.title = 'browser';
-	process.browser = true;
-	process.env = {};
-	process.argv = [];
-	process.version = ''; // empty string to avoid regexp issues
-	process.versions = {};
-	
-	function noop() {}
-	
-	process.on = noop;
-	process.addListener = noop;
-	process.once = noop;
-	process.off = noop;
-	process.removeListener = noop;
-	process.removeAllListeners = noop;
-	process.emit = noop;
-	
-	process.binding = function (name) {
-	    throw new Error('process.binding is not supported');
-	};
-	
-	process.cwd = function () { return '/' };
-	process.chdir = function (dir) {
-	    throw new Error('process.chdir is not supported');
-	};
-	process.umask = function() { return 0; };
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = log;
-	
-	/*eslint no-console:0*/
-	function log() {
-	  var _console;
-	
-	  if ((undefined)) (_console = console).log.apply(_console, arguments);
-	}
-
-/***/ }
-/******/ ])
-});
-;
-//# sourceMappingURL=react-draggable.js.map
-
-/***/ },
-/* 132 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getIn = __webpack_require__(178);
-var updateIn = __webpack_require__(179);
-
-/**
- * Extracted the linkedState implementation to its own function (instead of a mixin)
- *
- * @params {ReactElement} ctx The component's `this`
- * @params {str} path State key to be updated
- * @return {object}
- */
-module.exports = function linkState(ctx, path) {
-  return {
-    value: getIn(ctx.state, path),
-
-    requestChange: function setPartialState(value) {
-      ctx.setState(updateIn(
-        ctx.state,
-        path,
-        value
-      ));
-    }
-  };
-}
-
-
-/***/ },
-/* 133 */
-/***/ function(module, exports, __webpack_require__) {
-
-var hashClear = __webpack_require__(147),
-    hashDelete = __webpack_require__(148),
-    hashGet = __webpack_require__(149),
-    hashHas = __webpack_require__(150),
-    hashSet = __webpack_require__(151);
-
-/**
- * Creates a hash object.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function Hash(entries) {
-  var index = -1,
-      length = entries == null ? 0 : entries.length;
-
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `Hash`.
-Hash.prototype.clear = hashClear;
-Hash.prototype['delete'] = hashDelete;
-Hash.prototype.get = hashGet;
-Hash.prototype.has = hashHas;
-Hash.prototype.set = hashSet;
-
-module.exports = Hash;
-
-
-/***/ },
-/* 134 */
-/***/ function(module, exports, __webpack_require__) {
-
-var listCacheClear = __webpack_require__(155),
-    listCacheDelete = __webpack_require__(156),
-    listCacheGet = __webpack_require__(157),
-    listCacheHas = __webpack_require__(158),
-    listCacheSet = __webpack_require__(159);
-
-/**
- * Creates an list cache object.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function ListCache(entries) {
-  var index = -1,
-      length = entries == null ? 0 : entries.length;
-
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `ListCache`.
-ListCache.prototype.clear = listCacheClear;
-ListCache.prototype['delete'] = listCacheDelete;
-ListCache.prototype.get = listCacheGet;
-ListCache.prototype.has = listCacheHas;
-ListCache.prototype.set = listCacheSet;
-
-module.exports = ListCache;
-
-
-/***/ },
-/* 135 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getNative = __webpack_require__(13),
-    root = __webpack_require__(9);
-
-/* Built-in method references that are verified to be native. */
-var Map = getNative(root, 'Map');
-
-module.exports = Map;
-
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-var mapCacheClear = __webpack_require__(160),
-    mapCacheDelete = __webpack_require__(161),
-    mapCacheGet = __webpack_require__(162),
-    mapCacheHas = __webpack_require__(163),
-    mapCacheSet = __webpack_require__(164);
-
-/**
- * Creates a map cache object to store key-value pairs.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function MapCache(entries) {
-  var index = -1,
-      length = entries == null ? 0 : entries.length;
-
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `MapCache`.
-MapCache.prototype.clear = mapCacheClear;
-MapCache.prototype['delete'] = mapCacheDelete;
-MapCache.prototype.get = mapCacheGet;
-MapCache.prototype.has = mapCacheHas;
-MapCache.prototype.set = mapCacheSet;
-
-module.exports = MapCache;
-
-
-/***/ },
-/* 137 */
-/***/ function(module, exports) {
-
-/**
- * A specialized version of `_.map` for arrays without support for iteratee
- * shorthands.
- *
- * @private
- * @param {Array} [array] The array to iterate over.
- * @param {Function} iteratee The function invoked per iteration.
- * @returns {Array} Returns the new mapped array.
- */
-function arrayMap(array, iteratee) {
-  var index = -1,
-      length = array == null ? 0 : array.length,
-      result = Array(length);
-
-  while (++index < length) {
-    result[index] = iteratee(array[index], index, array);
-  }
-  return result;
-}
-
-module.exports = arrayMap;
-
-
-/***/ },
 /* 138 */
-/***/ function(module, exports) {
-
-/**
- * The base implementation of `_.clamp` which doesn't coerce arguments.
- *
- * @private
- * @param {number} number The number to clamp.
- * @param {number} [lower] The lower bound.
- * @param {number} upper The upper bound.
- * @returns {number} Returns the clamped number.
- */
-function baseClamp(number, lower, upper) {
-  if (number === number) {
-    if (upper !== undefined) {
-      number = number <= upper ? number : upper;
-    }
-    if (lower !== undefined) {
-      number = number >= lower ? number : lower;
-    }
-  }
-  return number;
-}
-
-module.exports = baseClamp;
-
-
-/***/ },
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-var castPath = __webpack_require__(142),
-    toKey = __webpack_require__(168);
-
-/**
- * The base implementation of `_.get` without support for default values.
- *
- * @private
- * @param {Object} object The object to query.
- * @param {Array|string} path The path of the property to get.
- * @returns {*} Returns the resolved value.
- */
-function baseGet(object, path) {
-  path = castPath(path, object);
-
-  var index = 0,
-      length = path.length;
-
-  while (object != null && index < length) {
-    object = object[toKey(path[index++])];
-  }
-  return (index && index == length) ? object : undefined;
-}
-
-module.exports = baseGet;
-
-
-/***/ },
-/* 140 */
-/***/ function(module, exports, __webpack_require__) {
-
-var isFunction = __webpack_require__(171),
-    isMasked = __webpack_require__(154),
-    isObject = __webpack_require__(11),
-    toSource = __webpack_require__(169);
-
-/**
- * Used to match `RegExp`
- * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
- */
-var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
-
-/** Used to detect host constructors (Safari). */
-var reIsHostCtor = /^\[object .+?Constructor\]$/;
-
-/** Used for built-in method references. */
-var funcProto = Function.prototype,
-    objectProto = Object.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString = funcProto.toString;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/** Used to detect if a method is native. */
-var reIsNative = RegExp('^' +
-  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
-  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
-);
-
-/**
- * The base implementation of `_.isNative` without bad shim checks.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a native function,
- *  else `false`.
- */
-function baseIsNative(value) {
-  if (!isObject(value) || isMasked(value)) {
-    return false;
-  }
-  var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
-  return pattern.test(toSource(value));
-}
-
-module.exports = baseIsNative;
-
-
-/***/ },
-/* 141 */
-/***/ function(module, exports, __webpack_require__) {
-
-var Symbol = __webpack_require__(8),
-    arrayMap = __webpack_require__(137),
-    isArray = __webpack_require__(10),
-    isSymbol = __webpack_require__(7);
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0;
-
-/** Used to convert symbols to primitives and strings. */
-var symbolProto = Symbol ? Symbol.prototype : undefined,
-    symbolToString = symbolProto ? symbolProto.toString : undefined;
-
-/**
- * The base implementation of `_.toString` which doesn't convert nullish
- * values to empty strings.
- *
- * @private
- * @param {*} value The value to process.
- * @returns {string} Returns the string.
- */
-function baseToString(value) {
-  // Exit early for strings to avoid a performance hit in some environments.
-  if (typeof value == 'string') {
-    return value;
-  }
-  if (isArray(value)) {
-    // Recursively convert values (susceptible to call stack limits).
-    return arrayMap(value, baseToString) + '';
-  }
-  if (isSymbol(value)) {
-    return symbolToString ? symbolToString.call(value) : '';
-  }
-  var result = (value + '');
-  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-}
-
-module.exports = baseToString;
-
-
-/***/ },
-/* 142 */
-/***/ function(module, exports, __webpack_require__) {
-
-var isArray = __webpack_require__(10),
-    isKey = __webpack_require__(152),
-    stringToPath = __webpack_require__(167),
-    toString = __webpack_require__(175);
-
-/**
- * Casts `value` to a path array if it's not one.
- *
- * @private
- * @param {*} value The value to inspect.
- * @param {Object} [object] The object to query keys on.
- * @returns {Array} Returns the cast property path array.
- */
-function castPath(value, object) {
-  if (isArray(value)) {
-    return value;
-  }
-  return isKey(value, object) ? [value] : stringToPath(toString(value));
-}
-
-module.exports = castPath;
-
-
-/***/ },
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
-
-var root = __webpack_require__(9);
-
-/** Used to detect overreaching core-js shims. */
-var coreJsData = root['__core-js_shared__'];
-
-module.exports = coreJsData;
-
-
-/***/ },
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-module.exports = freeGlobal;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(187)))
-
-/***/ },
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-var Symbol = __webpack_require__(8);
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString = objectProto.toString;
-
-/** Built-in value references. */
-var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
-
-/**
- * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
- *
- * @private
- * @param {*} value The value to query.
- * @returns {string} Returns the raw `toStringTag`.
- */
-function getRawTag(value) {
-  var isOwn = hasOwnProperty.call(value, symToStringTag),
-      tag = value[symToStringTag];
-
-  try {
-    value[symToStringTag] = undefined;
-    var unmasked = true;
-  } catch (e) {}
-
-  var result = nativeObjectToString.call(value);
-  if (unmasked) {
-    if (isOwn) {
-      value[symToStringTag] = tag;
-    } else {
-      delete value[symToStringTag];
-    }
-  }
-  return result;
-}
-
-module.exports = getRawTag;
-
-
-/***/ },
-/* 146 */
-/***/ function(module, exports) {
-
-/**
- * Gets the value at `key` of `object`.
- *
- * @private
- * @param {Object} [object] The object to query.
- * @param {string} key The key of the property to get.
- * @returns {*} Returns the property value.
- */
-function getValue(object, key) {
-  return object == null ? undefined : object[key];
-}
-
-module.exports = getValue;
-
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-var nativeCreate = __webpack_require__(6);
-
-/**
- * Removes all key-value entries from the hash.
- *
- * @private
- * @name clear
- * @memberOf Hash
- */
-function hashClear() {
-  this.__data__ = nativeCreate ? nativeCreate(null) : {};
-  this.size = 0;
-}
-
-module.exports = hashClear;
-
-
-/***/ },
-/* 148 */
-/***/ function(module, exports) {
-
-/**
- * Removes `key` and its value from the hash.
- *
- * @private
- * @name delete
- * @memberOf Hash
- * @param {Object} hash The hash to modify.
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function hashDelete(key) {
-  var result = this.has(key) && delete this.__data__[key];
-  this.size -= result ? 1 : 0;
-  return result;
-}
-
-module.exports = hashDelete;
-
-
-/***/ },
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
-
-var nativeCreate = __webpack_require__(6);
-
-/** Used to stand-in for `undefined` hash values. */
-var HASH_UNDEFINED = '__lodash_hash_undefined__';
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Gets the hash value for `key`.
- *
- * @private
- * @name get
- * @memberOf Hash
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function hashGet(key) {
-  var data = this.__data__;
-  if (nativeCreate) {
-    var result = data[key];
-    return result === HASH_UNDEFINED ? undefined : result;
-  }
-  return hasOwnProperty.call(data, key) ? data[key] : undefined;
-}
-
-module.exports = hashGet;
-
-
-/***/ },
-/* 150 */
-/***/ function(module, exports, __webpack_require__) {
-
-var nativeCreate = __webpack_require__(6);
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Checks if a hash value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf Hash
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function hashHas(key) {
-  var data = this.__data__;
-  return nativeCreate ? (data[key] !== undefined) : hasOwnProperty.call(data, key);
-}
-
-module.exports = hashHas;
-
-
-/***/ },
-/* 151 */
-/***/ function(module, exports, __webpack_require__) {
-
-var nativeCreate = __webpack_require__(6);
-
-/** Used to stand-in for `undefined` hash values. */
-var HASH_UNDEFINED = '__lodash_hash_undefined__';
-
-/**
- * Sets the hash `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf Hash
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the hash instance.
- */
-function hashSet(key, value) {
-  var data = this.__data__;
-  this.size += this.has(key) ? 0 : 1;
-  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
-  return this;
-}
-
-module.exports = hashSet;
-
-
-/***/ },
-/* 152 */
-/***/ function(module, exports, __webpack_require__) {
-
-var isArray = __webpack_require__(10),
-    isSymbol = __webpack_require__(7);
-
-/** Used to match property names within property paths. */
-var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
-    reIsPlainProp = /^\w*$/;
-
-/**
- * Checks if `value` is a property name and not a property path.
- *
- * @private
- * @param {*} value The value to check.
- * @param {Object} [object] The object to query keys on.
- * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
- */
-function isKey(value, object) {
-  if (isArray(value)) {
-    return false;
-  }
-  var type = typeof value;
-  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
-      value == null || isSymbol(value)) {
-    return true;
-  }
-  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
-    (object != null && value in Object(object));
-}
-
-module.exports = isKey;
-
-
-/***/ },
-/* 153 */
-/***/ function(module, exports) {
-
-/**
- * Checks if `value` is suitable for use as unique object key.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
- */
-function isKeyable(value) {
-  var type = typeof value;
-  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
-    ? (value !== '__proto__')
-    : (value === null);
-}
-
-module.exports = isKeyable;
-
-
-/***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-var coreJsData = __webpack_require__(143);
-
-/** Used to detect methods masquerading as native. */
-var maskSrcKey = (function() {
-  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
-  return uid ? ('Symbol(src)_1.' + uid) : '';
-}());
-
-/**
- * Checks if `func` has its source masked.
- *
- * @private
- * @param {Function} func The function to check.
- * @returns {boolean} Returns `true` if `func` is masked, else `false`.
- */
-function isMasked(func) {
-  return !!maskSrcKey && (maskSrcKey in func);
-}
-
-module.exports = isMasked;
-
-
-/***/ },
-/* 155 */
-/***/ function(module, exports) {
-
-/**
- * Removes all key-value entries from the list cache.
- *
- * @private
- * @name clear
- * @memberOf ListCache
- */
-function listCacheClear() {
-  this.__data__ = [];
-  this.size = 0;
-}
-
-module.exports = listCacheClear;
-
-
-/***/ },
-/* 156 */
-/***/ function(module, exports, __webpack_require__) {
-
-var assocIndexOf = __webpack_require__(4);
-
-/** Used for built-in method references. */
-var arrayProto = Array.prototype;
-
-/** Built-in value references. */
-var splice = arrayProto.splice;
-
-/**
- * Removes `key` and its value from the list cache.
- *
- * @private
- * @name delete
- * @memberOf ListCache
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function listCacheDelete(key) {
-  var data = this.__data__,
-      index = assocIndexOf(data, key);
-
-  if (index < 0) {
-    return false;
-  }
-  var lastIndex = data.length - 1;
-  if (index == lastIndex) {
-    data.pop();
-  } else {
-    splice.call(data, index, 1);
-  }
-  --this.size;
-  return true;
-}
-
-module.exports = listCacheDelete;
-
-
-/***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-var assocIndexOf = __webpack_require__(4);
-
-/**
- * Gets the list cache value for `key`.
- *
- * @private
- * @name get
- * @memberOf ListCache
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function listCacheGet(key) {
-  var data = this.__data__,
-      index = assocIndexOf(data, key);
-
-  return index < 0 ? undefined : data[index][1];
-}
-
-module.exports = listCacheGet;
-
-
-/***/ },
-/* 158 */
-/***/ function(module, exports, __webpack_require__) {
-
-var assocIndexOf = __webpack_require__(4);
-
-/**
- * Checks if a list cache value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf ListCache
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function listCacheHas(key) {
-  return assocIndexOf(this.__data__, key) > -1;
-}
-
-module.exports = listCacheHas;
-
-
-/***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
-
-var assocIndexOf = __webpack_require__(4);
-
-/**
- * Sets the list cache `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf ListCache
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the list cache instance.
- */
-function listCacheSet(key, value) {
-  var data = this.__data__,
-      index = assocIndexOf(data, key);
-
-  if (index < 0) {
-    ++this.size;
-    data.push([key, value]);
-  } else {
-    data[index][1] = value;
-  }
-  return this;
-}
-
-module.exports = listCacheSet;
-
-
-/***/ },
-/* 160 */
-/***/ function(module, exports, __webpack_require__) {
-
-var Hash = __webpack_require__(133),
-    ListCache = __webpack_require__(134),
-    Map = __webpack_require__(135);
-
-/**
- * Removes all key-value entries from the map.
- *
- * @private
- * @name clear
- * @memberOf MapCache
- */
-function mapCacheClear() {
-  this.size = 0;
-  this.__data__ = {
-    'hash': new Hash,
-    'map': new (Map || ListCache),
-    'string': new Hash
-  };
-}
-
-module.exports = mapCacheClear;
-
-
-/***/ },
-/* 161 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getMapData = __webpack_require__(5);
-
-/**
- * Removes `key` and its value from the map.
- *
- * @private
- * @name delete
- * @memberOf MapCache
- * @param {string} key The key of the value to remove.
- * @returns {boolean} Returns `true` if the entry was removed, else `false`.
- */
-function mapCacheDelete(key) {
-  var result = getMapData(this, key)['delete'](key);
-  this.size -= result ? 1 : 0;
-  return result;
-}
-
-module.exports = mapCacheDelete;
-
-
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getMapData = __webpack_require__(5);
-
-/**
- * Gets the map value for `key`.
- *
- * @private
- * @name get
- * @memberOf MapCache
- * @param {string} key The key of the value to get.
- * @returns {*} Returns the entry value.
- */
-function mapCacheGet(key) {
-  return getMapData(this, key).get(key);
-}
-
-module.exports = mapCacheGet;
-
-
-/***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getMapData = __webpack_require__(5);
-
-/**
- * Checks if a map value for `key` exists.
- *
- * @private
- * @name has
- * @memberOf MapCache
- * @param {string} key The key of the entry to check.
- * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
- */
-function mapCacheHas(key) {
-  return getMapData(this, key).has(key);
-}
-
-module.exports = mapCacheHas;
-
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-var getMapData = __webpack_require__(5);
-
-/**
- * Sets the map `key` to `value`.
- *
- * @private
- * @name set
- * @memberOf MapCache
- * @param {string} key The key of the value to set.
- * @param {*} value The value to set.
- * @returns {Object} Returns the map cache instance.
- */
-function mapCacheSet(key, value) {
-  var data = getMapData(this, key),
-      size = data.size;
-
-  data.set(key, value);
-  this.size += data.size == size ? 0 : 1;
-  return this;
-}
-
-module.exports = mapCacheSet;
-
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-var memoize = __webpack_require__(173);
-
-/** Used as the maximum memoize cache size. */
-var MAX_MEMOIZE_SIZE = 500;
-
-/**
- * A specialized version of `_.memoize` which clears the memoized function's
- * cache when it exceeds `MAX_MEMOIZE_SIZE`.
- *
- * @private
- * @param {Function} func The function to have its output memoized.
- * @returns {Function} Returns the new memoized function.
- */
-function memoizeCapped(func) {
-  var result = memoize(func, function(key) {
-    if (cache.size === MAX_MEMOIZE_SIZE) {
-      cache.clear();
-    }
-    return key;
-  });
-
-  var cache = result.cache;
-  return result;
-}
-
-module.exports = memoizeCapped;
-
-
-/***/ },
-/* 166 */
-/***/ function(module, exports) {
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var nativeObjectToString = objectProto.toString;
-
-/**
- * Converts `value` to a string using `Object.prototype.toString`.
- *
- * @private
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- */
-function objectToString(value) {
-  return nativeObjectToString.call(value);
-}
-
-module.exports = objectToString;
-
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-var memoizeCapped = __webpack_require__(165);
-
-/** Used to match property names within property paths. */
-var reLeadingDot = /^\./,
-    rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
-
-/** Used to match backslashes in property paths. */
-var reEscapeChar = /\\(\\)?/g;
-
-/**
- * Converts `string` to a property path array.
- *
- * @private
- * @param {string} string The string to convert.
- * @returns {Array} Returns the property path array.
- */
-var stringToPath = memoizeCapped(function(string) {
-  var result = [];
-  if (reLeadingDot.test(string)) {
-    result.push('');
-  }
-  string.replace(rePropName, function(match, number, quote, string) {
-    result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
-  });
-  return result;
-});
-
-module.exports = stringToPath;
-
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-var isSymbol = __webpack_require__(7);
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0;
-
-/**
- * Converts `value` to a string key if it's not a string or symbol.
- *
- * @private
- * @param {*} value The value to inspect.
- * @returns {string|symbol} Returns the key.
- */
-function toKey(value) {
-  if (typeof value == 'string' || isSymbol(value)) {
-    return value;
-  }
-  var result = (value + '');
-  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-}
-
-module.exports = toKey;
-
-
-/***/ },
-/* 169 */
-/***/ function(module, exports) {
-
-/** Used for built-in method references. */
-var funcProto = Function.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString = funcProto.toString;
-
-/**
- * Converts `func` to its source code.
- *
- * @private
- * @param {Function} func The function to convert.
- * @returns {string} Returns the source code.
- */
-function toSource(func) {
-  if (func != null) {
-    try {
-      return funcToString.call(func);
-    } catch (e) {}
-    try {
-      return (func + '');
-    } catch (e) {}
-  }
-  return '';
-}
-
-module.exports = toSource;
-
-
-/***/ },
-/* 170 */
-/***/ function(module, exports) {
-
-/**
- * Performs a
- * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * comparison between two values to determine if they are equivalent.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to compare.
- * @param {*} other The other value to compare.
- * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
- * @example
- *
- * var object = { 'a': 1 };
- * var other = { 'a': 1 };
- *
- * _.eq(object, object);
- * // => true
- *
- * _.eq(object, other);
- * // => false
- *
- * _.eq('a', 'a');
- * // => true
- *
- * _.eq('a', Object('a'));
- * // => false
- *
- * _.eq(NaN, NaN);
- * // => true
- */
-function eq(value, other) {
-  return value === other || (value !== value && other !== other);
-}
-
-module.exports = eq;
-
-
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
-
-var baseGetTag = __webpack_require__(12),
-    isObject = __webpack_require__(11);
-
-/** `Object#toString` result references. */
-var asyncTag = '[object AsyncFunction]',
-    funcTag = '[object Function]',
-    genTag = '[object GeneratorFunction]',
-    proxyTag = '[object Proxy]';
-
-/**
- * Checks if `value` is classified as a `Function` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a function, else `false`.
- * @example
- *
- * _.isFunction(_);
- * // => true
- *
- * _.isFunction(/abc/);
- * // => false
- */
-function isFunction(value) {
-  if (!isObject(value)) {
-    return false;
-  }
-  // The use of `Object#toString` avoids issues with the `typeof` operator
-  // in Safari 9 which returns 'object' for typed arrays and other constructors.
-  var tag = baseGetTag(value);
-  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
-}
-
-module.exports = isFunction;
-
-
-/***/ },
-/* 172 */
-/***/ function(module, exports) {
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return value != null && typeof value == 'object';
-}
-
-module.exports = isObjectLike;
-
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-var MapCache = __webpack_require__(136);
-
-/** Error message constants. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/**
- * Creates a function that memoizes the result of `func`. If `resolver` is
- * provided, it determines the cache key for storing the result based on the
- * arguments provided to the memoized function. By default, the first argument
- * provided to the memoized function is used as the map cache key. The `func`
- * is invoked with the `this` binding of the memoized function.
- *
- * **Note:** The cache is exposed as the `cache` property on the memoized
- * function. Its creation may be customized by replacing the `_.memoize.Cache`
- * constructor with one whose instances implement the
- * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
- * method interface of `clear`, `delete`, `get`, `has`, and `set`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Function
- * @param {Function} func The function to have its output memoized.
- * @param {Function} [resolver] The function to resolve the cache key.
- * @returns {Function} Returns the new memoized function.
- * @example
- *
- * var object = { 'a': 1, 'b': 2 };
- * var other = { 'c': 3, 'd': 4 };
- *
- * var values = _.memoize(_.values);
- * values(object);
- * // => [1, 2]
- *
- * values(other);
- * // => [3, 4]
- *
- * object.a = 2;
- * values(object);
- * // => [1, 2]
- *
- * // Modify the result cache.
- * values.cache.set(object, ['a', 'b']);
- * values(object);
- * // => ['a', 'b']
- *
- * // Replace `_.memoize.Cache`.
- * _.memoize.Cache = WeakMap;
- */
-function memoize(func, resolver) {
-  if (typeof func != 'function' || (resolver != null && typeof resolver != 'function')) {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  var memoized = function() {
-    var args = arguments,
-        key = resolver ? resolver.apply(this, args) : args[0],
-        cache = memoized.cache;
-
-    if (cache.has(key)) {
-      return cache.get(key);
-    }
-    var result = func.apply(this, args);
-    memoized.cache = cache.set(key, result) || cache;
-    return result;
-  };
-  memoized.cache = new (memoize.Cache || MapCache);
-  return memoized;
-}
-
-// Expose `MapCache`.
-memoize.Cache = MapCache;
-
-module.exports = memoize;
-
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(11),
-    isSymbol = __webpack_require__(7);
-
-/** Used as references for various `Number` constants. */
-var NAN = 0 / 0;
-
-/** Used to match leading and trailing whitespace. */
-var reTrim = /^\s+|\s+$/g;
-
-/** Used to detect bad signed hexadecimal string values. */
-var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
-
-/** Used to detect binary string values. */
-var reIsBinary = /^0b[01]+$/i;
-
-/** Used to detect octal string values. */
-var reIsOctal = /^0o[0-7]+$/i;
-
-/** Built-in method references without a dependency on `root`. */
-var freeParseInt = parseInt;
-
-/**
- * Converts `value` to a number.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to process.
- * @returns {number} Returns the number.
- * @example
- *
- * _.toNumber(3.2);
- * // => 3.2
- *
- * _.toNumber(Number.MIN_VALUE);
- * // => 5e-324
- *
- * _.toNumber(Infinity);
- * // => Infinity
- *
- * _.toNumber('3.2');
- * // => 3.2
- */
-function toNumber(value) {
-  if (typeof value == 'number') {
-    return value;
-  }
-  if (isSymbol(value)) {
-    return NAN;
-  }
-  if (isObject(value)) {
-    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-    value = isObject(other) ? (other + '') : other;
-  }
-  if (typeof value != 'string') {
-    return value === 0 ? value : +value;
-  }
-  value = value.replace(reTrim, '');
-  var isBinary = reIsBinary.test(value);
-  return (isBinary || reIsOctal.test(value))
-    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
-    : (reIsBadHex.test(value) ? NAN : +value);
-}
-
-module.exports = toNumber;
-
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-var baseToString = __webpack_require__(141);
-
-/**
- * Converts `value` to a string. An empty string is returned for `null`
- * and `undefined` values. The sign of `-0` is preserved.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- * @example
- *
- * _.toString(null);
- * // => ''
- *
- * _.toString(-0);
- * // => '-0'
- *
- * _.toString([1, 2, 3]);
- * // => '1,2,3'
- */
-function toString(value) {
-  return value == null ? '' : baseToString(value);
-}
-
-module.exports = toString;
-
-
-/***/ },
-/* 176 */
-/***/ function(module, exports, __webpack_require__) {
-
-var map = {
-	"./af": 14,
-	"./af.js": 14,
-	"./ar": 20,
-	"./ar-dz": 15,
-	"./ar-dz.js": 15,
-	"./ar-ly": 16,
-	"./ar-ly.js": 16,
-	"./ar-ma": 17,
-	"./ar-ma.js": 17,
-	"./ar-sa": 18,
-	"./ar-sa.js": 18,
-	"./ar-tn": 19,
-	"./ar-tn.js": 19,
-	"./ar.js": 20,
-	"./az": 21,
-	"./az.js": 21,
-	"./be": 22,
-	"./be.js": 22,
-	"./bg": 23,
-	"./bg.js": 23,
-	"./bn": 24,
-	"./bn.js": 24,
-	"./bo": 25,
-	"./bo.js": 25,
-	"./br": 26,
-	"./br.js": 26,
-	"./bs": 27,
-	"./bs.js": 27,
-	"./ca": 28,
-	"./ca.js": 28,
-	"./cs": 29,
-	"./cs.js": 29,
-	"./cv": 30,
-	"./cv.js": 30,
-	"./cy": 31,
-	"./cy.js": 31,
-	"./da": 32,
-	"./da.js": 32,
-	"./de": 34,
-	"./de-at": 33,
-	"./de-at.js": 33,
-	"./de.js": 34,
-	"./dv": 35,
-	"./dv.js": 35,
-	"./el": 36,
-	"./el.js": 36,
-	"./en-au": 37,
-	"./en-au.js": 37,
-	"./en-ca": 38,
-	"./en-ca.js": 38,
-	"./en-gb": 39,
-	"./en-gb.js": 39,
-	"./en-ie": 40,
-	"./en-ie.js": 40,
-	"./en-nz": 41,
-	"./en-nz.js": 41,
-	"./eo": 42,
-	"./eo.js": 42,
-	"./es": 44,
-	"./es-do": 43,
-	"./es-do.js": 43,
-	"./es.js": 44,
-	"./et": 45,
-	"./et.js": 45,
-	"./eu": 46,
-	"./eu.js": 46,
-	"./fa": 47,
-	"./fa.js": 47,
-	"./fi": 48,
-	"./fi.js": 48,
-	"./fo": 49,
-	"./fo.js": 49,
-	"./fr": 52,
-	"./fr-ca": 50,
-	"./fr-ca.js": 50,
-	"./fr-ch": 51,
-	"./fr-ch.js": 51,
-	"./fr.js": 52,
-	"./fy": 53,
-	"./fy.js": 53,
-	"./gd": 54,
-	"./gd.js": 54,
-	"./gl": 55,
-	"./gl.js": 55,
-	"./he": 56,
-	"./he.js": 56,
-	"./hi": 57,
-	"./hi.js": 57,
-	"./hr": 58,
-	"./hr.js": 58,
-	"./hu": 59,
-	"./hu.js": 59,
-	"./hy-am": 60,
-	"./hy-am.js": 60,
-	"./id": 61,
-	"./id.js": 61,
-	"./is": 62,
-	"./is.js": 62,
-	"./it": 63,
-	"./it.js": 63,
-	"./ja": 64,
-	"./ja.js": 64,
-	"./jv": 65,
-	"./jv.js": 65,
-	"./ka": 66,
-	"./ka.js": 66,
-	"./kk": 67,
-	"./kk.js": 67,
-	"./km": 68,
-	"./km.js": 68,
-	"./ko": 69,
-	"./ko.js": 69,
-	"./ky": 70,
-	"./ky.js": 70,
-	"./lb": 71,
-	"./lb.js": 71,
-	"./lo": 72,
-	"./lo.js": 72,
-	"./lt": 73,
-	"./lt.js": 73,
-	"./lv": 74,
-	"./lv.js": 74,
-	"./me": 75,
-	"./me.js": 75,
-	"./mi": 76,
-	"./mi.js": 76,
-	"./mk": 77,
-	"./mk.js": 77,
-	"./ml": 78,
-	"./ml.js": 78,
-	"./mr": 79,
-	"./mr.js": 79,
-	"./ms": 81,
-	"./ms-my": 80,
-	"./ms-my.js": 80,
-	"./ms.js": 81,
-	"./my": 82,
-	"./my.js": 82,
-	"./nb": 83,
-	"./nb.js": 83,
-	"./ne": 84,
-	"./ne.js": 84,
-	"./nl": 86,
-	"./nl-be": 85,
-	"./nl-be.js": 85,
-	"./nl.js": 86,
-	"./nn": 87,
-	"./nn.js": 87,
-	"./pa-in": 88,
-	"./pa-in.js": 88,
-	"./pl": 89,
-	"./pl.js": 89,
-	"./pt": 91,
-	"./pt-br": 90,
-	"./pt-br.js": 90,
-	"./pt.js": 91,
-	"./ro": 92,
-	"./ro.js": 92,
-	"./ru": 93,
-	"./ru.js": 93,
-	"./se": 94,
-	"./se.js": 94,
-	"./si": 95,
-	"./si.js": 95,
-	"./sk": 96,
-	"./sk.js": 96,
-	"./sl": 97,
-	"./sl.js": 97,
-	"./sq": 98,
-	"./sq.js": 98,
-	"./sr": 100,
-	"./sr-cyrl": 99,
-	"./sr-cyrl.js": 99,
-	"./sr.js": 100,
-	"./ss": 101,
-	"./ss.js": 101,
-	"./sv": 102,
-	"./sv.js": 102,
-	"./sw": 103,
-	"./sw.js": 103,
-	"./ta": 104,
-	"./ta.js": 104,
-	"./te": 105,
-	"./te.js": 105,
-	"./tet": 106,
-	"./tet.js": 106,
-	"./th": 107,
-	"./th.js": 107,
-	"./tl-ph": 108,
-	"./tl-ph.js": 108,
-	"./tlh": 109,
-	"./tlh.js": 109,
-	"./tr": 110,
-	"./tr.js": 110,
-	"./tzl": 111,
-	"./tzl.js": 111,
-	"./tzm": 113,
-	"./tzm-latn": 112,
-	"./tzm-latn.js": 112,
-	"./tzm.js": 113,
-	"./uk": 114,
-	"./uk.js": 114,
-	"./uz": 115,
-	"./uz.js": 115,
-	"./vi": 116,
-	"./vi.js": 116,
-	"./x-pseudo": 117,
-	"./x-pseudo.js": 117,
-	"./yo": 118,
-	"./yo.js": 118,
-	"./zh-cn": 119,
-	"./zh-cn.js": 119,
-	"./zh-hk": 120,
-	"./zh-hk.js": 120,
-	"./zh-tw": 121,
-	"./zh-tw.js": 121
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 176;
-
-
-/***/ },
-/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19916,129 +19067,129 @@ var React = __webpack_require__(1);
 var sizerStyle = { position: 'absolute', top: 0, left: 0, visibility: 'hidden', height: 0, overflow: 'scroll', whiteSpace: 'pre' };
 
 var AutosizeInput = React.createClass({
-	displayName: 'AutosizeInput',
+    displayName: 'AutosizeInput',
 
-	propTypes: {
-		className: React.PropTypes.string, // className for the outer element
-		defaultValue: React.PropTypes.any, // default field value
-		inputClassName: React.PropTypes.string, // className for the input element
-		inputStyle: React.PropTypes.object, // css styles for the input element
-		minWidth: React.PropTypes.oneOfType([// minimum width for input element
-		React.PropTypes.number, React.PropTypes.string]),
-		onChange: React.PropTypes.func, // onChange handler: function(newValue) {}
-		placeholder: React.PropTypes.string, // placeholder text
-		placeholderIsMinWidth: React.PropTypes.bool, // don't collapse size to less than the placeholder
-		style: React.PropTypes.object, // css styles for the outer element
-		value: React.PropTypes.any },
-	// field value
-	getDefaultProps: function getDefaultProps() {
-		return {
-			minWidth: 1
-		};
-	},
-	getInitialState: function getInitialState() {
-		return {
-			inputWidth: this.props.minWidth
-		};
-	},
-	componentDidMount: function componentDidMount() {
-		this.copyInputStyles();
-		this.updateInputWidth();
-	},
-	componentDidUpdate: function componentDidUpdate() {
-		this.updateInputWidth();
-	},
-	copyInputStyles: function copyInputStyles() {
-		if (!this.isMounted() || !window.getComputedStyle) {
-			return;
-		}
-		var inputStyle = window.getComputedStyle(this.refs.input);
-		if (!inputStyle) {
-			return;
-		}
-		var widthNode = this.refs.sizer;
-		widthNode.style.fontSize = inputStyle.fontSize;
-		widthNode.style.fontFamily = inputStyle.fontFamily;
-		widthNode.style.fontWeight = inputStyle.fontWeight;
-		widthNode.style.fontStyle = inputStyle.fontStyle;
-		widthNode.style.letterSpacing = inputStyle.letterSpacing;
-		if (this.props.placeholder) {
-			var placeholderNode = this.refs.placeholderSizer;
-			placeholderNode.style.fontSize = inputStyle.fontSize;
-			placeholderNode.style.fontFamily = inputStyle.fontFamily;
-			placeholderNode.style.fontWeight = inputStyle.fontWeight;
-			placeholderNode.style.fontStyle = inputStyle.fontStyle;
-			placeholderNode.style.letterSpacing = inputStyle.letterSpacing;
-		}
-	},
-	updateInputWidth: function updateInputWidth() {
-		if (!this.isMounted() || typeof this.refs.sizer.scrollWidth === 'undefined') {
-			return;
-		}
-		var newInputWidth = undefined;
-		if (this.props.placeholder && (!this.props.value || this.props.value && this.props.placeholderIsMinWidth)) {
-			newInputWidth = Math.max(this.refs.sizer.scrollWidth, this.refs.placeholderSizer.scrollWidth) + 2;
-		} else {
-			newInputWidth = this.refs.sizer.scrollWidth + 2;
-		}
-		if (newInputWidth < this.props.minWidth) {
-			newInputWidth = this.props.minWidth;
-		}
-		if (newInputWidth !== this.state.inputWidth) {
-			this.setState({
-				inputWidth: newInputWidth
-			});
-		}
-	},
-	getInput: function getInput() {
-		return this.refs.input;
-	},
-	focus: function focus() {
-		this.refs.input.focus();
-	},
-	blur: function blur() {
-		this.refs.input.blur();
-	},
-	select: function select() {
-		this.refs.input.select();
-	},
-	render: function render() {
-		var sizerValue = this.props.defaultValue || this.props.value || '';
-		var wrapperStyle = this.props.style || {};
-		if (!wrapperStyle.display) wrapperStyle.display = 'inline-block';
-		var inputStyle = _extends({}, this.props.inputStyle);
-		inputStyle.width = this.state.inputWidth + 'px';
-		inputStyle.boxSizing = 'content-box';
-		var inputProps = _extends({}, this.props);
-		inputProps.className = this.props.inputClassName;
-		inputProps.style = inputStyle;
-		// ensure props meant for `AutosizeInput` don't end up on the `input`
-		delete inputProps.inputClassName;
-		delete inputProps.inputStyle;
-		delete inputProps.minWidth;
-		delete inputProps.placeholderIsMinWidth;
-		return React.createElement(
-			'div',
-			{ className: this.props.className, style: wrapperStyle },
-			React.createElement('input', _extends({}, inputProps, { ref: 'input' })),
-			React.createElement(
-				'div',
-				{ ref: 'sizer', style: sizerStyle },
-				sizerValue
-			),
-			this.props.placeholder ? React.createElement(
-				'div',
-				{ ref: 'placeholderSizer', style: sizerStyle },
-				this.props.placeholder
-			) : null
-		);
-	}
+    propTypes: {
+        className: React.PropTypes.string, // className for the outer element
+        defaultValue: React.PropTypes.any, // default field value
+        inputClassName: React.PropTypes.string, // className for the input element
+        inputStyle: React.PropTypes.object, // css styles for the input element
+        minWidth: React.PropTypes.oneOfType([// minimum width for input element
+        React.PropTypes.number, React.PropTypes.string]),
+        onChange: React.PropTypes.func, // onChange handler: function(newValue) {}
+        placeholder: React.PropTypes.string, // placeholder text
+        placeholderIsMinWidth: React.PropTypes.bool, // don't collapse size to less than the placeholder
+        style: React.PropTypes.object, // css styles for the outer element
+        value: React.PropTypes.any },
+    // field value
+    getDefaultProps: function getDefaultProps() {
+        return {
+            minWidth: 1
+        };
+    },
+    getInitialState: function getInitialState() {
+        return {
+            inputWidth: this.props.minWidth
+        };
+    },
+    componentDidMount: function componentDidMount() {
+        this.copyInputStyles();
+        this.updateInputWidth();
+    },
+    componentDidUpdate: function componentDidUpdate() {
+        this.updateInputWidth();
+    },
+    copyInputStyles: function copyInputStyles() {
+        if (!this.isMounted() || !window.getComputedStyle) {
+            return;
+        }
+        var inputStyle = window.getComputedStyle(this.refs.input);
+        if (!inputStyle) {
+            return;
+        }
+        var widthNode = this.refs.sizer;
+        widthNode.style.fontSize = inputStyle.fontSize;
+        widthNode.style.fontFamily = inputStyle.fontFamily;
+        widthNode.style.fontWeight = inputStyle.fontWeight;
+        widthNode.style.fontStyle = inputStyle.fontStyle;
+        widthNode.style.letterSpacing = inputStyle.letterSpacing;
+        if (this.props.placeholder) {
+            var placeholderNode = this.refs.placeholderSizer;
+            placeholderNode.style.fontSize = inputStyle.fontSize;
+            placeholderNode.style.fontFamily = inputStyle.fontFamily;
+            placeholderNode.style.fontWeight = inputStyle.fontWeight;
+            placeholderNode.style.fontStyle = inputStyle.fontStyle;
+            placeholderNode.style.letterSpacing = inputStyle.letterSpacing;
+        }
+    },
+    updateInputWidth: function updateInputWidth() {
+        if (!this.isMounted() || typeof this.refs.sizer.scrollWidth === 'undefined') {
+            return;
+        }
+        var newInputWidth = undefined;
+        if (this.props.placeholder && (!this.props.value || this.props.value && this.props.placeholderIsMinWidth)) {
+            newInputWidth = Math.max(this.refs.sizer.scrollWidth, this.refs.placeholderSizer.scrollWidth) + 2;
+        } else {
+            newInputWidth = this.refs.sizer.scrollWidth + 2;
+        }
+        if (newInputWidth < this.props.minWidth) {
+            newInputWidth = this.props.minWidth;
+        }
+        if (newInputWidth !== this.state.inputWidth) {
+            this.setState({
+                inputWidth: newInputWidth
+            });
+        }
+    },
+    getInput: function getInput() {
+        return this.refs.input;
+    },
+    focus: function focus() {
+        this.refs.input.focus();
+    },
+    blur: function blur() {
+        this.refs.input.blur();
+    },
+    select: function select() {
+        this.refs.input.select();
+    },
+    render: function render() {
+        var sizerValue = this.props.defaultValue || this.props.value || '';
+        var wrapperStyle = this.props.style || {};
+        if (!wrapperStyle.display) wrapperStyle.display = 'inline-block';
+        var inputStyle = _extends({}, this.props.inputStyle);
+        inputStyle.width = this.state.inputWidth + 'px';
+        inputStyle.boxSizing = 'content-box';
+        var inputProps = _extends({}, this.props);
+        inputProps.className = this.props.inputClassName;
+        inputProps.style = inputStyle;
+        // ensure props meant for `AutosizeInput` don't end up on the `input`
+        delete inputProps.inputClassName;
+        delete inputProps.inputStyle;
+        delete inputProps.minWidth;
+        delete inputProps.placeholderIsMinWidth;
+        return React.createElement(
+            'div',
+            { className: this.props.className, style: wrapperStyle },
+            React.createElement('input', _extends({}, inputProps, { ref: 'input' })),
+            React.createElement(
+                'div',
+                { ref: 'sizer', style: sizerStyle },
+                sizerValue
+            ),
+            this.props.placeholder ? React.createElement(
+                'div',
+                { ref: 'placeholderSizer', style: sizerStyle },
+                this.props.placeholder
+            ) : null
+        );
+    }
 });
 
 module.exports = AutosizeInput;
 
 /***/ },
-/* 178 */
+/* 139 */
 /***/ function(module, exports) {
 
 /**
@@ -20061,7 +19212,7 @@ module.exports = function getIn(obj, path) {
 
 
 /***/ },
-/* 179 */
+/* 140 */
 /***/ function(module, exports) {
 
 /**
@@ -20087,14 +19238,14 @@ module.exports = function updateIn(obj, path, value) {
 
 
 /***/ },
-/* 180 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-	value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -20115,236 +19266,236 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Select = __webpack_require__(3);
+var _Select = __webpack_require__(4);
 
 var _Select2 = _interopRequireDefault(_Select);
 
-var _utilsStripDiacritics = __webpack_require__(124);
+var _utilsStripDiacritics = __webpack_require__(118);
 
 var _utilsStripDiacritics2 = _interopRequireDefault(_utilsStripDiacritics);
 
 var propTypes = {
-	autoload: _react2['default'].PropTypes.bool.isRequired, // automatically call the `loadOptions` prop on-mount; defaults to true
-	cache: _react2['default'].PropTypes.any, // object to use to cache results; set to null/false to disable caching
-	children: _react2['default'].PropTypes.func.isRequired, // Child function responsible for creating the inner Select component; (props: Object): PropTypes.element
-	ignoreAccents: _react2['default'].PropTypes.bool, // strip diacritics when filtering; defaults to true
-	ignoreCase: _react2['default'].PropTypes.bool, // perform case-insensitive filtering; defaults to true
-	loadingPlaceholder: _react2['default'].PropTypes.oneOfType([// replaces the placeholder while options are loading
-	_react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
-	loadOptions: _react2['default'].PropTypes.func.isRequired, // callback to load options asynchronously; (inputValue: string, callback: Function): ?Promise
-	options: _react.PropTypes.array.isRequired, // array of options
-	placeholder: _react2['default'].PropTypes.oneOfType([// field placeholder, displayed when there's no value (shared with Select)
-	_react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
-	noResultsText: _react2['default'].PropTypes.oneOfType([// field noResultsText, displayed when no options come back from the server
-	_react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
-	onChange: _react2['default'].PropTypes.func, // onChange handler: function (newValue) {}
-	searchPromptText: _react2['default'].PropTypes.oneOfType([// label to prompt for search input
-	_react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
-	onInputChange: _react2['default'].PropTypes.func, // optional for keeping track of what is being typed
-	value: _react2['default'].PropTypes.any };
+    autoload: _react2['default'].PropTypes.bool.isRequired, // automatically call the `loadOptions` prop on-mount; defaults to true
+    cache: _react2['default'].PropTypes.any, // object to use to cache results; set to null/false to disable caching
+    children: _react2['default'].PropTypes.func.isRequired, // Child function responsible for creating the inner Select component; (props: Object): PropTypes.element
+    ignoreAccents: _react2['default'].PropTypes.bool, // strip diacritics when filtering; defaults to true
+    ignoreCase: _react2['default'].PropTypes.bool, // perform case-insensitive filtering; defaults to true
+    loadingPlaceholder: _react2['default'].PropTypes.oneOfType([// replaces the placeholder while options are loading
+    _react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
+    loadOptions: _react2['default'].PropTypes.func.isRequired, // callback to load options asynchronously; (inputValue: string, callback: Function): ?Promise
+    options: _react.PropTypes.array.isRequired, // array of options
+    placeholder: _react2['default'].PropTypes.oneOfType([// field placeholder, displayed when there's no value (shared with Select)
+    _react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
+    noResultsText: _react2['default'].PropTypes.oneOfType([// field noResultsText, displayed when no options come back from the server
+    _react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
+    onChange: _react2['default'].PropTypes.func, // onChange handler: function (newValue) {}
+    searchPromptText: _react2['default'].PropTypes.oneOfType([// label to prompt for search input
+    _react2['default'].PropTypes.string, _react2['default'].PropTypes.node]),
+    onInputChange: _react2['default'].PropTypes.func, // optional for keeping track of what is being typed
+    value: _react2['default'].PropTypes.any };
 
 // initial field value
 var defaultCache = {};
 
 var defaultProps = {
-	autoload: true,
-	cache: defaultCache,
-	children: defaultChildren,
-	ignoreAccents: true,
-	ignoreCase: true,
-	loadingPlaceholder: 'Loading...',
-	options: [],
-	searchPromptText: 'Type to search'
+    autoload: true,
+    cache: defaultCache,
+    children: defaultChildren,
+    ignoreAccents: true,
+    ignoreCase: true,
+    loadingPlaceholder: 'Loading...',
+    options: [],
+    searchPromptText: 'Type to search'
 };
 
 var Async = (function (_Component) {
-	_inherits(Async, _Component);
+    _inherits(Async, _Component);
 
-	function Async(props, context) {
-		_classCallCheck(this, Async);
+    function Async(props, context) {
+        _classCallCheck(this, Async);
 
-		_get(Object.getPrototypeOf(Async.prototype), 'constructor', this).call(this, props, context);
+        _get(Object.getPrototypeOf(Async.prototype), 'constructor', this).call(this, props, context);
 
-		this._cache = props.cache === defaultCache ? {} : props.cache;
+        this._cache = props.cache === defaultCache ? {} : props.cache;
 
-		this.state = {
-			isLoading: false,
-			options: props.options
-		};
+        this.state = {
+            isLoading: false,
+            options: props.options
+        };
 
-		this._onInputChange = this._onInputChange.bind(this);
-	}
+        this._onInputChange = this._onInputChange.bind(this);
+    }
 
-	_createClass(Async, [{
-		key: 'componentDidMount',
-		value: function componentDidMount() {
-			var autoload = this.props.autoload;
+    _createClass(Async, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var autoload = this.props.autoload;
 
-			if (autoload) {
-				this.loadOptions('');
-			}
-		}
-	}, {
-		key: 'componentWillUpdate',
-		value: function componentWillUpdate(nextProps, nextState) {
-			var _this = this;
+            if (autoload) {
+                this.loadOptions('');
+            }
+        }
+    }, {
+        key: 'componentWillUpdate',
+        value: function componentWillUpdate(nextProps, nextState) {
+            var _this = this;
 
-			var propertiesToSync = ['options'];
-			propertiesToSync.forEach(function (prop) {
-				if (_this.props[prop] !== nextProps[prop]) {
-					_this.setState(_defineProperty({}, prop, nextProps[prop]));
-				}
-			});
-		}
-	}, {
-		key: 'clearOptions',
-		value: function clearOptions() {
-			this.setState({ options: [] });
-		}
-	}, {
-		key: 'loadOptions',
-		value: function loadOptions(inputValue) {
-			var _this2 = this;
+            var propertiesToSync = ['options'];
+            propertiesToSync.forEach(function (prop) {
+                if (_this.props[prop] !== nextProps[prop]) {
+                    _this.setState(_defineProperty({}, prop, nextProps[prop]));
+                }
+            });
+        }
+    }, {
+        key: 'clearOptions',
+        value: function clearOptions() {
+            this.setState({ options: [] });
+        }
+    }, {
+        key: 'loadOptions',
+        value: function loadOptions(inputValue) {
+            var _this2 = this;
 
-			var loadOptions = this.props.loadOptions;
+            var loadOptions = this.props.loadOptions;
 
-			var cache = this._cache;
+            var cache = this._cache;
 
-			if (cache && cache.hasOwnProperty(inputValue)) {
-				this.setState({
-					options: cache[inputValue]
-				});
+            if (cache && cache.hasOwnProperty(inputValue)) {
+                this.setState({
+                    options: cache[inputValue]
+                });
 
-				return;
-			}
+                return;
+            }
 
-			var callback = function callback(error, data) {
-				if (callback === _this2._callback) {
-					_this2._callback = null;
+            var callback = function callback(error, data) {
+                if (callback === _this2._callback) {
+                    _this2._callback = null;
 
-					var options = data && data.options || [];
+                    var options = data && data.options || [];
 
-					if (cache) {
-						cache[inputValue] = options;
-					}
+                    if (cache) {
+                        cache[inputValue] = options;
+                    }
 
-					_this2.setState({
-						isLoading: false,
-						options: options
-					});
-				}
-			};
+                    _this2.setState({
+                        isLoading: false,
+                        options: options
+                    });
+                }
+            };
 
-			// Ignore all but the most recent request
-			this._callback = callback;
+            // Ignore all but the most recent request
+            this._callback = callback;
 
-			var promise = loadOptions(inputValue, callback);
-			if (promise) {
-				promise.then(function (data) {
-					return callback(null, data);
-				}, function (error) {
-					return callback(error);
-				});
-			}
+            var promise = loadOptions(inputValue, callback);
+            if (promise) {
+                promise.then(function (data) {
+                    return callback(null, data);
+                }, function (error) {
+                    return callback(error);
+                });
+            }
 
-			if (this._callback && !this.state.isLoading) {
-				this.setState({
-					isLoading: true
-				});
-			}
+            if (this._callback && !this.state.isLoading) {
+                this.setState({
+                    isLoading: true
+                });
+            }
 
-			return inputValue;
-		}
-	}, {
-		key: '_onInputChange',
-		value: function _onInputChange(inputValue) {
-			var _props = this.props;
-			var ignoreAccents = _props.ignoreAccents;
-			var ignoreCase = _props.ignoreCase;
-			var onInputChange = _props.onInputChange;
+            return inputValue;
+        }
+    }, {
+        key: '_onInputChange',
+        value: function _onInputChange(inputValue) {
+            var _props = this.props;
+            var ignoreAccents = _props.ignoreAccents;
+            var ignoreCase = _props.ignoreCase;
+            var onInputChange = _props.onInputChange;
 
-			if (ignoreAccents) {
-				inputValue = (0, _utilsStripDiacritics2['default'])(inputValue);
-			}
+            if (ignoreAccents) {
+                inputValue = (0, _utilsStripDiacritics2['default'])(inputValue);
+            }
 
-			if (ignoreCase) {
-				inputValue = inputValue.toLowerCase();
-			}
+            if (ignoreCase) {
+                inputValue = inputValue.toLowerCase();
+            }
 
-			if (onInputChange) {
-				onInputChange(inputValue);
-			}
+            if (onInputChange) {
+                onInputChange(inputValue);
+            }
 
-			return this.loadOptions(inputValue);
-		}
-	}, {
-		key: 'inputValue',
-		value: function inputValue() {
-			if (this.select) {
-				return this.select.state.inputValue;
-			}
-			return '';
-		}
-	}, {
-		key: 'noResultsText',
-		value: function noResultsText() {
-			var _props2 = this.props;
-			var loadingPlaceholder = _props2.loadingPlaceholder;
-			var noResultsText = _props2.noResultsText;
-			var searchPromptText = _props2.searchPromptText;
-			var isLoading = this.state.isLoading;
+            return this.loadOptions(inputValue);
+        }
+    }, {
+        key: 'inputValue',
+        value: function inputValue() {
+            if (this.select) {
+                return this.select.state.inputValue;
+            }
+            return '';
+        }
+    }, {
+        key: 'noResultsText',
+        value: function noResultsText() {
+            var _props2 = this.props;
+            var loadingPlaceholder = _props2.loadingPlaceholder;
+            var noResultsText = _props2.noResultsText;
+            var searchPromptText = _props2.searchPromptText;
+            var isLoading = this.state.isLoading;
 
-			var inputValue = this.inputValue();
+            var inputValue = this.inputValue();
 
-			if (isLoading) {
-				return loadingPlaceholder;
-			}
-			if (inputValue && noResultsText) {
-				return noResultsText;
-			}
-			return searchPromptText;
-		}
-	}, {
-		key: 'focus',
-		value: function focus() {
-			this.select.focus();
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var _this3 = this;
+            if (isLoading) {
+                return loadingPlaceholder;
+            }
+            if (inputValue && noResultsText) {
+                return noResultsText;
+            }
+            return searchPromptText;
+        }
+    }, {
+        key: 'focus',
+        value: function focus() {
+            this.select.focus();
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
 
-			var _props3 = this.props;
-			var children = _props3.children;
-			var loadingPlaceholder = _props3.loadingPlaceholder;
-			var placeholder = _props3.placeholder;
-			var _state = this.state;
-			var isLoading = _state.isLoading;
-			var options = _state.options;
+            var _props3 = this.props;
+            var children = _props3.children;
+            var loadingPlaceholder = _props3.loadingPlaceholder;
+            var placeholder = _props3.placeholder;
+            var _state = this.state;
+            var isLoading = _state.isLoading;
+            var options = _state.options;
 
-			var props = {
-				noResultsText: this.noResultsText(),
-				placeholder: isLoading ? loadingPlaceholder : placeholder,
-				options: isLoading && loadingPlaceholder ? [] : options,
-				ref: function ref(_ref) {
-					return _this3.select = _ref;
-				},
-				onChange: function onChange(newValues) {
-					if (_this3.props.multi && _this3.props.value && newValues.length > _this3.props.value.length) {
-						_this3.clearOptions();
-					}
-					_this3.props.onChange(newValues);
-				}
-			};
+            var props = {
+                noResultsText: this.noResultsText(),
+                placeholder: isLoading ? loadingPlaceholder : placeholder,
+                options: isLoading && loadingPlaceholder ? [] : options,
+                ref: function ref(_ref) {
+                    return _this3.select = _ref;
+                },
+                onChange: function onChange(newValues) {
+                    if (_this3.props.multi && _this3.props.value && newValues.length > _this3.props.value.length) {
+                        _this3.clearOptions();
+                    }
+                    _this3.props.onChange(newValues);
+                }
+            };
 
-			return children(_extends({}, this.props, props, {
-				isLoading: isLoading,
-				onInputChange: this._onInputChange
-			}));
-		}
-	}]);
+            return children(_extends({}, this.props, props, {
+                isLoading: isLoading,
+                onInputChange: this._onInputChange
+            }));
+        }
+    }]);
 
-	return Async;
+    return Async;
 })(_react.Component);
 
 exports['default'] = Async;
@@ -20353,12 +19504,12 @@ Async.propTypes = propTypes;
 Async.defaultProps = defaultProps;
 
 function defaultChildren(props) {
-	return _react2['default'].createElement(_Select2['default'], props);
+    return _react2['default'].createElement(_Select2['default'], props);
 };
 module.exports = exports['default'];
 
 /***/ },
-/* 181 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20372,55 +19523,55 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Select = __webpack_require__(3);
+var _Select = __webpack_require__(4);
 
 var _Select2 = _interopRequireDefault(_Select);
 
 function reduce(obj) {
-	var props = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+    var props = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
-	return Object.keys(obj).reduce(function (props, key) {
-		var value = obj[key];
-		if (value !== undefined) props[key] = value;
-		return props;
-	}, props);
+    return Object.keys(obj).reduce(function (props, key) {
+        var value = obj[key];
+        if (value !== undefined) props[key] = value;
+        return props;
+    }, props);
 }
 
 var AsyncCreatable = _react2['default'].createClass({
-	displayName: 'AsyncCreatableSelect',
+    displayName: 'AsyncCreatableSelect',
 
-	render: function render() {
-		var _this = this;
+    render: function render() {
+        var _this = this;
 
-		return _react2['default'].createElement(
-			_Select2['default'].Async,
-			this.props,
-			function (asyncProps) {
-				return _react2['default'].createElement(
-					_Select2['default'].Creatable,
-					_this.props,
-					function (creatableProps) {
-						return _react2['default'].createElement(_Select2['default'], _extends({}, reduce(asyncProps, reduce(creatableProps, {})), {
-							onInputChange: function (input) {
-								creatableProps.onInputChange(input);
-								return asyncProps.onInputChange(input);
-							},
-							ref: function (ref) {
-								creatableProps.ref(ref);
-								asyncProps.ref(ref);
-							}
-						}));
-					}
-				);
-			}
-		);
-	}
+        return _react2['default'].createElement(
+            _Select2['default'].Async,
+            this.props,
+            function (asyncProps) {
+                return _react2['default'].createElement(
+                    _Select2['default'].Creatable,
+                    _this.props,
+                    function (creatableProps) {
+                        return _react2['default'].createElement(_Select2['default'], _extends({}, reduce(asyncProps, reduce(creatableProps, {})), {
+                            onInputChange: function (input) {
+                                creatableProps.onInputChange(input);
+                                return asyncProps.onInputChange(input);
+                            },
+                            ref: function (ref) {
+                                creatableProps.ref(ref);
+                                asyncProps.ref(ref);
+                            }
+                        }));
+                    }
+                );
+            }
+        );
+    }
 });
 
 module.exports = AsyncCreatable;
 
 /***/ },
-/* 182 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20436,313 +19587,313 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Select = __webpack_require__(3);
+var _Select = __webpack_require__(4);
 
 var _Select2 = _interopRequireDefault(_Select);
 
-var _utilsDefaultFilterOptions = __webpack_require__(122);
+var _utilsDefaultFilterOptions = __webpack_require__(116);
 
 var _utilsDefaultFilterOptions2 = _interopRequireDefault(_utilsDefaultFilterOptions);
 
-var _utilsDefaultMenuRenderer = __webpack_require__(123);
+var _utilsDefaultMenuRenderer = __webpack_require__(117);
 
 var _utilsDefaultMenuRenderer2 = _interopRequireDefault(_utilsDefaultMenuRenderer);
 
 var Creatable = _react2['default'].createClass({
-	displayName: 'CreatableSelect',
+    displayName: 'CreatableSelect',
 
-	propTypes: {
-		// Child function responsible for creating the inner Select component
-		// This component can be used to compose HOCs (eg Creatable and Async)
-		// (props: Object): PropTypes.element
-		children: _react2['default'].PropTypes.func,
+    propTypes: {
+        // Child function responsible for creating the inner Select component
+        // This component can be used to compose HOCs (eg Creatable and Async)
+        // (props: Object): PropTypes.element
+        children: _react2['default'].PropTypes.func,
 
-		// See Select.propTypes.filterOptions
-		filterOptions: _react2['default'].PropTypes.any,
+        // See Select.propTypes.filterOptions
+        filterOptions: _react2['default'].PropTypes.any,
 
-		// Searches for any matching option within the set of options.
-		// This function prevents duplicate options from being created.
-		// ({ option: Object, options: Array, labelKey: string, valueKey: string }): boolean
-		isOptionUnique: _react2['default'].PropTypes.func,
+        // Searches for any matching option within the set of options.
+        // This function prevents duplicate options from being created.
+        // ({ option: Object, options: Array, labelKey: string, valueKey: string }): boolean
+        isOptionUnique: _react2['default'].PropTypes.func,
 
-		// Determines if the current input text represents a valid option.
-		// ({ label: string }): boolean
-		isValidNewOption: _react2['default'].PropTypes.func,
+        // Determines if the current input text represents a valid option.
+        // ({ label: string }): boolean
+        isValidNewOption: _react2['default'].PropTypes.func,
 
-		// See Select.propTypes.menuRenderer
-		menuRenderer: _react2['default'].PropTypes.any,
+        // See Select.propTypes.menuRenderer
+        menuRenderer: _react2['default'].PropTypes.any,
 
-		// Factory to create new option.
-		// ({ label: string, labelKey: string, valueKey: string }): Object
-		newOptionCreator: _react2['default'].PropTypes.func,
+        // Factory to create new option.
+        // ({ label: string, labelKey: string, valueKey: string }): Object
+        newOptionCreator: _react2['default'].PropTypes.func,
 
-		// input change handler: function (inputValue) {}
-		onInputChange: _react2['default'].PropTypes.func,
+        // input change handler: function (inputValue) {}
+        onInputChange: _react2['default'].PropTypes.func,
 
-		// input keyDown handler: function (event) {}
-		onInputKeyDown: _react2['default'].PropTypes.func,
+        // input keyDown handler: function (event) {}
+        onInputKeyDown: _react2['default'].PropTypes.func,
 
-		// new option click handler: function (option) {}
-		onNewOptionClick: _react2['default'].PropTypes.func,
+        // new option click handler: function (option) {}
+        onNewOptionClick: _react2['default'].PropTypes.func,
 
-		// See Select.propTypes.options
-		options: _react2['default'].PropTypes.array,
+        // See Select.propTypes.options
+        options: _react2['default'].PropTypes.array,
 
-		// Creates prompt/placeholder option text.
-		// (filterText: string): string
-		promptTextCreator: _react2['default'].PropTypes.func,
+        // Creates prompt/placeholder option text.
+        // (filterText: string): string
+        promptTextCreator: _react2['default'].PropTypes.func,
 
-		// Decides if a keyDown event (eg its `keyCode`) should result in the creation of a new option.
-		shouldKeyDownEventCreateNewOption: _react2['default'].PropTypes.func
-	},
+        // Decides if a keyDown event (eg its `keyCode`) should result in the creation of a new option.
+        shouldKeyDownEventCreateNewOption: _react2['default'].PropTypes.func
+    },
 
-	// Default prop methods
-	statics: {
-		isOptionUnique: isOptionUnique,
-		isValidNewOption: isValidNewOption,
-		newOptionCreator: newOptionCreator,
-		promptTextCreator: promptTextCreator,
-		shouldKeyDownEventCreateNewOption: shouldKeyDownEventCreateNewOption
-	},
+    // Default prop methods
+    statics: {
+        isOptionUnique: isOptionUnique,
+        isValidNewOption: isValidNewOption,
+        newOptionCreator: newOptionCreator,
+        promptTextCreator: promptTextCreator,
+        shouldKeyDownEventCreateNewOption: shouldKeyDownEventCreateNewOption
+    },
 
-	getDefaultProps: function getDefaultProps() {
-		return {
-			filterOptions: _utilsDefaultFilterOptions2['default'],
-			isOptionUnique: isOptionUnique,
-			isValidNewOption: isValidNewOption,
-			menuRenderer: _utilsDefaultMenuRenderer2['default'],
-			newOptionCreator: newOptionCreator,
-			promptTextCreator: promptTextCreator,
-			shouldKeyDownEventCreateNewOption: shouldKeyDownEventCreateNewOption
-		};
-	},
+    getDefaultProps: function getDefaultProps() {
+        return {
+            filterOptions: _utilsDefaultFilterOptions2['default'],
+            isOptionUnique: isOptionUnique,
+            isValidNewOption: isValidNewOption,
+            menuRenderer: _utilsDefaultMenuRenderer2['default'],
+            newOptionCreator: newOptionCreator,
+            promptTextCreator: promptTextCreator,
+            shouldKeyDownEventCreateNewOption: shouldKeyDownEventCreateNewOption
+        };
+    },
 
-	createNewOption: function createNewOption() {
-		var _props = this.props;
-		var isValidNewOption = _props.isValidNewOption;
-		var newOptionCreator = _props.newOptionCreator;
-		var onNewOptionClick = _props.onNewOptionClick;
-		var _props$options = _props.options;
-		var options = _props$options === undefined ? [] : _props$options;
-		var shouldKeyDownEventCreateNewOption = _props.shouldKeyDownEventCreateNewOption;
+    createNewOption: function createNewOption() {
+        var _props = this.props;
+        var isValidNewOption = _props.isValidNewOption;
+        var newOptionCreator = _props.newOptionCreator;
+        var onNewOptionClick = _props.onNewOptionClick;
+        var _props$options = _props.options;
+        var options = _props$options === undefined ? [] : _props$options;
+        var shouldKeyDownEventCreateNewOption = _props.shouldKeyDownEventCreateNewOption;
 
-		if (isValidNewOption({ label: this.inputValue })) {
-			var option = newOptionCreator({ label: this.inputValue, labelKey: this.labelKey, valueKey: this.valueKey });
-			var _isOptionUnique = this.isOptionUnique({ option: option });
+        if (isValidNewOption({ label: this.inputValue })) {
+            var option = newOptionCreator({ label: this.inputValue, labelKey: this.labelKey, valueKey: this.valueKey });
+            var _isOptionUnique = this.isOptionUnique({ option: option });
 
-			// Don't add the same option twice.
-			if (_isOptionUnique) {
-				if (onNewOptionClick) {
-					onNewOptionClick(option);
-				} else {
-					options.unshift(option);
+            // Don't add the same option twice.
+            if (_isOptionUnique) {
+                if (onNewOptionClick) {
+                    onNewOptionClick(option);
+                } else {
+                    options.unshift(option);
 
-					this.select.selectValue(option);
-				}
-			}
-		}
-	},
+                    this.select.selectValue(option);
+                }
+            }
+        }
+    },
 
-	filterOptions: function filterOptions() {
-		var _props2 = this.props;
-		var filterOptions = _props2.filterOptions;
-		var isValidNewOption = _props2.isValidNewOption;
-		var options = _props2.options;
-		var promptTextCreator = _props2.promptTextCreator;
+    filterOptions: function filterOptions() {
+        var _props2 = this.props;
+        var filterOptions = _props2.filterOptions;
+        var isValidNewOption = _props2.isValidNewOption;
+        var options = _props2.options;
+        var promptTextCreator = _props2.promptTextCreator;
 
-		// TRICKY Check currently selected options as well.
-		// Don't display a create-prompt for a value that's selected.
-		// This covers async edge-cases where a newly-created Option isn't yet in the async-loaded array.
-		var excludeOptions = arguments[2] || [];
+        // TRICKY Check currently selected options as well.
+        // Don't display a create-prompt for a value that's selected.
+        // This covers async edge-cases where a newly-created Option isn't yet in the async-loaded array.
+        var excludeOptions = arguments[2] || [];
 
-		var filteredOptions = filterOptions.apply(undefined, arguments) || [];
+        var filteredOptions = filterOptions.apply(undefined, arguments) || [];
 
-		if (isValidNewOption({ label: this.inputValue })) {
-			var _newOptionCreator = this.props.newOptionCreator;
+        if (isValidNewOption({ label: this.inputValue })) {
+            var _newOptionCreator = this.props.newOptionCreator;
 
-			var option = _newOptionCreator({
-				label: this.inputValue,
-				labelKey: this.labelKey,
-				valueKey: this.valueKey
-			});
+            var option = _newOptionCreator({
+                label: this.inputValue,
+                labelKey: this.labelKey,
+                valueKey: this.valueKey
+            });
 
-			// TRICKY Compare to all options (not just filtered options) in case option has already been selected).
-			// For multi-selects, this would remove it from the filtered list.
-			var _isOptionUnique2 = this.isOptionUnique({
-				option: option,
-				options: excludeOptions.concat(filteredOptions)
-			});
+            // TRICKY Compare to all options (not just filtered options) in case option has already been selected).
+            // For multi-selects, this would remove it from the filtered list.
+            var _isOptionUnique2 = this.isOptionUnique({
+                option: option,
+                options: excludeOptions.concat(filteredOptions)
+            });
 
-			if (_isOptionUnique2) {
-				var _prompt = promptTextCreator(this.inputValue);
+            if (_isOptionUnique2) {
+                var _prompt = promptTextCreator(this.inputValue);
 
-				this._createPlaceholderOption = _newOptionCreator({
-					label: _prompt,
-					labelKey: this.labelKey,
-					valueKey: this.valueKey
-				});
+                this._createPlaceholderOption = _newOptionCreator({
+                    label: _prompt,
+                    labelKey: this.labelKey,
+                    valueKey: this.valueKey
+                });
 
-				filteredOptions.unshift(this._createPlaceholderOption);
-			}
-		}
+                filteredOptions.unshift(this._createPlaceholderOption);
+            }
+        }
 
-		return filteredOptions;
-	},
+        return filteredOptions;
+    },
 
-	isOptionUnique: function isOptionUnique(_ref2) {
-		var option = _ref2.option;
-		var options = _ref2.options;
-		var isOptionUnique = this.props.isOptionUnique;
+    isOptionUnique: function isOptionUnique(_ref2) {
+        var option = _ref2.option;
+        var options = _ref2.options;
+        var isOptionUnique = this.props.isOptionUnique;
 
-		options = options || this.select.filterOptions();
+        options = options || this.select.filterOptions();
 
-		return isOptionUnique({
-			labelKey: this.labelKey,
-			option: option,
-			options: options,
-			valueKey: this.valueKey
-		});
-	},
+        return isOptionUnique({
+            labelKey: this.labelKey,
+            option: option,
+            options: options,
+            valueKey: this.valueKey
+        });
+    },
 
-	menuRenderer: function menuRenderer(params) {
-		var menuRenderer = this.props.menuRenderer;
+    menuRenderer: function menuRenderer(params) {
+        var menuRenderer = this.props.menuRenderer;
 
-		return menuRenderer(_extends({}, params, {
-			onSelect: this.onOptionSelect,
-			selectValue: this.onOptionSelect
-		}));
-	},
+        return menuRenderer(_extends({}, params, {
+            onSelect: this.onOptionSelect,
+            selectValue: this.onOptionSelect
+        }));
+    },
 
-	onInputChange: function onInputChange(input) {
-		var onInputChange = this.props.onInputChange;
+    onInputChange: function onInputChange(input) {
+        var onInputChange = this.props.onInputChange;
 
-		if (onInputChange) {
-			onInputChange(input);
-		}
+        if (onInputChange) {
+            onInputChange(input);
+        }
 
-		// This value may be needed in between Select mounts (when this.select is null)
-		this.inputValue = input;
-	},
+        // This value may be needed in between Select mounts (when this.select is null)
+        this.inputValue = input;
+    },
 
-	onInputKeyDown: function onInputKeyDown(event) {
-		var _props3 = this.props;
-		var shouldKeyDownEventCreateNewOption = _props3.shouldKeyDownEventCreateNewOption;
-		var onInputKeyDown = _props3.onInputKeyDown;
+    onInputKeyDown: function onInputKeyDown(event) {
+        var _props3 = this.props;
+        var shouldKeyDownEventCreateNewOption = _props3.shouldKeyDownEventCreateNewOption;
+        var onInputKeyDown = _props3.onInputKeyDown;
 
-		var focusedOption = this.select.getFocusedOption();
+        var focusedOption = this.select.getFocusedOption();
 
-		if (focusedOption && focusedOption === this._createPlaceholderOption && shouldKeyDownEventCreateNewOption({ keyCode: event.keyCode })) {
-			this.createNewOption();
+        if (focusedOption && focusedOption === this._createPlaceholderOption && shouldKeyDownEventCreateNewOption({ keyCode: event.keyCode })) {
+            this.createNewOption();
 
-			// Prevent decorated Select from doing anything additional with this keyDown event
-			event.preventDefault();
-		} else if (onInputKeyDown) {
-			onInputKeyDown(event);
-		}
-	},
+            // Prevent decorated Select from doing anything additional with this keyDown event
+            event.preventDefault();
+        } else if (onInputKeyDown) {
+            onInputKeyDown(event);
+        }
+    },
 
-	onOptionSelect: function onOptionSelect(option, event) {
-		if (option === this._createPlaceholderOption) {
-			this.createNewOption();
-		} else {
-			this.select.selectValue(option);
-		}
-	},
+    onOptionSelect: function onOptionSelect(option, event) {
+        if (option === this._createPlaceholderOption) {
+            this.createNewOption();
+        } else {
+            this.select.selectValue(option);
+        }
+    },
 
-	render: function render() {
-		var _this = this;
+    render: function render() {
+        var _this = this;
 
-		var _props4 = this.props;
-		var newOptionCreator = _props4.newOptionCreator;
-		var shouldKeyDownEventCreateNewOption = _props4.shouldKeyDownEventCreateNewOption;
+        var _props4 = this.props;
+        var newOptionCreator = _props4.newOptionCreator;
+        var shouldKeyDownEventCreateNewOption = _props4.shouldKeyDownEventCreateNewOption;
 
-		var restProps = _objectWithoutProperties(_props4, ['newOptionCreator', 'shouldKeyDownEventCreateNewOption']);
+        var restProps = _objectWithoutProperties(_props4, ['newOptionCreator', 'shouldKeyDownEventCreateNewOption']);
 
-		var children = this.props.children;
+        var children = this.props.children;
 
-		// We can't use destructuring default values to set the children,
-		// because it won't apply work if `children` is null. A falsy check is
-		// more reliable in real world use-cases.
-		if (!children) {
-			children = defaultChildren;
-		}
+        // We can't use destructuring default values to set the children,
+        // because it won't apply work if `children` is null. A falsy check is
+        // more reliable in real world use-cases.
+        if (!children) {
+            children = defaultChildren;
+        }
 
-		var props = _extends({}, restProps, {
-			allowCreate: true,
-			filterOptions: this.filterOptions,
-			menuRenderer: this.menuRenderer,
-			onInputChange: this.onInputChange,
-			onInputKeyDown: this.onInputKeyDown,
-			ref: function ref(_ref) {
-				_this.select = _ref;
+        var props = _extends({}, restProps, {
+            allowCreate: true,
+            filterOptions: this.filterOptions,
+            menuRenderer: this.menuRenderer,
+            onInputChange: this.onInputChange,
+            onInputKeyDown: this.onInputKeyDown,
+            ref: function ref(_ref) {
+                _this.select = _ref;
 
-				// These values may be needed in between Select mounts (when this.select is null)
-				if (_ref) {
-					_this.labelKey = _ref.props.labelKey;
-					_this.valueKey = _ref.props.valueKey;
-				}
-			}
-		});
+                // These values may be needed in between Select mounts (when this.select is null)
+                if (_ref) {
+                    _this.labelKey = _ref.props.labelKey;
+                    _this.valueKey = _ref.props.valueKey;
+                }
+            }
+        });
 
-		return children(props);
-	}
+        return children(props);
+    }
 });
 
 function defaultChildren(props) {
-	return _react2['default'].createElement(_Select2['default'], props);
+    return _react2['default'].createElement(_Select2['default'], props);
 };
 
 function isOptionUnique(_ref3) {
-	var option = _ref3.option;
-	var options = _ref3.options;
-	var labelKey = _ref3.labelKey;
-	var valueKey = _ref3.valueKey;
+    var option = _ref3.option;
+    var options = _ref3.options;
+    var labelKey = _ref3.labelKey;
+    var valueKey = _ref3.valueKey;
 
-	return options.filter(function (existingOption) {
-		return existingOption[labelKey] === option[labelKey] || existingOption[valueKey] === option[valueKey];
-	}).length === 0;
+    return options.filter(function (existingOption) {
+        return existingOption[labelKey] === option[labelKey] || existingOption[valueKey] === option[valueKey];
+    }).length === 0;
 };
 
 function isValidNewOption(_ref4) {
-	var label = _ref4.label;
+    var label = _ref4.label;
 
-	return !!label;
+    return !!label;
 };
 
 function newOptionCreator(_ref5) {
-	var label = _ref5.label;
-	var labelKey = _ref5.labelKey;
-	var valueKey = _ref5.valueKey;
+    var label = _ref5.label;
+    var labelKey = _ref5.labelKey;
+    var valueKey = _ref5.valueKey;
 
-	var option = {};
-	option[valueKey] = label;
-	option[labelKey] = label;
-	option.className = 'Select-create-option-placeholder';
-	return option;
+    var option = {};
+    option[valueKey] = label;
+    option[labelKey] = label;
+    option.className = 'Select-create-option-placeholder';
+    return option;
 };
 
 function promptTextCreator(label) {
-	return 'Create option "' + label + '"';
+    return 'Create option "' + label + '"';
 }
 
 function shouldKeyDownEventCreateNewOption(_ref6) {
-	var keyCode = _ref6.keyCode;
+    var keyCode = _ref6.keyCode;
 
-	switch (keyCode) {
-		case 9: // TAB
-		case 13: // ENTER
-		case 188:
-			// COMMA
-			return true;
-	}
+    switch (keyCode) {
+        case 9: // TAB
+        case 13: // ENTER
+        case 188:
+            // COMMA
+            return true;
+    }
 
-	return false;
+    return false;
 };
 
 module.exports = Creatable;
 
 /***/ },
-/* 183 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20759,107 +19910,107 @@ var _classnames = __webpack_require__(2);
 var _classnames2 = _interopRequireDefault(_classnames);
 
 var Option = _react2['default'].createClass({
-	displayName: 'Option',
+    displayName: 'Option',
 
-	propTypes: {
-		children: _react2['default'].PropTypes.node,
-		className: _react2['default'].PropTypes.string, // className (based on mouse position)
-		instancePrefix: _react2['default'].PropTypes.string.isRequired, // unique prefix for the ids (used for aria)
-		isDisabled: _react2['default'].PropTypes.bool, // the option is disabled
-		isFocused: _react2['default'].PropTypes.bool, // the option is focused
-		isSelected: _react2['default'].PropTypes.bool, // the option is selected
-		onFocus: _react2['default'].PropTypes.func, // method to handle mouseEnter on option element
-		onSelect: _react2['default'].PropTypes.func, // method to handle click on option element
-		onUnfocus: _react2['default'].PropTypes.func, // method to handle mouseLeave on option element
-		option: _react2['default'].PropTypes.object.isRequired, // object that is base for that option
-		optionIndex: _react2['default'].PropTypes.number },
-	// index of the option, used to generate unique ids for aria
-	blockEvent: function blockEvent(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		if (event.target.tagName !== 'A' || !('href' in event.target)) {
-			return;
-		}
-		if (event.target.target) {
-			window.open(event.target.href, event.target.target);
-		} else {
-			window.location.href = event.target.href;
-		}
-	},
+    propTypes: {
+        children: _react2['default'].PropTypes.node,
+        className: _react2['default'].PropTypes.string, // className (based on mouse position)
+        instancePrefix: _react2['default'].PropTypes.string.isRequired, // unique prefix for the ids (used for aria)
+        isDisabled: _react2['default'].PropTypes.bool, // the option is disabled
+        isFocused: _react2['default'].PropTypes.bool, // the option is focused
+        isSelected: _react2['default'].PropTypes.bool, // the option is selected
+        onFocus: _react2['default'].PropTypes.func, // method to handle mouseEnter on option element
+        onSelect: _react2['default'].PropTypes.func, // method to handle click on option element
+        onUnfocus: _react2['default'].PropTypes.func, // method to handle mouseLeave on option element
+        option: _react2['default'].PropTypes.object.isRequired, // object that is base for that option
+        optionIndex: _react2['default'].PropTypes.number },
+    // index of the option, used to generate unique ids for aria
+    blockEvent: function blockEvent(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.target.tagName !== 'A' || !('href' in event.target)) {
+            return;
+        }
+        if (event.target.target) {
+            window.open(event.target.href, event.target.target);
+        } else {
+            window.location.href = event.target.href;
+        }
+    },
 
-	handleMouseDown: function handleMouseDown(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		this.props.onSelect(this.props.option, event);
-	},
+    handleMouseDown: function handleMouseDown(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.props.onSelect(this.props.option, event);
+    },
 
-	handleMouseEnter: function handleMouseEnter(event) {
-		this.onFocus(event);
-	},
+    handleMouseEnter: function handleMouseEnter(event) {
+        this.onFocus(event);
+    },
 
-	handleMouseMove: function handleMouseMove(event) {
-		this.onFocus(event);
-	},
+    handleMouseMove: function handleMouseMove(event) {
+        this.onFocus(event);
+    },
 
-	handleTouchEnd: function handleTouchEnd(event) {
-		// Check if the view is being dragged, In this case
-		// we don't want to fire the click event (because the user only wants to scroll)
-		if (this.dragging) return;
+    handleTouchEnd: function handleTouchEnd(event) {
+        // Check if the view is being dragged, In this case
+        // we don't want to fire the click event (because the user only wants to scroll)
+        if (this.dragging) return;
 
-		this.handleMouseDown(event);
-	},
+        this.handleMouseDown(event);
+    },
 
-	handleTouchMove: function handleTouchMove(event) {
-		// Set a flag that the view is being dragged
-		this.dragging = true;
-	},
+    handleTouchMove: function handleTouchMove(event) {
+        // Set a flag that the view is being dragged
+        this.dragging = true;
+    },
 
-	handleTouchStart: function handleTouchStart(event) {
-		// Set a flag that the view is not being dragged
-		this.dragging = false;
-	},
+    handleTouchStart: function handleTouchStart(event) {
+        // Set a flag that the view is not being dragged
+        this.dragging = false;
+    },
 
-	onFocus: function onFocus(event) {
-		if (!this.props.isFocused) {
-			this.props.onFocus(this.props.option, event);
-		}
-	},
-	render: function render() {
-		var _props = this.props;
-		var option = _props.option;
-		var instancePrefix = _props.instancePrefix;
-		var optionIndex = _props.optionIndex;
+    onFocus: function onFocus(event) {
+        if (!this.props.isFocused) {
+            this.props.onFocus(this.props.option, event);
+        }
+    },
+    render: function render() {
+        var _props = this.props;
+        var option = _props.option;
+        var instancePrefix = _props.instancePrefix;
+        var optionIndex = _props.optionIndex;
 
-		var className = (0, _classnames2['default'])(this.props.className, option.className);
+        var className = (0, _classnames2['default'])(this.props.className, option.className);
 
-		return option.disabled ? _react2['default'].createElement(
-			'div',
-			{ className: className,
-				onMouseDown: this.blockEvent,
-				onClick: this.blockEvent },
-			this.props.children
-		) : _react2['default'].createElement(
-			'div',
-			{ className: className,
-				style: option.style,
-				role: 'option',
-				onMouseDown: this.handleMouseDown,
-				onMouseEnter: this.handleMouseEnter,
-				onMouseMove: this.handleMouseMove,
-				onTouchStart: this.handleTouchStart,
-				onTouchMove: this.handleTouchMove,
-				onTouchEnd: this.handleTouchEnd,
-				id: instancePrefix + '-option-' + optionIndex,
-				title: option.title },
-			this.props.children
-		);
-	}
+        return option.disabled ? _react2['default'].createElement(
+            'div',
+            { className: className,
+                onMouseDown: this.blockEvent,
+                onClick: this.blockEvent },
+            this.props.children
+        ) : _react2['default'].createElement(
+            'div',
+            { className: className,
+                style: option.style,
+                role: 'option',
+                onMouseDown: this.handleMouseDown,
+                onMouseEnter: this.handleMouseEnter,
+                onMouseMove: this.handleMouseMove,
+                onTouchStart: this.handleTouchStart,
+                onTouchMove: this.handleTouchMove,
+                onTouchEnd: this.handleTouchEnd,
+                id: instancePrefix + '-option-' + optionIndex,
+                title: option.title },
+            this.props.children
+        );
+    }
 });
 
 module.exports = Option;
 
 /***/ },
-/* 184 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20877,108 +20028,108 @@ var _classnames2 = _interopRequireDefault(_classnames);
 
 var Value = _react2['default'].createClass({
 
-	displayName: 'Value',
+    displayName: 'Value',
 
-	propTypes: {
-		children: _react2['default'].PropTypes.node,
-		disabled: _react2['default'].PropTypes.bool, // disabled prop passed to ReactSelect
-		id: _react2['default'].PropTypes.string, // Unique id for the value - used for aria
-		onClick: _react2['default'].PropTypes.func, // method to handle click on value label
-		onRemove: _react2['default'].PropTypes.func, // method to handle removal of the value
-		value: _react2['default'].PropTypes.object.isRequired },
+    propTypes: {
+        children: _react2['default'].PropTypes.node,
+        disabled: _react2['default'].PropTypes.bool, // disabled prop passed to ReactSelect
+        id: _react2['default'].PropTypes.string, // Unique id for the value - used for aria
+        onClick: _react2['default'].PropTypes.func, // method to handle click on value label
+        onRemove: _react2['default'].PropTypes.func, // method to handle removal of the value
+        value: _react2['default'].PropTypes.object.isRequired },
 
-	// the option object for this value
-	handleMouseDown: function handleMouseDown(event) {
-		if (event.type === 'mousedown' && event.button !== 0) {
-			return;
-		}
-		if (this.props.onClick) {
-			event.stopPropagation();
-			this.props.onClick(this.props.value, event);
-			return;
-		}
-		if (this.props.value.href) {
-			event.stopPropagation();
-		}
-	},
+    // the option object for this value
+    handleMouseDown: function handleMouseDown(event) {
+        if (event.type === 'mousedown' && event.button !== 0) {
+            return;
+        }
+        if (this.props.onClick) {
+            event.stopPropagation();
+            this.props.onClick(this.props.value, event);
+            return;
+        }
+        if (this.props.value.href) {
+            event.stopPropagation();
+        }
+    },
 
-	onRemove: function onRemove(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		this.props.onRemove(this.props.value);
-	},
+    onRemove: function onRemove(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.props.onRemove(this.props.value);
+    },
 
-	handleTouchEndRemove: function handleTouchEndRemove(event) {
-		// Check if the view is being dragged, In this case
-		// we don't want to fire the click event (because the user only wants to scroll)
-		if (this.dragging) return;
+    handleTouchEndRemove: function handleTouchEndRemove(event) {
+        // Check if the view is being dragged, In this case
+        // we don't want to fire the click event (because the user only wants to scroll)
+        if (this.dragging) return;
 
-		// Fire the mouse events
-		this.onRemove(event);
-	},
+        // Fire the mouse events
+        this.onRemove(event);
+    },
 
-	handleTouchMove: function handleTouchMove(event) {
-		// Set a flag that the view is being dragged
-		this.dragging = true;
-	},
+    handleTouchMove: function handleTouchMove(event) {
+        // Set a flag that the view is being dragged
+        this.dragging = true;
+    },
 
-	handleTouchStart: function handleTouchStart(event) {
-		// Set a flag that the view is not being dragged
-		this.dragging = false;
-	},
+    handleTouchStart: function handleTouchStart(event) {
+        // Set a flag that the view is not being dragged
+        this.dragging = false;
+    },
 
-	renderRemoveIcon: function renderRemoveIcon() {
-		if (this.props.disabled || !this.props.onRemove) return;
-		return _react2['default'].createElement(
-			'span',
-			{ className: 'Select-value-icon',
-				'aria-hidden': 'true',
-				onMouseDown: this.onRemove,
-				onTouchEnd: this.handleTouchEndRemove,
-				onTouchStart: this.handleTouchStart,
-				onTouchMove: this.handleTouchMove },
-			'×'
-		);
-	},
+    renderRemoveIcon: function renderRemoveIcon() {
+        if (this.props.disabled || !this.props.onRemove) return;
+        return _react2['default'].createElement(
+            'span',
+            { className: 'Select-value-icon',
+                'aria-hidden': 'true',
+                onMouseDown: this.onRemove,
+                onTouchEnd: this.handleTouchEndRemove,
+                onTouchStart: this.handleTouchStart,
+                onTouchMove: this.handleTouchMove },
+            '×'
+        );
+    },
 
-	renderLabel: function renderLabel() {
-		var className = 'Select-value-label';
-		return this.props.onClick || this.props.value.href ? _react2['default'].createElement(
-			'a',
-			{ className: className, href: this.props.value.href, target: this.props.value.target, onMouseDown: this.handleMouseDown, onTouchEnd: this.handleMouseDown },
-			this.props.children
-		) : _react2['default'].createElement(
-			'span',
-			{ className: className, role: 'option', 'aria-selected': 'true', id: this.props.id },
-			this.props.children
-		);
-	},
+    renderLabel: function renderLabel() {
+        var className = 'Select-value-label';
+        return this.props.onClick || this.props.value.href ? _react2['default'].createElement(
+            'a',
+            { className: className, href: this.props.value.href, target: this.props.value.target, onMouseDown: this.handleMouseDown, onTouchEnd: this.handleMouseDown },
+            this.props.children
+        ) : _react2['default'].createElement(
+            'span',
+            { className: className, role: 'option', 'aria-selected': 'true', id: this.props.id },
+            this.props.children
+        );
+    },
 
-	render: function render() {
-		return _react2['default'].createElement(
-			'div',
-			{ className: (0, _classnames2['default'])('Select-value', this.props.value.className),
-				style: this.props.value.style,
-				title: this.props.value.title
-			},
-			this.renderRemoveIcon(),
-			this.renderLabel()
-		);
-	}
+    render: function render() {
+        return _react2['default'].createElement(
+            'div',
+            { className: (0, _classnames2['default'])('Select-value', this.props.value.className),
+                style: this.props.value.style,
+                title: this.props.value.title
+            },
+            this.renderRemoveIcon(),
+            this.renderLabel()
+        );
+    }
 
 });
 
 module.exports = Value;
 
 /***/ },
-/* 185 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 exports["default"] = arrowRenderer;
 
@@ -20989,26 +20140,26 @@ var _react = __webpack_require__(1);
 var _react2 = _interopRequireDefault(_react);
 
 function arrowRenderer(_ref) {
-	var onMouseDown = _ref.onMouseDown;
+    var onMouseDown = _ref.onMouseDown;
 
-	return _react2["default"].createElement("span", {
-		className: "Select-arrow",
-		onMouseDown: onMouseDown
-	});
+    return _react2["default"].createElement("span", {
+        className: "Select-arrow",
+        onMouseDown: onMouseDown
+    });
 }
 
 ;
 module.exports = exports["default"];
 
 /***/ },
-/* 186 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-	value: true
+    value: true
 });
 exports['default'] = clearRenderer;
 
@@ -21019,17 +20170,17 @@ var _react = __webpack_require__(1);
 var _react2 = _interopRequireDefault(_react);
 
 function clearRenderer() {
-	return _react2['default'].createElement('span', {
-		className: 'Select-clear',
-		dangerouslySetInnerHTML: { __html: '&times;' }
-	});
+    return _react2['default'].createElement('span', {
+        className: 'Select-clear',
+        dangerouslySetInnerHTML: { __html: '&times;' }
+    });
 }
 
 ;
 module.exports = exports['default'];
 
 /***/ },
-/* 187 */
+/* 148 */
 /***/ function(module, exports) {
 
 var g;
@@ -21038,12 +20189,12 @@ var g;
 g = (function() { return this; })();
 
 try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
+    // This works if eval is allowed (see CSP)
+    g = g || Function("return this")() || (1,eval)("this");
 } catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
+    // This works if the window reference is available
+    if(typeof window === "object")
+        g = window;
 }
 
 // g can still be undefined, but nothing to do about it...
@@ -21054,33 +20205,33 @@ module.exports = g;
 
 
 /***/ },
-/* 188 */
+/* 149 */
 /***/ function(module, exports) {
 
 module.exports = function(module) {
-	if(!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			configurable: false,
-			get: function() { return module.l; }
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			configurable: false,
-			get: function() { return module.i; }
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
+    if(!module.webpackPolyfill) {
+        module.deprecate = function() {};
+        module.paths = [];
+        // module.parent = undefined by default
+        if(!module.children) module.children = [];
+        Object.defineProperty(module, "loaded", {
+            enumerable: true,
+            configurable: false,
+            get: function() { return module.l; }
+        });
+        Object.defineProperty(module, "id", {
+            enumerable: true,
+            configurable: false,
+            get: function() { return module.i; }
+        });
+        module.webpackPolyfill = 1;
+    }
+    return module;
 }
 
 
 /***/ },
-/* 189 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21090,21 +20241,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDraggable = __webpack_require__(131);
-
-var _reactLinkState = __webpack_require__(132);
+var _reactLinkState = __webpack_require__(124);
 
 var _reactLinkState2 = _interopRequireDefault(_reactLinkState);
-
-var _clamp = __webpack_require__(128);
-
-var _clamp2 = _interopRequireDefault(_clamp);
 
 var _moment = __webpack_require__(0);
 
@@ -21114,36 +20261,39 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _generate = __webpack_require__(126);
+var _generate = __webpack_require__(123);
 
 var _generate2 = _interopRequireDefault(_generate);
 
-var _reactSelect = __webpack_require__(3);
-
-var _reactSelect2 = _interopRequireDefault(_reactSelect);
-
-var _getIncrementDifference = __webpack_require__(127);
+var _getIncrementDifference = __webpack_require__(5);
 
 var _getIncrementDifference2 = _interopRequireDefault(_getIncrementDifference);
 
-var _reactClickOutside = __webpack_require__(130);
+var _settings = __webpack_require__(3);
 
-var _reactClickOutside2 = _interopRequireDefault(_reactClickOutside);
+var _DraggableLayer = __webpack_require__(120);
 
-var _get = __webpack_require__(129);
+var _DraggableLayer2 = _interopRequireDefault(_DraggableLayer);
 
-var _get2 = _interopRequireDefault(_get);
+var _Resizer = __webpack_require__(122);
+
+var _Resizer2 = _interopRequireDefault(_Resizer);
+
+var _Popover = __webpack_require__(121);
+
+var _Popover2 = _interopRequireDefault(_Popover);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var height = 125;
-var width = 250;
 
 var Timesheet = function (_React$Component) {
   _inherits(Timesheet, _React$Component);
@@ -21162,144 +20312,76 @@ var Timesheet = function (_React$Component) {
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Timesheet.__proto__ || Object.getPrototypeOf(Timesheet)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
       schedules: _this.props.schedules,
       times: (0, _generate2.default)(_this.props.time.start, _this.props.time.end, _this.props.time.increment),
-      recent: false, // Flag if a schedule was recently created
-      edit: null, // Data / cache of what we're editing
-      editing: false, // Flag if we're in create mode
-      source: null,
-      drag: null,
-      dragging: false,
-      resize: null,
-      resizing: false
-    }, _this.handleSubmit = function (evt) {
-      evt.preventDefault();
-      _this.handleCancelEdit();
-    }, _this.handleCancel = function () {
+      // Flag if a schedule was recently created
+      recent: false,
+      // Data / cache of what we're editing
+      // ({ day: String, index: Number (arrayIndex), time: Number (timeIndex) })
+      edit: null,
+      // Flag if we're in create mode
+      editing: false
+    }, _this.validate = function (dest) {
       var _this$state = _this.state,
           schedules = _this$state.schedules,
-          times = _this$state.times,
-          edit = _this$state.edit;
+          times = _this$state.times;
 
-      var schedule = schedules[edit.day];
-      schedule.splice(edit.index, 1);
+      var day = schedules[dest.day];
+      var last = times[times.length - 1];
+      // Check if start and end time are not the same
+      // Check if there are overlapping schedules
+      // Must start before and after start
+      // Must end before and after end
+      return dest.start < dest.end && dest.end <= last.end && !day.find(function (schedule) {
+        return dest.schedule !== schedule &&
+        // http://stackoverflow.com/a/325964/2698227
+        Math.max(dest.start, schedule.start) < Math.min(dest.end, schedule.end);
+      });
+    }, _this.handleCancel = function () {
+      if (_this.state.recent) {
+        var _this$state2 = _this.state,
+            schedules = _this$state2.schedules,
+            edit = _this$state2.edit;
+
+        schedules[edit.day].splice(edit.index, 1);
+
+        _this.setState({
+          edit: null,
+          editing: false,
+          recent: false,
+          schedules: schedules
+        });
+
+        return;
+      }
 
       _this.setState({
         edit: null,
-        editing: false,
-        recent: false,
-        schedules: schedules
+        editing: false
       });
-    }, _this.handleCancelEdit = function () {
+    }, _this.handleSubmit = function (schedule) {
+      var _this$state$edit = _this.state.edit,
+          day = _this$state$edit.day,
+          index = _this$state$edit.index;
+
+
+      if (_this.state.recent) {
+        _this.props.onStore(day, schedule);
+      } else {
+        _this.props.onUpdate(day, index, schedule);
+      }
+
       _this.setState({
         edit: null,
         editing: false,
         recent: false
       });
-    }, _this.handleEscape = function (evt) {
-      if (evt.keyCode === 27) {
-        if (_this.state.recent) {
-          _this.handleCancel();
-        } else {
-          _this.handleCancelEdit();
-        }
-      }
-    }, _this.handleDrag = function (evt, position) {
-      _this.setState({
-        drag: {
-          x: _this.state.drag.x + position.deltaX,
-          y: _this.state.drag.y + position.deltaY
-        },
-
-        dragging: true,
-        edit: null,
-        editing: false
-      });
-    }, _this.handleDragStop = function (evt) {
-      if (!_this.state.dragging) {
-        return;
-      }
-
-      var _this$state2 = _this.state,
-          source = _this$state2.source,
-          schedules = _this$state2.schedules,
-          times = _this$state2.times,
-          drag = _this$state2.drag;
-
-      var diw = Object.keys(schedules); // All days in words
-      var day = diw[(0, _clamp2.default)(Math.ceil(drag.x / width), 0, diw.length - 1)]; // Target day (index)
-      var time = times[(0, _clamp2.default)(Math.ceil(drag.y / height), 0, times.length - 1)]; // Target time (index)
-      var schedule = schedules[source.day][source.index];
-
-      var start = schedule.start;
-      var end = schedule.end;
-      // If we dragged across another time (vertical),
-      // we'll compute those changes for validation.
-      if (!time.start.isSame(schedule.start)) {
-        var increment = _this.props.time.increment;
-
-        var difference = (0, _getIncrementDifference2.default)(schedule.start, schedule.end, increment);
-        start = time.start.clone();
-        end = time.start.clone().add(difference * increment.hours, 'hours').add(difference * increment.minutes, 'minutes');
-      }
-
-      // We'll apply changes only once we've verified that thing are valid
-      if (_this.validate({ day: day, schedule: schedule, start: start, end: end })) {
-        // Changes for when dragged across another time (vertical)
-        schedule.start = start;
-        schedule.end = end;
-
-        // Changes for when dragged across another day (horizontal)
-        if (day !== source.day) {
-          schedules[source.day].splice(source.index, 1)[0];
-          schedules[day].splice(0, 0, schedule);
-        }
-      }
-
-      _this.setState({
-        schedules: schedules,
-        source: null,
-        drag: null,
-        dragging: false
-      });
-    }, _this.handleResize = function (evt, position) {
-      _this.setState({
-        resize: _this.state.resize + position.deltaY / height,
-        resizing: true,
-        edit: null,
-        editing: false
-      });
-    }, _this.handleResizeStop = function () {
-      if (!_this.state.resizing) {
-        return;
-      }
-
-      var increment = _this.props.time.increment;
-      var _this$state3 = _this.state,
-          schedules = _this$state3.schedules,
-          source = _this$state3.source,
-          resize = _this$state3.resize;
-
-      var schedule = schedules[source.day][source.index];
-      var end = schedule.start.clone().add(resize * increment.hours, 'hours').add(resize * increment.minutes, 'minutes');
-
-      if (_this.validate({ day: source.day, schedule: schedule, start: schedule.start, end: end })) {
-        schedule.end = end;
-      }
-
-      _this.setState({
-        schedules: schedules,
-        source: null,
-        resize: null,
-        resizing: false
-      });
+    }, _this.handleDrag = function (day, index, schedule, dest) {
+      _this.props.onUpdate(day, index, schedule, dest);
+    }, _this.handleResize = function (day, index, schedule) {
+      _this.props.onUpdate(day, index, schedule);
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Timesheet, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      document.addEventListener('keyup', this.handleEscape);
-    }
-  }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       if (nextProps.schedules === this.props.schedules) {
@@ -21307,11 +20389,6 @@ var Timesheet = function (_React$Component) {
       }
 
       this.setState({ schedules: nextProps.schedules });
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      document.removeEventListener('keyup', this.handleEscape);
     }
   }, {
     key: 'render',
@@ -21322,7 +20399,13 @@ var Timesheet = function (_React$Component) {
           times = _state.times,
           schedules = _state.schedules,
           editing = _state.editing,
-          edit = _state.edit;
+          edit = _state.edit,
+          recent = _state.recent;
+      var _props = this.props,
+          time = _props.time,
+          professors = _props.professors,
+          subjects = _props.subjects,
+          sections = _props.sections;
 
       var now = (0, _moment2.default)();
 
@@ -21375,29 +20458,38 @@ var Timesheet = function (_React$Component) {
                   key: ii });
               }),
               schedules[day].map(function (schedule, ii) {
+                var current = now.isSameOrAfter(schedule.start) && now.isSameOrBefore(schedule.end);
+                var done = now.isAfter(schedule.end);
+
                 return _react2.default.createElement(
-                  _reactDraggable.DraggableCore,
+                  _DraggableLayer2.default,
                   {
-                    allowAnyClick: true,
-                    grid: [width, height],
-                    cancel: '.draggable-cancel',
-                    onStart: _this2.handleDragStart(day, ii),
-                    onDrag: _this2.handleDrag.bind(_this2),
-                    onStop: _this2.handleDragStop.bind(_this2),
+                    source: { day: day, index: ii },
+                    schedule: schedule,
+                    schedules: schedules,
+                    time: time,
+                    times: times,
+                    validate: _this2.validate,
+                    onDrag: _this2.handleDrag,
                     key: ii },
                   _react2.default.createElement(
                     'div',
                     { onDoubleClick: _this2.handleEdit(day, ii),
                       className: (0, _classnames2.default)('timesheet__overlay', {
-                        'timesheet__overlay--current': now.isSameOrAfter(schedule.start) && now.isSameOrBefore(schedule.end),
-                        'timesheet__overlay--done': now.isAfter(schedule.end)
+                        'timesheet__overlay--current': current,
+                        'timesheet__overlay--done': done
                       }),
                       style: {
-                        transform: 'translateY(' + height * times.findIndex(function (time) {
+                        transform: 'translateY(' + _settings.height * times.findIndex(function (time) {
                           return time.start.isSame(schedule.start);
                         }) + 'px)',
-                        height: height * (0, _getIncrementDifference2.default)(schedule.start, schedule.end, _this2.props.time.increment)
+                        height: _settings.height * (0, _getIncrementDifference2.default)(schedule.start, schedule.end, _this2.props.time.increment)
                       } },
+                    (current || done) && _react2.default.createElement(
+                      'div',
+                      { className: 'timesheet__overlay-status' },
+                      current ? 'On-going' : 'Done'
+                    ),
                     _react2.default.createElement(
                       'h6',
                       { className: 'timesheet__overlay-other' },
@@ -21413,81 +20505,29 @@ var Timesheet = function (_React$Component) {
                       { className: 'timesheet__overlay-other' },
                       schedule.data.professor.name || 'Professor Name'
                     ),
-                    _react2.default.createElement(
-                      _reactDraggable.DraggableCore,
-                      {
-                        allowAnyClick: true,
-                        grid: [width, height],
-                        onStart: _this2.handleResizeStart(day, ii),
-                        onDrag: _this2.handleResize,
-                        onStop: _this2.handleResizeStop },
-                      _react2.default.createElement('div', { className: 'timesheet__overlay-resizer draggable-cancel' })
-                    )
+                    _react2.default.createElement(_Resizer2.default, {
+                      schedules: schedules,
+                      schedule: schedule,
+                      source: { day: day, index: ii },
+                      time: time,
+                      times: times,
+                      validate: _this2.validate,
+                      onResize: _this2.handleResize })
                   )
                 );
               })
             );
           }),
-          editing && _react2.default.createElement(
-            _reactClickOutside2.default,
-            { onClickOutside: this.handleCancelEdit,
-              className: 'timesheet__popover draggable-cancel',
-              style: {
-                top: height * edit.time + 30,
-                left: width * (Object.keys(this.state.schedules).findIndex(function (day) {
-                  return edit.day === day;
-                }) + 1) + 75
-              } },
-            _react2.default.createElement(
-              'form',
-              { onSubmit: this.handleSubmit },
-              _react2.default.createElement(
-                'div',
-                { className: 'timesheet__popover-body' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'u-spacer' },
-                  _react2.default.createElement(_reactSelect2.default, { autofocus: true,
-                    value: (0, _get2.default)(schedules, '[' + edit.day + '][' + edit.index + '].data.section.id'),
-                    onChange: this.handleInput('section'),
-                    options: this.props.sections,
-                    placeholder: 'Section Name' })
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'u-spacer' },
-                  _react2.default.createElement(_reactSelect2.default, {
-                    value: (0, _get2.default)(schedules, '[' + edit.day + '][' + edit.index + '].data.subject.id'),
-                    onChange: this.handleInput('subject'),
-                    options: this.props.subjects,
-                    placeholder: 'Subject Name' })
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'u-spacer' },
-                  _react2.default.createElement(_reactSelect2.default, { type: 'text',
-                    value: (0, _get2.default)(schedules, '[' + edit.day + '][' + edit.index + '].data.professor.id'),
-                    onChange: this.handleInput('professor'),
-                    options: this.props.professors,
-                    placeholder: 'Professor Name' })
-                )
-              ),
-              _react2.default.createElement(
-                'footer',
-                { className: 'timesheet__popover-footer' },
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', onClick: this.state.recent ? this.handleCancel : this.handleCancelEdit },
-                  this.state.recent ? 'Cancel' : 'Close'
-                ),
-                _react2.default.createElement(
-                  'button',
-                  null,
-                  this.state.recent ? 'Create' : 'Update'
-                )
-              )
-            )
-          )
+          editing && _react2.default.createElement(_Popover2.default, {
+            schedules: schedules,
+            schedule: schedules[edit.day][edit.index],
+            source: edit,
+            recent: recent,
+            subjects: subjects,
+            professors: professors,
+            sections: sections,
+            onCancel: this.handleCancel,
+            onSubmit: this.handleSubmit })
         )
       );
     }
@@ -21498,97 +20538,47 @@ var Timesheet = function (_React$Component) {
      */
 
   }, {
-    key: 'validate',
-    value: function validate(dest) {
-      var _state2 = this.state,
-          schedules = _state2.schedules,
-          times = _state2.times;
+    key: 'handleCreate',
 
-      var day = schedules[dest.day];
-      var last = times[times.length - 1];
-      // Check if start and end time are not the same
-      // Check if there are overlapping schedules
-      // Must start before and after start
-      // Must end before and after end
-      return dest.start.isBefore(dest.end) && dest.end.isSameOrBefore(last.end) && !day.find(function (schedule) {
-        return dest.schedule !== schedule && (dest.start.isSameOrAfter(schedule.start) && dest.start.isSameOrBefore(schedule.end) && dest.end.isSameOrAfter(schedule.start) && dest.end.isSameOrBefore(schedule.end) || schedule.start.isSameOrAfter(dest.start) && schedule.start.isSameOrBefore(dest.end) && schedule.end.isSameOrAfter(dest.start) && schedule.end.isSameOrBefore(dest.end));
-      });
-    }
-
-    /**
-     * Handle form submission
-     */
-
-
-    /**
-     * Cancel edit mode.
-     *
-     * @see .handleEscape
-     * @see The editing panel
-     */
-
-  }, {
-    key: 'handleInput',
-    value: function handleInput(field) {
-      var _this3 = this;
-
-      return function (option) {
-        option = option || { label: '', value: '' };
-        var _state3 = _this3.state,
-            edit = _state3.edit,
-            schedules = _state3.schedules;
-
-        var schedule = schedules[edit.day][edit.index];
-        schedule.data[field].id = option.value;
-        schedule.data[field].name = option.label;
-        _this3.setState({ schedules: schedules });
-      };
-    }
 
     /**
      * @param {string} day Key of the schedule or day is being created
      * @param {int} index Index of the time the schedule is being created
      */
-
-  }, {
-    key: 'handleCreate',
     value: function handleCreate(day, index) {
-      var _this4 = this;
+      var _this3 = this;
 
       return function () {
-        var _state4 = _this4.state,
-            schedules = _state4.schedules,
-            times = _state4.times;
+        var _state2 = _this3.state,
+            schedules = _state2.schedules,
+            times = _state2.times;
 
         var time = times[index];
         var schedule = schedules[day];
-        // Index of the time in the array
 
-        schedule.push({
-          start: time.start,
-          end: time.end,
-          data: {
-            subject: {
-              id: 0,
-              name: ''
-            },
+        _this3.setState({
+          schedules: _extends({}, schedules, _defineProperty({}, day, [].concat(_toConsumableArray(schedule), [{
+            start: time.start,
+            end: time.end,
+            data: {
+              subject: {
+                id: 0,
+                name: ''
+              },
 
-            professor: {
-              id: 0,
-              name: ''
-            },
+              professor: {
+                id: 0,
+                name: ''
+              },
 
-            section: {
-              id: 0,
-              name: ''
+              section: {
+                id: 0,
+                name: ''
+              }
             }
-          }
-        });
-
-        _this4.setState({
-          schedules: schedules,
+          }]))),
           editing: true,
-          edit: { day: day, index: schedule.length - 1, time: index },
+          edit: { day: day, index: schedule.length, time: index },
           recent: true
         });
       };
@@ -21596,12 +20586,12 @@ var Timesheet = function (_React$Component) {
   }, {
     key: 'handleEdit',
     value: function handleEdit(day, index) {
-      var _this5 = this;
+      var _this4 = this;
 
       return function () {
-        var _state5 = _this5.state,
-            schedules = _state5.schedules,
-            times = _state5.times;
+        var _state3 = _this4.state,
+            schedules = _state3.schedules,
+            times = _state3.times;
 
         var schedule = schedules[day][index];
         // Index of the time in the array
@@ -21609,54 +20599,9 @@ var Timesheet = function (_React$Component) {
           return schedule.start.isSame(time.start);
         });
 
-        _this5.setState({
+        _this4.setState({
           editing: true,
           edit: { day: day, index: index, time: time }
-        });
-      };
-    }
-  }, {
-    key: 'handleDragStart',
-    value: function handleDragStart(day, index) {
-      var _this6 = this;
-
-      return function (evt, position) {
-        var _state6 = _this6.state,
-            schedules = _state6.schedules,
-            times = _state6.times;
-
-        var schedule = schedules[day][index];
-        var time = times.findIndex(function (time) {
-          return time.start.isSame(schedule.start);
-        });
-        var diw = Object.keys(schedules).indexOf(day);
-
-        _this6.setState({
-          drag: {
-            x: width * diw,
-            y: height * time
-          },
-
-          source: { day: day, index: index }
-        });
-      };
-    }
-  }, {
-    key: 'handleResizeStart',
-    value: function handleResizeStart(day, index) {
-      var _this7 = this;
-
-      return function () {
-        var _state$schedules$day$ = _this7.state.schedules[day][index],
-            start = _state$schedules$day$.start,
-            end = _state$schedules$day$.end;
-
-
-        _this7.setState({
-          // Difference from start date
-          // (start - end) / increment
-          resize: (0, _getIncrementDifference2.default)(start, end, _this7.props.time.increment),
-          source: { day: day, index: index }
         });
       };
     }
@@ -21673,27 +20618,13 @@ Timesheet.propTypes = {
       start: _react.PropTypes.number,
       end: _react.PropTypes.number
     }).isRequired
-  }),
-
+  }).isRequired,
   schedules: _react.PropTypes.object.isRequired,
-
-  component: _react.PropTypes.shape({
-    time: _react.PropTypes.func,
-    schedule: _react.PropTypes.func
-  }),
-
   sections: _react.PropTypes.array.isRequired,
   subjects: _react.PropTypes.array.isRequired,
   professors: _react.PropTypes.array.isRequired,
   onStore: _react.PropTypes.func.isRequired,
   onUpdate: _react.PropTypes.func.isRequired
-};
-Timesheet.defaultProps = {
-  time: {
-    start: '10:00 AM',
-    end: '10:00 PM',
-    increment: { hours: 1, minutes: 30 }
-  }
 };
 exports.default = Timesheet;
 

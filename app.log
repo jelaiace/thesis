@@ -1,0 +1,1388 @@
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60103 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60104 [302]: /
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60105 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60106 [200]: /login
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60109 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60110 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60111 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60112 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60114 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:35:01 2017] 127.0.0.1:60115 [200]: /favicon.ico
+[Thu Mar  9 01:36:18 2017] 127.0.0.1:60141 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60142 [302]: /login
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60145 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60146 [200]: /
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60150 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60151 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60152 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60153 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60156 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:19 2017] 127.0.0.1:60157 [200]: /favicon.ico
+[Thu Mar  9 01:36:24 2017] 127.0.0.1:60169 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:24 2017] 127.0.0.1:60170 [500]: /schedule
+[Thu Mar  9 01:36:24 2017] 127.0.0.1:60172 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:24 2017] 127.0.0.1:60173 [200]: /favicon.ico
+[Thu Mar  9 01:36:32 2017] 127.0.0.1:60179 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:32 2017] 127.0.0.1:60180 [500]: /schedule
+[Thu Mar  9 01:36:32 2017] 127.0.0.1:60182 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:36:32 2017] 127.0.0.1:60183 [200]: /favicon.ico
+[Thu Mar  9 01:37:16 2017] 127.0.0.1:60187 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:16 2017] 127.0.0.1:60188 [200]: /schedule
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60190 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60191 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60192 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60193 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60195 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:17 2017] 127.0.0.1:60196 [200]: /favicon.ico
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60200 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60201 [200]: /schedule
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60203 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60204 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60205 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60206 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60208 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:34 2017] 127.0.0.1:60209 [200]: /favicon.ico
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60213 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60214 [200]: /schedule
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60217 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60218 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60219 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60220 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60222 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:41 2017] 127.0.0.1:60223 [200]: /favicon.ico
+[Thu Mar  9 01:37:49 2017] 127.0.0.1:60225 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:49 2017] 127.0.0.1:60226 [500]: /schedule/2
+[Thu Mar  9 01:37:49 2017] 127.0.0.1:60228 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:49 2017] 127.0.0.1:60229 [200]: /favicon.ico
+[Thu Mar  9 01:37:50 2017] 127.0.0.1:60231 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:37:50 2017] 127.0.0.1:60232 [200]: /favicon.ico
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60245 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60246 [200]: /schedule
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60250 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60251 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60252 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:38:28 2017] 127.0.0.1:60253 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:38:29 2017] 127.0.0.1:60255 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:29 2017] 127.0.0.1:60256 [200]: /favicon.ico
+[Thu Mar  9 01:38:30 2017] 127.0.0.1:60258 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:30 2017] 127.0.0.1:60259 [500]: /schedule/1
+[Thu Mar  9 01:38:30 2017] 127.0.0.1:60262 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:30 2017] 127.0.0.1:60263 [200]: /favicon.ico
+[Thu Mar  9 01:38:42 2017] 127.0.0.1:60265 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:42 2017] 127.0.0.1:60266 [500]: /schedule/1
+[Thu Mar  9 01:38:43 2017] 127.0.0.1:60269 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:38:43 2017] 127.0.0.1:60270 [200]: /favicon.ico
+[Thu Mar  9 01:41:29 2017] 127.0.0.1:60280 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:41:29 2017] 127.0.0.1:60281 [500]: /schedule/1
+[Thu Mar  9 01:41:29 2017] 127.0.0.1:60284 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:41:29 2017] 127.0.0.1:60285 [200]: /favicon.ico
+[Thu Mar  9 01:42:33 2017] 127.0.0.1:60296 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:33 2017] 127.0.0.1:60297 [500]: /schedule/1
+[Thu Mar  9 01:42:33 2017] 127.0.0.1:60299 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:33 2017] 127.0.0.1:60300 [200]: /favicon.ico
+[Thu Mar  9 01:42:52 2017] 127.0.0.1:60303 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:52 2017] 127.0.0.1:60304 [500]: /schedule/1
+[Thu Mar  9 01:42:52 2017] 127.0.0.1:60306 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:52 2017] 127.0.0.1:60307 [200]: /favicon.ico
+[Thu Mar  9 01:42:57 2017] 127.0.0.1:60309 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:57 2017] 127.0.0.1:60310 [500]: /schedule/1
+[Thu Mar  9 01:42:57 2017] 127.0.0.1:60313 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:42:57 2017] 127.0.0.1:60314 [200]: /favicon.ico
+[Thu Mar  9 01:43:16 2017] 127.0.0.1:60318 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:16 2017] 127.0.0.1:60319 [500]: /schedule/1
+[Thu Mar  9 01:43:17 2017] 127.0.0.1:60321 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:17 2017] 127.0.0.1:60322 [200]: /favicon.ico
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60332 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60333 [200]: /schedule/1
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60340 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60341 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60342 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60343 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:22 2017] 127.0.0.1:60344 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60345 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60346 [404]: /schedule/%7B%7B%20asset(%27assets/react-select.css%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60347 [404]: /schedule/%7B%7B%20asset(%27assets/react-timesheet.css%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60348 [404]: /schedule/%7B%7B%20asset(%27assets/lodash.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60349 [404]: /schedule/%7B%7B%20asset(%27assets/react.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60352 [404]: /schedule/%7B%7B%20asset(%27assets/react-dom.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60353 [404]: /schedule/%7B%7B%20asset(%27assets/moment.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60354 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60355 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60356 [404]: /schedule/%7B%7B%20asset(%27assets/axios.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60357 [404]: /schedule/%7B%7B%20asset(%27assets/react-timesheet.js%27)%20%7D%7D - No such file or directory
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60359 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:23 2017] 127.0.0.1:60360 [200]: /favicon.ico
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60363 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60364 [200]: /schedule/1
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60371 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60372 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60373 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60374 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60375 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60376 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60377 [200]: /assets/react-select.css
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60378 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60379 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60382 [200]: /assets/react-dom.js
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60380 [200]: /assets/lodash.js
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60381 [200]: /assets/react.js
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60385 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60386 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60387 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60388 [200]: /assets/moment.js
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60391 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60392 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60393 [200]: /assets/axios.js
+[Thu Mar  9 01:43:32 2017] 127.0.0.1:60394 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:43:33 2017] 127.0.0.1:60396 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:43:33 2017] 127.0.0.1:60397 [200]: /favicon.ico
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60400 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60401 [200]: /schedule/1
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60408 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60409 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60410 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60411 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60412 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60413 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60414 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60415 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60416 [200]: /assets/react-select.css
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60418 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60419 [200]: /assets/lodash.js
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60420 [200]: /assets/react.js
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60423 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60424 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60425 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60426 [200]: /assets/react-dom.js
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60428 [200]: /assets/moment.js
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60429 [200]: /assets/axios.js
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60430 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:00 2017] 127.0.0.1:60431 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:44:01 2017] 127.0.0.1:60433 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:01 2017] 127.0.0.1:60434 [200]: /favicon.ico
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60437 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60438 [200]: /schedule/1
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60446 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60447 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60448 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60449 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60450 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60451 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60452 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60453 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60455 [200]: /assets/react-select.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60456 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60457 [200]: /assets/lodash.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60458 [200]: /assets/react.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60462 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60463 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60464 [200]: /assets/react-dom.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60465 [200]: /assets/moment.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60466 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60467 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60468 [200]: /assets/axios.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60469 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60472 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60473 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60474 [200]: /schedule/2
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60475 [200]: /favicon.ico
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60483 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60484 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60485 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60486 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60487 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60488 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60489 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60490 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60491 [200]: /assets/react-select.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60492 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60493 [200]: /assets/lodash.js
+[Thu Mar  9 01:44:26 2017] 127.0.0.1:60494 [200]: /assets/react.js
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60499 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60500 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60501 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60502 [200]: /assets/react-dom.js
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60503 [200]: /assets/moment.js
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60504 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60505 [200]: /assets/axios.js
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60506 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60508 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60509 [200]: /favicon.ico
+[Thu Mar  9 01:44:27 2017] 127.0.0.1:60511 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60512 [200]: /schedule/1
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60520 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60521 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60522 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60523 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60524 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60525 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60526 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60527 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60528 [200]: /assets/react-select.css
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60529 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60530 [200]: /assets/lodash.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60531 [200]: /assets/react.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60536 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60537 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60538 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60539 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60540 [200]: /assets/react-dom.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60541 [200]: /assets/moment.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60542 [200]: /assets/axios.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60543 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60545 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:28 2017] 127.0.0.1:60546 [200]: /favicon.ico
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60551 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60552 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60553 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60554 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60558 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60555 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60556 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60557 [200]: /assets/react-select.css
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60561 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60562 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60563 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60564 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60566 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:44:30 2017] 127.0.0.1:60567 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60569 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60570 [200]: /schedule/1
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60578 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60579 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60580 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60581 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60582 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60583 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60584 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60585 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60586 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60589 [200]: /assets/react.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60588 [200]: /assets/lodash.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60587 [200]: /assets/react-select.css
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60594 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60595 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60597 [200]: /assets/react-dom.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60598 [200]: /assets/moment.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60599 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60600 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60602 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60601 [200]: /assets/axios.js
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60603 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60604 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60606 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:58 2017] 127.0.0.1:60607 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:45:59 2017] 127.0.0.1:60610 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:59 2017] 127.0.0.1:60611 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:45:59 2017] 127.0.0.1:60612 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:45:59 2017] 127.0.0.1:60613 [200]: /favicon.ico
+[Thu Mar  9 01:46:00 2017] 127.0.0.1:60615 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:01 2017] 127.0.0.1:60616 [404]: /schedules
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60618 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60619 [200]: /schedule/1
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60627 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60628 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60629 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60630 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60631 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60632 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60633 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60634 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60635 [200]: /assets/react-select.css
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60637 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60638 [200]: /assets/lodash.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60639 [200]: /assets/react.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60643 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60644 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60645 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60646 [200]: /assets/react-dom.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60647 [200]: /assets/moment.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60648 [200]: /assets/axios.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60649 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60650 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60652 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60653 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60655 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60656 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60659 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60660 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60661 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:46:04 2017] 127.0.0.1:60662 [200]: /favicon.ico
+[Thu Mar  9 01:46:06 2017] 127.0.0.1:60664 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:06 2017] 127.0.0.1:60665 [404]: /schedules
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60667 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60668 [200]: /schedule/1
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60676 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60677 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60678 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60679 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60680 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60681 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60682 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60683 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60684 [200]: /assets/react-select.css
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60685 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60686 [200]: /assets/lodash.js
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60687 [200]: /assets/react.js
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60692 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60693 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60694 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60695 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60696 [200]: /assets/react-dom.js
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60697 [200]: /assets/moment.js
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60698 [200]: /assets/axios.js
+[Thu Mar  9 01:46:20 2017] 127.0.0.1:60699 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60701 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60702 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60704 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60705 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60708 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60709 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60710 [200]: /favicon.ico
+[Thu Mar  9 01:46:21 2017] 127.0.0.1:60711 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60713 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60714 [200]: /schedule/1
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60722 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60724 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60723 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60725 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60726 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60728 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60727 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60729 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60730 [200]: /assets/react-select.css
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60731 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60732 [200]: /assets/lodash.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60733 [200]: /assets/react-dom.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60738 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60739 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60740 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60741 [200]: /assets/react.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60742 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60743 [200]: /assets/moment.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60744 [200]: /assets/axios.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60745 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60747 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:24 2017] 127.0.0.1:60748 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60750 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60751 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60754 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60755 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60756 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:46:25 2017] 127.0.0.1:60757 [200]: /favicon.ico
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60780 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60781 [200]: /schedule/1
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60789 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60790 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60791 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60792 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60793 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60794 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60795 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60796 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60798 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60799 [200]: /assets/lodash.js
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60797 [200]: /assets/react-select.css
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60800 [200]: /assets/react.js
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60802 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60803 [200]: /assets/react-dom.js
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60805 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:47:59 2017] 127.0.0.1:60806 [200]: /assets/moment.js
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60809 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60810 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60811 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60812 [200]: /assets/axios.js
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60814 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60815 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60817 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60818 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60821 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60822 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60823 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:48:00 2017] 127.0.0.1:60824 [200]: /favicon.ico
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60834 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60835 [200]: /schedule/1
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60843 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60844 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60845 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60846 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60847 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60848 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60849 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60850 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60851 [200]: /assets/react-select.css
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60852 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60853 [200]: /assets/lodash.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60854 [200]: /assets/react.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60858 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60859 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60860 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60861 [200]: /assets/react-dom.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60862 [200]: /assets/moment.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60863 [200]: /assets/axios.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60865 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60866 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60868 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:03 2017] 127.0.0.1:60869 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60871 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60872 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60875 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60876 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60877 [200]: /favicon.ico
+[Thu Mar  9 01:49:04 2017] 127.0.0.1:60878 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:49:08 2017] 127.0.0.1:60880 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:08 2017] 127.0.0.1:60881 [500]: /schedule
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60884 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60885 [200]: /schedule/1
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60893 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60894 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60896 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60897 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60895 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60898 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60899 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60900 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60902 [200]: /assets/react-select.css
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60903 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60904 [200]: /assets/react.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60905 [200]: /assets/lodash.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60906 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60910 [200]: /assets/react-dom.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60912 [200]: /assets/moment.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60911 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60913 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60914 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60915 [200]: /assets/axios.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60916 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60918 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:32 2017] 127.0.0.1:60919 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60921 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60922 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60925 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60926 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60927 [200]: /favicon.ico
+[Thu Mar  9 01:49:33 2017] 127.0.0.1:60928 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:49:38 2017] 127.0.0.1:60930 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:38 2017] 127.0.0.1:60931 [500]: /schedule
+[Thu Mar  9 01:49:52 2017] 127.0.0.1:60934 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60935 [200]: /schedule/1
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60943 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60944 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60945 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60946 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60947 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60948 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60949 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60950 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60952 [200]: /assets/react-select.css
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60953 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60955 [200]: /assets/lodash.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60956 [200]: /assets/react.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60958 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60959 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60961 [200]: /assets/react-dom.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60962 [200]: /assets/moment.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60963 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60964 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60965 [200]: /assets/axios.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60966 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60968 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60969 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60971 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60972 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60975 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60976 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60977 [200]: /favicon.ico
+[Thu Mar  9 01:49:53 2017] 127.0.0.1:60978 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:49:56 2017] 127.0.0.1:60980 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:49:57 2017] 127.0.0.1:60981 [500]: /schedule
+[Thu Mar  9 01:52:12 2017] 127.0.0.1:60984 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:12 2017] 127.0.0.1:60985 [500]: /schedule/1
+[Thu Mar  9 01:52:12 2017] 127.0.0.1:60987 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:12 2017] 127.0.0.1:60988 [200]: /favicon.ico
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:60990 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:60991 [200]: /schedule/1
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:60999 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61000 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61001 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61002 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61003 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61004 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61005 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61006 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61007 [200]: /assets/react-select.css
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61008 [200]: /assets/lodash.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61010 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61011 [200]: /assets/react.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61015 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61016 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61017 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61018 [200]: /assets/react-dom.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61019 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61020 [200]: /assets/moment.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61021 [200]: /assets/axios.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61022 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61024 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61025 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61027 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:20 2017] 127.0.0.1:61028 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:52:21 2017] 127.0.0.1:61031 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:21 2017] 127.0.0.1:61032 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:21 2017] 127.0.0.1:61033 [200]: /favicon.ico
+[Thu Mar  9 01:52:21 2017] 127.0.0.1:61034 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:52:25 2017] 127.0.0.1:61036 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:25 2017] 127.0.0.1:61037 [500]: /schedule
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61040 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61041 [200]: /schedule/1
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61049 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61050 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61051 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61052 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61053 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61054 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61055 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61056 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61057 [200]: /assets/react-select.css
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61058 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61059 [200]: /assets/lodash.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61060 [200]: /assets/react.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61065 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61066 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61067 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61068 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61069 [200]: /assets/react-dom.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61070 [200]: /assets/moment.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61071 [200]: /assets/axios.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61072 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61074 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:51 2017] 127.0.0.1:61075 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61077 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61078 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61081 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61082 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61083 [200]: /favicon.ico
+[Thu Mar  9 01:52:52 2017] 127.0.0.1:61084 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:52:56 2017] 127.0.0.1:61086 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:52:56 2017] 127.0.0.1:61087 [500]: /schedule
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61090 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61091 [200]: /schedule/1
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61099 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61100 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61102 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61101 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61103 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61104 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61105 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61106 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61108 [200]: /assets/react-select.css
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61110 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61111 [200]: /assets/lodash.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61112 [200]: /assets/react.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61116 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61114 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61117 [200]: /assets/react-dom.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61118 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61119 [200]: /assets/axios.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61120 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61121 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61122 [200]: /assets/moment.js
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61124 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61125 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61127 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:19 2017] 127.0.0.1:61128 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:53:20 2017] 127.0.0.1:61131 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:20 2017] 127.0.0.1:61132 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:20 2017] 127.0.0.1:61133 [200]: /favicon.ico
+[Thu Mar  9 01:53:20 2017] 127.0.0.1:61134 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:53:28 2017] 127.0.0.1:61136 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:53:28 2017] 127.0.0.1:61137 [200]: /schedule
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61140 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61141 [200]: /schedule/1
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61149 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61150 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61151 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61152 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61153 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61154 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61155 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61156 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61157 [200]: /assets/react-select.css
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61158 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61159 [200]: /assets/lodash.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61160 [200]: /assets/react.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61162 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61163 [200]: /assets/react-dom.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61166 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61167 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61168 [200]: /assets/moment.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61170 [200]: /assets/axios.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61171 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61172 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61174 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61175 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61177 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:46 2017] 127.0.0.1:61178 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:54:47 2017] 127.0.0.1:61180 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:47 2017] 127.0.0.1:61181 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:54:47 2017] 127.0.0.1:61183 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:54:47 2017] 127.0.0.1:61184 [200]: /favicon.ico
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61186 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61187 [200]: /schedule/1
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61195 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61196 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61197 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61198 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61199 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61200 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61201 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61202 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61203 [200]: /assets/react-select.css
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61204 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61205 [200]: /assets/lodash.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61206 [200]: /assets/react.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61208 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61209 [200]: /assets/react-dom.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61211 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61212 [200]: /assets/moment.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61214 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61215 [200]: /assets/axios.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61217 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61218 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61220 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61221 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61223 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61224 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61226 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:23 2017] 127.0.0.1:61227 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:56:24 2017] 127.0.0.1:61229 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:24 2017] 127.0.0.1:61230 [200]: /favicon.ico
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61232 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61233 [200]: /schedule/1
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61241 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61242 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61243 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61244 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61245 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61246 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61247 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61248 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61249 [200]: /assets/react-select.css
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61250 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61251 [200]: /assets/lodash.js
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61252 [200]: /assets/react.js
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61257 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61258 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61259 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61260 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61261 [200]: /assets/react-dom.js
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61262 [200]: /assets/moment.js
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61263 [200]: /assets/axios.js
+[Thu Mar  9 01:56:53 2017] 127.0.0.1:61264 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61266 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61267 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61269 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61270 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61272 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61273 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61275 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:56:54 2017] 127.0.0.1:61276 [200]: /favicon.ico
+[Thu Mar  9 01:57:13 2017] 127.0.0.1:61285 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61286 [200]: /schedule/1
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61294 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61295 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61296 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61297 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61298 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61299 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61300 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61301 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61302 [200]: /assets/react-select.css
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61303 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61304 [200]: /assets/lodash.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61305 [200]: /assets/react.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61310 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61311 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61312 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61313 [200]: /assets/react-dom.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61317 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61314 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61315 [200]: /assets/moment.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61316 [200]: /assets/axios.js
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61319 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61320 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61322 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61323 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61325 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:14 2017] 127.0.0.1:61326 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:57:15 2017] 127.0.0.1:61328 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:15 2017] 127.0.0.1:61329 [200]: /favicon.ico
+[Thu Mar  9 01:57:25 2017] 127.0.0.1:61331 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61332 [200]: /schedule/1
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61340 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61341 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61342 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61343 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61344 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61345 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61346 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61347 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61348 [200]: /assets/react-select.css
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61349 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61350 [200]: /assets/lodash.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61351 [200]: /assets/react-dom.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61356 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61357 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61358 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61359 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61360 [200]: /assets/react.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61361 [200]: /assets/moment.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61362 [200]: /assets/axios.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61363 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61365 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61366 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61368 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61369 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61371 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61372 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61374 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:26 2017] 127.0.0.1:61375 [200]: /favicon.ico
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61377 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61378 [200]: /schedule/1
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61386 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61387 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61388 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61389 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61390 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61391 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61392 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61393 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61394 [200]: /assets/react-select.css
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61395 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61396 [200]: /assets/lodash.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61397 [200]: /assets/react.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61402 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61403 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61404 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61405 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61406 [200]: /assets/react-dom.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61407 [200]: /assets/moment.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61408 [200]: /assets/axios.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61409 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61411 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61412 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61414 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61415 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61417 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61418 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61420 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:27 2017] 127.0.0.1:61421 [200]: /favicon.ico
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61423 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61424 [200]: /schedule/1
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61432 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61433 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61434 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61435 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61436 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61437 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61438 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61439 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61440 [200]: /assets/react-select.css
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61441 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61442 [200]: /assets/lodash.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61443 [200]: /assets/react.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61448 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61449 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61450 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61451 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61455 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61452 [200]: /assets/moment.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61453 [200]: /assets/react-dom.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61454 [200]: /assets/axios.js
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61457 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61458 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61460 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:28 2017] 127.0.0.1:61461 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:57:29 2017] 127.0.0.1:61463 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:29 2017] 127.0.0.1:61464 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:57:29 2017] 127.0.0.1:61466 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:29 2017] 127.0.0.1:61467 [200]: /favicon.ico
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61469 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61470 [200]: /schedule/1
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61478 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61479 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61480 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61481 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61482 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61483 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61484 [200]: /assets/bootstrap.css
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61485 [200]: /assets/stylesheet.css
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61486 [200]: /assets/react-select.css
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61489 [200]: /assets/react-timesheet.css
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61490 [200]: /assets/lodash.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61491 [200]: /assets/react.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61492 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61494 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61496 [200]: /assets/react-dom.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61497 [200]: /assets/moment.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61498 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61499 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61500 [200]: /assets/axios.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61501 [200]: /assets/react-timesheet.js
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61503 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:33 2017] 127.0.0.1:61504 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61506 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61507 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61509 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61510 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61512 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:34 2017] 127.0.0.1:61513 [200]: /favicon.ico
+[Thu Mar  9 01:57:59 2017] 127.0.0.1:61515 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:59 2017] 127.0.0.1:61516 [500]: /schedule/1
+[Thu Mar  9 01:57:59 2017] 127.0.0.1:61519 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:57:59 2017] 127.0.0.1:61520 [200]: /favicon.ico
+[Thu Mar  9 01:58:02 2017] 127.0.0.1:61522 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:58:02 2017] 127.0.0.1:61523 [200]: /schedule/1
+[Thu Mar  9 01:58:03 2017] 127.0.0.1:61526 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:58:03 2017] 127.0.0.1:61527 [200]: /favicon.ico
+[Thu Mar  9 01:58:16 2017] 127.0.0.1:61529 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:58:16 2017] 127.0.0.1:61530 [200]: /schedule/1
+[Thu Mar  9 01:58:17 2017] 127.0.0.1:61533 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:58:17 2017] 127.0.0.1:61534 [200]: /favicon.ico
+[Thu Mar  9 01:59:33 2017] 127.0.0.1:61537 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:59:34 2017] 127.0.0.1:61538 [200]: /schedule/1
+[Thu Mar  9 01:59:34 2017] 127.0.0.1:61541 Invalid request (Unexpected EOF)
+[Thu Mar  9 01:59:34 2017] 127.0.0.1:61542 [200]: /favicon.ico
+[Thu Mar  9 02:00:48 2017] 127.0.0.1:61608 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:00:48 2017] 127.0.0.1:61609 [200]: /schedule/1
+[Thu Mar  9 02:00:49 2017] 127.0.0.1:61612 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:00:49 2017] 127.0.0.1:61613 [200]: /favicon.ico
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61644 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61645 [200]: /schedule/1
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61653 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61654 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61656 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61655 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61657 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61658 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61659 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61661 [200]: /assets/react-select.css
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61660 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61662 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61663 [200]: /assets/lodash.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61664 [200]: /assets/react.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61667 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61669 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61670 [200]: /assets/react-dom.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61671 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61673 [200]: /assets/moment.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61674 [200]: /assets/axios.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61675 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61676 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61678 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61679 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61681 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61682 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61684 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61686 [200]: /favicon.ico
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61687 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:13 2017] 127.0.0.1:61688 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:03:15 2017] 127.0.0.1:61690 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:15 2017] 127.0.0.1:61691 [200]: /schedule/1
+[Thu Mar  9 02:03:16 2017] 127.0.0.1:61694 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:17 2017] 127.0.0.1:61695 [200]: /schedule/1
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61703 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61704 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61705 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61706 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61707 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61708 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61709 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61710 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61711 [200]: /assets/react-select.css
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61712 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61713 [200]: /assets/lodash.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61715 [200]: /assets/react.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61719 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61720 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61721 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61722 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61723 [200]: /assets/react-dom.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61724 [200]: /assets/moment.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61725 [200]: /assets/axios.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61726 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61728 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61729 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61731 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:18 2017] 127.0.0.1:61732 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:03:19 2017] 127.0.0.1:61735 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:19 2017] 127.0.0.1:61736 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:03:19 2017] 127.0.0.1:61737 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:03:19 2017] 127.0.0.1:61738 [200]: /favicon.ico
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61740 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61741 [200]: /schedule/1
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61749 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61750 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61751 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61752 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61753 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61754 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61755 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61756 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61758 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61757 [200]: /assets/react-select.css
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61759 [200]: /assets/lodash.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61760 [200]: /assets/react.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61764 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61766 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61767 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61768 [200]: /assets/react-dom.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61769 [200]: /assets/moment.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61772 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61770 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61771 [200]: /assets/axios.js
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61774 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61775 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61777 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:46 2017] 127.0.0.1:61778 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:04:47 2017] 127.0.0.1:61781 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:47 2017] 127.0.0.1:61782 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:47 2017] 127.0.0.1:61783 [200]: /favicon.ico
+[Thu Mar  9 02:04:47 2017] 127.0.0.1:61784 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:04:48 2017] 127.0.0.1:61786 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:48 2017] 127.0.0.1:61787 [200]: /schedule/1
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61790 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61791 [200]: /schedule/1
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61799 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61800 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61801 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61802 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61803 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61804 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61805 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61806 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61809 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61810 [200]: /assets/react-select.css
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61811 [200]: /assets/lodash.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61812 [200]: /assets/react.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61815 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61816 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61817 [200]: /assets/react-dom.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61818 [200]: /assets/moment.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61819 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61820 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61821 [200]: /assets/axios.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61822 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61824 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61825 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61827 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61828 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61831 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61832 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61833 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:04:49 2017] 127.0.0.1:61834 [200]: /favicon.ico
+[Thu Mar  9 02:04:50 2017] 127.0.0.1:61836 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:50 2017] 127.0.0.1:61837 [200]: /schedule/1
+[Thu Mar  9 02:04:51 2017] 127.0.0.1:61840 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:52 2017] 127.0.0.1:61841 [200]: /schedule/1
+[Thu Mar  9 02:04:54 2017] 127.0.0.1:61844 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:04:54 2017] 127.0.0.1:61845 [405]: /schedule/
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61847 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61848 [200]: /schedule/1
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61856 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61857 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61858 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61859 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61860 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61861 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61862 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61863 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61864 [200]: /assets/react-select.css
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61869 [200]: /assets/lodash.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61868 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61870 [200]: /assets/react.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61872 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61873 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61874 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61875 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61876 [200]: /assets/react-dom.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61877 [200]: /assets/moment.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61878 [200]: /assets/axios.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61879 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61881 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61882 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61884 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:18 2017] 127.0.0.1:61885 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:05:19 2017] 127.0.0.1:61888 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:19 2017] 127.0.0.1:61889 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:19 2017] 127.0.0.1:61890 [200]: /favicon.ico
+[Thu Mar  9 02:05:19 2017] 127.0.0.1:61891 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:05:21 2017] 127.0.0.1:61893 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:21 2017] 127.0.0.1:61894 [405]: /schedule/
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61896 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61897 [200]: /schedule/1
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61905 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61906 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61907 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61908 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61909 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61910 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61911 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61912 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61913 [200]: /assets/react-select.css
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61916 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61917 [200]: /assets/lodash.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61918 [200]: /assets/react.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61921 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61922 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61923 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61924 [200]: /assets/react-dom.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61925 [200]: /assets/moment.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61926 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61927 [200]: /assets/axios.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61928 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61930 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61931 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61933 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61934 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61937 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61938 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61939 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:05:24 2017] 127.0.0.1:61940 [200]: /favicon.ico
+[Thu Mar  9 02:05:27 2017] 127.0.0.1:61942 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:05:27 2017] 127.0.0.1:61943 [405]: /schedule/
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61980 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61981 [200]: /schedule/1
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61989 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61990 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61991 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61993 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61992 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61994 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61995 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61996 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61997 [200]: /assets/react-select.css
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61998 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:61999 [200]: /assets/lodash.js
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62000 [200]: /assets/react.js
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62003 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62004 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62005 [200]: /assets/react-dom.js
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62007 [200]: /assets/moment.js
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62008 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62010 [200]: /assets/axios.js
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62011 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:50 2017] 127.0.0.1:62012 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62014 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62015 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62017 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62018 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62020 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62021 [200]: /favicon.ico
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62023 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:51 2017] 127.0.0.1:62024 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:08:53 2017] 127.0.0.1:62026 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:53 2017] 127.0.0.1:62027 [200]: /schedule/1
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62035 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62036 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62037 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62038 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62039 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62040 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62041 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62042 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62043 [200]: /assets/react-select.css
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62044 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62045 [200]: /assets/lodash.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62046 [200]: /assets/react.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62051 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62052 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62053 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62054 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62055 [200]: /assets/react-dom.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62056 [200]: /assets/moment.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62057 [200]: /assets/axios.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62058 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62060 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62061 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62063 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:54 2017] 127.0.0.1:62064 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62067 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62068 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62069 [200]: /favicon.ico
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62070 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62072 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:55 2017] 127.0.0.1:62073 [200]: /schedule/1
+[Thu Mar  9 02:08:56 2017] 127.0.0.1:62076 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62077 [200]: /schedule/1
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62085 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62086 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62087 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62088 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62089 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62090 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62091 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62092 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62094 [200]: /assets/react-select.css
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62095 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62096 [200]: /assets/lodash.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62097 [200]: /assets/react.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62098 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62102 [200]: /assets/react-dom.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62103 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62104 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62105 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62106 [200]: /assets/moment.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62107 [200]: /assets/axios.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62108 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62110 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62111 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62113 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62114 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62117 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62118 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62119 [200]: /favicon.ico
+[Thu Mar  9 02:08:57 2017] 127.0.0.1:62120 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:08:58 2017] 127.0.0.1:62122 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:58 2017] 127.0.0.1:62123 [200]: /schedule/1
+[Thu Mar  9 02:08:59 2017] 127.0.0.1:62126 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:08:59 2017] 127.0.0.1:62127 [200]: /schedule/1
+[Thu Mar  9 02:09:06 2017] 127.0.0.1:62130 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:06 2017] 127.0.0.1:62131 [200]: /schedule
+[Thu Mar  9 02:09:07 2017] 127.0.0.1:62134 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62135 [200]: /schedule/1
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62143 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62144 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62145 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62146 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62147 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62148 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62149 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62150 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62151 [200]: /assets/react-select.css
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62152 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62153 [200]: /assets/lodash.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62154 [200]: /assets/react.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62159 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62160 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62161 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62162 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62163 [200]: /assets/react-dom.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62165 [200]: /assets/axios.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62166 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62164 [200]: /assets/moment.js
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62168 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62169 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62173 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62174 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62175 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62176 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62177 [200]: /favicon.ico
+[Thu Mar  9 02:09:08 2017] 127.0.0.1:62178 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:09:09 2017] 127.0.0.1:62180 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:09 2017] 127.0.0.1:62181 [200]: /schedule/2
+[Thu Mar  9 02:09:10 2017] 127.0.0.1:62184 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:09:10 2017] 127.0.0.1:62185 [500]: /schedule/2
+[Thu Mar  9 02:10:25 2017] 127.0.0.1:62188 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:25 2017] 127.0.0.1:62189 [200]: /schedule/1
+[Thu Mar  9 02:10:25 2017] 127.0.0.1:62197 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:25 2017] 127.0.0.1:62198 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62199 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62200 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62201 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62202 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62204 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62203 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62205 [200]: /assets/react-select.css
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62206 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62207 [200]: /assets/react.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62208 [200]: /assets/lodash.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62213 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62214 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62215 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62216 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62218 [200]: /assets/moment.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62217 [200]: /assets/react-dom.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62219 [200]: /assets/axios.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62220 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62222 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62223 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62225 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62226 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62229 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62230 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62231 [200]: /favicon.ico
+[Thu Mar  9 02:10:26 2017] 127.0.0.1:62232 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:10:58 2017] 127.0.0.1:62234 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62235 [200]: /schedule/1
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62243 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62244 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62245 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62246 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62247 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62248 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62249 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62250 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62251 [200]: /assets/react-select.css
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62254 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62255 [200]: /assets/lodash.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62256 [200]: /assets/react.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62259 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62260 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62261 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62262 [200]: /assets/react-dom.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62263 [200]: /assets/moment.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62264 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62265 [200]: /assets/axios.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62266 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62268 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62269 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62271 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62272 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62275 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62276 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62277 [200]: /favicon.ico
+[Thu Mar  9 02:10:59 2017] 127.0.0.1:62278 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:11:00 2017] 127.0.0.1:62280 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:01 2017] 127.0.0.1:62281 [200]: /schedule/2
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62284 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62285 [200]: /schedule/1
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62293 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62294 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62295 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62296 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62297 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62298 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62299 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62300 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:11:31 2017] 127.0.0.1:62301 [200]: /assets/react-select.css
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62304 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62305 [200]: /assets/lodash.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62307 [200]: /assets/react.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62309 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62310 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62311 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62312 [200]: /assets/react-dom.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62313 [200]: /assets/moment.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62314 [200]: /assets/axios.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62315 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62316 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62318 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62319 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62321 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62322 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62325 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62326 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62327 [200]: /favicon.ico
+[Thu Mar  9 02:11:32 2017] 127.0.0.1:62328 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:11:35 2017] 127.0.0.1:62330 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:35 2017] 127.0.0.1:62331 [200]: /schedule/2
+[Thu Mar  9 02:11:36 2017] 127.0.0.1:62334 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:37 2017] 127.0.0.1:62335 [200]: /schedule/2
+[Thu Mar  9 02:11:37 2017] 127.0.0.1:62338 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:37 2017] 127.0.0.1:62339 [200]: /schedule/2
+[Thu Mar  9 02:11:38 2017] 127.0.0.1:62342 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:38 2017] 127.0.0.1:62343 [200]: /schedule/2
+[Thu Mar  9 02:11:38 2017] 127.0.0.1:62346 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:38 2017] 127.0.0.1:62347 [200]: /schedule/2
+[Thu Mar  9 02:11:40 2017] 127.0.0.1:62350 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:40 2017] 127.0.0.1:62351 [200]: /schedule/2
+[Thu Mar  9 02:11:41 2017] 127.0.0.1:62354 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:41 2017] 127.0.0.1:62355 [200]: /schedule/2
+[Thu Mar  9 02:11:43 2017] 127.0.0.1:62358 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:43 2017] 127.0.0.1:62359 [200]: /schedule/2
+[Thu Mar  9 02:11:44 2017] 127.0.0.1:62362 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:44 2017] 127.0.0.1:62363 [200]: /schedule/2
+[Thu Mar  9 02:11:45 2017] 127.0.0.1:62366 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:45 2017] 127.0.0.1:62367 [200]: /schedule/2
+[Thu Mar  9 02:11:46 2017] 127.0.0.1:62370 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:46 2017] 127.0.0.1:62371 [200]: /schedule/2
+[Thu Mar  9 02:11:46 2017] 127.0.0.1:62374 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:46 2017] 127.0.0.1:62375 [200]: /schedule/2
+[Thu Mar  9 02:11:47 2017] 127.0.0.1:62378 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:47 2017] 127.0.0.1:62379 [200]: /schedule/2
+[Thu Mar  9 02:11:48 2017] 127.0.0.1:62382 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:48 2017] 127.0.0.1:62383 [200]: /schedule/2
+[Thu Mar  9 02:11:49 2017] 127.0.0.1:62386 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:50 2017] 127.0.0.1:62387 [200]: /schedule/2
+[Thu Mar  9 02:11:51 2017] 127.0.0.1:62390 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:51 2017] 127.0.0.1:62391 [200]: /schedule/2
+[Thu Mar  9 02:11:52 2017] 127.0.0.1:62394 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:52 2017] 127.0.0.1:62395 [200]: /schedule/2
+[Thu Mar  9 02:11:53 2017] 127.0.0.1:62398 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:53 2017] 127.0.0.1:62399 [200]: /schedule/1
+[Thu Mar  9 02:11:54 2017] 127.0.0.1:62402 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:54 2017] 127.0.0.1:62403 [200]: /schedule/1
+[Thu Mar  9 02:11:56 2017] 127.0.0.1:62406 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:56 2017] 127.0.0.1:62407 [200]: /schedule/1
+[Thu Mar  9 02:11:56 2017] 127.0.0.1:62410 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:11:57 2017] 127.0.0.1:62411 [200]: /schedule/1
+[Thu Mar  9 02:12:00 2017] 127.0.0.1:62414 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:01 2017] 127.0.0.1:62415 [200]: /schedule/1
+[Thu Mar  9 02:12:01 2017] 127.0.0.1:62418 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:01 2017] 127.0.0.1:62419 [200]: /schedule/1
+[Thu Mar  9 02:12:02 2017] 127.0.0.1:62422 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:02 2017] 127.0.0.1:62423 [200]: /schedule/1
+[Thu Mar  9 02:12:02 2017] 127.0.0.1:62426 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:03 2017] 127.0.0.1:62427 [200]: /schedule/1
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62433 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62434 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62435 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62436 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62437 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62438 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62439 [200]: /assets/react-select.css
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62440 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62443 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62444 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62445 [404]: /assets/axios.min.map - No such file or directory
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62446 [404]: /assets/react-draggable.js.map - No such file or directory
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62448 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:12:05 2017] 127.0.0.1:62449 [200]: /assets/bootstrap.css.map
+[Thu Mar  9 02:13:02 2017] 127.0.0.1:62452 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:02 2017] 127.0.0.1:62453 [200]: /schedule/2
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62456 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62457 [200]: /schedule/1
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62465 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62466 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62467 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62468 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62469 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62470 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62471 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62472 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62475 [200]: /assets/react-select.css
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62476 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62477 [200]: /assets/lodash.js
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62478 [200]: /assets/react.js
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62481 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62482 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62483 [200]: /assets/react-dom.js
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62484 [200]: /assets/moment.js
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62485 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62486 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62487 [200]: /assets/axios.js
+[Thu Mar  9 02:13:11 2017] 127.0.0.1:62488 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62490 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62491 [200]: /schedule/2
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62499 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62500 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62501 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62502 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62503 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62504 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62509 [200]: /assets/lodash.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62505 [200]: /assets/bootstrap.css
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62506 [200]: /assets/stylesheet.css
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62507 [200]: /assets/react-select.css
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62508 [200]: /assets/react-timesheet.css
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62510 [200]: /assets/react.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62515 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62516 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62517 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62518 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62519 [200]: /assets/react-dom.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62520 [200]: /assets/moment.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62521 [200]: /assets/axios.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62522 [200]: /assets/react-timesheet.js
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62524 Invalid request (Unexpected EOF)
+[Thu Mar  9 02:13:12 2017] 127.0.0.1:62525 [200]: /favicon.ico

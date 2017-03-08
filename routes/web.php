@@ -58,10 +58,8 @@ Route::group(['middleware' =>['web', 'auth']], function() {
     });
 });
 
-        Route::get('schedule', 'SchedulesController@index');
-        Route::get('schedule/create', 'SchedulesController@create');
-        Route::post('schedule', 'SchedulesController@store');
-        Route::get('schedule/{schedule}', 'SchedulesController@show');
-        Route::get('schedule/{schedule}/edit', 'SchedulesController@edit');
-        Route::put('schedule/{schedule}', 'SchedulesController@update');
-        Route::delete('schedule/{schedule}', 'SchedulesController@delete');
+Route::get('schedule', 'SchedulesController@index');
+Route::post('schedule', 'SchedulesController@store');
+Route::get('schedule/{department}', 'SchedulesController@department');
+Route::put('schedule/{schedule}', 'SchedulesController@update');
+Route::delete('schedule/{schedule}', 'SchedulesController@delete');

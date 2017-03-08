@@ -7,3 +7,6 @@
 Homestead.json
 Homestead.yaml
 .env
+Thumbs.db
+.DS_Store
+*.log
