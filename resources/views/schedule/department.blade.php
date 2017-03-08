@@ -111,7 +111,7 @@
 						start_time: schedule.start.format('HH:mm:ss'),
 						end_time: schedule.end.format('HH:mm:ss'),
 						room: room,
-						day: {{ $day }}
+						day: '{{ $day }}'
 					}).then((res) => {						
 						var schedules = Object.assign({}, this.state.schedules);
 						schedule.data.id = res.data.id
@@ -131,7 +131,7 @@
 						start_time: schedule.start.format('HH:mm:ss'),
 						end_time: schedule.end.format('HH:mm:ss'),
 						room: dest || room,
-						day: {{ $day }}
+						day: '{{ $day }}'
 					}).then((res) => {
 						var schedules = Object.assign({}, this.state.schedules);
 
