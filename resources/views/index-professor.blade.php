@@ -38,9 +38,6 @@
   <script>
     ;(function() {
       var rooms = {!! $rooms->toJson() !!};
-      var subjects = selectify({!! $subjects->toJson() !!});
-      var professors = selectify({!! $professors->toJson() !!});
-      var blocks = selectify({!! $blocks->toJson() !!});
       var Timesheet = React.createFactory(ReactTimesheet.default);
 
       var App = React.createFactory(class extends React.Component {
@@ -66,9 +63,6 @@
               }
             )
           };
-
-          this.handleStore = this.handleStore.bind(this);
-          this.handleUpdate = this.handleUpdate.bind(this);
         }
 
         render() {
@@ -80,66 +74,14 @@
                 end: '9:00 PM',
                 increment: { hours: 1, minutes: 30 }
               },
-              professors: professors,
-              subjects: subjects,
-              sections: blocks,
-              onStore: this.handleStore,
-              onUpdate: this.handleUpdate
+              professors: [],
+              subjects: [],
+              sections: [],
+              disabled: true
             }, null)
           )
         }
-
-        handleStore(room, schedule) {
-          axios.post('/schedule', {
-            professor_id: schedule.data.professor.id,
-            block_id: schedule.data.section.id,
-            subject_id: schedule.data.subject.id,
-            start_time: schedule.start.format('HH:mm:ss'),
-            end_time: schedule.end.format('HH:mm:ss'),
-            room: room,
-            day: '{{ $day }}'
-          }).then((res) => {            
-            var schedules = Object.assign({}, this.state.schedules);
-            schedule.data.id = res.data.id
-            schedules[room] = schedules[room].concat([schedule]);
-            this.setState({ schedules: schedules });
-          });
-        }
-
-        handleUpdate(room, index, schedule, dest) {
-          dest = dest || room;
-          var endpoint = ['/schedule', schedule.data.id].join('/');
-
-          axios.put(endpoint, {
-            professor_id: schedule.data.professor.id,
-            block_id: schedule.data.section.id,
-            subject_id: schedule.data.subject.id,
-            start_time: schedule.start.format('HH:mm:ss'),
-            end_time: schedule.end.format('HH:mm:ss'),
-            room: dest || room,
-            day: '{{ $day }}'
-          }).then((res) => {
-            var schedules = Object.assign({}, this.state.schedules);
-
-            if (room === dest) {
-              schedules[room][index] = schedule;
-            } else {
-              console.log(dest);
-              schedules[room] = schedules[room].filter((_, i) => i !== index),
-              schedules[dest] = schedules[dest].concat([schedule]);
-            }
-
-            this.setState({ schedules: schedules });
-          });
-        }
       });
-
-      function selectify(collection) {
-        return collection.map((item) => ({
-          value: item.id,
-          label: item.name
-        }));
-      }
 
       ReactDOM.render(
         App(),
