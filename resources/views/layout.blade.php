@@ -20,7 +20,7 @@
 	            	</div>
 	            </div>
 
-	            <div class="col-md-6">
+	            <div class="col-md-7">
 	            	@if(Auth::check())
 			            <div class="collapse navbar-collapse">
 			                <ul class="nav navbar-nav">
@@ -38,11 +38,20 @@
 			        @endif
 	            </div>
 
-	            <div class="col-md-3">
-	            @if(Auth::check())
-	            	{{ Auth::user()->name }}
-	                <a href="/logout" class="btn btn-default" >Logout</a>	
-	            @endif
+	            <div class="col-md-2 text-right">
+	            	@if(Auth::check())
+		            	<ul class="nav navbar-nav">
+			            	<li class="dropdown">
+			            		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			            			{{ Auth::user()->name }} <span class="caret"></span>
+			            		</a>
+
+			            		<ul class="dropdown-menu">
+			            			<li><a href="/logout">Logout</a></li>
+			            		</ul>
+			            	</li>
+				           </ul>
+				          @endif
 	            </div>
 	        </div>
 	    </div>    
