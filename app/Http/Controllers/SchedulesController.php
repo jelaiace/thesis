@@ -24,23 +24,26 @@ class SchedulesController extends Controller
         $professors = User::where('type', 'professor')->get();
         $subjects = Subject::all();
         $blocks = Block::all();
+        $day = strtolower($request->get('day', 'mth'));
         $rooms = Room::where('department_id', $department->id)
-            ->get()
-            ->load(['schedules' => function($query) use ($request) {
-                $query->where('day', $request->get('day', 'mth'));
-            }])
-            ->load(
+            ->with(
                 'schedules.professor',
                 'schedules.block',
                 'schedules.room',
                 'schedules.subject'
-            );
+            )
+            ->with(['schedules' => function($query) use ($request, $day) {
+                $query->where('day', $day);
+            }])
+            ->get();
 
         return view('schedule.department', compact(
             'professors',
             'subjects',
             'blocks',
             'departments',
+            'department',
+            'day',
             'rooms'
         ));
     }

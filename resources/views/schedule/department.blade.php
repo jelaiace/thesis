@@ -1,19 +1,35 @@
 @extends('layout')
 
+@section('title')
+	Manage Schedules of {{ $department->name }}
+@endsection
+
 @section('content')
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
 				<div class="list-group">
-					@foreach($departments as $department)
-						<a href="/schedule/{{ $department->id }}" class="list-group-item">
-							{{ $department->name }}
+					@foreach($departments as $dept)
+						<a href="/schedule/{{ $dept->id }}" class="list-group-item">
+							{{ $dept->name }}
 						</a>
 					@endforeach
 				</div>
 			</div>
 
 			<div class="col-md-9">
+				<ul class="nav nav-tabs u-spacer">
+				  <li role="presentation" {{ $day !== 'tf' && $day !== 'ws' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}">MTH</a>
+				  </li>
+				  <li role="presentation" {{ $day === 'tf' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=tf">TF</a>
+				  </li>
+				  <li role="presentation" {{ $day === 'ws' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=ws">WS</a>
+				  </li>
+				</ul>
+
 				<div id="calendar-mount"></div>
 			</div>
 		</div>
@@ -94,7 +110,8 @@
 						subject_id: schedule.data.subject.id,
 						start_time: schedule.start.format('HH:mm:ss'),
 						end_time: schedule.end.format('HH:mm:ss'),
-						room: room
+						room: room,
+						day: {{ $day }}
 					}).then((res) => {						
 						var schedules = Object.assign({}, this.state.schedules);
 						schedule.data.id = res.data.id
@@ -113,7 +130,8 @@
 						subject_id: schedule.data.subject.id,
 						start_time: schedule.start.format('HH:mm:ss'),
 						end_time: schedule.end.format('HH:mm:ss'),
-						room: dest || room
+						room: dest || room,
+						day: {{ $day }}
 					}).then((res) => {
 						var schedules = Object.assign({}, this.state.schedules);
 
