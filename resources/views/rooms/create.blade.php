@@ -9,13 +9,25 @@
 			    <form action="/rooms" method="POST">
 			    	<div class="form-group">
 			    		<label>Name</label>
-			        	<input type="text" placeholder="Name" name="name" class="form-control">
+		        	<input type="text" placeholder="Name" name="name" class="form-control">
+		        </div>
 
-			        	<label>Type</label>
-			        	<input type="text" placeholder="Name" name="type" class="form-control">
-			        </div>
+		       <div class="form-group">
+		        	<label>Type</label>
+		        	<input type="text" placeholder="Name" name="type" class="form-control">
+		        </div>
 
-			        <button class="btn btn-info">Create Rooms</button>
+		       <div class="form-group">
+		        	<label>Department</label>
+		        	<select name="department_id" class="form-control">
+		        		<option>Select department</option>
+		        		@foreach($departments as $department)
+		        			<option value="{{ $department->id }}">{{ $department->name }}</option>
+		        		@endforeach
+		        	</select>
+		        </div>
+
+			        <button class="btn btn-info">Create Room</button>
 			    </form>
 			</div>
 		</div>
