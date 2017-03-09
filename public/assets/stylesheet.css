@@ -3,6 +3,16 @@
 	padding-bottom: 50px;
 }
 
+.calendar-container {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.timesheet__heading-column,
+.timesheet__column {
+  flex-shrink :0;
+}
+
 .u-spacer {
   margin-bottom: 8px;
 }

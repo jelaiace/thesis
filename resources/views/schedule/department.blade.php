@@ -30,7 +30,7 @@
 				  </li>
 				</ul>
 
-				<div id="calendar-mount"></div>
+				<div id="calendar-mount" class="calendar-container"></div>
 			</div>
 		</div>
 	</div>
