@@ -19,7 +19,17 @@
 						<label>Units</label>
 						<input type="text" placeholder="units" name="units" class="form-control" value=" {{$subject->units}} ">
 
-						<button class="btn btn-info">Edit Subject</button>
+						<label>Assign Department</label>
+					<select name="department_id" class="form-control">
+						@foreach($departments as $department)
+							<option value=" {{$department->id}} ">
+								{{ $department->name}}
+							</option>
+						@endforeach
+					</select>
+
+
+						<button class="btn btn-info">Update Subject</button>
 					</div>
 				</form>
 			</div>

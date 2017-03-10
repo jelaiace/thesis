@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRoomsTable extends Migration
+class AddDepartmentIdColumnToSubjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateRoomsTable extends Migration
      */
     public function up()
     {
-        Schema::create('rooms', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->enum('type',['lecture', 'laboratory']);
-            $table->timestamps();
+        Schema::table('subjects', function (Blueprint $table){
+            $table->integer('department_id');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateRoomsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rooms');
+        Schema::table('subjects', function(Blueprint $table){
+            $table->dropColumn('department_id');
+        });
     }
 }

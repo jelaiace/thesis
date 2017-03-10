@@ -35,20 +35,20 @@
 		    	@foreach($subjects as $subject)
 			    	<tr>
 			    		<td>
-	                    	<div class="table">{{ $subject->id }}</div>
+	                    	{{ $subject->id }}
 	                    </td>
 
 
 	                    <td>
-	                    	<div class="table">{{ $subject->course_code }}</div>
+	                    	{{ $subject->course_code }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{ $subject->name}}</div>
+	                    	{{ $subject->name}}
 	                    </td>
 	                    	
 	                    <td>
-	                    	<div class="table">{{ $subject->units }}</div>	
+	                    	{{ $subject->units }}
 	                    </td>
 
 	                    <td>

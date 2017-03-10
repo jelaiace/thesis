@@ -1,4 +1,3 @@
-@extends('layout')
 
 @section('title')
     Manage Departments
@@ -33,11 +32,11 @@
                 @foreach($departments as $department)
                     <tr>
                         <td>
-                            <div class="table">{{ $department->id }}</div>
+                            {{ $department->id }}
                         </td>
 
                         <td>
-                            <div class="table">{{ $department->name}}</div>
+                            {{ $department->name}}
                         </td>
 
                         <td>

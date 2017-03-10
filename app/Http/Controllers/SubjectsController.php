@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Subject;
+use App\Department;
 
 class SubjectsController extends Controller
 {
@@ -15,8 +16,8 @@ class SubjectsController extends Controller
 
     public function create()
     {
-        $subjects = Subject::all();
-        return view('subjects/create');
+        $departments = Department::all();
+        return view('subjects/create', compact('departments'));
     }
 
     public function store(Request $request)
@@ -24,7 +25,8 @@ class SubjectsController extends Controller
         $subject = Subject::create([
             'course_code' => $request->get('course_code'),
             'name' => $request->get('name'),
-            'units' => $request->get('units')
+            'units' => $request->get('units'),
+            'department_id' => $request->get('department_id')
             ]);
         return redirect('/subjects');
     }
@@ -36,8 +38,8 @@ class SubjectsController extends Controller
 
     public function edit(Subject $subject)
     {
-        
-        return view('subjects/edit', compact('subject'));
+        $departments = Department::all();
+        return view('subjects/edit', compact('subject', 'departments'));
     }
 
     public function update(Request $request, Subject $subject)
@@ -45,6 +47,7 @@ class SubjectsController extends Controller
         $subject->course_code = $request->get('course_code');
         $subject->name = $request->get('name');
         $subject->units = $request->get('units');
+        $user->department_id = $request->get('department_id');
         $subject->save();
         return redirect('/subjects');
     }

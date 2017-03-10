@@ -9,6 +9,7 @@ class Subject extends Model
     Protected $fillable = [
     'course_code',
     'name',
-    'units'
+    'units',
+    'department_id'
     ];
 }

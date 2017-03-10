@@ -15,8 +15,11 @@
 	        </div>
 
 	       <div class="form-group">
-	        	<label>Type</label>
-	        	<input type="text" placeholder="Name" name="type" class="form-control" value="{{ $room->type }}">
+	        <label>Type</label>
+					<select name="type" class="form-control">
+						<option value="lecture" {{ $room->type === 'lecture' ? 'selected' : '' }}>Lecture Room</option>
+						<option value="laboratory" {{ $room->type === 'laboratory' ? 'selected' : '' }}>Laboratory Room</option>
+					</select>
 	        </div>
 
 	       <div class="form-group">
@@ -31,7 +34,7 @@
 	        	</select>
 	        </div>
 
-	        <button class="btn btn-info">Create Room</button>
+	        <button class="btn btn-info">Update Room</button>
 		    </form>
 			</div>
 		</div>

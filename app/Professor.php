@@ -14,4 +14,12 @@ class Professor extends Model
     {
         return $this->belongsTo('App\Department');
     }
+
+    public function user() {
+        return $this->belongsTo('App/User');
+    }
+
+    public function department() {
+        return $this->hasMany('App/Department')
+    }
 }

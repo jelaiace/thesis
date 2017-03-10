@@ -36,23 +36,23 @@
 		    	@foreach($blocks as $block)
 			    	<tr>
 			    		<td>
-	                    	<div class="table">{{ $block->id }}</div>
+	                    	{{ $block->id }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{ $block->name }}</div>
+	                    	{{ $block->name }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{ $block->course->name}}</div>
+							{{ $block->course->name}}
 	                    </td>
 	                    	
 	                    <td>
-	                    	<div class="table">{{ $block->year_level }}</div>	
+	                    	{{ $block->year_level }}	
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{ $block->semester }}</div>
+	                    	{{ $block->semester }}
 	                    </td>
 
 	                    <td>

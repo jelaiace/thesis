@@ -21,8 +21,8 @@ class SchedulesController extends Controller
     public function department(Request $request, Department $department)
     {
         $departments = Department::all();
-        $professors = User::where('type', 'professor')->get();
-        $subjects = Subject::all();
+        $professors = $department->users()->where('type', 'professor')->get();
+        $subjects = $department->subjects;
         $blocks = Block::all();
         $day = strtolower($request->get('day', 'mth'));
         $rooms = Room::where('department_id', $department->id)

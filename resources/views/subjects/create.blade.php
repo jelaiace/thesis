@@ -23,6 +23,15 @@
 							<option value="3">3 units</option>
 						</select>
 
+						<label>Assign Department</label>
+						<select name="department_id" class="form-control">
+						@foreach($departments as $department)
+						<option value="{{$department->id}}">
+							{{ $department->name}}
+						</option>
+						@endforeach
+						</select>
+
 						<button class="btn btn-info">Create new Subject</button>
 					</div>
 				</form>

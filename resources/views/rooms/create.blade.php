@@ -14,7 +14,11 @@
 
 		       <div class="form-group">
 		        	<label>Type</label>
-		        	<input type="text" placeholder="Name" name="type" class="form-control">
+		        	<select name="type" class="form-control">
+		        		<option>Select Type</option>
+		        		<option value="lecture">Lecture Room</option>
+		        		<option value="laboratory">Laboratory Room</option>
+		        	</select>
 		        </div>
 
 		       <div class="form-group">
