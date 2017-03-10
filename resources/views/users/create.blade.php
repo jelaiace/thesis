@@ -19,10 +19,9 @@
 
 						<label>Type</label>
 						<select name="type" class="form-control">
-							<option value="dean">Admin</option>
-							<option value="professor">Dean</option>
+							<option value="admin">Admin</option>
+							<option value="dean">Dean</option>
 							<option value="professor">Professor</option>
-
 						</select>
 
 						<label>Assign Department</label>

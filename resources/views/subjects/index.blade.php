@@ -52,7 +52,9 @@
 	                    </td>
 
 	                    <td>
-		    				<a href="/subjects/{{ $subject->id }}/edit" class="btn btn-info">Edit</a>
+		    				<a href="/subjects/{{ $subject->id }}/edit" class="btn btn-info">
+		    					<span class="glyphicon glyphicon-pencil"></span>
+		    				</a>
 		    			</td>
 	                </tr>
                 @endforeach

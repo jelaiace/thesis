@@ -56,7 +56,9 @@
 	                    </td>
 
 	                    <td>
-		    				<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">Edit</a>
+		    				<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">
+		    					<span class="glyphicon glyphicon-pencil"></span>
+		    				</a>
 		    			</td>
 	                </tr>
                 @endforeach

@@ -47,7 +47,7 @@ class SubjectsController extends Controller
         $subject->course_code = $request->get('course_code');
         $subject->name = $request->get('name');
         $subject->units = $request->get('units');
-        $user->department_id = $request->get('department_id');
+        $subject->department_id = $request->get('department_id');
         $subject->save();
         return redirect('/subjects');
     }

@@ -2,9 +2,9 @@
 
 @section('content')
 	<div class="container">
+	<h1>Edit Department details <small>({{ $department->name }})</small></h1>
 		<div class="grid">
 			<div class="col-md-4">
-			    <h1>Edit Department details ({{ $department->name }})</h1>
 
 			    <form action="/departments/{{ $department->id }}" method="POST">
 			        {{ method_field("PUT") }}

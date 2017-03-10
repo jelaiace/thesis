@@ -3,9 +3,9 @@
 @section('content')
 
 	<div class="container">
+	<h1>Edit Class details<small>({{ $block->name }})</small></h1>
 		<div class="grid">
 			<div class="col-md-4">
-				<h1>Edit Class details({{ $block->name }})</h1>
 
 				<form action="/blocks/{{$block->id}}" method="POST">
 				{{method_field('PUT')}}

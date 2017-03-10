@@ -3,10 +3,10 @@
 @section('content')
 
 	<div class="container">
+		<h1>Edit Subject <small>({{ $subject->name }})</small></h1>
+
 		<div class="grid">
 			<div class="col-md-4">
-			<h1>Edit Subjects ( {{ $subject->name }} )</h1>
-				
 				<form action="/subjects/{{ $subject->id }}" method="POST">
 					{{ method_field("PUT") }}
 					<div class="form-group">

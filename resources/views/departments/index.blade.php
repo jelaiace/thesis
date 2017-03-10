@@ -1,3 +1,4 @@
+@extends('layout')
 
 @section('title')
     Manage Departments
@@ -40,7 +41,9 @@
                         </td>
 
                         <td>
-                            <a href="/departments/{{ $department->id }}/edit" class="btn btn-info">Edit</a>
+                            <a href="/departments/{{ $department->id }}/edit" class="btn btn-info">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            </a>
                         </td>
                     </tr>
                 @endforeach

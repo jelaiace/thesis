@@ -42,7 +42,9 @@
 	            <td>{{ $room->type }}</td>
 	            <td>{{ $room->department->name }}</td>
 	            <td>
-		    				<a href="/rooms/{{ $room->id }}/edit" class="btn btn-info">Edit</a>
+		    				<a href="/rooms/{{ $room->id }}/edit" class="btn btn-info">
+		    				<span class="glyphicon glyphicon-pencil"></span>
+		    				</a>
 		    			</td>
 	         	</tr>
           @endforeach	
