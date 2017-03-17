@@ -32,7 +32,7 @@ class HomeController extends Controller
       $rooms = Room::join('schedules', function($join) use ($day) {
       	$join->on('rooms.id', '=', 'schedules.room_id')
       		->where('day', $day);
-      })->with(
+      })->select('rooms.*')->with(
         'schedules.professor',
         'schedules.block',
         'schedules.room',
