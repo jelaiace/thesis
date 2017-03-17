@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use PDF;
 use App\Schedule;
 use App\User;
 use App\Room;
@@ -48,5 +49,20 @@ class HomeController extends Controller
   	}
 
     return view('index');
+  }
+
+  public function report(Request $request)
+  {
+    $user = Auth::user();
+
+    $schedules = $user->schedules()
+      ->with('room', 'room.department', 'subject', 'block')
+      ->get()
+      ->sortBy('day_value');
+
+    $pdf = PDF::loadView('pdf.schedules', compact('user'))
+      ->setPaper('a4', 'landscape');
+
+    return $pdf->download('schedules.pdf');
   }
 }

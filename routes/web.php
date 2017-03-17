@@ -6,8 +6,9 @@ Auth::routes();
 
 Route::group(['middleware' =>['web', 'auth']], function() {
     Route::get('/', 'HomeController@index');
-
-    Route::group(['middleware' =>['professor']], function() {
+    Route::get('report', 'HomeController@report');
+    
+    Route::group(['middleware' => ['professor']], function() {
         Route::get('blocks', 'BlocksController@index');
         Route::get('blocks/create', 'BlocksController@create');
         Route::post('blocks', 'BlocksController@store');

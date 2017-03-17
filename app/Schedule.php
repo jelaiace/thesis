@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Schedule extends Model
 {
@@ -31,5 +32,28 @@ class Schedule extends Model
 
     public function block() {
         return $this->belongsTo('App\Block');
+    }
+
+    public function getDayValueAttribute() {
+        switch($this->day) {
+            case 'mth': return 1;
+            case 'tf': return 2;
+            case 'ws': return 3;
+        }
+    }
+
+    public function getFormattedStartTimeAttribute() {
+        return date('g:i a', strtotime($this->start_time));
+    }
+
+    public function getFormattedEndTimeAttribute() {
+        return date('g:i a', strtotime($this->end_time));
+    }
+
+    public function getIncrementDifferenceAttribute() {
+        $start = Carbon::parse($this->start_time);
+        $end = Carbon::parse($this->end_time);
+        dd($start->diffInHours($end));
+        return $start->diffInHours($end);
     }
 }
