@@ -11,11 +11,10 @@
 
 				<div class="form-group">
 					<label>Name</label>
-					<input type="text" placeholder="Enter name" name="name" class="form-control" value=" {{$user->name}} ">
+					<input type="text" placeholder="Enter name" name="name" class="form-control" value="{{ $user->name }}">
 
 					<label>Username</label>
-					<input type="text" placeholder="Enter name" name="email" class="form-control" value=" {{$user->email}} ">
-
+					<input type="text" placeholder="Enter name" name="email" class="form-control" value="{{ $user->email }}">
 
 					<label>Type</label>
 					<select name="type" class="form-control">
