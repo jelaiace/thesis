@@ -39,8 +39,9 @@ class HomeController extends Controller
         'schedules.block',
         'schedules.room',
         'schedules.subject'
-      )->with(['schedules' => function($query) use ($request, $user) {
-        $query->where('professor_id', $user->id);
+      )->with(['schedules' => function($query) use ($request, $day, $user) {
+        $query->where('schedules.day', $day)
+          ->where('professor_id', $user->id);
       }])->get();
 
       return view('index-professor', compact(
