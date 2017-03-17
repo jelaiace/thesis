@@ -10,7 +10,7 @@
 			<div class="col-md-3">
 				<div class="list-group">
 					@foreach($departments as $dept)
-						<a href="/schedule/{{ $dept->id }}" class="list-group-item">
+						<a href="/schedule/{{ $dept->id }}" class="list-group-item {{ $dept->id === $department->id ? 'active' : '' }}">
 							{{ $dept->name }}
 						</a>
 					@endforeach
@@ -18,6 +18,7 @@
 			</div>
 
 			<div class="col-md-9">
+				<h1>{{ $department->name }}</h1>
 				<ul class="nav nav-tabs u-spacer">
 				  <li role="presentation" {{ $day !== 'tf' && $day !== 'ws' ? 'class=active' : '' }}>
 				  	<a href="/schedule/{{ $department->id }}">MTH</a>
