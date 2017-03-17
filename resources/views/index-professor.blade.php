@@ -16,6 +16,9 @@
       <li role="presentation" {{ $day === 'ws' ? 'class=active' : '' }}>
         <a href="/?day=ws">WS</a>
       </li>
+      <li role="presentation" class="pull-right">
+        <a href="/report">Reports</a>
+      </li>
     </ul>
 
     <div id="calendar-mount" class="calendar-container"></div>

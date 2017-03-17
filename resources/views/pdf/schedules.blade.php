@@ -1,4 +1,7 @@
 <style>
+body {
+  font-family: 'Helvetica'; 
+}
   
 .table {
   width: 100%;
