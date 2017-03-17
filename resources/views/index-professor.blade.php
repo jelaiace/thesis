@@ -68,6 +68,7 @@
         render() {
           return (
             Timesheet({
+              corny: true,
               schedules: this.state.schedules,
               time: {
                 start: '7:30 AM',
