@@ -19,6 +19,7 @@
 
 						<label>Type</label>
 						<select name="type" class="form-control">
+							<option>Select User</option>
 							<option value="admin">Admin</option>
 							<option value="dean">Dean</option>
 							<option value="professor">Professor</option>
@@ -26,6 +27,7 @@
 
 						<label>Assign Department</label>
 						<select name="department_id" class="form-control">
+						<option>Select Department</option>
 						@foreach($departments as $department)
 						<option value="{{$department->id}}">
 							{{ $department->name}}

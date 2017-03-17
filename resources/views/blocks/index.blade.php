@@ -40,7 +40,7 @@
 	                    </td>
 
 	                    <td>
-	                    	{{ $block->name }}
+	                    	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
 	                    </td>
 
 	                    <td>

@@ -18,13 +18,17 @@
 						
 						<label>Units</label>
 						<select name="units" class="form-control">
-							<option value="1">1 units</option>
+							<option>Select units</option>
+							<option value="1">1 unit</option>
 							<option value="2">2 units</option>
 							<option value="3">3 units</option>
+							<option value="4">4 units</option>
+							<option value="5">5 units</option>
 						</select>
 
 						<label>Assign Department</label>
 						<select name="department_id" class="form-control">
+						<option>Select department</option>
 						@foreach($departments as $department)
 						<option value="{{$department->id}}">
 							{{ $department->name}}
