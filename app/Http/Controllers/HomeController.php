@@ -29,15 +29,19 @@ class HomeController extends Controller
       $subjects = Subject::all();
       $blocks = Block::all();
       $day = strtolower($request->get('day', 'mth'));
-      $rooms = Room::join('schedules', function($join) use ($day) {
+
+      $rooms = Room::join('schedules', function($join) use ($day, $user) {
       	$join->on('rooms.id', '=', 'schedules.room_id')
-      		->where('day', $day);
-      })->select('rooms.*')->with(
+      		->where('schedules.day', $day)
+          ->where('schedules.professor_id', '=', $user->id);
+      })->select('rooms.*', 'schedules.professor_id')->with(
         'schedules.professor',
         'schedules.block',
         'schedules.room',
         'schedules.subject'
-      )->get();
+      )->with(['schedules' => function($query) use ($request, $user) {
+        $query->where('professor_id', $user->id);
+      }])->get();
 
       return view('index-professor', compact(
         'professors',
