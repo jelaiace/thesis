@@ -27,6 +27,7 @@
 		    		<tr>
 		    			<th>#</th>
 		    			<th>Name</th>
+		    			<th>Username</th>
 		    			<th>Type</th>
 	    				<th>Department</th>
 		    		</tr>
@@ -38,11 +39,15 @@
 		    	@foreach($users as $user)
 			    	<tr>
 			    		<td>
-	                    <div class="table">{{ $user->id }}</div>
+	                    	<div class="table">{{ $user->id }}</div>
 	                    </td>
 
 	                    <td>
-	                    <div class="table">{{ $user->name }}</div>
+	                    	<div class="table">{{ $user->name }}</div>
+	                    </td>
+
+	                    <td>
+	                    	<div class="table"> {{ $user->email}} </div>
 	                    </td>
 
 	                    <td>
