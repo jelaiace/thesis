@@ -8,10 +8,20 @@ use App\Department;
 
 class RoomsController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $rooms = Room::all();
-        return view('rooms/index', compact('rooms'));
+        
+        $query = $request->get('q', '');
+            if ($query) {
+                $rooms = Room::where('name', 'LIKE', '%' . $query . '%')->get();
+            } 
+                else 
+                {
+                    $rooms = Room::all();
+                }
+
+        return view('rooms/index', compact('rooms', 'query'));
     }
 
     public function create()

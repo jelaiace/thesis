@@ -7,11 +7,22 @@ use App\Department;
 
 class DepartmentController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $departments = Department::all();
 
-        return view('departments.index', compact('departments'));
+        $query = $request->get('q', '');
+                if ($query) 
+                    {
+                        $departments = Department::where('name', 'LIKE', '%' . $query . '%')->get();
+                    } 
+                else 
+                    {
+                        $departments = Department::all();
+                    }
+
+
+        return view('departments.index', compact('departments', 'query'));
     }
 
     public function create()

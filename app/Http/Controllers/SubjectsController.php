@@ -8,10 +8,20 @@ use App\Department;
 
 class SubjectsController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $subjects = Subject::all();
-        return view('subjects/index', compact('subjects'));
+       
+        $query = $request->get('q', '');
+            if ($query) {
+                $subjects = Subject::where('name', 'LIKE', '%' . $query . '%')->get();
+            } 
+                else 
+                {
+                    $subjects = Subject::all();
+                }
+
+        return view('subjects/index', compact('subjects', 'query'));
     }
 
     public function create()

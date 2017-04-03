@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="container">
-	<h1>Edit Department details <small>({{ $department->name }})</small></h1>
+	<h1>Edit Department Name <small>({{ $department->name }})</small></h1>
 		<div class="grid">
 			<div class="col-md-4">
 
@@ -13,7 +13,7 @@
 			        	<input type="text" placeholder="Name" name="name" class="form-control" value="{{ $department->name }}">
 			        </div>
 
-			        <button class="btn btn-info">Edit Department</button>
+			        <button class="btn btn-info">Update Department</button>
 			    </form>
 			</div>
 		</div>

@@ -13,8 +13,9 @@
         </div>
     </div>
         <div class="col-md-8">
+            <form action="/departments">
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search">
+					<input type="text" class="form-control" placeholder="Search" name="q" value= {{ $query}} >
 					<span class="input-group-btn">
 						<button class="btn btn-default" type="button">Go</button>
 					</span>

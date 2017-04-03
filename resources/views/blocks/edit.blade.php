@@ -38,7 +38,7 @@
 						</select>
 
 
-					<button class="btn btn-info">Edit Class</button>
+					<button class="btn btn-info">Update Class Info</button>
 				</form>
 			</div>
 		</div>

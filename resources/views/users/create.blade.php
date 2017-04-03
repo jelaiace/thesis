@@ -21,6 +21,8 @@
 						<select name="type" class="form-control">
 							<option>Select User</option>
 							<option value="admin">Admin</option>
+							<option value="admin">Vice President</option>
+							<option value="admin">President</option>
 							<option value="dean">Dean</option>
 							<option value="professor">Professor</option>
 						</select>
@@ -36,7 +38,7 @@
 						</select>
 					
 
-					<button class="btn btn-info">Create New Department</button>
+					<button class="btn btn-info">Create New Users</button>
 					</div>
 				</form>
 			</div>

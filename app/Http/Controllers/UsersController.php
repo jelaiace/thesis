@@ -8,11 +8,21 @@ use App\Department;
 
 class UsersController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $users = User::all();
+            
+        $query = $request->get('q', '');
+            if ($query) {
+                $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
+            } 
+                else 
+                {
+                    $users = User::all();
+                }
 
-        return view('users/index', compact('users'));
+
+        return view('users/index', compact('users', 'query'));
     }
 
     public function create()

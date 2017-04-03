@@ -32,7 +32,7 @@
 						@endforeach
 					</select>
 
-					<button class="btn btn-info">Edit User details</button>
+					<button class="btn btn-info">Update User details</button>
 				</div>
 			</form>
 		</div>

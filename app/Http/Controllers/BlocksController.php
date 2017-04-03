@@ -8,11 +8,19 @@ use App\Course;
 
 class BlocksController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $blocks = Block::all();
+        $query = $request->get('q', '');
+            if ($query) {
+                $blocks = Block::where('name', 'LIKE', '%' . $query . '%')->get();
+            } 
+                else 
+                {
+                    $blocks = Block::all();
+                }
 
-        return view('blocks/index', compact('blocks'));
+        return view('blocks/index', compact('blocks', 'query'));
     }
 
     public function create()
