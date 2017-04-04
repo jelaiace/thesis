@@ -63,4 +63,5 @@ Route::get('schedule', 'SchedulesController@index');
 Route::post('schedule', 'SchedulesController@store');
 Route::get('schedule/{department}', 'SchedulesController@department');
 Route::put('schedule/{schedule}', 'SchedulesController@update');
+Route::patch('schedule/{schedule}/action', 'SchedulesController@action');
 Route::delete('schedule/{schedule}', 'SchedulesController@delete');

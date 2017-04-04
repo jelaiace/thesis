@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use Illuminate\Http\Request;
 use App\Schedule;
 use App\User;
@@ -30,7 +31,9 @@ class SchedulesController extends Controller
                 'schedules.professor',
                 'schedules.block',
                 'schedules.room',
-                'schedules.subject'
+                'schedules.subject',
+                'schedules.requester',
+                'schedules.requester.department'
             )
             ->with(['schedules' => function($query) use ($request, $day) {
                 $query->where('day', $day);
@@ -50,16 +53,21 @@ class SchedulesController extends Controller
 
     public function store(Request $request)
     {
-        $schedule = Schedule::create([
-            'professor_id' => $request->get('professor_id'),
-            'block_id' => $request->get('block_id'),
-            'subject_id' => $request->get('subject_id'),
-            'room_id' => Room::where('name', $request->get('room'))->first()->id,
-            'day' => $request->get('day'),
-            'name' => 'xx',
-            'start_time' => $request->get('start_time'),
-            'end_time' => $request->get('end_time')
-        ]);
+        $schedule = new Schedule();
+        $schedule->professor_id = $request->get('professor_id');
+        $schedule->block_id = $request->get('block_id');
+        $schedule->subject_id = $request->get('subject_id');
+        $schedule->room_id = Room::where('name', $request->get('room'))->first()->id;
+        $schedule->day = $request->get('day');
+        $schedule->name = 'xx';
+        $schedule->start_time = $request->get('start_time');
+        $schedule->end_time = $request->get('end_time');
+
+        if ($request->get('is_requested', 0) == 1) {
+            $schedule->requester_id = Auth::user()->id;
+        }
+
+        $schedule->save();
 
         return response()->json($schedule->load(['block', 'subject', 'room', 'professor']));
     }
@@ -76,6 +84,18 @@ class SchedulesController extends Controller
         $schedule->save();
 
         return response()->json($schedule->load(['subject', 'block', 'room', 'professor']));
+    }
+
+    public function action(Request $request, Schedule $schedule)
+    {
+        if ($request->get('is_approved')) {
+            $schedule->requester_id = 0;
+            $schedule->save();
+        } else {
+            $schedule->delete();
+        }
+
+        return response()->json(['success' => true]);
     }
 
     public function delete(Schedule $schedule)

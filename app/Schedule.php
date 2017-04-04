@@ -7,7 +7,7 @@ use Carbon\Carbon;
 
 class Schedule extends Model
 {
-    protected $fillable =[
+    protected $fillable = [
         'name',
         'start_time',
         'end_time',
@@ -15,7 +15,12 @@ class Schedule extends Model
         'department_id',
         'subject_id',
         'room_id',
-        'block_id'
+        'block_id',
+        'requester_id'
+    ];
+
+    protected $appends = [
+        'is_requested'
     ];
 
     public function professor() {
@@ -32,6 +37,10 @@ class Schedule extends Model
 
     public function block() {
         return $this->belongsTo('App\Block');
+    }
+
+    public function requester() {
+        return $this->belongsTo('App\User', 'requester_id');
     }
 
     public function getDayValueAttribute() {
@@ -55,5 +64,9 @@ class Schedule extends Model
         $end = Carbon::parse($this->end_time);
         dd($start->diffInHours($end));
         return $start->diffInHours($end);
+    }
+
+    public function getIsRequestedAttribute() {
+        return $this->requester_id != null;
     }
 }

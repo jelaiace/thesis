@@ -39,6 +39,7 @@
 
 @section('styles')
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/react-select.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/rc-tooltip.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/react-timesheet.css') }}">
 @stop
 
@@ -70,6 +71,18 @@
 									return {
 										start: moment(schedule.start_time, 'hh:mm a'),
 										end: moment(schedule.end_time, 'hh:mm a'),
+										request: schedule.is_requested,
+										requester: schedule.is_requested ? {
+											id: schedule.requester.id,
+											department: {
+												id: schedule.requester.department.id,
+												name: schedule.requester.department.name
+											},
+											user: {
+												id: schedule.requester.id,
+												name: schedule.requester.name
+											}
+										} : {},
 										data: {
 											id: schedule.id,
 											section: schedule.block,
@@ -84,6 +97,7 @@
 
 					this.handleStore = this.handleStore.bind(this);
 					this.handleUpdate = this.handleUpdate.bind(this);
+					this.handleRequestAction = this.handleRequestAction.bind(this);
 				}
 
 				render() {
@@ -91,6 +105,18 @@
 						Timesheet({
 							corny: true,
 							schedules: this.state.schedules,
+							request: {{ Auth::user()->department->id !== $department->id ? 'true' : 'false' }},
+							requester: {
+								id: {{ Auth::user()->id }},
+								department: {
+									id: {{ Auth::user()->department->id }},
+									name: '{{ Auth::user()->department->name }}'
+								},
+								user: {
+									id: {{ Auth::user()->id }},
+									name: '{{ Auth::user()->name }}'
+								}
+							},
 							time: {
 								start: '7:30 AM',
 								end: '9:00 PM',
@@ -100,7 +126,8 @@
 							subjects: subjects,
 							sections: blocks,
 							onStore: this.handleStore,
-							onUpdate: this.handleUpdate
+							onUpdate: this.handleUpdate,
+							onRequestAction: this.handleRequestAction
 						}, null)
 					)
 				}
@@ -113,7 +140,8 @@
 						start_time: schedule.start.format('HH:mm:ss'),
 						end_time: schedule.end.format('HH:mm:ss'),
 						room: room,
-						day: '{{ $day }}'
+						day: '{{ $day }}',
+						is_requested: schedule.request
 					}).then((res) => {						
 						var schedules = Object.assign({}, this.state.schedules);
 						schedule.data.id = res.data.id
@@ -140,13 +168,37 @@
 						if (room === dest) {
 							schedules[room][index] = schedule;
 						} else {
-							console.log(dest);
 							schedules[room] = schedules[room].filter((_, i) => i !== index),
 		          schedules[dest] = schedules[dest].concat([schedule]);
 						}
 
 						this.setState({ schedules: schedules });
 					});
+				}
+
+				handleRequestAction(room, index, action) {
+					var schedule = this.state.schedules[room][index];
+					var endpoint = ['/schedule', schedule.data.id, 'action'].join('/');
+
+					axios.patch(endpoint, { is_approved: action })
+						.then((res) => {
+							var schedules = Object.assign({}, this.state.schedules);
+
+							if (action) {
+								schedules[room] = schedules[room].map((schedule, i) => {
+									return index === i ? Object.assign({}, schedule, {
+										request: false,
+										requester: {}
+									}) : schedule;
+								});
+							} else {
+								schedules[room] = schedules[room].filter((schedule, i) => {
+									return index !== i
+								});
+							}
+
+							this.setState({ schedules });
+						});
 				}
 			});
 
