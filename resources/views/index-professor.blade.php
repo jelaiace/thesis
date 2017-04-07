@@ -59,7 +59,10 @@
                       id: schedule.id,
                       section: schedule.block,
                       professor: schedule.professor,
-                      subject: schedule.subject
+                      subject: {
+                        id: schedule.subject,
+                        name: schedule.subject.name + ' (' + schedule.subject.course_code + ')'
+                      }
                     }
                   };
                 });

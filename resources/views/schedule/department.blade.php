@@ -54,7 +54,10 @@
 	<script>
 		;(function() {
 			var rooms = {!! $rooms->toJson() !!};
-			var subjects = selectify({!! $subjects->toJson() !!});
+			var subjects = selectify({!! $subjects->toJson() !!}.map(subject => {
+				subject.name = subject.name + ' (' + subject.course_code + ')';
+				return subject;
+			}));
 			var professors = selectify({!! $professors->toJson() !!});
 			var blocks = selectify({!! $blocks->toJson() !!});
 			var Timesheet = React.createFactory(ReactTimesheet.default);
@@ -87,7 +90,10 @@
 											id: schedule.id,
 											section: schedule.block,
 											professor: schedule.professor,
-											subject: schedule.subject
+											subject: {
+												id: schedule.subject,
+												name: schedule.subject.name + ' (' + schedule.subject.course_code + ')'
+											}
 										}
 									};
 								});
