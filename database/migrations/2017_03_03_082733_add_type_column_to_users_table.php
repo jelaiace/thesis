@@ -14,7 +14,7 @@ class AddTypeColumnToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function($table){
-            $table->enum('type', ['admin', 'dean', 'professor']);
+            $table->enum('type', ['admin', 'dean', 'professor', 'president', 'vice-president']);
         });
     }
 

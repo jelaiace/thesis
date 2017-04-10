@@ -32,12 +32,17 @@ class RoomsController extends Controller
 
     public function store(Request $request) 
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'type' => 'required|in:lecture,laboratory',
+            'department_id' => 'required'
+        ]);
         $room = Room::create([
             'name' => $request->get('name'),
             'type' => $request->get('type'),
             'department_id' => $request->get('department_id'),
         ]);
-
+        session()->flash('success', 'Room was successfully created!');
         return redirect('/rooms');
     }
 
@@ -54,10 +59,16 @@ class RoomsController extends Controller
 
     public function update(Request $request, Room $room)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'type' => 'required|in:lecture,laboratory',
+            'department_id' => 'required'
+        ]);
         $room->name = $request->get('name');
         $room->type = $request->get('type');
         $room->department_id = $request->get('department_id');
         $room->save();
+        session()->flash('success', 'Room was successfully updated!');
         return redirect('/rooms');
     }
 

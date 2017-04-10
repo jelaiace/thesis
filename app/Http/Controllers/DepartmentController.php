@@ -32,10 +32,13 @@ class DepartmentController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+        ]);
         $department = Department::create([
             'name' => $request->get('name')
         ]);
-
+        session()->flash('success', 'Department was successfully created!');
         return redirect('/departments');
     }
     
@@ -51,8 +54,12 @@ class DepartmentController extends Controller
 
     public function update(Request $request, Department $department)
     {
+         $this->validate($request, [
+            'name'  => 'required',
+        ]);
         $department->name = $request->get('name');
         $department->save();
+        session()->flash('success', 'Department was successfully updated!');
         return redirect('/departments');
     }
 

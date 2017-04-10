@@ -60,3 +60,10 @@ body {
 {
 	color:  #fff;
 }
+
+.u-text-error {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #a94442;
+  font-size: 12px;
+}

@@ -10,6 +10,12 @@
 			    	<div class="form-group">
 			    		<label>Name</label>
 		        	<input type="text" placeholder="Name" name="name" class="form-control">
+
+		        	@if($errors->has('name'))
+							<p class="u-text-error">
+								{{ $errors->first('name') }}
+							</p>
+					@endif
 		        </div>
 
 		       <div class="form-group">
@@ -19,16 +25,28 @@
 		        		<option value="lecture">Lecture Room</option>
 		        		<option value="laboratory">Laboratory Room</option>
 		        	</select>
+
+		        	@if($errors->has('type'))
+							<p class="u-text-error">
+								{{ $errors->first('type') }}
+							</p>
+					@endif
 		        </div>
 
 		       <div class="form-group">
 		        	<label>Department</label>
 		        	<select name="department_id" class="form-control">
-		        		<option>Select department</option>
+		        		<option value="">Select department</option>
 		        		@foreach($departments as $department)
 		        			<option value="{{ $department->id }}">{{ $department->name }}</option>
 		        		@endforeach
 		        	</select>
+		        	
+		        	@if($errors->has('department_id'))
+							<p class="u-text-error">
+								{{ $errors->first('department_id') }}
+							</p>
+					@endif
 		        </div>
 
 			        <button class="btn btn-info">Create Room</button>

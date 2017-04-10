@@ -13,6 +13,11 @@
         </div>
     </div>
         <div class="col-md-8">
+         @if (session()->has('success'))
+            <div class="alert alert-success">
+                {{ session()->get('success') }}
+            </div>
+        @endif
             <form action="/departments">
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search" name="q" value= {{ $query}} >

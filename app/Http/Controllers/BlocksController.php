@@ -32,13 +32,21 @@ class BlocksController extends Controller
 
     public function store(Request $request)
     {
-
+        $this->validate($request, [
+            'name'  => 'required',
+            'course_id' => 'required',
+            'year_level' => 'required',
+            'semester' => 'required'
+        ]);
+        
         $block = Block::create([
             'name' => $request->get('name'),
             'course_id' =>$request->get('course_id'),
             'year_level' => $request->get('year_level'),
             'semester' => $request->get('semester')
-            ]);
+        ]);
+
+        session()->flash('success', 'Block was successfully created!');
         return redirect('/blocks');
     }
 
@@ -55,11 +63,18 @@ class BlocksController extends Controller
 
     public function update(Request $request, Block $block)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'course_id' => 'required',
+            'year_level' => 'required',
+            'semester' => 'required'
+        ]); 
         $block->name = $request->get('name');
         $block->course_id = $request->get('course_id');
         $block->year_level = $request->get('year_level');
         $block->semester = $request->get('semester');
         $block->save();
+         session()->flash('success', 'Block was successfully updated!');
         return redirect('/blocks');
     }
 

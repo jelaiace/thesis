@@ -10,6 +10,12 @@
 			    	<div class="form-group">
 			    		<label>Name</label>
 			        	<input type="text" placeholder="Name" name="name" class="form-control">
+
+			        	@if($errors->has('name'))
+							<p class="u-text-error">
+								{{ $errors->first('name') }}
+							</p>
+					@endif
 			        </div>
 
 			        <button class="btn btn-info">Create Department</button>

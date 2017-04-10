@@ -5,23 +5,27 @@
 @stop
 
 @section('content')
-<div class="container">
-	<div class="col-md-2">
-        <div class="button btn-active">
-            <a href="/subjects/create" class="btn btn-info">Create New Subjects</a>
-        </div>
-    </div>
-        <div class="col-md-8">
-	        <form action="/subjects">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" name="q" value= {{$query}} >
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">Go</button>
-					</span>
-				</div>
-			</form>
-		
-		
+	<div class="container">
+		<div class="col-md-2">
+	        <div class="button btn-active">
+	            <a href="/subjects/create" class="btn btn-info">Create New Subjects</a>
+	        </div>
+	    </div>
+     <div class="col-md-8">
+	    @if (session()->has('success'))
+	    	<div class="alert alert-success">
+	    		{{ session()->get('success') }}
+	    	</div>
+	    @endif
+
+        <form action="/subjects">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search" name="q" value= {{$query}} >
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">Go</button>
+				</span>
+			</div>
+		</form>
 
 			<table class="table table-hover">
 			<thead>
@@ -67,7 +71,6 @@
 		    </table>
 		</div>
 	</div>
-</div>
 
 
 

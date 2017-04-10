@@ -11,6 +11,13 @@
 			    	<div class="form-group">
 			    		<label>Name</label>
 			        	<input type="text" placeholder="Name" name="name" class="form-control" value="{{ $department->name }}">
+
+			        @if($errors->has('name'))
+						<p class="u-text-error">
+							{{ $errors->first('name') }}
+						</p>
+					@endif
+					
 			        </div>
 
 			        <button class="btn btn-info">Update Department</button>

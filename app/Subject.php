@@ -6,10 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-    Protected $fillable = [
-    'course_code',
-    'name',
-    'units',
-    'department_id'
+    protected $fillable = [
+        'course_code',
+        'name',
+        'units',
+        'department_id'
     ];
+
+    public function department() {
+        return $this->belongsTo('App\Department');
+    }
 }

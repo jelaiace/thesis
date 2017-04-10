@@ -9,18 +9,14 @@ use App\Department;
 class UsersController extends Controller
 {
     public function index(Request $request)
-    {
-        $users = User::all();
-            
+    {            
         $query = $request->get('q', '');
-            if ($query) {
-                $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
-            } 
-                else 
-                {
-                    $users = User::all();
-                }
 
+        if ($query) {
+            $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
+        } else {
+            $users = User::all();
+        }
 
         return view('users/index', compact('users', 'query'));
     }
@@ -33,6 +29,14 @@ class UsersController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:8',
+            'type' => 'required|in:admin,dean,professer,vice-president,president',
+            'department_id' => 'required'
+        ]);
+
         $users = User::create([
             'name' => $request->get('name'),
             'email' => $request->get('email'),
@@ -41,6 +45,7 @@ class UsersController extends Controller
             'department_id' => $request->get('department_id')
         ]);
 
+        session()->flash('success', 'User was successfully created!');
         return redirect('/users');
     }
     
@@ -57,11 +62,25 @@ class UsersController extends Controller
 
     public function update(Request $request, User $user)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'password' => 'min:8',
+            'type' => 'required|in:admin,dean,professer,vice-president,president',
+            'department_id' => 'required'
+        ]);
+
         $user->name = $request->get('name');
         $user->email = $request->get('email');
         $user->type = $request->get('type');
         $user->department_id = $request->get('department_id');
+
+        if ($request->has('password')) {
+            $user->password = bcrypt($request->get('password'));
+        }
+
         $user->save();
+        session()->flash('success', 'User was successfully updated!');
         return redirect('/users');
     }
 
