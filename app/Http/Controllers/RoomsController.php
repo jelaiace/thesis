@@ -4,22 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Room;
+use Auth;
 use App\Department;
 
 class RoomsController extends Controller
 {
     public function index(Request $request)
     {
-        $rooms = Room::all();
-        
+        $user = Auth::user();
+
         $query = $request->get('q', '');
-            if ($query) {
+        if ($query) {
+            if ($user->type ==='dean') {
+                $rooms = $user->department->rooms()
+                ->where('name', 'LIKE', '%' . $query . '%')
+                ->get();
+            } else {
                 $rooms = Room::where('name', 'LIKE', '%' . $query . '%')->get();
-            } 
-                else 
-                {
-                    $rooms = Room::all();
-                }
+            }
+        } else {
+            if ($user->type === 'dean') {
+                $rooms = $user->department->rooms;
+            } else {
+                $rooms = Room::all();
+            }
+        }
 
         return view('rooms/index', compact('rooms', 'query'));
     }

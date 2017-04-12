@@ -4,18 +4,30 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 use App\Department;
 
 class UsersController extends Controller
 {
     public function index(Request $request)
-    {            
+    {
+        $user = Auth::user();
         $query = $request->get('q', '');
 
         if ($query) {
-            $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
+            if ($user->type === 'dean') {
+                $users = $user->department->users()
+                ->where('name', 'LIKE', '%' . $query . '%')
+                ->get();
+            } else {
+                $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
+            }
         } else {
-            $users = User::all();
+            if ($user->type === 'dean') {
+                $users = $user->department->users;
+            } else {
+                $users = User::all();
+            }
         }
 
         return view('users/index', compact('users', 'query'));

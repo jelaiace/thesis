@@ -17,4 +17,15 @@ class Department extends Model
     public function users() {
         return $this->hasMany('App\User');
     }
+
+    public function blocks() {
+        return $this->hasManyThrough('App\Block', 'App\Course');
+    }
+
+    public function rooms() {
+        return $this->hasMany('App\Room');
+    }
+    public function courses() {
+        return $this->hasMany('App\Course');
+    }
 }

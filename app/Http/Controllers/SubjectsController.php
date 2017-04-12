@@ -4,22 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Subject;
+use Auth;
 use App\Department;
 
 class SubjectsController extends Controller
 {
     public function index(Request $request)
-    {
-        $subjects = Subject::all();
-       
+    {  
+        $user = Auth::user();
         $query = $request->get('q', '');
-            if ($query) {
+
+        if ($query) {
+            if ($user->type === 'dean') {
+                $subjects = $user->department->subjects()
+                    ->where('name', 'LIKE', '%' . $query . '%')
+                    ->get();
+            } else {
                 $subjects = Subject::where('name', 'LIKE', '%' . $query . '%')->get();
-            } 
-                else 
-                {
-                    $subjects = Subject::all();
-                }
+            }
+        } else {
+            if ($user->type === 'dean') {
+                $subjects = $user->department->subjects;
+            } else {
+                $subjects = Subject::all();
+            }
+        }
 
         return view('subjects/index', compact('subjects', 'query'));
     }

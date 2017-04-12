@@ -4,21 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Course;
+use Auth;
 use App\Department;
 
 class CoursesController extends Controller
 {
     public function index(Request $request)
     {
-        $courses = Course::all();
+        $user = Auth::user();
+
         $query = $request->get('q', '');
-            if ($query) {
+        if ($query) {
+            if ($user->type === 'dean') {
+                $courses = $user->department->courses()
+                    ->where('name', 'LIKE', '%' . $query . '%')
+                    ->get();
+            } else {
                 $courses = Course::where('name', 'LIKE', '%' . $query . '%')->get();
-            } 
-                else 
-                {
-                    $courses = Course::all();
-                }
+            }
+        } else {
+            if ($user->type === 'dean') {
+                 $courses = $user->department->courses;
+             } else {
+                $courses = Course::all();
+            }
+        }
         return view('courses/index', compact('courses', 'query'));
     }
 

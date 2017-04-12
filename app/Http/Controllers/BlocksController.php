@@ -4,21 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Block;
+use Auth;
 use App\Course;
 
 class BlocksController extends Controller
 {
     public function index(Request $request)
     {
-        $blocks = Block::all();
+        $user = Auth::user();
         $query = $request->get('q', '');
-            if ($query) {
+
+        if ($query) {
+            if ($user->type === 'dean') {
+                $blocks = $user->department->blocks()
+                    ->where('blocks.name', 'LIKE', '%' . $query . '%')
+                    ->get();
+            } else {
                 $blocks = Block::where('name', 'LIKE', '%' . $query . '%')->get();
-            } 
-                else 
-                {
-                    $blocks = Block::all();
-                }
+            }
+        } else {
+            if ($user->type === 'dean') {
+                $blocks = $user->department->blocks;
+            } else {
+                $blocks = Block::all(); 
+            }
+        }
 
         return view('blocks/index', compact('blocks', 'query'));
     }
