@@ -13,10 +13,12 @@
 	        <div class="row">
 	        	<div class="col-md-3">
 	            	<div class="navbar-header">
-	              		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	                 	<span class="icon-toggle"></span>
-	              		</button>
-	             	 <a class="navbar-brand" href="./dashboard.html">Classroom Scheduler</a>
+	             		<a class="navbar-brand" href="/">
+	             			<div class="navbar-logo">
+	             				<img class="logo" src="{{ asset('pcu-logo.png') }}">
+	             				Classroom Scheduler
+	             			</div>
+	             		</a>
 	            	</div>
 	            </div>
 
@@ -24,8 +26,9 @@
 	            	@if(Auth::check())
 			            <div class="collapse navbar-collapse">
 			                <ul class="nav navbar-nav">
-			                    <li><a href="/">Home</a></li>
+			                   
 			                    @if(Auth::user()->type !== "professor")
+			                    <li><a href="/courses">Courses</a></li>
 			                    <li><a href="/blocks">Blocks</a></li>
 			                    <li><a href="/subjects">Subjects</a></li>
 			                    <li><a href="/rooms">Rooms</a></li>

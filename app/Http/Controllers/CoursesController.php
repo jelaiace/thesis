@@ -4,43 +4,66 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Course;
+use App\Department;
 
 class CoursesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $courses = Course::all();
-        return view('index', compact('courses'));
+        $query = $request->get('q', '');
+            if ($query) {
+                $courses = Course::where('name', 'LIKE', '%' . $query . '%')->get();
+            } 
+                else 
+                {
+                    $courses = Course::all();
+                }
+        return view('courses/index', compact('courses', 'query'));
     }
 
     public function create()
     {
-        return view('create');
+        $departments = Department::all();
+        return view('courses/create', compact('departments'));
     }
 
     public function store(Request $request)
     {
+          $this->validate($request, [
+            'name'  => 'required',
+            'department_id' => 'required'
+        ]);
         $course = Course::create([
-            'name' => $request->get('name')
+            'name' => $request->get('name'),
+            'department_id' => $request->get('department_id')
             ]);
-        return redirect('/courses/' . $course->id);
+
+        session()->flash('success', 'Course was successfully created!');
+        return redirect('/courses/');
     }
     
     public function show(Course $course)
     {
-        return view('show', compact('course'));
+        return view('courses/show', compact('course'));
     }
 
     public function edit(Course $course)
     {
-        return view('edit', compact('course'));
+         $departments = Department::all();
+        return view('courses/edit', compact('course', 'departments'));
     }
 
     public function update(Request $request, Course $course)
     {
+        $this->validate($request, [
+            'name'  => 'required',
+            'department_id' => 'required'
+        ]);
         $course->name = $request->get('name');
         $course->save();
-        return redirect('/courses/' . $course->id);
+        session()->flash('success', 'Course was successfully updated!');
+        return redirect('/courses/');
     }
 
     public function delete(Course $course)

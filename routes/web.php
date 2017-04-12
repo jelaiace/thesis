@@ -23,7 +23,7 @@ Route::group(['middleware' =>['web', 'auth']], function() {
         Route::get('courses/{course}', 'CoursesController@show');
         Route::get('courses/{course}/edit', 'CoursesController@edit');
         Route::put('courses/{course}', 'CoursesController@update');
-        Route::delete('courses/{}');
+        Route::delete('courses/{course}', 'CoursesController@delete');
 
         Route::get('departments', 'DepartmentController@index');
         Route::get('departments/create', 'DepartmentController@create');

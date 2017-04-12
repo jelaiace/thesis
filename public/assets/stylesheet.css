@@ -67,3 +67,14 @@ body {
   color: #a94442;
   font-size: 12px;
 }
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.navbar-logo > .logo {
+  width: 40px;
+  margin-right: 16px;
+}
