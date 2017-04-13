@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+	{{ $block->name }}
+@stop
+
 @section('content')
 	<div class="container">
 		<h1>{{ $block->name }}</h1>
@@ -7,28 +11,24 @@
 		<table class="table table-hover">
 			<thead>
 		    		<tr>
-		    			<th>Time</th>
-		    			<th>Subject Description</th>
-		    			<th>Units</th>
+		    			<th>Schedule</th>
+		    			<th>Department</th>
 		    			<th>Room</th>
+		    			<th>Subject</th>
+		    			<th>Units</th>
 	    				<th>Professor</th>
-	    				<th>Department</th>
 		    		</tr>
 		    </thead>
 
 		    <tbody>
-		    	@foreach($block->schedules as $schedule)
+		    	@foreach($schedules as $schedule)
 		    		<tr>
 		    			<td>
-							{{ date('g:i:a', strtotime($schedule->start_time)) }} - {{ date('g:i:a', strtotime($schedule->end_time)) }}
-						</td>
+								{{ date('g:i:a', strtotime($schedule->start_time)) }} - {{ date('g:i:a', strtotime($schedule->end_time)) }}
+							</td>
 
 						<td>
-							{{ $schedule->subject->name}}
-						</td>
-
-						<td>
-							{{ $schedule->subject->units}}
+							{{ $schedule->room->department->name}}
 						</td>
 
 						<td>
@@ -36,13 +36,16 @@
 						</td>
 
 						<td>
-							{{ $schedule->professor->name}}
+							{{ $schedule->subject->name}}
 						</td>
 
 						<td>
-							{{ $schedule->room->department->name}}
+							{{ $schedule->subject->units }}
 						</td>
 
+						<td>
+							{{ $schedule->professor->name}}
+						</td>
 					</tr> 
 				@endforeach
 
