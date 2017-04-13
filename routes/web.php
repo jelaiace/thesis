@@ -60,6 +60,8 @@ Route::group(['middleware' =>['web', 'auth']], function() {
 });
 
 Route::get('schedule', 'SchedulesController@index');
+Route::get('schedule/requests', 'SchedulesController@requests');
+Route::get('schedule/incoming', 'SchedulesController@incoming');
 Route::post('schedule', 'SchedulesController@store');
 Route::get('schedule/{department}', 'SchedulesController@department');
 Route::put('schedule/{schedule}', 'SchedulesController@update');

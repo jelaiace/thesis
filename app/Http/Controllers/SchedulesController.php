@@ -26,6 +26,7 @@ class SchedulesController extends Controller
         $subjects = $department->subjects;
         $blocks = Block::all();
         $day = strtolower($request->get('day', 'mth'));
+
         $rooms = Room::where('department_id', $department->id)
             ->with(
                 'schedules.professor',
@@ -36,7 +37,9 @@ class SchedulesController extends Controller
                 'schedules.requester.department'
             )
             ->with(['schedules' => function($query) use ($request, $day) {
-                $query->where('day', $day);
+                $query->where('day', $day)
+                    ->where('status', '!=', 'declined')
+                    ->orWhereNull('status');
             }])
             ->get();
 
@@ -64,6 +67,8 @@ class SchedulesController extends Controller
         $schedule->end_time = $request->get('end_time');
 
         if ($request->get('is_requested', 0) == 1) {
+            $schedule->status = 'pending';
+            $schedule->is_seen = false;
             $schedule->requester_id = Auth::user()->id;
         }
 
@@ -88,19 +93,84 @@ class SchedulesController extends Controller
 
     public function action(Request $request, Schedule $schedule)
     {
-        if ($request->get('is_approved')) {
-            $schedule->requester_id = 0;
-            $schedule->save();
-        } else {
-            $schedule->delete();
-        }
+        $schedule->status = $request->get('is_approved')
+            ? 'approved'
+            : 'declined';
 
-        return response()->json(['success' => true]);
+        $schedule->save();
+
+        return $request->expectsJson()
+            ? response()->json(['success' => true])
+            : redirect()->back();
     }
 
     public function delete(Schedule $schedule)
     {
         $schedule->delete();
         return redirect('/schedule');
+    }
+
+    public function requests() {
+        $type = 'requests';
+
+        $departments = Department::all();
+
+        $status = request()->get('status', 'pending');
+
+        $pending = Auth::user()->requests()
+            ->orderBy('id', 'desc')
+            ->where('status', 'pending')
+            ->get();
+
+        $requests = Auth::user()->requests()
+            ->orderBy('id', 'desc');
+
+        switch($status) {
+            case 'pending':
+                $requests = $pending;
+                break;
+
+            case 'approved':
+                $requests = $requests->where('status', 'approved')->get();
+                break;
+
+            case 'declined':
+                $requests = $requests->where('status', 'declined')->get();
+                break;
+        }
+
+        return view('schedule.requests', compact('departments', 'status', 'requests', 'pending', 'type'));
+    }
+
+    public function incoming() {
+        $type = 'incoming';
+
+        $departments = Department::all();
+
+        $status = request()->get('status', 'pending');
+
+        $pending = Auth::user()->department->schedules()
+            ->orderBy('id', 'desc')
+            ->where('status', 'pending')
+            ->get();
+
+        $requests = Auth::user()->department->schedules()
+            ->orderBy('id', 'desc');
+
+        switch($status) {
+            case 'pending':
+                $requests = $pending;
+                break;
+
+            case 'approved':
+                $requests = $requests->where('status', 'approved')->get();
+                break;
+
+            case 'declined':
+                $requests = $requests->where('status', 'declined')->get();
+                break;
+        }
+
+        return view('schedule.requests', compact('departments', 'status', 'requests', 'pending', 'type'));
     }
 }

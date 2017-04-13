@@ -10,6 +10,10 @@ class Department extends Model
         'name'
     ];
 
+    public function schedules() {
+        return $this->hasManyThrough('App\Schedule', 'App\Room');
+    }
+
     public function subjects() {
         return $this->hasMany('App\Subject');
     }
@@ -25,6 +29,7 @@ class Department extends Model
     public function rooms() {
         return $this->hasMany('App\Room');
     }
+
     public function courses() {
         return $this->hasMany('App\Course');
     }

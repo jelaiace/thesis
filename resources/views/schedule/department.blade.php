@@ -15,6 +15,16 @@
 						</a>
 					@endforeach
 				</div>
+
+        <div class="list-group">
+          <a href="/schedule/requests" class="list-group-item">
+            My Requests
+          </a>
+
+          <a href="/schedule/incoming" class="list-group-item">
+            Department Requests
+          </a>
+        </div>
 			</div>
 
 			<div class="col-md-9">
@@ -74,8 +84,8 @@
 									return {
 										start: moment(schedule.start_time, 'hh:mm a'),
 										end: moment(schedule.end_time, 'hh:mm a'),
-										request: schedule.is_requested,
-										requester: schedule.is_requested ? {
+										request: schedule.is_pending,
+										requester: schedule.is_pending ? {
 											id: schedule.requester.id,
 											department: {
 												id: schedule.requester.department.id,
@@ -91,7 +101,7 @@
 											section: schedule.block,
 											professor: schedule.professor,
 											subject: {
-												id: schedule.subject,
+												id: schedule.subject.id,
 												name: schedule.subject.name + ' (' + schedule.subject.course_code + ')'
 											}
 										}

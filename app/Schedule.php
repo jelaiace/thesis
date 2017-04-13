@@ -20,7 +20,7 @@ class Schedule extends Model
     ];
 
     protected $appends = [
-        'is_requested'
+        'is_pending'
     ];
 
     public function professor() {
@@ -59,6 +59,10 @@ class Schedule extends Model
         return date('g:i a', strtotime($this->end_time));
     }
 
+    public function getFormattedTimeAttribute() {
+        return "{$this->formatted_start_time} - {$this->formatted_end_time}";
+    }
+
     public function getIncrementDifferenceAttribute() {
         $start = Carbon::parse($this->start_time);
         $end = Carbon::parse($this->end_time);
@@ -66,7 +70,7 @@ class Schedule extends Model
         return $start->diffInHours($end);
     }
 
-    public function getIsRequestedAttribute() {
-        return $this->requester_id != null;
+    public function getIsPendingAttribute() {
+        return $this->status === 'pending';
     }
 }

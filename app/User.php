@@ -37,4 +37,8 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Schedule', 'professor_id');
     }
+
+    public function requests() {
+        return $this->hasMany('App\Schedule', 'requester_id');
+    }
 }

@@ -15,6 +15,16 @@
 						</a>
 					@endforeach
 				</div>
+
+				<div class="list-group">
+					<a href="/schedule/requests" class="list-group-item">
+						My Requests
+					</a>
+
+					<a href="/schedule/incoming" class="list-group-item">
+						Department Requests
+					</a>
+				</div>
 			</div>
 
 			<div class="col-md-9">
