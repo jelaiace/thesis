@@ -121,7 +121,7 @@
 						Timesheet({
 							corny: true,
 							schedules: this.state.schedules,
-							request: {{ Auth::user()->department->id !== $department->id ? 'true' : 'false' }},
+							request: {{ Auth::user()->type === 'dean' && Auth::user()->department->id !== $department->id ? 'true' : 'false' }},
 							requester: {
 								id: {{ Auth::user()->id }},
 								department: {
