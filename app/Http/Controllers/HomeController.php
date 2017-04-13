@@ -41,7 +41,11 @@ class HomeController extends Controller
         'schedules.subject'
       )->with(['schedules' => function($query) use ($request, $day, $user) {
         $query->where('schedules.day', $day)
-          ->where('professor_id', $user->id);
+          ->where('professor_id', $user->id)
+          ->where(function($query) {
+            $query->where('schedules.status', 'approved')
+              ->orWhereNull('schedules.status');
+          });
       }])->get();
 
       return view('index-professor', compact(
