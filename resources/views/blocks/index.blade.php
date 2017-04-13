@@ -18,6 +18,12 @@
 	    		{{ session()->get('success') }}
 	    	</div>
 	    @endif
+	    @if (session()->has('info'))
+	    	<div class="alert alert-info">
+	    		{{ session()->get('info') }}
+	    	</div>
+	    @endif
+
 
         <form action="/blocks">
 			<div class="input-group">
@@ -66,6 +72,15 @@
 		    				<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">
 		    					<span class="glyphicon glyphicon-pencil"></span>
 		    				</a>
+		    			</td>
+
+		    			<td>
+		    			 	<form action="/blocks/{{ $block->id }}" method="POST">
+		    			 		{{ method_field('DELETE') }}
+			    				<button class="btn btn-danger">
+	                            	<span class="glyphicon glyphicon-trash"></span>
+	                            </button>
+	                        </form>
 		    			</td>
 	                </tr>
                 @endforeach

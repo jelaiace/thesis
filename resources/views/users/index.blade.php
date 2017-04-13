@@ -19,6 +19,12 @@
 		    	</div>
 		    @endif
 
+		    @if (session()->has('info'))
+		    	<div class="alert alert-info">
+		    		{{ session()->get('info') }}
+		    	</div>
+		    @endif
+
         	<form action="/users">
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search" name="q" value={{ $query }}>
@@ -69,6 +75,17 @@
                             <span class="glyphicon glyphicon-pencil"></span>
                             </a>
 		    			</td>
+
+		    			 <td>
+		    			 	<form action="/users/{{ $user->id }}" method="POST">
+		    			 		{{ method_field('DELETE') }}
+			    				<button class="btn btn-danger">
+	                            	<span class="glyphicon glyphicon-trash"></span>
+	                            </button>
+	                        </form>
+		    			</td>
+
+
 	                </tr>
                 @endforeach
 		    		

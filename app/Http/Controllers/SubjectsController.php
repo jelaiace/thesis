@@ -91,6 +91,7 @@ class SubjectsController extends Controller
     public function delete(Subject $subject)
     {
         $subject->delete();
-        return view('/subject');
+        session()->flash('info', 'Subjects was successfully deleted!');
+        return redirect()->back();
     }
 }

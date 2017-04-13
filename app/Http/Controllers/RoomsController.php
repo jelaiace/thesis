@@ -84,6 +84,7 @@ class RoomsController extends Controller
     public function delete(Room $room)
     {
         $room->delete();
-        return redirect('/rooms');
+        session()->flash('success', 'Room was successfully deleted!');
+        return redirect()->back();
     }
 }

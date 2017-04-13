@@ -19,6 +19,12 @@
 	    	</div>
 	    @endif
 
+	     @if (session()->has('info'))
+	    	<div class="alert alert-info">
+	    		{{ session()->get('info') }}
+	    	</div>
+	    @endif
+
         <form action="/courses">
 			<div class="input-group">
 				<input type="text" class="form-control" placeholder="Search" name="q" value= {{ $query}} >
@@ -56,6 +62,15 @@
 		    				<a href="/courses/{{ $course->id }}/edit" class="btn btn-info">
 		    					<span class="glyphicon glyphicon-pencil"></span>
 		    				</a>
+		    			</td>
+
+		    			<td>
+		    			 	<form action="/courses/{{ $course->id }}" method="POST">
+		    			 		{{ method_field('DELETE') }}
+			    				<button class="btn btn-danger">
+	                            	<span class="glyphicon glyphicon-trash"></span>
+	                            </button>
+	                        </form>
 		    			</td>
 	                </tr>
                 @endforeach

@@ -19,6 +19,12 @@
 	    		{{ session()->get('success') }}
 	    	</div>
 	    @endif
+
+	    @if (session()->has('info'))
+		    	<div class="alert alert-info">
+		    		{{ session()->get('info') }}
+		    	</div>
+		    @endif
 	    
 	    <form action="/rooms">
 			<div class="input-group">
@@ -43,14 +49,30 @@
 	    	<tbody>
 		    	@foreach($rooms as $room)
 			    	<tr>
-			    		<td>{{ $room->id }}</td>
-			            <td>{{ $room->name }}</td>
-			            <td>{{ $room->type }}</td>
-			            <td>{{ $room->department->name }}</td>
+			    		<td>
+			    			{{ $room->id }}
+			    		</td>
+			            <td>
+			            	{{ $room->name }}
+			            </td>
+			            <td>
+			            	{{ $room->type }}
+			            </td>
+			            <td>
+			            	{{ $room->department->name }}
+			            </td>
 			            <td>
 		    				<a href="/rooms/{{ $room->id }}/edit" class="btn btn-info">
-		    				<span class="glyphicon glyphicon-pencil"></span>
+		    					<span class="glyphicon glyphicon-pencil"></span>
 		    				</a>
+		    			</td>
+		    			<td>
+		    			 	<form action="/rooms/{{ $room->id }}" method="POST">
+		    			 		{{ method_field('DELETE') }}
+			    				<button class="btn btn-danger">
+	                            	<span class="glyphicon glyphicon-trash"></span>
+	                            </button>
+	                        </form>
 		    			</td>
 	         		</tr>
          		 @endforeach	

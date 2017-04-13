@@ -79,6 +79,7 @@ class CoursesController extends Controller
     public function delete(Course $course)
     {
         $course->delete();
+        session()->flash('info', 'Course was successfully deleted!');
         return redirect('/courses');
     }
 }

@@ -99,6 +99,7 @@ class UsersController extends Controller
     public function delete(User $user)
     {
         $user->delete();
-        return redirect('/users');
+        session()->flash('info', 'User was successfully deleted!');
+        return redirect()->back();
     }
 }

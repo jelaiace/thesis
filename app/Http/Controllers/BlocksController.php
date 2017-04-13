@@ -91,6 +91,7 @@ class BlocksController extends Controller
     public function delete(Block $block)
     {
         $block->delete();
+        session()->flash('info','Block was successfully deleted!');
         return redirect('/blocks/');
     }
 }

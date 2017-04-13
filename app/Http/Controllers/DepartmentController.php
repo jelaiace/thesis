@@ -66,6 +66,7 @@ class DepartmentController extends Controller
     public function delete(Department $department)
     {
         $department->delete();
-        return redirect('/departments');
+        session()->flash('info', 'Department was successfully deleted!');
+        return redirect()->back();
     }
 }
