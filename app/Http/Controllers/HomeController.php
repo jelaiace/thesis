@@ -61,6 +61,7 @@ class HomeController extends Controller
     $user = Auth::user();
 
     $schedules = $user->schedules()
+      ->confirmed()
       ->with('room', 'room.department', 'subject', 'block')
       ->get()
       ->sortBy('day_value');

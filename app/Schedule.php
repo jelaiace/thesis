@@ -73,4 +73,9 @@ class Schedule extends Model
     public function getIsPendingAttribute() {
         return $this->status === 'pending';
     }
+
+    public function scopeConfirmed() {
+      return $this->where('status', 'approved')
+        ->orWhere('status', 'IS', null);
+    }
 }

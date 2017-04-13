@@ -63,8 +63,7 @@ class BlocksController extends Controller
     public function show(Block $block)
     {
         $schedules = $block->schedules()
-            ->where('status', 'approved')
-            ->orWhere('status', 'IS', null)
+            ->confirmed()
             ->get();
             
         return view('blocks/show', compact('block', 'schedules'));
