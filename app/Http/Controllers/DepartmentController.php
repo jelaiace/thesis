@@ -12,15 +12,12 @@ class DepartmentController extends Controller
         $departments = Department::all();
 
         $query = $request->get('q', '');
-                if ($query) 
-                    {
-                        $departments = Department::where('name', 'LIKE', '%' . $query . '%')->get();
-                    } 
-                else 
-                    {
-                        $departments = Department::all();
-                    }
 
+        if ($query) {
+            $departments = Department::where('name', 'LIKE', '%' . $query . '%')->get();
+        } else {
+            $departments = Department::all();
+        }
 
         return view('departments.index', compact('departments', 'query'));
     }
@@ -33,7 +30,7 @@ class DepartmentController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:departments,name',
         ]);
         $department = Department::create([
             'name' => $request->get('name')
@@ -55,7 +52,7 @@ class DepartmentController extends Controller
     public function update(Request $request, Department $department)
     {
          $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:departments,name,' . $department->id,
         ]);
         $department->name = $request->get('name');
         $department->save();
