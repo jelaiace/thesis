@@ -64,9 +64,14 @@ class BlocksController extends Controller
     {
         $schedules = $block->schedules()
             ->confirmed()
+            ->orderBy('end_time', 'asc')
             ->get();
-            
-        return view('blocks/show', compact('block', 'schedules'));
+
+        $groups = $schedules->groupBy(function($schedule) {
+            return $schedule->day;
+        });
+
+        return view('blocks/show', compact('block', 'groups'));
     }
 
     public function edit(Block $block)

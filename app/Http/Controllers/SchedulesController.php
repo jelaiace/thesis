@@ -39,8 +39,10 @@ class SchedulesController extends Controller
             )
             ->with(['schedules' => function($query) use ($request, $day) {
                 $query->where('day', $day)
-                    ->where('status', '!=', 'declined')
-                    ->orWhereNull('status');
+                    ->where(function($query) {
+                        $query->where('status', '!=', 'declined')
+                            ->orWhereNull('status');
+                    });
             }])
             ->get();
 
