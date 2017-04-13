@@ -75,7 +75,9 @@ class Schedule extends Model
     }
 
     public function scopeConfirmed() {
-      return $this->where('status', 'approved')
-        ->orWhere('status', 'IS', null);
+        return $this->where(function($query) {
+            $query->where('status', 'approved')
+                ->orWhere('status', 'IS', null);
+        });
     }
 }
