@@ -49,26 +49,26 @@
 		    	@foreach($blocks as $block)
 			    	<tr>
 			    		<td>
-	                    	{{ $block->id }}
-	                    </td>
+              	{{ $block->id }}
+              </td>
 
-	                    <td>
-	                    	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
-	                    </td>
+              <td>
+              	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
+              </td>
 
-	                    <td>
-							{{ $block->course->name}}
-	                    </td>
-	                    	
-	                    <td>
-	                    	{{ $block->year_level }}	
-	                    </td>
+              <td>
+								{{ $block->course->name}}
+              </td>
+              	
+              <td>
+              	{{ $block->year_level }}	
+              </td>
 
-	                    <td>
-	                    	{{ $block->semester }}
-	                    </td>
+              <td>
+              	{{ $block->semester }}
+              </td>
 
-	                    <td>
+              <td>
 		    				<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">
 		    					<span class="glyphicon glyphicon-pencil"></span>
 		    				</a>
@@ -78,12 +78,12 @@
 		    			 	<form action="/blocks/{{ $block->id }}" method="POST">
 		    			 		{{ method_field('DELETE') }}
 			    				<button class="btn btn-danger">
-	                            	<span class="glyphicon glyphicon-trash"></span>
-	                            </button>
-	                        </form>
+                  	<span class="glyphicon glyphicon-trash"></span>
+                  </button>
+                </form>
 		    			</td>
-	                </tr>
-                @endforeach
+            </tr>
+          @endforeach
 	    	</tbody>
 	    </table>
 	</div>

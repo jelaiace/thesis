@@ -8,48 +8,54 @@
 	<div class="container">
 		<h1>{{ $block->name }}</h1>
 
-		<table class="table table-hover">
-			<thead>
+		@foreach($groups as $group => $schedules)
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong>{{ strtoupper($group) }}</strong>
+				</div>
+				<table class="table table-hover">
+					<thead>
 		    		<tr>
 		    			<th>Schedule</th>
 		    			<th>Department</th>
 		    			<th>Room</th>
 		    			<th>Subject</th>
 		    			<th>Units</th>
-	    				<th>Professor</th>
+		  				<th>Professor</th>
 		    		</tr>
-		    </thead>
+			    </thead>
 
-		    <tbody>
-		    	@foreach($schedules as $schedule)
-		    		<tr>
-		    			<td>
-								{{ date('g:i:a', strtotime($schedule->start_time)) }} - {{ date('g:i:a', strtotime($schedule->end_time)) }}
-							</td>
+			    <tbody>
+			    	@foreach($schedules as $schedule)
+			    		<tr>
+			    			<td>
+									{{ $schedule->formatted_time }}
+								</td>
 
-						<td>
-							{{ $schedule->room->department->name}}
-						</td>
+								<td>
+									{{ $schedule->room->department->name}}
+								</td>
 
-						<td>
-							{{ $schedule->room->name}}
-						</td>
+								<td>
+									{{ $schedule->room->name}}
+								</td>
 
-						<td>
-							{{ $schedule->subject->name}}
-						</td>
+								<td>
+									{{ $schedule->subject->name}}
+								</td>
 
-						<td>
-							{{ $schedule->subject->units }}
-						</td>
+								<td>
+									{{ $schedule->subject->units }}
+								</td>
 
-						<td>
-							{{ $schedule->professor->name}}
-						</td>
-					</tr> 
-				@endforeach
-
-		    </tbody>
-		
+								<td>
+									{{ $schedule->professor->name}}
+								</td>
+							</tr> 
+						@endforeach
+			    </tbody>
+		  	</table>
+		  </div>
+		 @endforeach
 	</div>
 @stop
