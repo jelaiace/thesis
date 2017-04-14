@@ -41,19 +41,22 @@ class SubjectsController extends Controller
 
     public function store(Request $request)
     {
+        $user = Auth::user();
         $this->validate($request,[
             'course_code' => 'required',
             'name' => 'required',
             'units' => 'required',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
+        $subject = new Subject();
+        $subject->course_code = $request->get('course_code');
+        $subject->name = $request->get('name');
+        $subject->units = $request->get('units');
+        $subject->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
+        $subject->save();
 
-        $subject = Subject::create([
-            'course_code' => $request->get('course_code'),
-            'name' => $request->get('name'),
-            'units' => $request->get('units'),
-            'department_id' => $request->get('department_id')
-            ]);
         session()->flash('success', 'Subject was successfully created!');
         return redirect('/subjects');
     }
@@ -71,19 +74,22 @@ class SubjectsController extends Controller
 
     public function update(Request $request, Subject $subject)
     {
-         $this->validate($request,[
+        $user = Auth::user();
+        $this->validate($request,[
             'course_code' => 'required',
             'name' => 'required',
             'units' => 'required',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
-         
+        
         $subject->course_code = $request->get('course_code');
         $subject->name = $request->get('name');
         $subject->units = $request->get('units');
-        $subject->department_id = $request->get('department_id');
-
+        $subject->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
         $subject->save();
+
         session()->flash('success', 'Subject was successfully updated!');
         return redirect('/subjects');
     }
