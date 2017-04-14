@@ -14,7 +14,7 @@ class AddDayColumnToSchedulesTable extends Migration
     public function up()
     {
         Schema::table('schedules', function(Blueprint $table) {
-            $table->enum('day', ['mth', 'tf', 'ws']);
+            $table->enum('day', ['m', 't', 'w','th','f','s']);
         });
     }
 
