@@ -52,11 +52,16 @@
           <thead>
             <tr>
               <th width="175">Schedule</th>
-              <th width="100">Department</th>
+              @if ($type === 'requests')
+                <th width="100">Department</th>
+              @endif
               <th>Room</th>
               <th>Subject</th>
               <th>Professor</th>
               <th>Block</th>
+              @if ($type === 'incoming')
+                <th width="150">Requested By</th>
+              @endif
               @if($status === 'all')
                 <th width="75">
                   Status
@@ -74,9 +79,11 @@
                 <td>
                   {{ $request->formatted_time }}
                 </td>
-                <td>
-                  {{ $request->room->department->name }}
-                </td>
+                @if ($type === 'requests')
+                  <td>
+                    {{ $request->room->department->name }}
+                  </td>
+                @endif
                 <td>
                   {{ $request->room->name }}
                 </td>
@@ -90,8 +97,14 @@
                   {{ $request->block->name }}
                 </td>
 
+                @if ($type === 'incoming')
+                  <td>
+                    {{ $request->requester->name }}
+                  </td>
+                @endif
+
                 @if ($status === 'all')
-                  <th width="75">
+                  <td width="75">
                     @if ($request->status === 'pending')
                       <span class="label label-default">Pending</span>
                     @elseif ($request->status === 'approved')
@@ -99,7 +112,7 @@
                     @elseif ($request->status === 'declined')
                       <span class="label label-danger">Declined</span>
                     @endif
-                  </th>
+                  </td>
                 @endif
 
                 @if ($type === 'incoming' && ($status === 'pending' || $status === 'all'))
