@@ -28,7 +28,7 @@ class HomeController extends Controller
       $professors = User::where('type', 'professor')->get();
       $subjects = Subject::all();
       $blocks = Block::all();
-      $day = strtolower($request->get('day', 'mth'));
+      $day = strtolower($request->get('day', 'm'));
 
       $rooms = Room::join('schedules', function($join) use ($day, $user) {
       	$join->on('rooms.id', '=', 'schedules.room_id')

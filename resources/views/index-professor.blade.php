@@ -7,14 +7,23 @@
 @section('content')
   <div class="container">
     <ul class="nav nav-tabs u-spacer">
-      <li role="presentation" {{ $day !== 'tf' && $day !== 'ws' ? 'class=active' : '' }}>
-        <a href="/">MTH</a>
+      <li role="presentation" {{ $day === 'm' ? 'class=active' : '' }}>
+        <a href="/">Monday</a>
       </li>
-      <li role="presentation" {{ $day === 'tf' ? 'class=active' : '' }}>
-        <a href="/?day=tf">TF</a>
+      <li role="presentation" {{ $day === 't' ? 'class=active' : '' }}>
+        <a href="/?day=t">Tuesday</a>
       </li>
-      <li role="presentation" {{ $day === 'ws' ? 'class=active' : '' }}>
-        <a href="/?day=ws">WS</a>
+      <li role="presentation" {{ $day === 'w' ? 'class=active' : '' }}>
+        <a href="/?day=w">Wednesday</a>
+      </li>
+      <li role="presentation" {{ $day === 'th' ? 'class=active' : '' }}>
+        <a href="/?day=th">Thursday</a>
+      </li>
+      <li role="presentation" {{ $day === 'f' ? 'class=active' : '' }}>
+        <a href="/?day=f">Friday</a>
+      </li>
+      <li role="presentation" {{ $day === 's' ? 'class=active' : '' }}>
+        <a href="/?day=s">Saturday</a>
       </li>
       <li role="presentation" class="pull-right">
         <a href="/report">Reports</a>

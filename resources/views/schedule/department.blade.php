@@ -30,14 +30,23 @@
 			<div class="col-md-9">
 				<h1>{{ $department->name }}</h1>
 				<ul class="nav nav-tabs u-spacer">
-				  <li role="presentation" {{ $day !== 'tf' && $day !== 'ws' ? 'class=active' : '' }}>
-				  	<a href="/schedule/{{ $department->id }}">MTH</a>
+				  <li role="presentation" {{ $day === 'm' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}">Monday</a>
 				  </li>
-				  <li role="presentation" {{ $day === 'tf' ? 'class=active' : '' }}>
-				  	<a href="/schedule/{{ $department->id }}?day=tf">TF</a>
+				  <li role="presentation" {{ $day === 't' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=t">Tuesday</a>
 				  </li>
-				  <li role="presentation" {{ $day === 'ws' ? 'class=active' : '' }}>
-				  	<a href="/schedule/{{ $department->id }}?day=ws">WS</a>
+				  <li role="presentation" {{ $day === 'w' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=w">Wednesday</a>
+				  </li>
+				  <li role="presentation" {{ $day === 'th' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=th">Thursday</a>
+				  </li>
+				  <li role="presentation" {{ $day === 'f' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=f">Friday</a>
+				  </li>
+				  <li role="presentation" {{ $day === 's' ? 'class=active' : '' }}>
+				  	<a href="/schedule/{{ $department->id }}?day=s">Saturday</a>
 				  </li>
 				</ul>
 
