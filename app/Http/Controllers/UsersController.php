@@ -43,6 +43,7 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         $auth = Auth::user();
+        
         $this->validate($request, [
             'name'  => 'required',
             'email' => 'required|email|unique:users,email',
@@ -54,7 +55,7 @@ class UsersController extends Controller
         $user = new User();
         $user->name = $request->get('name');
         $user->email = $request->get('email');
-        $user->password = $request->get('password');
+        $user->password = bcrypt($request->get('password'));
         $user->type = $request->get('type');
         $user->department_id = $auth->type === 'dean'
             ? $auth->department->id
@@ -78,7 +79,8 @@ class UsersController extends Controller
 
     public function update(Request $request, User $user)
     {
-         $auth = Auth::user();
+        $auth = Auth::user();
+
         $this->validate($request, [
             'name'  => 'required',
             'email' => 'required|email|unique:users,email',
@@ -86,11 +88,9 @@ class UsersController extends Controller
             'type' => 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
-
         
         $user->name = $request->get('name');
         $user->email = $request->get('email');
-        $user->password = $request->get('password');
         $user->type = $request->get('type');
         $user->department_id = $auth->type === 'dean'
             ? $auth->department->id

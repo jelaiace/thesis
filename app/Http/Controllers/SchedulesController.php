@@ -26,7 +26,7 @@ class SchedulesController extends Controller
         $professors = $auth->department->users()->where('type', 'professor')->get();
         $subjects = $auth->department->subjects;
         $blocks = $auth->department->blocks;
-        $day = strtolower($request->get('day', 'mth'));
+        $day = strtolower($request->get('day', 'm'));
 
         $rooms = Room::where('department_id', $department->id)
             ->with(

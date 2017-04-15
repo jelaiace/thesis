@@ -45,9 +45,23 @@ class Schedule extends Model
 
     public function getDayValueAttribute() {
         switch($this->day) {
-            case 'mth': return 1;
-            case 'tf': return 2;
-            case 'ws': return 3;
+            case 'm': return 1;
+            case 't': return 2;
+            case 'w': return 3;
+            case 'th': return 4;
+            case 'f': return 5;
+            case 's': return 6;
+        }
+    }
+
+    public function getDayNameAttribute() {
+        switch($this->day) {
+            case 'm': return 'Monday';
+            case 't': return 'Tuesday';
+            case 'w': return 'Wednesday';
+            case 'th': return 'Thursday';
+            case 'f': return 'Friday';
+            case 's': return 'Saturday';
         }
     }
 
