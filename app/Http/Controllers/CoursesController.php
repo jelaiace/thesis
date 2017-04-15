@@ -40,14 +40,19 @@ class CoursesController extends Controller
 
     public function store(Request $request)
     {
-          $this->validate($request, [
+        $user = Auth::user();
+
+        $this->validate($request, [
             'name'  => 'required',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
-        $course = Course::create([
-            'name' => $request->get('name'),
-            'department_id' => $request->get('department_id')
-            ]);
+
+        $course = new Course();
+        $course->name = $request->get('name');
+        $course->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
+        $course->save();
 
         session()->flash('success', 'Course was successfully created!');
         return redirect('/courses/');
@@ -66,11 +71,17 @@ class CoursesController extends Controller
 
     public function update(Request $request, Course $course)
     {
+        $user = Auth::user();
         $this->validate($request, [
             'name'  => 'required',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
+
+        
         $course->name = $request->get('name');
+        $course->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
         $course->save();
         session()->flash('success', 'Course was successfully updated!');
         return redirect('/courses/');

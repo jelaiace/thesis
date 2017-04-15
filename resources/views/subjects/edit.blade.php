@@ -39,7 +39,7 @@
 						@endif
 					</div>
 
-
+					@if (Auth::user()->type !== 'dean')
 					<div class="form-group">	
 						<label>Assign Department</label>
 						<select name="department_id" class="form-control">
@@ -56,7 +56,8 @@
 								</p>
 							@endif
 						</div>
-
+						@endif
+						
 						<button class="btn btn-info">Update Subject</button>
 					</div>
 				</form>

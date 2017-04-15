@@ -41,21 +41,24 @@ class UsersController extends Controller
 
     public function store(Request $request)
     {
+        $auth = Auth::user();
         $this->validate($request, [
             'name'  => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:8',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
-            'department_id' => 'required'
+            'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
 
-        $users = User::create([
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'password' => bcrypt($request->get('password')),
-            'type' => $request->get('type'),
-            'department_id' => $request->get('department_id')
-        ]);
+        $user = new User();
+        $user->name = $request->get('name');
+        $user->email = $request->get('email');
+        $user->password = $request->get('password');
+        $user->type = $request->get('type');
+        $user->department_id = $auth->type === 'dean'
+            ? $auth->department->id
+            : $request->get('department_id');
+        $user->save();
 
         session()->flash('success', 'User was successfully created!');
         return redirect('/users');
@@ -74,24 +77,29 @@ class UsersController extends Controller
 
     public function update(Request $request, User $user)
     {
+         $auth = Auth::user();
         $this->validate($request, [
             'name'  => 'required',
-            'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'min:8',
-            'type' => 'required|in:admin,dean,professer,vice-president,president',
-            'department_id' => 'required'
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:8',
+            'type' => 'required|in:admin,dean,professor,vice-president,president',
+            'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
 
+        
         $user->name = $request->get('name');
         $user->email = $request->get('email');
+        $user->password = $request->get('password');
         $user->type = $request->get('type');
-        $user->department_id = $request->get('department_id');
-
+        $user->department_id = $auth->type === 'dean'
+            ? $auth->department->id
+            : $request->get('department_id');
+       
         if ($request->has('password')) {
             $user->password = bcrypt($request->get('password'));
         }
-
         $user->save();
+        
         session()->flash('success', 'User was successfully updated!');
         return redirect('/users');
     }

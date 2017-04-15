@@ -41,16 +41,21 @@ class RoomsController extends Controller
 
     public function store(Request $request) 
     {
+        $user = Auth::user();
         $this->validate($request, [
             'name'  => 'required',
             'type' => 'required|in:lecture,laboratory',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
-        $room = Room::create([
-            'name' => $request->get('name'),
-            'type' => $request->get('type'),
-            'department_id' => $request->get('department_id'),
-        ]);
+
+        $room = new Room();
+        $room->name = $request->get('name');
+        $room->type = $request->get('type');
+        $room->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
+        $room->save();
+
         session()->flash('success', 'Room was successfully created!');
         return redirect('/rooms');
     }
@@ -68,15 +73,20 @@ class RoomsController extends Controller
 
     public function update(Request $request, Room $room)
     {
+        $user = Auth::user();
         $this->validate($request, [
             'name'  => 'required',
             'type' => 'required|in:lecture,laboratory',
-            'department_id' => 'required'
+            'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
+        
         $room->name = $request->get('name');
         $room->type = $request->get('type');
-        $room->department_id = $request->get('department_id');
+        $room->department_id = $user->type === 'dean'
+            ? $user->department->id
+            : $request->get('department_id');
         $room->save();
+
         session()->flash('success', 'Room was successfully updated!');
         return redirect('/rooms');
     }

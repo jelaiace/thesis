@@ -18,29 +18,27 @@
 						@endif
 					</div>
 
-					<div class="form-group">	
-						<label>Assign Department</label>
-						<select name="department_id" class="form-control">
-						<option value="">Select Department</option>
-						@foreach($departments as $department)
-						<option value="{{$department->id}}">
-							{{ $department->name}}
-						</option>
-						@endforeach
-						</select>
-						@if($errors->has('department_id'))
-							<p class="u-text-error">
-								{{ $errors->first('department_id') }}
-							</p>
-						@endif
-					</div>
-
-					
-						<button class="btn btn-info">Create new Course</button>
-					</div>
+					@if (Auth::user()->type !== 'dean')
+						<div class="form-group">	
+							<label>Assign Department</label>
+							<select name="department_id" class="form-control">
+								<option value="">Select Department</option>
+								@foreach($departments as $department)
+									<option value="{{$department->id}}">
+										{{ $department->name}}
+									</option>
+								@endforeach
+							</select>
+							@if ($errors->has('department_id'))
+								<p class="u-text-error">
+									{{ $errors->first('department_id') }}
+								</p>
+							@endif
+						</div>
+					@endif
+					<button class="btn btn-info">Create new Course</button>
 				</form>
 			</div>
 		</div>
 	</div>
-
 @stop
