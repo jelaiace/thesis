@@ -48,7 +48,7 @@ body {
         <td>{{ strtoupper($schedule->day) }}</td>
         <td>{{ $schedule->room->name }}</td>
         <td>{{ $schedule->block->name }}</td>
-        <td>{{ $schedule->room->department->Name }}</td>
+        <td>{{ $schedule->room->department->name }}</td>
         <td>{{ $schedule->subject->name }}</td>
         <td>{{ $schedule->formattedStartTime }}</td>
         <td>{{ $schedule->formattedEndTime }}</td>
