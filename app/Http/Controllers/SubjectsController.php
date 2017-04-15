@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Subject;
 use Auth;
+use PDF;
 use App\Department;
 
 class SubjectsController extends Controller
@@ -99,5 +100,16 @@ class SubjectsController extends Controller
         $subject->delete();
         session()->flash('info', 'Subjects was successfully deleted!');
         return redirect()->back();
+    }
+
+    public function report(Request $request)
+    {
+        $user = Auth::user();
+        $subjects = $user->department->subjects;
+
+        $pdf = PDF::loadView('pdf.subject', compact('subjects'))
+          ->setPaper('a4', 'landscape');
+
+        return $pdf->download('subjects.pdf');
     }
 }

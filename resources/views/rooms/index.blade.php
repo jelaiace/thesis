@@ -8,9 +8,12 @@
 @section('content')
 <div class="container">
 	<div class="col-md-2">
-		<div class="button btn-active">
-      		<a href="/rooms/create" class="btn btn-info">Create room</a>
-		</div>
+		<a href="/rooms/create" class="btn btn-info btn-block u-spacer">
+        		Create New Rooms
+        </a>
+        <a href="/rooms/report" class="btn btn-success btn-block">
+        	Generate Reports
+        </a>
 	</div>
 
     <div class="col-md-8">

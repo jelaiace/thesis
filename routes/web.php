@@ -53,6 +53,7 @@ Route::group(['middleware' =>['web', 'auth']], function() {
         Route::delete('users/{user}', 'UsersController@delete');
 
         Route::get('subjects', 'SubjectsController@index');
+        Route::get('subjects/report', 'SubjectsController@report');
         Route::get('subjects/create', 'SubjectsController@create');
         Route::post('subjects', 'SubjectsController@store');
         Route::get('subjects/{subject}', 'SubjectsController@show');

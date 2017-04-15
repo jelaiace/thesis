@@ -7,9 +7,13 @@
 @section('content')
 	<div class="container">
 		<div class="col-md-2">
-	        <div class="button btn-active">
-	            <a href="/subjects/create" class="btn btn-info">Create New Subjects</a>
-	        </div>
+        	<a href="/subjects/create" class="btn btn-info btn-block u-spacer">
+        		Create New Subjects
+        	</a>
+
+            <a href="/subjects/report" class="btn btn-success btn-block">
+            	Generate Reports
+            </a>
 	    </div>
      <div class="col-md-8">
 	    @if (session()->has('success'))

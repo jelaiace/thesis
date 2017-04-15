@@ -7,9 +7,13 @@
 @section('content')
 <div class="container">
 	<div class="col-md-2">
-        <div class="button btn-active">
-            <a href="/blocks/create" class="btn btn-info">Create Block</a>
-        </div>
+        <a href="/blocks/create" class="btn btn-info btn-block u-spacer">
+        	Create Block
+        </a>
+        
+        <a href="/blocks/report" class="btn btn-success btn-block">
+        	Generate Reports
+        </a>
     </div>
 
     <div class="col-md-8">
