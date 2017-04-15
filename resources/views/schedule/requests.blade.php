@@ -29,8 +29,11 @@
 
       <div class="col-md-9">
         <ul class="nav nav-tabs u-spacer">
+          <li role="presentation" {{ $status === 'all' ? 'class=active' : '' }}>
+            <a href="/schedule/{{ $type === 'incoming' ? 'incoming' : 'requests' }}">All</a>
+          </li>
           <li role="presentation" {{ $status === 'pending' ? 'class=active' : '' }}>
-            <a href="/schedule/{{ $type === 'incoming' ? 'incoming' : 'requests' }}">
+            <a href="/schedule/{{ $type === 'incoming' ? 'incoming' : 'requests' }}?status=pending">
               Pending
               @if ($pending->count())
                 <span class="badge">{{ $pending->count() }}</span>
@@ -54,7 +57,12 @@
               <th>Subject</th>
               <th>Professor</th>
               <th>Block</th>
-              @if($type === 'incoming' && $status === 'pending')
+              @if($status === 'all')
+                <th width="75">
+                  Status
+                </th>
+              @endif
+              @if ($type === 'incoming' && ($status === 'pending' || $status === 'all'))
                 <th width="75">Action</th>
               @endif
             </tr>
@@ -82,19 +90,33 @@
                   {{ $request->block->name }}
                 </td>
 
-                @if($type === 'incoming' && $status === 'pending')
+                @if ($status === 'all')
+                  <th width="75">
+                    @if ($request->status === 'pending')
+                      <span class="label label-default">Pending</span>
+                    @elseif ($request->status === 'approved')
+                      <span class="label label-success">Approved</span>
+                    @elseif ($request->status === 'declined')
+                      <span class="label label-danger">Declined</span>
+                    @endif
+                  </th>
+                @endif
+
+                @if ($type === 'incoming' && ($status === 'pending' || $status === 'all'))
                   <td>
-                    <form action="/schedule/{{ $request->id }}/action" method="POST">
-                      {{ method_field('PATCH') }}
-                      <div class="btn-group btn-group-xs" role="group">
-                        <button class="btn btn-primary" data-toggle="tooltip" title="Approve" name="is_approved" value="1">
-                          <i class="glyphicon glyphicon-ok"></i>
-                        </button>
-                        <button class="btn btn-danger" data-toggle="tooltip" title="Decline" name="is_approved" value="0">
-                          <i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                      </div>
-                    </form>
+                    @if ($request->status === 'pending')
+                      <form action="/schedule/{{ $request->id }}/action" method="POST">
+                        {{ method_field('PATCH') }}
+                        <div class="btn-group btn-group-xs" role="group">
+                          <button class="btn btn-primary" data-toggle="tooltip" title="Approve" name="is_approved" value="1">
+                            <i class="glyphicon glyphicon-ok"></i>
+                          </button>
+                          <button class="btn btn-danger" data-toggle="tooltip" title="Decline" name="is_approved" value="0">
+                            <i class="glyphicon glyphicon-remove"></i>
+                          </button>
+                        </div>
+                      </form>
+                    @endif
                   </td>
                 @endif
               </tr>
