@@ -118,7 +118,7 @@ class SchedulesController extends Controller
 
         $departments = Department::all();
 
-        $status = request()->get('status', 'pending');
+        $status = request()->get('status', 'all');
 
         $pending = Auth::user()->requests()
             ->orderBy('id', 'desc')
@@ -129,6 +129,10 @@ class SchedulesController extends Controller
             ->orderBy('id', 'desc');
 
         switch($status) {
+            case 'all':
+                $requests = $requests->whereNotNull('status')->get();
+                break;
+
             case 'pending':
                 $requests = $pending;
                 break;
@@ -150,7 +154,7 @@ class SchedulesController extends Controller
 
         $departments = Department::all();
 
-        $status = request()->get('status', 'pending');
+        $status = request()->get('status', 'all');
 
         $pending = Auth::user()->department->schedules()
             ->orderBy('id', 'desc')
@@ -161,6 +165,10 @@ class SchedulesController extends Controller
             ->orderBy('id', 'desc');
 
         switch($status) {
+            case 'all':
+                $requests = $requests->whereNotNull('status')->get();
+                break;
+
             case 'pending':
                 $requests = $pending;
                 break;
