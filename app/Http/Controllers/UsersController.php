@@ -42,6 +42,7 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         $auth = Auth::user();
+        
         $this->validate($request, [
             'name'  => 'required',
             'email' => 'required|email|unique:users,email',
