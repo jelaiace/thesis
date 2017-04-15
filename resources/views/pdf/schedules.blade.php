@@ -26,33 +26,32 @@ body {
 }
 </style>
 
-<h1>Schedules</h1>
-<h4>{{ $user->name }}</h4>
+<h1>{{ $user->name }}'s Schedule</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Day</th>
-      <th>Room</th>
-      <th>Block</th>
-      <th>Department</th>
-      <th>Subject</th>
-      <th>Start</th>
-      <th>End</th>
-    </tr>
-  </thead>
+@foreach($groups as $day => $schedules)
+  <h3>{{ $schedules->first()->day_name }}</h3>
 
-  <tbody>
-    @foreach($user->schedules as $schedule)
+  <table class="table">
+    <thead>
       <tr>
-        <td>{{ strtoupper($schedule->day) }}</td>
-        <td>{{ $schedule->room->name }}</td>
-        <td>{{ $schedule->block->name }}</td>
-        <td>{{ $schedule->room->department->name }}</td>
-        <td>{{ $schedule->subject->name }}</td>
-        <td>{{ $schedule->formattedStartTime }}</td>
-        <td>{{ $schedule->formattedEndTime }}</td>
+        <th>Schedule</th>
+        <th>Room</th>
+        <th>Block</th>
+        <th>Department</th>
+        <th>Subject</th>
       </tr>
-    @endforeach
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      @foreach($schedules as $schedule)
+        <tr>
+          <td>{{ $schedule->formatted_time }}</td>
+          <td>{{ $schedule->room->name }}</td>
+          <td>{{ $schedule->block->name }}</td>
+          <td>{{ $schedule->room->department->name }}</td>
+          <td>{{ $schedule->subject->name }}</td>
+        </tr>
+      @endforeach
+    </tbody>
+  </table>
+@endforeach

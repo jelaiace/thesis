@@ -54,6 +54,17 @@ class Schedule extends Model
         }
     }
 
+    public function getDayNameAttribute() {
+        switch($this->day) {
+            case 'm': return 'Monday';
+            case 't': return 'Tuesday';
+            case 'w': return 'Wednesday';
+            case 'th': return 'Thursday';
+            case 'f': return 'Friday';
+            case 's': return 'Saturday';
+        }
+    }
+
     public function getFormattedStartTimeAttribute() {
         return date('g:i a', strtotime($this->start_time));
     }

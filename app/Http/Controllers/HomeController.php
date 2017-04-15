@@ -65,12 +65,16 @@ class HomeController extends Controller
     $user = Auth::user();
 
     $schedules = $user->schedules()
+      ->orderBy('start_time', 'asc')
       ->confirmed()
       ->with('room', 'room.department', 'subject', 'block')
-      ->get()
-      ->sortBy('day_value');
+      ->get();
 
-    $pdf = PDF::loadView('pdf.schedules', compact('user'))
+    $groups = $schedules->groupBy(function($schedule) {
+      return $schedule->day;
+    })->sortBy('day_value');
+
+    $pdf = PDF::loadView('pdf.schedules', compact('user', 'groups'))
       ->setPaper('a4', 'landscape');
 
     return $pdf->download('schedules.pdf');
