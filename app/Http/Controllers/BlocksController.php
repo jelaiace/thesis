@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Block;
 use Auth;
+use PDF;
 use App\Course;
 
 class BlocksController extends Controller
@@ -102,5 +103,16 @@ class BlocksController extends Controller
         $block->delete();
         session()->flash('info','Block was successfully deleted!');
         return redirect('/blocks/');
+    }
+
+    public function report(Request $request)
+    {
+        $user = Auth::user();
+        $blocks = $user->department->blocks;
+
+        $pdf = PDF::loadView('pdf.block', compact('blocks'))
+          ->setPaper('a4', 'landscape');
+
+        return $pdf->download('blocks.pdf');
     }
 }

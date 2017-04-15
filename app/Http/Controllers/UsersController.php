@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
+use PDF;
 use App\Department;
 
 class UsersController extends Controller
@@ -109,5 +110,16 @@ class UsersController extends Controller
         $user->delete();
         session()->flash('info', 'User was successfully deleted!');
         return redirect()->back();
+    }
+
+    public function report(Request $request)
+    {
+        $auth = Auth::user();
+        $users = $auth->department->users;
+
+        $pdf = PDF::loadView('pdf.users', compact('users'))
+          ->setPaper('a4', 'landscape');
+
+        return $pdf->download('users.pdf');
     }
 }

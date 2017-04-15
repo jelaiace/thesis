@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Room;
 use Auth;
+use PDF;
 use App\Department;
 
 class RoomsController extends Controller
@@ -96,5 +97,16 @@ class RoomsController extends Controller
         $room->delete();
         session()->flash('success', 'Room was successfully deleted!');
         return redirect()->back();
+    }
+
+    public function report(Request $request) 
+    {
+        $user = Auth::user();
+        $rooms = $user->department->rooms;
+
+        $pdf = PDF::loadView('pdf.room', compact('rooms'))
+          ->setPaper('a4', 'landscape');
+
+        return $pdf->download('rooms.pdf');
     }
 }

@@ -10,6 +10,7 @@ Route::group(['middleware' =>['web', 'auth']], function() {
     
     Route::group(['middleware' => ['professor']], function() {
         Route::get('blocks', 'BlocksController@index');
+        Route::get('blocks/report', 'BlocksController@report');
         Route::get('blocks/create', 'BlocksController@create');
         Route::post('blocks', 'BlocksController@store');
         Route::get('blocks/{block}', 'BlocksController@show');
@@ -34,6 +35,7 @@ Route::group(['middleware' =>['web', 'auth']], function() {
         Route::delete('departments/{department}', 'DepartmentController@delete');
 
         Route::get('rooms', 'RoomsController@index');
+        Route::get('rooms/report', 'RoomsController@report');
         Route::get('rooms/create', 'RoomsController@create');
         Route::post('rooms', 'RoomsController@store');
         Route::get('rooms/{room}', 'RoomsController@show');
@@ -42,6 +44,7 @@ Route::group(['middleware' =>['web', 'auth']], function() {
         Route::delete('rooms/{room}', 'RoomsController@delete');
 
         Route::get('users', 'UsersController@index');
+        Route::get('users/report', 'UsersController@report');
         Route::get('users/create', 'UsersController@create');
         Route::post('users', 'UsersController@store');
         Route::get('users/{user}', 'UsersController@show');
