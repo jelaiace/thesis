@@ -10,11 +10,10 @@
 	<div class="col-md-2">
         <a href="/users/create" class="btn btn-info btn-block u-spacer">
         		Create New Users
-        	</a>
-
-            <a href="/users/report" class="btn btn-success btn-block">
-            	Generate Reports
-            </a>
+        </a>
+        <a href="/users/report" class="btn btn-success btn-block">
+        	Generate Reports
+        </a>
     </div>
         <div class="col-md-8">
 		    @if (session()->has('success'))
