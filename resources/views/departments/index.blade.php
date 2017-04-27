@@ -58,7 +58,7 @@
                         </td>
 
                         <td>
-                            <form action="/departments/{{ $department->id }}" method="POST">
+                            <form action="/departments/{{ $department->id }}" method="POST" data-verilete="department" data-verilete-name="{{ $department->name }}">
                                 {{ method_field('DELETE') }}
                                 <button class="btn btn-danger">
                                     <span class="glyphicon glyphicon-trash"></span>

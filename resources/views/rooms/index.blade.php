@@ -70,7 +70,7 @@
 		    				</a>
 		    			</td>
 		    			<td>
-		    			 	<form action="/rooms/{{ $room->id }}" method="POST">
+		    			 	<form action="/rooms/{{ $room->id }}" method="POST" data-verilete="room" data-verilete-name="{{ $room->name }}">
 		    			 		{{ method_field('DELETE') }}
 			    				<button class="btn btn-danger">
 	                            	<span class="glyphicon glyphicon-trash"></span>

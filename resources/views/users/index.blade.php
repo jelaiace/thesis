@@ -80,7 +80,7 @@
 		    			</td>
 
 		    			 <td>
-		    			 	<form action="/users/{{ $user->id }}" method="POST">
+		    			 	<form action="/users/{{ $user->id }}" method="POST" data-verilete="user" data-verilete-name="{{ $user->name }}">
 		    			 		{{ method_field('DELETE') }}
 			    				<button class="btn btn-danger">
 	                            	<span class="glyphicon glyphicon-trash"></span>

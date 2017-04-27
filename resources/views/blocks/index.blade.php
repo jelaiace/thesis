@@ -53,41 +53,41 @@
 		    	@foreach($blocks as $block)
 			    	<tr>
 			    		<td>
-              	{{ $block->id }}
-              </td>
+              				{{ $block->id }}
+             			 </td>
 
-              <td>
-              	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
-              </td>
+			              <td>
+			              	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
+			              </td>
 
-              <td>
-								{{ $block->course->name}}
-              </td>
+			              <td>
+							{{ $block->course->name}}
+			              </td>
               	
-              <td>
-              	{{ $block->year_level }}	
-              </td>
+			              <td>
+			              	{{ $block->year_level }}
+			              </td>
 
-              <td>
-              	{{ $block->semester }}
-              </td>
+			              <td>
+			              	{{ $block->semester }}
+			              </td>
 
-              <td>
-		    				<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">
-		    					<span class="glyphicon glyphicon-pencil"></span>
-		    				</a>
-		    			</td>
+			              <td>
+			    			<a href="/blocks/{{ $block->id }}/edit" class="btn btn-info">
+			    			  <span class="glyphicon glyphicon-pencil"></span>
+			    			</a>
+			    		  </td>
 
 		    			<td>
-		    			 	<form action="/blocks/{{ $block->id }}" method="POST">
+		    			 	<form action="/blocks/{{ $block->id }}" method="POST" data-verilete="block" data-verilete-name="{{ $block->name }}">
 		    			 		{{ method_field('DELETE') }}
 			    				<button class="btn btn-danger">
-                  	<span class="glyphicon glyphicon-trash"></span>
-                  </button>
-                </form>
+				                  	<span class="glyphicon glyphicon-trash"></span>
+                  				</button>
+                			</form>
 		    			</td>
-            </tr>
-          @endforeach
+            		</tr>
+          		@endforeach
 	    	</tbody>
 	    </table>
 	</div>

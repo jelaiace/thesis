@@ -76,7 +76,7 @@
 		    			</td>
 
 		    			 <td>
-		    			 	<form action="/subjects/{{ $subject->id }}" method="POST">
+		    			 	<form action="/subjects/{{ $subject->id }}" method="POST" data-verilete="subject" data-verilete-name="{{ $subject->name }}">
 		    			 		{{ method_field('DELETE') }}
 			    				<button class="btn btn-danger">
 	                            	<span class="glyphicon glyphicon-trash"></span>
