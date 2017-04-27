@@ -11,7 +11,7 @@
 		@foreach($groups as $group => $schedules)
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<strong>{{ strtoupper($group) }}</strong>
+					<strong>{{ $group }}</strong>
 				</div>
 				<table class="table table-hover">
 					<thead>

@@ -69,7 +69,7 @@ class BlocksController extends Controller
             ->get();
 
         $groups = $schedules->groupBy(function($schedule) {
-            return $schedule->day;
+            return $schedule->day_name;
         });
 
         return view('blocks/show', compact('block', 'groups'));
