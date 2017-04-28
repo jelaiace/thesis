@@ -7,6 +7,11 @@ body {
   font-family: 'Helvetica'; 
 }
 
+.school-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .doc-heading {
   font-weight: 300;
 }
@@ -58,6 +63,8 @@ body {
   border: 1px dashed #f3f3f7;
 }
 </style>
+
+<img src="{{ public_path('logo-full.png') }}" class="school-logo" />
 
 <h1 class="doc-heading">Blocks ({{ $user->department->name }})</h1>
 

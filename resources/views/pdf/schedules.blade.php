@@ -2,6 +2,11 @@
 body {
   font-family: 'Helvetica'; 
 }
+
+.school-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
   
 .table {
   width: 100%;
@@ -25,6 +30,8 @@ body {
   border-top: 1px solid $color-gray;
 }
 </style>
+
+<img src="{{ public_path('logo-full.png') }}" class="school-logo" />
 
 <h1>{{ $user->name }}'s Schedule</h1>
 
