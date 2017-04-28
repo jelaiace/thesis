@@ -30,6 +30,7 @@
 						<button class="btn btn-default" type="button">Go</button>
 					</span>
 				</div>
+            </form>
 
 
         <table class="table table-hover">
