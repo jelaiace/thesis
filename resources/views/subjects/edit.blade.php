@@ -10,8 +10,17 @@
 				<form action="/subjects/{{ $subject->id }}" method="POST">
 					{{ method_field("PUT") }}
 					<div class="form-group">
-						<label>Course Code</label>
-						<input type="text" placeholder="course code" name="course_code" class="form-control" value=" {{ $subject->course_code}} ">
+						<label>Course Number</label>
+						<input type="text" placeholder="course number" name="course_number" class="form-control" value=" {{ $subject->course_number}} ">
+						@if($errors->has('course_number'))
+							<p class="u-text-error">
+								{{ $errors->first('course_number') }}
+							</p>
+						@endif
+					</div>
+					<div class="form-group">
+						<label>Class Code</label>
+						<input type="text" placeholder="course code" name="class code" class="form-control" value=" {{ $subject->course_code}} ">
 						@if($errors->has('course_code'))
 							<p class="u-text-error">
 								{{ $errors->first('course_code') }}

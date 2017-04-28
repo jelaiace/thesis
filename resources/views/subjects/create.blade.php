@@ -9,6 +9,16 @@
 
 				<form action="/subjects" method="POST">
 					<div class="form-group">
+						<label>Course Number</label>
+						<input type="text" placeholder="course number" name="course_number" class="form-control">
+						@if($errors->has('course_number'))
+							<p class="u-text-error">
+								{{ $errors->first('course_number') }}
+							</p>
+						@endif
+					</div>
+
+					<div class="form-group">
 						<label>Course Code</label>
 						<input type="text" placeholder="course code" name="course_code" class="form-control">
 						@if($errors->has('course_code'))

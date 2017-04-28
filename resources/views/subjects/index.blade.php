@@ -41,7 +41,8 @@
 			<thead>
 		    		<tr>
 		    			<th>#</th>
-		    			<th>Course Code</th>
+		    			<th>Course Number</th>
+		    			<th>Class Code</th>
 		    			<th>Subject Name</th>
 	    				<th>Units</th>
 		    		</tr>
@@ -56,6 +57,9 @@
 	                    	{{ $subject->id }}
 	                    </td>
 
+	                    <td>
+	                    	{{ $subject->course_number }}
+	                    </td>
 
 	                    <td>
 	                    	{{ $subject->course_code }}

@@ -44,12 +44,14 @@ class SubjectsController extends Controller
     {
         $user = Auth::user();
         $this->validate($request,[
+            'course_number' => 'required',
             'course_code' => 'required',
             'name' => 'required',
             'units' => 'required',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
         $subject = new Subject();
+        $subject->course_number = $request->get('course_number');
         $subject->course_code = $request->get('course_code');
         $subject->name = $request->get('name');
         $subject->units = $request->get('units');
@@ -77,12 +79,14 @@ class SubjectsController extends Controller
     {
         $user = Auth::user();
         $this->validate($request,[
+            'course_number' => 'required',
             'course_code' => 'required',
             'name' => 'required',
             'units' => 'required',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
-        
+
+        $subject->course_number = $request->get('course_number');
         $subject->course_code = $request->get('course_code');
         $subject->name = $request->get('name');
         $subject->units = $request->get('units');
