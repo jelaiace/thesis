@@ -88,7 +88,7 @@ class UsersController extends Controller
         $this->validate($request, [
             'first_name'  => 'required',
             'last_name'  => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email|unique:users,email,' . $user->id,
             'password' => 'min:8',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
