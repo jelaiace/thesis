@@ -36,7 +36,7 @@ artisan migrate
 artisan db:seed
 ```
 
-- **Serve** &mdash; After running the command below, open up your browser and visit `localhost:3000`.
+- **Serve** &mdash; After running the command below, open up your browser and visit `localhost:8000`.
 ```
 php artisan serve
 ```
