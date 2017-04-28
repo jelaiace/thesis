@@ -35,3 +35,8 @@ artisan migrate
 # However, you will need to fill out the fields yourself.
 artisan db:seed
 ```
+
+- **Serve** &mdash; After running the command below, open up your browser and visit `localhost:3000`.
+```
+php artisan serve
+```
