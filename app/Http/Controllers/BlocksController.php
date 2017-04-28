@@ -108,9 +108,15 @@ class BlocksController extends Controller
     public function report(Request $request)
     {
         $user = Auth::user();
-        $blocks = $user->department->blocks;
 
-        $pdf = PDF::loadView('pdf.block', compact('blocks'))
+        $blocks = $user->department->blocks
+            ->each(function($block) {
+                $block->days = $block->schedules->groupBy(function($schedule) {
+                    return $schedule->day_name;
+                });
+            });
+
+        $pdf = PDF::loadView('pdf.block', compact('blocks', 'user'))
           ->setPaper('a4', 'landscape');
 
         return $pdf->download('blocks.pdf');
