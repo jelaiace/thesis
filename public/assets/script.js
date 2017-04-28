@@ -19,3 +19,23 @@
       : `${message} (${name})?`)
   }
 })(jQuery)
+
++(function($) {
+  $('[data-jort]').on('click', function() {
+    var el = $(this)
+    var key = el.data('jort')
+    var q = new URLSearchParams(window.location.search)
+    var sort = q.get('sort')
+    var descending = `-${key}`
+    
+    if (!sort || (sort !== key && sort !== descending)) {
+      q.set('sort', key)
+    } else if (sort.substr(0, 1) === '-') {
+      q.delete('sort')
+    } else {
+      q.set('sort', descending)
+    }
+
+    window.location.search = String(q)
+  })
+})(jQuery)

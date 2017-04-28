@@ -14,6 +14,7 @@ class UsersController extends Controller
     {
         $user = Auth::user();
         $query = null;
+        $sort = $request->get('sort', '');
         $first_name = $request->get('first_name', '');
         $last_name = $request->get('last_name', '');
 
@@ -31,9 +32,15 @@ class UsersController extends Controller
             $query = $query->where('last_name', 'LIKE', "%{$last_name}%");
         }
 
+        if ($sort) {
+            $order = substr($sort, 0, 1) === '-' ? 'desc' : 'asc';
+            $field = substr($sort, 0, 1) === '-' ? substr($sort, 1) : $sort;
+            $query = $query->orderBy($field, $order);
+        }
+
         $users = $query->get();
 
-        return view('users/index', compact('users', 'first_name', 'last_name'));
+        return view('users/index', compact('users', 'first_name', 'last_name', 'sort'));
     }
 
     public function create()

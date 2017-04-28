@@ -54,8 +54,26 @@
 			<thead>
 		    		<tr>
 		    			<th>#</th>
-		    			<th>First Name</th>
-		    			<th>Last Name</th>
+		    			<th data-jort="first_name">
+		    				First Name
+		    				@if($sort === 'first_name')
+		    					<span class="dropup">
+		    						<span class="caret"></span>
+		    					</span>
+		    				@elseif ($sort === '-first_name')
+		    					<span class="caret"></span>
+		    				@endif
+		    			</th>
+		    			<th data-jort="last_name">		    			
+		    				Last Name
+		    				@if($sort === 'last_name')
+		    					<span class="dropup">
+		    						<span class="caret"></span>
+		    					</span>
+		    				@elseif ($sort === '-last_name')
+		    					<span class="caret"></span>
+		    				@endif
+		    			</th>
 		    			<th>Username</th>
 		    			<th>Type</th>
 	    				<th>Department</th>
