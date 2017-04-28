@@ -89,7 +89,7 @@ class UsersController extends Controller
             'first_name'  => 'required',
             'last_name'  => 'required',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|min:8',
+            'password' => 'min:8',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
