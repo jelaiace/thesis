@@ -80,7 +80,7 @@
 							<option value="">Select Department</option>
 							
 							@foreach($departments as $department)
-								<option value="{{ $department->id }}">
+								<option value="{{ $department->id }}" @if($user->department->id === $department->id) selected @endif>
 									{{ $department->name}}
 								</option>
 							@endforeach
