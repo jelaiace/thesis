@@ -85,14 +85,16 @@ class UsersController extends Controller
     {
         $auth = Auth::user();
 
-        $this->validate($request, [
+        $rules = array_merge([
             'first_name'  => 'required',
             'last_name'  => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'min:8|confirmed',
+            'password' => 'confirmed',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
-        ]);
+        ], $request->has('password') ? ['password' => 'min:8|confirmed'] : []);
+
+        $this->validate($request, $rules);
         
         $user->first_name = $request->get('first_name');
         $user->last_name = $request->get('last_name');
