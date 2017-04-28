@@ -41,7 +41,7 @@
 
 				<div class="form-group">
 					<label>Password</label>
-					<input type="password" placeholder="password" name="password" class="form-control">
+					<input type="password" placeholder="*****" name="password" class="form-control">
 					@if($errors->has('password'))
 							<p class="u-text-error">
 								{{ $errors->first('password') }}
@@ -51,10 +51,10 @@
 
 				<div class="form-group">
 					<label>Password Confirmation</label>
-					<input type="password" placeholder="password" name="password" class="form-control">
-					@if($errors->has('password'))
+					<input type="password" placeholder="*****" name="password_confirmation" class="form-control">
+					@if($errors->has('password_confirmation'))
 							<p class="u-text-error">
-								{{ $errors->first('password') }}
+								{{ $errors->first('password_confirmation') }}
 							</p>
 					@endif
 				</div>
