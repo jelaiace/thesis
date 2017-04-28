@@ -24,5 +24,7 @@ artisan key:generate
 - **Run database migrations**
 ```bash
 artisan migrate
-artisan db:seed # Optional. Leave out to set a clean database.
+# Optional. Leave out to set a clean database.
+# However, you will need to fill out the fields yourself.
+artisan db:seed
 ```
