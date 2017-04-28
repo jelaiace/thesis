@@ -29,11 +29,24 @@
 		    @endif
 
         	<form action="/users">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" name="q" value={{ $query }}>
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">Go</button>
-					</span>
+        		<div class="row u-spacer-large">
+        			<div class="col-md-4">
+						<input type="text" class="form-control" placeholder="Search by First Name" name="first_name" value={{ $first_name }}>
+					</div>
+
+					<div class="col-md-4">
+						<input type="text" class="form-control" placeholder="Search by Last Name" name="last_name" value={{ $last_name }}>
+					</div>
+
+					<div class="col-md-4 text-right">
+						<button class="btn btn-default">
+							Search
+						</button>
+
+						<a href="/users" class="btn btn-warning">
+							Clear
+						</a>
+					</div>
 				</div>
 			</form>	
 
@@ -41,10 +54,13 @@
 			<thead>
 		    		<tr>
 		    			<th>#</th>
-		    			<th>Name</th>
+		    			<th>First Name</th>
+		    			<th>Last Name</th>
 		    			<th>Username</th>
 		    			<th>Type</th>
 	    				<th>Department</th>
+	    				<th width="40"></th>
+	    				<th width="40"></th>
 		    		</tr>
 		    </thead>
 		
@@ -54,41 +70,43 @@
 		    	@foreach($users as $user)
 			    	<tr>
 			    		<td>
-	                    	<div class="table">{{ $user->id }}</div>
+	                    	{{ $user->id }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{ $user->name }}</div>
+	                    	{{ $user->first_name }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table"> {{ $user->email}} </div>
+	                    	{{ $user->last_name }}
 	                    </td>
 
 	                    <td>
-	                    	<div class="table">{{$user->type}}</div>
+	                    	 {{ $user->email}} 
+	                    </td>
+
+	                    <td>
+	                    	{{$user->type}}
 	                    </td>
 	                    	
 	                    <td>
-	                    	<div class="table">{{ $user->department->name }}</div>	
+	                    	{{ $user->department->name }}
 	                    </td>
 
 	                    <td>
-		    				<a href="/users/{{ $user->id }}/edit" class="btn btn-info">
-                            <span class="glyphicon glyphicon-pencil"></span>
+		    				<a href="/users/{{ $user->id }}/edit" class="btn btn-info btn-xs">
+                            	<span class="glyphicon glyphicon-pencil"></span>
                             </a>
 		    			</td>
 
 		    			 <td>
 		    			 	<form action="/users/{{ $user->id }}" method="POST" data-verilete="user" data-verilete-name="{{ $user->name }}">
 		    			 		{{ method_field('DELETE') }}
-			    				<button class="btn btn-danger">
+			    				<button class="btn btn-danger btn-xs">
 	                            	<span class="glyphicon glyphicon-trash"></span>
 	                            </button>
 	                        </form>
 		    			</td>
-
-
 	                </tr>
                 @endforeach
 		    		

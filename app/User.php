@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'department_id', 'type'
+        'first_name', 'last_name', 'email', 'password', 'department_id', 'type'
     ];
 
     /**
@@ -27,6 +27,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * The attributes that should be appended to the JSON-serialized model
+     *
+     * @var array
+     */
+    protected $appends = [
+        'name'
+    ];
+
+    public function getNameAttribute() {
+        return "{$this->first_name} {$this->last_name}";
+    }
 
     public function department()
     {

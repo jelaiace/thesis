@@ -13,25 +13,27 @@ class UsersController extends Controller
     public function index(Request $request)
     {
         $user = Auth::user();
-        $query = $request->get('q', '');
+        $query = null;
+        $first_name = $request->get('first_name', '');
+        $last_name = $request->get('last_name', '');
 
-        if ($query) {
-            if ($user->type === 'dean') {
-                $users = $user->department->users()
-                ->where('name', 'LIKE', '%' . $query . '%')
-                ->get();
-            } else {
-                $users = User::where('name', 'LIKE', '%' . $query . '%')->get();
-            }
+        if ($user->type === 'dean') {
+            $query = $user->department->users();
         } else {
-            if ($user->type === 'dean') {
-                $users = $user->department->users;
-            } else {
-                $users = User::all();
-            }
+            $query = new User();
         }
 
-        return view('users/index', compact('users', 'query'));
+        if ($first_name) {
+            $query = $query->where('first_name', 'LIKE', "%{$first_name}%");
+        }
+
+        if ($last_name) {
+            $query = $query->where('last_name', 'LIKE', "%{$last_name}%");
+        }
+
+        $users = $query->get();
+
+        return view('users/index', compact('users', 'first_name', 'last_name'));
     }
 
     public function create()
@@ -45,7 +47,8 @@ class UsersController extends Controller
         $auth = Auth::user();
         
         $this->validate($request, [
-            'name'  => 'required',
+            'first_name'  => 'required',
+            'last_name'  => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:8',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
@@ -53,7 +56,8 @@ class UsersController extends Controller
         ]);
 
         $user = new User();
-        $user->name = $request->get('name');
+        $user->first_name = $request->get('first_name');
+        $user->last_name = $request->get('last_name');
         $user->email = $request->get('email');
         $user->password = bcrypt($request->get('password'));
         $user->type = $request->get('type');
@@ -82,14 +86,16 @@ class UsersController extends Controller
         $auth = Auth::user();
 
         $this->validate($request, [
-            'name'  => 'required',
+            'first_name'  => 'required',
+            'last_name'  => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:8',
             'type' => 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
         
-        $user->name = $request->get('name');
+        $user->first_name = $request->get('first_name');
+        $user->last_name = $request->get('last_name');
         $user->email = $request->get('email');
         $user->type = $request->get('type');
         $user->department_id = $auth->type === 'dean'

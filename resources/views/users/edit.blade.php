@@ -10,14 +10,24 @@
 				{{method_field ("PUT") }}
 
 				<div class="form-group">
-					<label>Name</label>
-					<input type="text" placeholder="Enter name" name="name" class="form-control" value="{{ $user->name }}">
-					@if($errors->has('name'))
+					<label>First Name</label>
+					<input type="text" placeholder="Enter first name" name="first_name" class="form-control" value="{{ $user->first_name }}">
+					@if($errors->has('first_name'))
 							<p class="u-text-error">
-								{{ $errors->first('name') }}
+								{{ $errors->first('first_name') }}
 							</p>
 					@endif
 				</div>
+
+				<div class="form-group">
+					<label>Last Name</label>
+					<input type="text" placeholder="Enter last name" name="last_name" class="form-control" value="{{ $user->last_name }}">
+					@if($errors->has('last_name'))
+							<p class="u-text-error">
+								{{ $errors->first('last_name') }}
+							</p>
+					@endif
+				</div>				
 
 				<div class="form-group">
 					<label>Username</label>
