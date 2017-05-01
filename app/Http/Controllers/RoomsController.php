@@ -44,7 +44,7 @@ class RoomsController extends Controller
     {
         $user = Auth::user();
         $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:rooms,name',
             'type' => 'required|in:lecture,laboratory',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);

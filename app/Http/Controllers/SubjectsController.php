@@ -46,7 +46,7 @@ class SubjectsController extends Controller
         $this->validate($request,[
             'course_number' => 'required',
             'course_code' => 'required',
-            'name' => 'required',
+            'name' => 'required|unique:subjects,name',
             'units' => 'required',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
