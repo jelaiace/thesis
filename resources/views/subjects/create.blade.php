@@ -19,8 +19,8 @@
 					</div>
 
 					<div class="form-group">
-						<label>Course Code</label>
-						<input type="text" placeholder="course code" name="course_code" class="form-control">
+						<label>Class Code</label>
+						<input type="text" placeholder="class code" name="course_code" class="form-control">
 						@if($errors->has('course_code'))
 							<p class="u-text-error">
 								{{ $errors->first('course_code') }}
