@@ -75,7 +75,7 @@
 
 				@if (Auth::user()->type !== 'dean')
 					<div class="form-group">
-						<label>Assign Department</label>
+						<label>Assigned Department</label>
 						<select name="department_id" class="form-control">
 							<option value="">Select Department</option>
 							
