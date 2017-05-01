@@ -74,7 +74,7 @@
 		    					<span class="caret"></span>
 		    				@endif
 		    			</th>
-		    			<th>Username</th>
+		    			<th>Email</th>
 		    			<th>Type</th>
 	    				<th>Department</th>
 	    				<th width="40"></th>

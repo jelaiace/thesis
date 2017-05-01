@@ -9,7 +9,7 @@
 
 				<form action="/courses" method="POST">
 					<div class="form-group">
-						<label>Course Description</label>
+						<label>Course Name</label>
 						<input type="text" placeholder="course name" name="name" class="form-control">
 						@if($errors->has('name'))
 							<p class="u-text-error">
