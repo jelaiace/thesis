@@ -79,7 +79,17 @@ class UsersController extends Controller
     
     public function show(User $user)
     {
-        return view('users/show', compact('user'));
+        $schedules = $user->schedules()
+            ->confirmed()
+            ->orderBy('end_time', 'asc')
+            ->get();
+
+        $groups = $schedules->groupBy(function($schedule) {
+            return $schedule->day_name;
+        });
+
+        
+        return view('users/show', compact('user', 'groups'));
     }
 
     public function edit(User $user)

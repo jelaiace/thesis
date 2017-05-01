@@ -92,7 +92,7 @@
 	                    </td>
 
 	                    <td>
-	                    	{{ $user->first_name }}
+	                    	<a href="/users/{{$user->id}}">{{ $user->first_name }}</a>
 	                    </td>
 
 	                    <td>

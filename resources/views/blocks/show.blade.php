@@ -28,7 +28,7 @@
 			    <tbody>
 			    	@foreach($schedules as $schedule)
 			    		<tr>
-			    			<td>
+			    				<td>
 									{{ $schedule->formatted_time }}
 								</td>
 
