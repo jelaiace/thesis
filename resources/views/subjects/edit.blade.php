@@ -11,7 +11,7 @@
 					{{ method_field("PUT") }}
 					<div class="form-group">
 						<label>Course Number</label>
-						<input type="text" placeholder="course number" name="course_number" class="form-control" value=" {{ $subject->course_number}} ">
+						<input type="text" placeholder="course number" name="course_number" class="form-control" value="{{ $subject->course_number }}">
 						@if($errors->has('course_number'))
 							<p class="u-text-error">
 								{{ $errors->first('course_number') }}
@@ -20,10 +20,10 @@
 					</div>
 					<div class="form-group">
 						<label>Class Code</label>
-						<input type="text" placeholder="class code" name="class code" class="form-control" value=" {{ $subject->course_code}} ">
-						@if($errors->has('course_code'))
+						<input type="text" placeholder="class code" name="class_code" class="form-control" value="{{ $subject->course_code }}">
+						@if($errors->has('class_code'))
 							<p class="u-text-error">
-								{{ $errors->first('course_code') }}
+								{{ $errors->first('class_code') }}
 							</p>
 						@endif
 					</div>

@@ -20,10 +20,10 @@
 
 					<div class="form-group">
 						<label>Class Code</label>
-						<input type="text" placeholder="class code" name="course_code" class="form-control">
-						@if($errors->has('course_code'))
+						<input type="text" placeholder="class code" name="class_code" class="form-control">
+						@if($errors->has('class_code'))
 							<p class="u-text-error">
-								{{ $errors->first('course_code') }}
+								{{ $errors->first('class_code') }}
 							</p>
 						@endif
 					</div>
