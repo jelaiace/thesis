@@ -24,23 +24,23 @@ class Schedule extends Model
     ];
 
     public function professor() {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User')->withTrashed();
     }
 
     public function room() {
-        return $this->belongsTo('App\Room');
+        return $this->belongsTo('App\Room')->withTrashed();
     }
 
     public function subject() {
-        return $this->belongsTo('App\Subject');
+        return $this->belongsTo('App\Subject')->withTrashed();
     }
 
     public function block() {
-        return $this->belongsTo('App\Block');
+        return $this->belongsTo('App\Block')->withTrashed();
     }
 
     public function requester() {
-        return $this->belongsTo('App\User', 'requester_id');
+        return $this->belongsTo('App\User', 'requester_id')->withTrashed();
     }
 
     public function getDayValueAttribute() {

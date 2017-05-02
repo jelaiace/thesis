@@ -3,14 +3,21 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Block extends Model
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'name',
         'course_id',
         'year_level',
         'semester'
+    ];
+
+    protected $dates = [
+        'deleted_at'
     ];
 
     /**
@@ -31,7 +38,7 @@ class Block extends Model
     }    
 
     public function course() {
-        return $this->belongsTo('App\Course');
+        return $this->belongsTo('App\Course')->withTrashed();
     }
 
     public function schedules() {

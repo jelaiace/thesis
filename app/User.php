@@ -4,11 +4,12 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Department;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -37,13 +38,17 @@ class User extends Authenticatable
         'name'
     ];
 
+    protected $dates = [
+        'deleted_at'
+    ];
+
     public function getNameAttribute() {
         return "{$this->first_name} {$this->last_name}";
     }
 
     public function department()
     {
-        return $this->belongsTo('App\Department');
+        return $this->belongsTo('App\Department')->withTrashed();
     }
 
     public function schedules()
