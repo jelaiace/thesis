@@ -88,9 +88,9 @@ class Schedule extends Model
         return $this->status === 'pending';
     }
 
-    public function scopeConfirmed() {
-        return $this->where(function($query) {
-            $query->where('status', 'approved')
+    public function scopeConfirmed($query) {
+        return $query->where(function($sub) {
+            return $sub->where('status', 'approved')
                 ->orWhereNull('status');
         });
     }
