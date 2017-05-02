@@ -33,7 +33,7 @@
 			<div class="input-group">
 				<input type="text" class="form-control" placeholder="Search" name="q" value= {{ $query}} >
 				<span class="input-group-btn">
-					<button class="btn btn-default" type="button">Go</button>
+					<button class="btn btn-default">Go</button>
 				</span>
 			</div>
 		</form>

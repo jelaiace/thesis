@@ -43,7 +43,7 @@ class CoursesController extends Controller
         $user = Auth::user();
 
         $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:courses,name,NULL,id,deleted_at,NULL',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
 
@@ -73,7 +73,7 @@ class CoursesController extends Controller
     {
         $user = Auth::user();
         $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:courses,name,' . $course->id . ',id,deleted_at,NULL',
             'department_id' => $user->type === 'dean' ? '' : 'required'
         ]);
 

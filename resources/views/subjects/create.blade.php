@@ -10,7 +10,7 @@
 				<form action="/subjects" method="POST">
 					<div class="form-group">
 						<label>Course Number</label>
-						<input type="text" placeholder="course number" name="course_number" class="form-control">
+						<input type="text" placeholder="course number" name="course_number" class="form-control" value="{{old('name')}}">
 						@if($errors->has('course_number'))
 							<p class="u-text-error">
 								{{ $errors->first('course_number') }}

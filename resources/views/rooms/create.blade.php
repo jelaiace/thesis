@@ -9,14 +9,14 @@
 			    <form action="/rooms" method="POST">
 			    	<div class="form-group">
 			    		<label>Name</label>
-		        	<input type="text" placeholder="Name" name="name" class="form-control">
+		        		<input type="text" placeholder="Name" name="name" class="form-control" value="{{ old('name') }}">
 
-		        	@if($errors->has('name'))
-							<p class="u-text-error">
-								{{ $errors->first('name') }}
-							</p>
-					@endif
-		        </div>
+			        	@if($errors->has('name'))
+								<p class="u-text-error">
+									{{ $errors->first('name') }}
+								</p>
+						@endif
+			        </div>
 
 		       <div class="form-group">
 		        	<label>Type</label>

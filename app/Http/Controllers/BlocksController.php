@@ -44,7 +44,7 @@ class BlocksController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'  => 'required|unique:blocks,name',
+            'name'  => 'required|unique:blocks,name,NULL,id,deleted_at,NULL',
             'course_id' => 'required',
             'year_level' => 'required',
             'semester' => 'required'
@@ -84,7 +84,7 @@ class BlocksController extends Controller
     public function update(Request $request, Block $block)
     {
         $this->validate($request, [
-            'name'  => 'required',
+            'name'  => 'required|unique:blocks,name,' . $block->id . ',id,deleted_at,NULL',
             'course_id' => 'required',
             'year_level' => 'required',
             'semester' => 'required'

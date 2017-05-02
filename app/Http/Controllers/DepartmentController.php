@@ -30,7 +30,7 @@ class DepartmentController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'  => 'required|unique:departments,name',
+            'name'  => 'required|unique:departments,name,NULL,id,deleted_at,NULL',
         ]);
         $department = Department::create([
             'name' => $request->get('name')
@@ -52,7 +52,7 @@ class DepartmentController extends Controller
     public function update(Request $request, Department $department)
     {
          $this->validate($request, [
-            'name'  => 'required|unique:departments,name,' . $department->id,
+            'name'  => 'required|unique:departments,name,' . $department->id . ',id,deleted_at,NULL',
         ]);
         $department->name = $request->get('name');
         $department->save();

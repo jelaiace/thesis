@@ -10,7 +10,7 @@
 				<form action="/blocks" method="POST">
 					<div class="form-group">
 						<label>Class Name</label>
-						<input type="text" placeholder="Block name" name="name" class="form-control">
+						<input type="text" placeholder="Block name" name="name" class="form-control" value="{{old('name')}}">
 						@if($errors->has('name'))
 							<p class="u-text-error">
 								{{ $errors->first('name') }}
