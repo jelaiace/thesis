@@ -49,7 +49,7 @@
                         </td>
 
                         <td>
-                            {{ $department->name}}
+                            <a href="/schedule/{{ $department->id}}">{{ $department->name }}</a>
                         </td>
 
                         <td>
