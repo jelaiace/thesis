@@ -38,7 +38,7 @@
 							</div>
 						@endif
 
-						<button class="btn btn-info">Update Subject</button>
+						<button class="btn btn-info">Update Course</button>
 					</div>
 				</form>
 			</div>
