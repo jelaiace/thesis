@@ -88,6 +88,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | CUSTOM Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the error messages for custom
+    | validation rules
+    |
+    */
+
+    'conflict_free_schedule' => 'The :attribute is conflicting with the block\'s other schedules',
+
+    /*
+    |--------------------------------------------------------------------------
     | Custom Validation Language Lines
     |--------------------------------------------------------------------------
     |

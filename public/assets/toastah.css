@@ -1,0 +1,35 @@
+.toast-float {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  pointer-events: none;
+  z-index: 1200;
+}
+
+.toast-float > .item {
+  display: inline-block;
+  padding: 16px;
+  font-size: 14px;
+  color: #fff;
+  background: #333;
+  border-radius: 4px;
+  pointer-events: all;
+}
+
+.toast-float > .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.toast-float > .item > .close {
+  display: inline-block;
+  padding: 4px;
+  margin: 0;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  opacity: 1;
+}

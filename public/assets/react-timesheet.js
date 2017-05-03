@@ -25408,16 +25408,14 @@ var Timesheet = function (_React$Component) {
           index = _this$state$edit.index;
 
 
-      if (_this.state.recent) {
-        _this.props.onStore(day, schedule);
-      } else {
-        _this.props.onUpdate(day, index, schedule);
-      }
+      var promise = _this.state.recent ? _this.props.onStore(day, schedule) : _this.props.onUpdate(day, index, schedule);
 
-      _this.setState({
-        edit: null,
-        editing: false,
-        recent: false
+      Promise.resolve(promise).then(function (res) {
+        _this.setState({
+          edit: null,
+          editing: false,
+          recent: false
+        });
       });
     }, _this.handleDrag = function (day, index, schedule, dest) {
       _this.props.onUpdate(day, index, schedule, dest);

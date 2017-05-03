@@ -60,6 +60,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/react-select.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/rc-tooltip.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/react-timesheet.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/toastah.css') }}">
 @stop
 
 @section('scripts')
@@ -69,6 +70,7 @@
 	<script src="{{ asset('assets/moment.js') }}"></script>
 	<script src="{{ asset('assets/axios.js') }}"></script>
 	<script src="{{ asset('assets/react-timesheet.js') }}"></script>
+	<script src="{{ asset('assets/toastah.js') }}"></script>
 
 	<script>
 		;(function() {
@@ -160,7 +162,7 @@
 				}
 
 				handleStore(room, schedule) {
-					axios.post('/schedule', {
+					return axios.post('/schedule', {
 						professor_id: schedule.data.professor.id,
 						block_id: schedule.data.section.id,
 						subject_id: schedule.data.subject.id,
@@ -174,6 +176,10 @@
 						schedule.data.id = res.data.id
 						schedules[room] = schedules[room].concat([schedule]);
 						this.setState({ schedules: schedules });
+					}).then(null, (err) => {
+						const res = err.response;
+						toastah(res.data.schedule[0]);
+						return Promise.reject(err);
 					});
 				}
 
@@ -200,6 +206,10 @@
 						}
 
 						this.setState({ schedules: schedules });
+					}).then(null, (err) => {
+						const res = err.response;
+						toastah(res.data.schedule[0]);
+						return Promise.reject(err);
 					});
 				}
 

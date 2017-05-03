@@ -59,6 +59,14 @@ class SchedulesController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'schedule' => 'conflict_free_schedule:' . implode([
+                $request->get('block_id'),
+                $request->get('start_time'),
+                $request->get('end_time')
+            ], ',')
+        ]);
+
         $schedule = new Schedule();
         $schedule->professor_id = $request->get('professor_id');
         $schedule->block_id = $request->get('block_id');
@@ -82,6 +90,15 @@ class SchedulesController extends Controller
 
     public function update(Request $request, Schedule $schedule)
     {
+        $this->validate($request, [
+            'schedule' => 'conflict_free_schedule:' . implode([
+                $request->get('block_id'),
+                $request->get('start_time'),
+                $request->get('end_time'),
+                $schedule->id
+            ], ',')
+        ]);
+
         $schedule->name = 'xx';
         $schedule->block_id = $request->get('block_id');
         $schedule->room_id = Room::where('name', $request->get('room'))->first()->id;
