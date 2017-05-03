@@ -110,7 +110,7 @@ class SchedulesController extends Controller
     public function delete(Schedule $schedule)
     {
         $schedule->delete();
-        return redirect('/schedule');
+        return response()->json(['success' => true]);
     }
 
     public function requests() {

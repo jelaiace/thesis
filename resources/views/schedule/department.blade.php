@@ -122,6 +122,7 @@
 
 					this.handleStore = this.handleStore.bind(this);
 					this.handleUpdate = this.handleUpdate.bind(this);
+					this.handleDelete = this.handleDelete.bind(this);
 					this.handleRequestAction = this.handleRequestAction.bind(this);
 				}
 
@@ -152,6 +153,7 @@
 							sections: blocks,
 							onStore: this.handleStore,
 							onUpdate: this.handleUpdate,
+							onDelete: this.handleDelete,
 							onRequestAction: this.handleRequestAction
 						}, null)
 					)
@@ -224,6 +226,26 @@
 
 							this.setState({ schedules });
 						});
+				}
+
+				handleDelete(room, index) {
+		      if (!confirm('Are you sure to delete this schedule?')) {
+		        return;
+		      }
+      
+					var schedule = this.state.schedules[room][index];
+					var endpoint = ['/schedule', schedule.data.id].join('/');
+
+					axios.delete(endpoint)
+						.then((res) => {
+							var schedules = Object.assign({}, this.state.schedules);
+
+							schedules[room] = schedules[room].filter((schedule, i) => {
+								return index !== i;
+							})
+
+							this.setState({ schedules });
+						})
 				}
 			});
 
