@@ -109,7 +109,11 @@ class BlocksController extends Controller
     {
         $user = Auth::user();
 
-        $blocks = $user->department->blocks
+        $blocks = $user->department->blocks()
+            ->with(['schedules' => function($query) {
+                return $query->orderBy('start_time', 'asc');
+            }])
+            ->get()
             ->each(function($block) {
                 $block->days = $block->schedules->groupBy(function($schedule) {
                     return $schedule->day_name;

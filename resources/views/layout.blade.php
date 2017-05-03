@@ -4,6 +4,7 @@
 	<title>@yield('title') - Classroom Scheduler</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/bootstrap.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/stylesheet.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/sweetalert.css') }}">
 	@yield('styles')
 </head>
 
@@ -63,6 +64,7 @@
 	@yield('content')
 	<script src="{{ asset('assets/jquery.min.js') }}"></script>
 	<script src="{{ asset('assets/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/sweetalert.min.js') }}"></script>
 	<script src="{{ asset('assets/script.js') }}"></script>
 	@yield('scripts')
 </body>

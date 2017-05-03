@@ -239,23 +239,26 @@
 				}
 
 				handleDelete(room, index) {
-		      if (!confirm('Are you sure to delete this schedule?')) {
-		        return;
-		      }
-      
-					var schedule = this.state.schedules[room][index];
-					var endpoint = ['/schedule', schedule.data.id].join('/');
+			    swal({
+			      title: 'Warning',
+			      type: 'warning',
+			      text: 'Are you sure to delete this schedule?',
+			      showCancelButton: true
+			    }, () => {
+						var schedule = this.state.schedules[room][index];
+						var endpoint = ['/schedule', schedule.data.id].join('/');
 
-					axios.delete(endpoint)
-						.then((res) => {
-							var schedules = Object.assign({}, this.state.schedules);
+						axios.delete(endpoint)
+							.then((res) => {
+								var schedules = Object.assign({}, this.state.schedules);
 
-							schedules[room] = schedules[room].filter((schedule, i) => {
-								return index !== i;
-							})
+								schedules[room] = schedules[room].filter((schedule, i) => {
+									return index !== i;
+								})
 
-							this.setState({ schedules });
-						})
+								this.setState({ schedules });
+							});
+			    })
 				}
 			});
 

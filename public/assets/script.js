@@ -1,22 +1,36 @@
-+(function($, undefined) {
   // <form data-verilete="user" data-verilete-name=
   // Verilete = Verify delete
++(function($, undefined) {
+  var prevent = true;
+
   $('[data-verilete]').on('submit', function(e) {
+    if (!prevent) {
+      return;
+    }
+
+    e.preventDefault();
+
     var el = $(this)
-    var resource = el.data('verilete') || 'resource';
+    var resource = el.data('verilete') || 'resource'
     var name = el.data('verilete-name')
 
-    if (!confirmation({ resource: resource, name: name }) ) {
-      e.preventDefault()
-    }
+    swal({
+      title: 'Warning',
+      type: 'warning',
+      text: message({ resource: resource, name: name }),
+      showCancelButton: true
+    }, function() {
+      prevent = false;
+      el.submit();
+    })
   })
 
-  function confirmation({resource, name}) {
-    const message = `Are you sure to delete this ${resource}`
+  function message({resource, name}) {
+    const text = `Are you sure to delete this ${resource}`
 
-    return confirm(!name
-      ? `${message}?`
-      : `${message} (${name})?`)
+    return !name
+      ? `${text}?`
+      : `${text} (${name})?`
   }
 })(jQuery)
 
