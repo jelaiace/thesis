@@ -28,13 +28,13 @@
 			                <ul class="nav navbar-nav">
 			                   
 			                    @if(Auth::user()->type !== "professor")
+			                    <li><a href="/departments">Departments</a></li>
 			                    <li><a href="/courses">Courses</a></li>
 			                    <li><a href="/blocks">Blocks</a></li>
 			                    <li><a href="/subjects">Subjects</a></li>
 			                    <li><a href="/rooms">Rooms</a></li>
 			                    <li><a href="/schedule">Schedules</a></li>
 			                    <li><a href="/users">Users</a></li>
-			                    <li><a href="/departments">Departments</a></li>
 			                    @endif
 			                </ul>
 			            </div>

@@ -36,7 +36,6 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>Department Name</th>
                 </tr>
             </thead>
@@ -44,10 +43,6 @@
             <tbody>
                 @foreach($departments as $department)
                     <tr>
-                        <td>
-                            {{ $department->id }}
-                        </td>
-
                         <td>
                             <a href="/schedule/{{ $department->id}}">{{ $department->name }}</a>
                         </td>
