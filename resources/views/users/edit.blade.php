@@ -63,8 +63,8 @@
 					<label>Type</label>
 					<select name="type" class="form-control">
 						<option value="admin" {{ $user->type === 'admin' ? 'selected' : '' }}>Admin</option>
-						<option value="president" {{ $user->type === 'admin' ? 'selected' : '' }}>President</option>
-						<option value="vice-president" {{ $user->type === 'admin' ? 'selected' : '' }}>Vice President</option>
+						<option value="president" {{ $user->type === 'president' ? 'selected' : '' }}>President</option>
+						<option value="vice-president" {{ $user->type === 'vice-president' ? 'selected' : '' }}>Vice President</option>
 						<option value="dean" {{ $user->type === 'dean' ? 'selected' : '' }}>Dean</option>
 						<option value="professor" {{ $user->type === 'professor' ? 'selected' : '' }}>Professor</option>
 					</select>
