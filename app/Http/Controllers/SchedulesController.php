@@ -63,7 +63,8 @@ class SchedulesController extends Controller
             'schedule' => 'conflict_free_schedule:' . implode([
                 $request->get('block_id'),
                 $request->get('start_time'),
-                $request->get('end_time')
+                $request->get('end_time'),
+                $request->get('day')
             ], ',')
         ]);
 
@@ -95,6 +96,7 @@ class SchedulesController extends Controller
                 $request->get('block_id'),
                 $request->get('start_time'),
                 $request->get('end_time'),
+                $request->get('day'),
                 $schedule->id
             ], ',')
         ]);
