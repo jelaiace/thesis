@@ -35,25 +35,28 @@ class AppServiceProvider extends ServiceProvider
             $day = $parameters[3];
             $ignore = array_get($parameters, '4');
 
-            // Check  start and end time are not the same
-            // Check if there are overlapping schedules
-            // Must start before and after start
-            // Must end before and after end
-            $query = Schedule::where('block_id', $id)
-                ->where('start_time', '<', $end)
-                ->where('end_time', '>', $start)
-                ->where('day', $day)
-                ->where('status', '!=', 'declined');
-
-            if ($ignore) {
-                $query->where('id', '!=', $ignore);
-            }
-            
-            $conflicting = $query->first();
-
-            // dd($conflicting);
+            $conflicting = Schedule::conflicting($id, $start, $end, $day, $ignore)->first();
 
             return null == $conflicting;
+        });
+
+        /**
+         * Validation message replacer so we can provide the conflicting schedule
+         */
+        Validator::replacer('conflict_free_schedule', function($message, $attribute, $rule, $parameters) {
+            $id = $parameters[0];
+            $start = $parameters[1];
+            $end = $parameters[2];
+            $day = $parameters[3];
+            $ignore = array_get($parameters, '4');
+
+            $conflicting = Schedule::conflicting($id, $start, $end, $day, $ignore)->first();
+
+            return str_replace(
+                [':conflict_department', ':conflict_room'],
+                [$conflicting->room->department->name, $conflicting->room->name],
+                $message
+            );
         });
     }
 

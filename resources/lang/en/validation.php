@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'conflict_free_schedule' => 'The :attribute is conflicting with the block\'s other schedules',
+    'conflict_free_schedule' => 'The :attribute is conflicting with the block\'s other schedules (:conflict_department, Room :conflict_room)',
 
     /*
     |--------------------------------------------------------------------------

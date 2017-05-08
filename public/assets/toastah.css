@@ -5,12 +5,14 @@
   bottom: 32px;
   right: 32px;
   pointer-events: none;
+  max-width: 320px;
   z-index: 1200;
 }
 
 .toast-float > .item {
   display: inline-block;
   padding: 16px;
+  padding-right: 36px;
   font-size: 14px;
   color: #fff;
   background: #333;
@@ -23,6 +25,9 @@
 }
 
 .toast-float > .item > .close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   display: inline-block;
   padding: 4px;
   margin: 0;

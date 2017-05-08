@@ -94,4 +94,25 @@ class Schedule extends Model
                 ->orWhereNull('status');
         });
     }
+
+    // Check start and end time are not the same
+    // Check if there are overlapping schedules
+    // Must start before and after start
+    // Must end before and after end
+    public function scopeConflicting($query, $block, $start, $end, $day, $ignore = null) {
+        $query->where('block_id', $block)
+            ->where('start_time', '<', $end)
+            ->where('end_time', '>', $start)
+            ->where('day', $day)
+            ->where(function($sub) {
+                $sub->where('status', '!=', 'declined')
+                    ->orWhereNull('status');
+            });
+
+        if ($ignore) {
+            $query->where('id', '!=', $ignore);
+        }
+
+        return $query;
+    }
 }

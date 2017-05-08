@@ -21,5 +21,9 @@
     }, 10000);
   }
 
+  container.on('click', '.item > .close', function() {
+    var item = $(this).parent('.item').remove();
+  });
+
   window.toastah = toastah;
 })(window, jQuery);
