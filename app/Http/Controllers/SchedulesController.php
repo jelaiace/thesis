@@ -145,6 +145,7 @@ class SchedulesController extends Controller
             ->get();
 
         $requests = Auth::user()->requests()
+            ->recent()
             ->orderBy('id', 'desc');
 
         switch($status) {
@@ -181,6 +182,7 @@ class SchedulesController extends Controller
             ->get();
 
         $requests = Auth::user()->department->schedules()
+            ->recent()
             ->orderBy('id', 'desc');
 
         switch($status) {

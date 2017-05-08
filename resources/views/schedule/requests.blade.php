@@ -48,6 +48,13 @@
           </li>
         </ul>
 
+        @if ($status === 'all')
+          <p class="alert alert-info">
+            <i class="glyphicon glyphicon-info-sign"></i>
+            Displayed are the <em>most recent</em> approved and declined requests and <em>all</em> pending requests.
+          </p>
+        @endif
+
         <table class="table">
           <thead>
             <tr>

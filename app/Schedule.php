@@ -95,6 +95,20 @@ class Schedule extends Model
         });
     }
 
+    /**
+     * Get all recent schedules (all pending, and recent *approved*
+     * and *declined* requests) added since the past week.
+     * Intended to be used for recent requests.
+     */
+    public function scopeRecent($query) {
+        return $query->where(function($query) {
+            return $query->where(function($query) {
+                return $query->where('status', '!=', 'pending')
+                    ->where('created_at', '>=', Carbon::now()->subWeek());
+            })->orWhere('status', 'pending');
+        });
+    }
+
     // Check start and end time are not the same
     // Check if there are overlapping schedules
     // Must start before and after start
@@ -105,7 +119,7 @@ class Schedule extends Model
             ->where('end_time', '>', $start)
             ->where('day', $day)
             ->where(function($sub) {
-                $sub->where('status', '!=', 'declined')
+                return $sub->where('status', '!=', 'declined')
                     ->orWhereNull('status');
             });
 
