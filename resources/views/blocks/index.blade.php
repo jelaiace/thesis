@@ -41,7 +41,7 @@
 		<table class="table table-hover">
 			<thead>
 		    		<tr>
-		    			<th>#</th>
+		    			<!--<th>#</th>-->
 		    			<th>Class Name</th>
 		    			<th>Course</th>
 	    				<th>Year Level</th>
@@ -52,9 +52,7 @@
 	    	<tbody>
 		    	@foreach($blocks as $block)
 			    	<tr>
-			    		<td>
-              				{{ $block->id }}
-             			 </td>
+			    		
 
 			              <td>
 			              	<a href="/blocks/{{ $block->id }}">{{ $block->name }}</a>
