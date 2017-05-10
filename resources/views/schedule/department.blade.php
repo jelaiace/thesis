@@ -16,15 +16,27 @@
 					@endforeach
 				</div>
 
-        <div class="list-group">
-          <a href="/schedule/requests" class="list-group-item">
-            My Requests
-          </a>
+				<div class="panel panel-default">	
+					<div class="panel-heading">Color Legend</div>
+					<div class="panel-body">
+						@foreach(['upcoming', 'on-going', 'done', 'request'] as $status)
+							<div class="timesheet-legend -{{ $status }}">
+								<div class="boxie"></div>
+								{{ ucfirst($status) }}
+							</div>
+						@endforeach
+					</div>
+				</div>	
 
-          <a href="/schedule/incoming" class="list-group-item">
-            Department Requests
-          </a>
-        </div>
+		        <div class="list-group">
+		          <a href="/schedule/requests" class="list-group-item">
+		            My Requests
+		          </a>
+
+		          <a href="/schedule/incoming" class="list-group-item">
+		            Department Requests
+		          </a>
+		        </div>
 			</div>
 
 			<div class="col-md-9">

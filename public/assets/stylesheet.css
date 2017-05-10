@@ -92,3 +92,29 @@ body {
 [data-jort] {
   cursor: pointer;
 }
+
+.timesheet-legend {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #383a48;
+}
+
+.timesheet-legend > .boxie {
+  margin-right: 8px;
+  height: 24px;
+  width: 24px;
+  background: #383a48;
+  /*border: 1px solid #ddd;*/
+}
+
+.timesheet-legend:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.timesheet-legend.-on-going { color: #58da86; }
+.timesheet-legend.-on-going > .boxie { background: #58da86; }
+.timesheet-legend.-done { color: #ccced8; }
+.timesheet-legend.-done > .boxie { background: #ccced8; }
+.timesheet-legend.-request { color: #a8dadc; }
+.timesheet-legend.-request > .boxie { background: #a8dadc; }
