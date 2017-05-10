@@ -47,22 +47,24 @@
 						@endif
 					</div>
 						
-					<div class="form-group">
-						<label>Type</label>
-						<select name="type" class="form-control">
-							<option>Select User</option>
-							<option value="admin">Admin</option>
-							<option value="president">President</option>
-							<option value="vice-president">Vice President</option>
-							<option value="dean">Dean</option>
-							<option value="professor">Professor</option>
-						</select>
-						@if($errors->has('type'))
-							<p class="u-text-error">
-								{{ $errors->first('type') }}
-							</p>
-						@endif
-					</div>
+					@if (Auth::user()->type !== 'dean')
+						<div class="form-group">
+							<label>Type</label>
+							<select name="type" class="form-control">
+								<option>Select User</option>
+								<option value="admin">Admin</option>
+								<option value="president">President</option>
+								<option value="vice-president">Vice President</option>
+								<option value="dean">Dean</option>
+								<option value="professor">Professor</option>
+							</select>
+							@if($errors->has('type'))
+								<p class="u-text-error">
+									{{ $errors->first('type') }}
+								</p>
+							@endif
+						</div>
+					@endif
 					
 					@if (Auth::user()->type !== 'dean')
 						<div class="form-group">	

@@ -58,7 +58,7 @@ class UsersController extends Controller
             'last_name'  => 'required',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:8',
-            'type' => 'required|in:admin,dean,professor,vice-president,president',
+            'type' => $auth->type === 'dean' ? '' : 'required|in:admin,dean,professor,vice-president,president',
             'department_id' => $auth->type === 'dean' ? '' : 'required'
         ]);
 
@@ -67,7 +67,9 @@ class UsersController extends Controller
         $user->last_name = $request->get('last_name');
         $user->email = $request->get('email');
         $user->password = bcrypt($request->get('password'));
-        $user->type = $request->get('type');
+        $user->type = $auth->type === 'dean'
+            ? 'professor'
+            : $request->get('type');
         $user->department_id = $auth->type === 'dean'
             ? $auth->department->id
             : $request->get('department_id');
@@ -116,7 +118,9 @@ class UsersController extends Controller
         $user->first_name = $request->get('first_name');
         $user->last_name = $request->get('last_name');
         $user->email = $request->get('email');
-        $user->type = $request->get('type');
+        $user->type = $auth->type === 'dean'
+            ? 'professor'
+            : $request->get('type');
         $user->department_id = $auth->type === 'dean'
             ? $auth->department->id
             : $request->get('department_id');

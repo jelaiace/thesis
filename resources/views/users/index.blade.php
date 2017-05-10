@@ -108,7 +108,9 @@
 	                    </td>
 	                    	
 	                    <td>
-	                    	{{ $user->department->name }}
+	                    	 @if ($user->type === 'dean' || $user->type === 'professor')
+		                    	{{ $user->department->name }}
+	                    	@endif
 	                    </td>
 
 	                    <td>
