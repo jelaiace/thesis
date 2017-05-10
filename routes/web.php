@@ -60,14 +60,14 @@ Route::group(['middleware' =>['web', 'auth']], function() {
         Route::get('subjects/{subject}/edit', 'SubjectsController@edit');
         Route::put('subjects/{subject}', 'SubjectsController@update');
         Route::delete('subjects/{subject}', 'SubjectsController@delete');
+
+        Route::get('schedule', 'SchedulesController@index');
+        Route::get('schedule/requests', 'SchedulesController@requests');
+        Route::get('schedule/incoming', 'SchedulesController@incoming');
+        Route::post('schedule', 'SchedulesController@store');
+        Route::get('schedule/{department}', 'SchedulesController@department');
+        Route::put('schedule/{schedule}', 'SchedulesController@update');
+        Route::patch('schedule/{schedule}/action', 'SchedulesController@action');
+        Route::delete('schedule/{schedule}', 'SchedulesController@delete'); 
     });
 });
-
-Route::get('schedule', 'SchedulesController@index');
-Route::get('schedule/requests', 'SchedulesController@requests');
-Route::get('schedule/incoming', 'SchedulesController@incoming');
-Route::post('schedule', 'SchedulesController@store');
-Route::get('schedule/{department}', 'SchedulesController@department');
-Route::put('schedule/{schedule}', 'SchedulesController@update');
-Route::patch('schedule/{schedule}/action', 'SchedulesController@action');
-Route::delete('schedule/{schedule}', 'SchedulesController@delete');
