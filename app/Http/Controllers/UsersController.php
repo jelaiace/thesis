@@ -111,28 +111,19 @@ class UsersController extends Controller
             'first_name'  => 'required',
             'last_name'  => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'confirmed',
-            'type' => $auth->type === 'dean' ? '' : 'required|in:admin,dean,professor,vice-president,president',
-            'department_id' => $auth->type !== 'dean' ? 'required_if:type,dean|required_if:type,professor' : ''
+            'password' => 'confirmed'
         ], $request->has('password') ? ['password' => 'min:8|confirmed'] : []);
 
         $this->validate($request, $rules);
-
-        $type = $request->get('type');
         
         $user->first_name = $request->get('first_name');
         $user->last_name = $request->get('last_name');
         $user->email = $request->get('email');
-        $user->type = $auth->type === 'dean'
-            ? 'professor'
-            : $request->get('type');
-        $user->department_id = $auth->type === 'dean'
-            ? $auth->department->id
-            : ($type === 'dean' || $type === 'professor' ? $request->get('department_id') : 0);
        
         if ($request->has('password')) {
             $user->password = bcrypt($request->get('password'));
         }
+        
         $user->save();
         
         session()->flash('success', 'User was successfully updated!');
