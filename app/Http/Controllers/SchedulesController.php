@@ -23,9 +23,17 @@ class SchedulesController extends Controller
     {
         $auth = Auth::user();
         $departments = Department::all();
-        $professors = $auth->department->users()->where('type', 'professor')->get();
-        $subjects = $auth->department->subjects;
-        $blocks = $auth->department->blocks;
+        
+        if ($auth->type === 'dean') {
+            $professors = $auth->department->users()->where('type', 'professor')->get();
+            $subjects = $auth->department->subjects;
+            $blocks = $auth->department->blocks;
+        } else {
+            $professors = User::ofType('professor')->get();
+            $subjects = Subject::all();
+            $blocks = Block::all();;
+        }
+
         $day = strtolower($request->get('day', 'm'));
 
         $rooms = Room::where('department_id', $department->id)

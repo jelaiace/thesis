@@ -59,4 +59,8 @@ class User extends Authenticatable
     public function requests() {
         return $this->hasMany('App\Schedule', 'requester_id');
     }
+
+    public function scopeOfType($query, $type) {
+        return $query->where('type', $type);
+    }
 }
