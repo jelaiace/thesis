@@ -48,15 +48,15 @@
 					</div>
 						
 					@if (Auth::user()->type !== 'dean')
-						<div class="form-group">
+						<div class="form-group" \>
 							<label>Type</label>
-							<select name="type" class="form-control">
+							<select name="type" class="form-control js-form-type">
 								<option>Select User</option>
-								<option value="admin">Admin</option>
-								<option value="president">President</option>
-								<option value="vice-president">Vice President</option>
-								<option value="dean">Dean</option>
-								<option value="professor">Professor</option>
+								<option @if(old('type') === 'admin') selected @endif value="admin">Admin</option>
+								<option @if(old('type') === 'president') selected @endif value="president">President</option>
+								<option @if(old('type') === 'vice-president') selected @endif value="vice-president">Vice President</option>
+								<option @if(old('type') === 'dean') selected @endif value="dean">Dean</option>
+								<option @if(old('type') === 'professor') selected @endif value="professor">Professor</option>
 							</select>
 							@if($errors->has('type'))
 								<p class="u-text-error">
@@ -67,13 +67,13 @@
 					@endif
 					
 					@if (Auth::user()->type !== 'dean')
-						<div class="form-group">	
+						<div class="form-group js-dept-group" style="display: none">	
 							<label>Assign Department</label>
 							<select name="department_id" class="form-control">
 								<option value="">Select Department</option>
 								@foreach($departments as $department)
-									<option value="{{$department->id}}">
-										{{ $department->name}}
+									<option value="{{$department->id}}" @if($department->id == old('department_id')) selected @endif>
+										{{ $department->name }}
 									</option>
 								@endforeach
 							</select>
@@ -91,6 +91,10 @@
 			</div>
 		</div>
 	</div>
+@stop
 
-
+@section('scripts')
+	@if (Auth::user()->type !== 'dean')
+		<script src="{{ asset('assets/page.user-ops.js') }}" type="text/javascript"></script>
+	@endif
 @stop

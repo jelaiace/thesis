@@ -59,30 +59,32 @@
 					@endif
 				</div>
 
-				<div class="form-group">
-					<label>Type</label>
-					<select name="type" class="form-control">
-						<option value="admin" {{ $user->type === 'admin' ? 'selected' : '' }}>Admin</option>
-						<option value="president" {{ $user->type === 'president' ? 'selected' : '' }}>President</option>
-						<option value="vice-president" {{ $user->type === 'vice-president' ? 'selected' : '' }}>Vice President</option>
-						<option value="dean" {{ $user->type === 'dean' ? 'selected' : '' }}>Dean</option>
-						<option value="professor" {{ $user->type === 'professor' ? 'selected' : '' }}>Professor</option>
-					</select>
-					@if($errors->has('type'))
-							<p class="u-text-error">
-								{{ $errors->first('type') }}
-							</p>
-					@endif
-				</div>
-
 				@if (Auth::user()->type !== 'dean')
 					<div class="form-group">
+						<label>Type</label>
+						<select name="type" class="form-control js-form-type">
+							<option value="admin" {{ $user->type === 'admin' ? 'selected' : '' }}>Admin</option>
+							<option value="president" {{ $user->type === 'president' ? 'selected' : '' }}>President</option>
+							<option value="vice-president" {{ $user->type === 'vice-president' ? 'selected' : '' }}>Vice President</option>
+							<option value="dean" {{ $user->type === 'dean' ? 'selected' : '' }}>Dean</option>
+							<option value="professor" {{ $user->type === 'professor' ? 'selected' : '' }}>Professor</option>
+						</select>
+						@if($errors->has('type'))
+								<p class="u-text-error">
+									{{ $errors->first('type') }}
+								</p>
+						@endif
+					</div>
+				@endif
+
+				@if (Auth::user()->type !== 'dean')
+					<div class="form-group js-dept-group" @if($user->department == null) style="display: none;" @endif>
 						<label>Assigned Department</label>
 						<select name="department_id" class="form-control">
 							<option value="">Select Department</option>
 							
 							@foreach($departments as $department)
-								<option value="{{ $department->id }}" @if($user->department->id === $department->id) selected @endif>
+								<option value="{{ $department->id }}" @if($user->department && $user->department->id === $department->id) selected @endif>
 									{{ $department->name}}
 								</option>
 							@endforeach
@@ -101,4 +103,10 @@
 		</div>
 	</div>
 </div>
+@stop
+
+@section('scripts')
+	@if (Auth::user()->type !== 'dean')
+		<script src="{{ asset('assets/page.user-ops.js') }}" type="text/javascript"></script>
+	@endif
 @stop
