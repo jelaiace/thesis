@@ -24,12 +24,11 @@
 	            </div>
 
 	            <div class="col-md-7">
-	            	@if(Auth::check())
+	            	
 			            <div class="collapse navbar-collapse">
-			                <ul class="nav navbar-nav">
-			                   
+			                <ul class="nav navbar-nav">			                   
 			                    @if(Auth::user()->type !== "professor")
-			                    	@if(Auth::user()->type !== "dean")
+			                    	@if(Auth::user()->type !=="dean")
 			                  			<li><a href="/departments">Departments</a></li>
 			                  		@endif
 			                    <li><a href="/courses">Courses</a></li>
@@ -41,7 +40,7 @@
 			                    @endif
 			                </ul>
 			            </div>
-			        @endif
+			       
 	            </div>
 
 	            <div class="col-md-2 text-right">
