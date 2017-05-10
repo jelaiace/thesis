@@ -29,7 +29,9 @@
 			                <ul class="nav navbar-nav">
 			                   
 			                    @if(Auth::user()->type !== "professor")
-			                    <li><a href="/departments">Departments</a></li>
+			                    	@if(Auth::user()->type !== "dean")
+			                  			<li><a href="/departments">Departments</a></li>
+			                  		@endif
 			                    <li><a href="/courses">Courses</a></li>
 			                    <li><a href="/blocks">Blocks</a></li>
 			                    <li><a href="/subjects">Subjects</a></li>

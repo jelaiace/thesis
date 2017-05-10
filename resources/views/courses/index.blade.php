@@ -37,7 +37,7 @@
 		<table class="table table-hover">
 			<thead>
 		    		<tr>
-		    			<th>#</th>
+		    			<!--<th>#</th>-->
 		    			<th>Course Name</th>
 		    			<th>Department</th>
 		    		</tr>
@@ -46,9 +46,6 @@
 	    	<tbody>
 		    	@foreach($courses as $course)
 			    	<tr>
-			    		<td>
-	                    	{{ $course->id }}
-	                    </td>
 
 	                    <td>
 	                    	{{ $course->name }}
