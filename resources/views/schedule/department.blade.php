@@ -60,6 +60,13 @@
 				  <li role="presentation" {{ $day === 's' ? 'class=active' : '' }}>
 				  	<a href="/schedule/{{ $department->id }}?day=s">Saturday</a>
 				  </li>
+
+				  <li role="presentation" class="pull-right">
+				  	<select class="form-control js-dummy-semester" style="width: 150px;">
+				  		<option value="1" @if($semester == 1) selected @endif>1st Semester</option>
+				  		<option value="2" @if($semester == 2) selected @endif>2nd Semester</option>
+				  	</select>
+				  </li>
 				</ul>
 
 				<div id="calendar-mount" class="calendar-container"></div>
@@ -83,6 +90,17 @@
 	<script src="{{ asset('assets/axios.js') }}"></script>
 	<script src="{{ asset('assets/react-timesheet.js') }}"></script>
 	<script src="{{ asset('assets/toastah.js') }}"></script>
+
+	<script>
+		;(function($) {
+			$('.js-dummy-semester').on('change', function() {
+				var el = $(this);
+				var q = new URLSearchParams(window.location.search);
+				q.set('semester', el.val());
+				window.location.search = String(q);
+			});
+		})(jQuery);
+	</script>
 
 	<script>
 		;(function() {

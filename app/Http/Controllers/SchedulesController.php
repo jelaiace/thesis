@@ -23,6 +23,7 @@ class SchedulesController extends Controller
     {
         $auth = Auth::user();
         $departments = Department::all();
+        $semester = $request->get('semester', 1);
         
         if ($auth->type === 'dean') {
             $professors = $auth->department->users()->where('type', 'professor')->get();
@@ -61,7 +62,8 @@ class SchedulesController extends Controller
             'departments',
             'department',
             'day',
-            'rooms'
+            'rooms',
+            'semester'
         ));
     }
 
