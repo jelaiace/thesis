@@ -101,11 +101,15 @@ class Schedule extends Model
      * Intended to be used for recent requests.
      */
     public function scopeRecent($query) {
-        return $query->where(function($query) {
-            return $query->where(function($query) {
-                return $query->where('status', '!=', 'pending')
-                    ->where('created_at', '>=', Carbon::now()->subWeek());
-            })->orWhere('status', 'pending');
+        // Avoid MySQL *ambiguous errors* when
+        // scope is used within a join query.
+        $table = $this->getTable();
+
+        return $query->where(function($query) use($table) {
+            return $query->where(function($query) use($table) {
+                return $query->where("{$table}.status", '!=', 'pending')
+                    ->where("{$table}.created_at", '>=', Carbon::now()->subWeek());
+            })->orWhere("{$table}.status", 'pending');
         });
     }
 
